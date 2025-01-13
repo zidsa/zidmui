@@ -1,0 +1,62 @@
+version: '3'
+
+#
+# Global Env Vars
+dotenv:
+  [
+    '.env.taskfile',
+    '{{.HOME}}/.env.taskfile',
+  ]
+
+
+#
+# Tasks
+tasks:
+  install:
+    desc: Install dependencies
+    cmds:
+      - pnpm i -f
+
+  ci:
+    desc: Install dependencies for CI
+    cmds:
+      - pnpm ci -f
+
+  # test:
+  #   desc: Run tests
+  #   cmds:
+  #     - npm test
+
+  build:
+    desc: Build package
+    cmds:
+      - pnpm run build
+
+  pack:
+    desc: Build package & package it
+    cmds:
+      - task: build
+      - cd dist && pnpm pack
+
+  link:
+    desc: Link package to install locally on another project
+    cmds:
+      - task: build
+      - cd dist && pnpm link
+
+  release:
+    desc: Build package & release it to registery
+    cmds:
+      - task: build
+      - pnpm run release --ci -- --npm.skipChecks
+
+  lint:
+    desc: Lint code & fromat it and type check typescript
+    cmds:
+      - pnpm run lint
+      - pnpm run tscheck
+
+  lint-check:
+    desc: Lint code (check only without formatting)
+    cmds:
+      - pnpm run lint-check
