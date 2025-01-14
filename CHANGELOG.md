@@ -1,5 +1,7 @@
 # Changelog
 
+## [v1.1.3](https://github.com/zidsa/zidmui/compare/v1.1.1...vv1.1.3) (2025-01-14)
+
 * chore: add github actions (495ae956)
 * chore: project updates (414e5ba8)
 
