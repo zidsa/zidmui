@@ -1,9 +1,11 @@
-import { defineConfig } from "vite";
-import dts from "vite-plugin-dts";
-import { peerDependencies } from "./package.json";
 import path from 'path';
-import {glob} from 'glob';
-import react from '@vitejs/plugin-react'
+
+import react from '@vitejs/plugin-react';
+import { glob } from 'glob';
+import { defineConfig } from 'vite';
+import dts from 'vite-plugin-dts';
+
+import { peerDependencies } from './package.json';
 
 //
 
@@ -11,22 +13,29 @@ export default defineConfig({
   build: {
     target: 'es2022',
     minify: false,
+    outDir: 'dist',
     lib: {
       entry: path.resolve(__dirname, './src/index.ts'),
-      name: "zidmui",
-      fileName: (format) => `${format}/[name].js`,
-      formats: ["cjs", "es"]
+      name: 'zidmui',
+      fileName: format => `${format}/[name].js`,
+      formats: ['es', 'cjs'],
     },
     rollupOptions: {
       input: glob.sync(path.resolve(__dirname, 'src/**/*.{ts,tsx}')),
       external: ['react/jsx-runtime', ...Object.keys(peerDependencies)],
       output: {
         preserveModules: true,
-        // preserveModulesRoot: 'src',
+        preserveModulesRoot: 'src',
       },
     },
     sourcemap: true,
-    emptyOutDir: true
+    emptyOutDir: true,
   },
-  plugins: [dts({ outDir: 'dist/types'}), react()]
+  plugins: [
+    react(),
+    dts({
+      entryRoot: 'src',
+      outDir: 'dist/types',
+    }),
+  ],
 });

@@ -1,5 +1,6 @@
 {
   "name": "@zidsa/zidmui",
+  "type": "module",
   "version": "1.1.0",
   "description": "Zid MUI shared components and utilities",
   "author": "Abdulaziz Homaily <a.homaily@gmail.com>",
@@ -13,13 +14,6 @@
   "bugs": {
     "url": "https://github.com/zidsa/zidmui/issues"
   },
-  "main": "dist/cjs",
-  "module": "dist/es",
-  "types": "dist/types",
-  "files": [
-    "dist/",
-    "README.md"
-  ],
   "scripts": {
     "preinstall": "npx -y only-allow pnpm",
     "build": "tsc && vite build",
@@ -28,6 +22,107 @@
     "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\" --fix",
     "lint-check": "eslint \"src/**/*.{ts,tsx,js,jsx}\"",
     "release": "release-it"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    "./icons/arrows/*": {
+      "require": "./dist/cjs/icons/arrows/*.js",
+      "types": "./dist/types/icons/arrows/*.d.ts",
+      "import": "./dist/es/icons/arrows/*.js"
+    },
+    "./icons/buildings/*": {
+      "require": "./dist/cjs/icons/buildings/*.js",
+      "types": "./dist/types/icons/buildings/*.d.ts",
+      "import": "./dist/es/icons/buildings/*.js"
+    },
+    "./icons/business/*": {
+      "require": "./dist/cjs/icons/business/*.js",
+      "types": "./dist/types/icons/business/*.d.ts",
+      "import": "./dist/es/icons/business/*.js"
+    },
+    "./icons/communication/*": {
+      "require": "./dist/cjs/icons/communication/*.js",
+      "types": "./dist/types/icons/communication/*.d.ts",
+      "import": "./dist/es/icons/communication/*.js"
+    },
+    "./icons/design/*": {
+      "require": "./dist/cjs/icons/design/*.js",
+      "types": "./dist/types/icons/design/*.d.ts",
+      "import": "./dist/es/icons/design/*.js"
+    },
+    "./icons/development/*": {
+      "require": "./dist/cjs/icons/development/*.js",
+      "types": "./dist/types/icons/development/*.d.ts",
+      "import": "./dist/es/icons/development/*.js"
+    },
+    "./icons/device/*": {
+      "require": "./dist/cjs/icons/device/*.js",
+      "types": "./dist/types/icons/device/*.d.ts",
+      "import": "./dist/es/icons/device/*.js"
+    },
+    "./icons/document/*": {
+      "require": "./dist/cjs/icons/document/*.js",
+      "types": "./dist/types/icons/document/*.d.ts",
+      "import": "./dist/es/icons/document/*.js"
+    },
+    "./icons/editor/*": {
+      "require": "./dist/cjs/icons/editor/*.js",
+      "types": "./dist/types/icons/editor/*.d.ts",
+      "import": "./dist/es/icons/editor/*.js"
+    },
+    "./icons/finance/*": {
+      "require": "./dist/cjs/icons/finance/*.js",
+      "types": "./dist/types/icons/finance/*.d.ts",
+      "import": "./dist/es/icons/finance/*.js"
+    },
+    "./icons/food/*": {
+      "require": "./dist/cjs/icons/food/*.js",
+      "types": "./dist/types/icons/food/*.d.ts",
+      "import": "./dist/es/icons/food/*.js"
+    },
+    "./icons/health-medical/*": {
+      "require": "./dist/cjs/icons/health-medical/*.js",
+      "types": "./dist/types/icons/health-medical/*.d.ts",
+      "import": "./dist/es/icons/health-medical/*.js"
+    },
+    "./icons/logos/*": {
+      "require": "./dist/cjs/icons/logos/*.js",
+      "types": "./dist/types/icons/logos/*.d.ts",
+      "import": "./dist/es/icons/logos/*.js"
+    },
+    "./icons/map/*": {
+      "require": "./dist/cjs/icons/map/*.js",
+      "types": "./dist/types/icons/map/*.d.ts",
+      "import": "./dist/es/icons/map/*.js"
+    },
+    "./icons/media/*": {
+      "require": "./dist/cjs/icons/media/*.js",
+      "types": "./dist/types/icons/media/*.d.ts",
+      "import": "./dist/es/icons/media/*.js"
+    },
+    "./icons/others/*": {
+      "require": "./dist/cjs/icons/others/*.js",
+      "types": "./dist/types/icons/others/*.d.ts",
+      "import": "./dist/es/icons/others/*.js"
+    },
+    "./icons/system/*": {
+      "require": "./dist/cjs/icons/system/*.js",
+      "types": "./dist/types/icons/system/*.d.ts",
+      "import": "./dist/es/icons/system/*.js"
+    },
+    "./icons/user-faces/*": {
+      "require": "./dist/cjs/icons/user-faces/*.js",
+      "types": "./dist/types/icons/user-faces/*.d.ts",
+      "import": "./dist/es/icons/user-faces/*.js"
+    },
+    "./icons/weather/*": {
+      "require": "./dist/cjs/icons/weather/*.js",
+      "types": "./dist/types/icons/weather/*.d.ts",
+      "import": "./dist/es/icons/weather/*.js"
+    }
   },
   "peerDependencies": {
     "@mui/material": "^6.3.1",
@@ -46,7 +141,10 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-import-resolver-typescript": "3.7.0",
     "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-prettier": "5.2.1",
+    "eslint-plugin-react": "7.37.4",
+    "eslint-plugin-react-hooks": "5.1.0",
     "glob": "11.0.1",
     "lefthook": "1.10.3",
     "prettier": "3.4.2",
