@@ -1,5 +1,8 @@
 # Changelog
 
+* chore: add github actions (495ae956)
+* chore: project updates (414e5ba8)
+
 # 1.0.0 (2025-01-13)
 
 
