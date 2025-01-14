@@ -1,0 +1,52 @@
+name: CI Tests
+
+on:
+  # pull_request:
+  #   paths-ignore:
+  #     - 'infrastructure/**'
+  #     - '.github/**'
+  #     - '.vscode/**'
+  #   branches:
+  #     - main
+  #     - develop
+  push:
+    paths-ignore:
+      - 'infrastructure/**'
+      - '.github/**'
+      - '.vscode/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          registry-url: https://npm.pkg.github.com/
+          scope: '@zidsa'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm run lint-check
+
+      - name: Lint
+        run: pnpm run json-check
+
+      - name: Typescript check
+        run: pnpm run tscheck
+
+      - name: Build
+        run: pnpm run build
+
+      # - name: Test
+      #   run: npm run test
