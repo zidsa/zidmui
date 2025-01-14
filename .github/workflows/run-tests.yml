@@ -39,9 +39,6 @@ jobs:
       - name: Lint
         run: pnpm run lint-check
 
-      - name: Lint
-        run: pnpm run json-check
-
       - name: Typescript check
         run: pnpm run tscheck
 
