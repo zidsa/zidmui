@@ -107,9 +107,37 @@ module.exports = {
           'error',
           {
             paths: [
-              { name: '@remix-run/react', importNames: ['useNavigate', 'useSearchParams'], message: 'Please use useApp... instead' },
-              { name: '@mui/material', importNames: ['Grid', 'Hidden', 'Breadcrumbs', 'Alert', 'AlertTitle', 'Typography', 'Button'], message: 'Restricted import, use equivalent app component' },
-              { name: '~/zidmui/hooks/use-app-search-params', importNames: ['useAppSearchParams'], message: 'You porbably should use usePageSearchParams' },
+              {
+                name: '@remix-run/react',
+                importNames: ['useNavigate', 'useSearchParams', 'useMatches'],
+                message: 'Use useApp... instead',
+              },
+              {
+                name: 'react-router-dom',
+                message: 'Use remix import instead',
+              },
+              {
+                name: 'react-router',
+                message: 'Use remix import instead',
+              },
+              {
+                name: '@mui/material',
+                importNames: [
+                  'Grid',
+                  'Hidden',
+                  'Breadcrumbs',
+                  'Alert',
+                  'AlertTitle',
+                  'Typography',
+                  'Button',
+                ],
+                message: 'Use equivalent app component',
+              },
+              {
+                name: '@mui/lab',
+                importNames: ['LoadingButton'],
+                message: 'Use AppButton instead',
+              },
             ],
           },
         ],
@@ -133,9 +161,10 @@ module.exports = {
               { pattern: '~/**', group: 'internal', position: 'after' },
             ],
             pathGroupsExcludedImportTypes: ['builtin'],
-            alphabetize: { order: 'asc' }
+            alphabetize: { order: 'asc' },
           },
         ],
+        "import/no-cycle": [2, { "maxDepth": "∞" }]
       },
     },
   ],
