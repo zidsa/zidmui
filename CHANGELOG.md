@@ -1,5 +1,8 @@
 # Changelog
 
+* chore: update dependencies (dc799ac9)
+* chore: sync configuration with hermes, update dependencies (30ab6e1b)
+
 ## [1.1.3](https://github.com/zidsa/zidmui/compare/vv1.1.3...vnull) (2025-01-21)
 
 ## [v1.1.3](https://github.com/zidsa/zidmui/compare/v1.1.1...vv1.1.3) (2025-01-14)
