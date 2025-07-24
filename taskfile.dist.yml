@@ -45,10 +45,14 @@ tasks:
       - cd dist && pnpm link
 
   release:
-    desc: Build package & release it to registery
+    desc: Build package & release it to registry
     cmds:
-      - task: build
-      - pnpm run release --ci -- --npm.skipChecks
+      - pnpm run release patch -- --npm.skipChecks {{.CLI_ARGS}}
+
+  release-dev:
+    desc: Build package & release it to registry (Dev version)
+    cmds:
+      - pnpm run release patch --preRelease=dev -- --npm.skipChecks {{.CLI_ARGS}}
 
   lint:
     desc: Lint code & fromat it and type check typescript
