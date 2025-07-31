@@ -9,12 +9,6 @@ on:
       - '.vscode/**'
     branches:
       - main
-  # push:
-  #   paths-ignore:
-  #     - '.github/**'
-  #     - '.vscode/**'
-  #   branches:
-  #     - main
 
 jobs:
   release:
@@ -26,8 +20,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
@@ -40,16 +32,23 @@ jobs:
           scope: '@zidsa'
           cache: 'pnpm'
 
+      - name: Set github registry & auth for private dependencies
+        env:
+          GPR_TOKEN: ${{ secrets.GPR_AUTH_TOKEN }}
+        run: |
+          pnpm config set @zidsa:registry https://npm.pkg.github.com/
+          pnpm config set //npm.pkg.github.com/:_authToken $GPR_TOKEN
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
       - name: git config
         run: |
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 
-      - name: Install Dependencies
-        run: pnpm install --frozen-lockfile
+      - name: Update GPR auth token for release
+        run: pnpm config set //npm.pkg.github.com/:_authToken ${{ secrets.GITHUB_TOKEN }}
 
       - name: Release
-        run: pnpm run release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        run: pnpm run release patch --ci
