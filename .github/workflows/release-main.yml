@@ -51,4 +51,4 @@ jobs:
         run: pnpm config set //npm.pkg.github.com/:_authToken ${{ secrets.GITHUB_TOKEN }}
 
       - name: Release
-        run: pnpm run release patch --ci
+        run: pnpm run release --ci
