@@ -122,6 +122,11 @@
       "require": "./dist/cjs/icons/weather/*.js",
       "types": "./dist/types/icons/weather/*.d.ts",
       "import": "./dist/es/icons/weather/*.js"
+    },
+    "./hooks/*": {
+      "require": "./dist/cjs/hooks/*.js",
+      "types": "./dist/types/hooks/*.d.ts",
+      "import": "./dist/es/hooks/*.js"
     }
   },
   "peerDependencies": {
@@ -148,7 +153,7 @@
     "glob": "11.0.3",
     "lefthook": "1.11.16",
     "prettier": "3.5.3",
-    "release-it": "18.1.2",
+    "release-it": "19.0.4",
     "typescript": "5.8.3",
     "vite": "6.2.7",
     "vite-plugin-dts": "4.5.4"
