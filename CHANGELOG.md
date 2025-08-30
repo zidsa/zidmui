@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/zidsa/zidmui/compare/v1.2.0...v1.2.1) (2025-08-30)
+
+
+### Features
+
+* implement 'useToggle' hook ([1d36a94](https://github.com/zidsa/zidmui/commit/1d36a9407b0cae65276fbd1fe47dbda363c33bb7))
+
 * chore: update exports (6cbbb5d)
 * feat: implement 'useToggle' hook (1d36a94)
 
