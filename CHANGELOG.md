@@ -1,5 +1,8 @@
 # Changelog
 
+* chore: update exports (6cbbb5d)
+* feat: implement 'useToggle' hook (1d36a94)
+
 * chore: update dependencies (dc799ac9)
 * chore: sync configuration with hermes, update dependencies (30ab6e1b)
 
