@@ -86,7 +86,6 @@ module.exports = {
     {
       files: ['**/*.{js,jsx,ts,tsx}'],
       extends: ['plugin:prettier/recommended'],
-      // plugins: ['no-relative-import-paths'],
       rules: {
         'react/jsx-curly-brace-presence': [1, { props: 'never', children: 'never' }],
         'import/default': 'off',
@@ -103,53 +102,6 @@ module.exports = {
           { blankLine: 'always', prev: ['multiline-block-like'], next: '*' },
           { blankLine: 'always', prev: '*', next: ['multiline-block-like'] },
         ],
-        'no-restricted-imports': [
-          'error',
-          {
-            paths: [
-              {
-                name: '@remix-run/react',
-                importNames: ['useNavigate', 'useSearchParams', 'useMatches'],
-                message: 'Use useApp... instead',
-              },
-              {
-                name: 'react-router-dom',
-                message: 'Use remix import instead',
-              },
-              {
-                name: 'react-router',
-                message: 'Use remix import instead',
-              },
-              {
-                name: '@mui/material',
-                importNames: [
-                  'Grid',
-                  'Hidden',
-                  'Breadcrumbs',
-                  'Alert',
-                  'AlertTitle',
-                  'Typography',
-                  'Button',
-                ],
-                message: 'Use equivalent app component',
-              },
-              {
-                name: '@mui/lab',
-                importNames: ['LoadingButton'],
-                message: 'Use AppButton instead',
-              },
-            ],
-          },
-        ],
-        // 'no-relative-import-paths/no-relative-import-paths': [
-        //   'error',
-        //   {
-        //     'allowSameFolder': true,
-        //     rootDir: 'app',
-        //     prefix: '~',
-        //     allowedDepth: 1
-        //   }
-        // ],
         'import/order': [
           'error',
           {
@@ -164,7 +116,7 @@ module.exports = {
             alphabetize: { order: 'asc' },
           },
         ],
-        "import/no-cycle": [2, { "maxDepth": "∞" }]
+        'import/no-cycle': [2, { maxDepth: '∞' }],
       },
     },
   ],

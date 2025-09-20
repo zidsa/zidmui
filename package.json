@@ -127,6 +127,16 @@
       "require": "./dist/cjs/hooks/*.js",
       "types": "./dist/types/hooks/*.d.ts",
       "import": "./dist/es/hooks/*.js"
+    },
+    "./theme/*": {
+      "require": "./dist/cjs/theme/*.js",
+      "types": "./dist/types/theme/*.d.ts",
+      "import": "./dist/es/theme/*.js"
+    },
+    "./components/*": {
+      "require": "./dist/cjs/components/*.js",
+      "types": "./dist/types/components/*.d.ts",
+      "import": "./dist/es/components/*.js"
     }
   },
   "peerDependencies": {
