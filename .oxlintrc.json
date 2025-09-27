@@ -1,0 +1,59 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "ignorePatterns": [
+    "!**/.server",
+    "!**/.client",
+    "build/",
+    ".eslint-cache",
+    "public/tinymce/**/*"
+  ],
+  "plugins": [
+    "react",
+    "unicorn",
+    "typescript",
+    "oxc",
+    "import",
+    "react-hooks",
+    "jsx-a11y",
+    "react-perf"
+  ],
+  "rules": {
+    "eslint/max-lines": ["error", { "max": 450, "skipBlankLines": "true", "skipComments": "true" }],
+    "eslint/no-console": "error",
+    "eslint/no-constant-binary-expression": "off",
+    "eslint/no-extra-boolean-cast": "off",
+    "eslint/no-unused-vars": "error",
+
+    "import/export": "error",
+    "import/namespace": "error",
+    "import/no-anonymous-default-export": "warn",
+    "import/no-cycle": "error",
+    "import/no-duplicates": "error",
+    "import/no-unresolved": "error",
+
+    "oxc/const-comparisons": "off",
+    "oxc/erasing-op": "off",
+
+    "react-hooks/exhaustive-deps": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react/jsx-curly-brace-presence": [1, { "children": "never", "props": "never" }],
+    "react/jsx-no-target-blank": "warn",
+
+    "typescript/no-explicit-any": "error",
+    "typescript/no-for-in-array": "error",
+
+    "unicorn/no-constant-binary-expression": "off",
+    "unicorn/no-new-array": "off",
+    "unicorn/no-single-promise-in-promise-methods": "off",
+    "unicorn/no-thenable": "off",
+    "unicorn/no-useless-fallback-in-spread": "off",
+    "unicorn/no-useless-spread": "off",
+    "unicorn/prefer-string-starts-ends-with": "off"
+  },
+
+  "settings": {}
+}

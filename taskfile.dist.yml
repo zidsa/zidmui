@@ -2,12 +2,7 @@ version: '3'
 
 #
 # Global Env Vars
-dotenv:
-  [
-    '.env.taskfile',
-    '{{.HOME}}/.env.taskfile',
-  ]
-
+dotenv: ['.env.taskfile', '{{.HOME}}/.env.taskfile']
 
 #
 # Tasks
@@ -58,9 +53,11 @@ tasks:
     desc: Lint code & fromat it and type check typescript
     cmds:
       - pnpm run lint
+      - pnpm run lint-oxlint
       - pnpm run tscheck
 
   lint-check:
     desc: Lint code (check only without formatting)
     cmds:
       - pnpm run lint-check
+      - pnpm run lint-oxlint

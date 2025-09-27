@@ -87,15 +87,7 @@ module.exports = {
       files: ['**/*.{js,jsx,ts,tsx}'],
       extends: ['plugin:prettier/recommended'],
       rules: {
-        'react/jsx-curly-brace-presence': [1, { props: 'never', children: 'never' }],
-        'import/default': 'off',
-        'no-console': 'error',
         'react/display-name': ['error', { ignoreTranspilerName: false, checkContextObjects: true }],
-        'import/no-named-as-default': 'off',
-        'import/no-named-as-default-member': 'off',
-        'import/no-anonymous-default-export': 'warn',
-        'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
-        'max-lines': ['warn', { max: 300, skipComments: true, skipBlankLines: true }],
         'padding-line-between-statements': [
           'error',
           { blankLine: 'always', prev: '*', next: 'return' },
@@ -116,7 +108,17 @@ module.exports = {
             alphabetize: { order: 'asc' },
           },
         ],
-        'import/no-cycle': [2, { maxDepth: '∞' }],
+
+        //
+
+        'react/jsx-curly-brace-presence': 'off',
+        'import/no-cycle': 'off',
+        'no-console': 'off',
+        'import/default': 'off',
+        'import/no-named-as-default': 'off',
+        'import/no-named-as-default-member': 'off',
+        'import/no-anonymous-default-export': 'off',
+        'max-lines': 'off',
       },
     },
   ],
