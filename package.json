@@ -141,15 +141,15 @@
     }
   },
   "peerDependencies": {
-    "@mui/material": "7.0.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "@mui/material": "7.3.2",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "19.8.1",
-    "@commitlint/config-conventional": "19.8.1",
+    "@commitlint/cli": "20.0.0",
+    "@commitlint/config-conventional": "20.0.0",
     "@release-it/conventional-changelog": "10.0.1",
-    "@types/react": "18.3.23",
+    "@types/react": "19.1.14",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
     "@vitejs/plugin-react": "4.3.4",
@@ -162,12 +162,12 @@
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "4.6.2",
     "glob": "11.0.3",
-    "lefthook": "1.11.16",
+    "lefthook": "1.13.4",
     "oxlint": "1.18.0",
-    "prettier": "3.5.3",
-    "release-it": "19.0.4",
-    "typescript": "5.8.3",
-    "vite": "6.2.7",
+    "prettier": "3.6.2",
+    "release-it": "19.0.5",
+    "typescript": "5.9.2",
+    "vite": "7.1.7",
     "vite-plugin-dts": "4.5.4"
   },
   "engines": {

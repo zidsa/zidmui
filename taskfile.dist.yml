@@ -52,8 +52,8 @@ tasks:
   lint:
     desc: Lint code & fromat it and type check typescript
     cmds:
-      - pnpm run lint
       - pnpm run lint-oxlint
+      - pnpm run lint
       - pnpm run tscheck
 
   lint-check:

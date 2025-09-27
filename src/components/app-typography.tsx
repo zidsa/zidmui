@@ -17,31 +17,36 @@ export type AppTypographyProps = Omit<TypographyProps, 'fontSize' | 'fontWeight'
   tooltipProps?: Omit<TooltipProps, 'children' | 'title'>;
 };
 
-export const AppTypography = React.forwardRef<HTMLSpanElement, AppTypographyProps>(
-  ({ children, variant = 'body1', tooltip, tooltipProps, ...props }, ref) => {
-    const element = (
-      <Typography ref={ref} {...props} variant={variant}>
-        {children}
-      </Typography>
-    );
+export const AppTypography: React.FC<AppTypographyProps> = ({
+  ref,
+  children,
+  variant = 'body1',
+  tooltip,
+  tooltipProps,
+  ...props
+}) => {
+  const element = (
+    <Typography ref={ref} {...props} variant={variant}>
+      {children}
+    </Typography>
+  );
 
-    return tooltip ? (
-      <Tooltip
-        title={tooltip}
-        placement="bottom"
-        disableInteractive
-        enterDelay={700}
-        slotProps={{
-          popper: { modifiers: [{ name: 'offset', options: { offset: [0, -12] } }] },
-        }}
-        {...tooltipProps}
-      >
-        {element}
-      </Tooltip>
-    ) : (
-      element
-    );
-  },
-);
+  return tooltip ? (
+    <Tooltip
+      title={tooltip}
+      placement="bottom"
+      disableInteractive
+      enterDelay={700}
+      slotProps={{
+        popper: { modifiers: [{ name: 'offset', options: { offset: [0, -12] } }] },
+      }}
+      {...tooltipProps}
+    >
+      {element}
+    </Tooltip>
+  ) : (
+    element
+  );
+};
 
 AppTypography.displayName = 'AppTypography';
