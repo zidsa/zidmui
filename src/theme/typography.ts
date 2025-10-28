@@ -3,8 +3,7 @@ import { ThemeOptions } from '@mui/material';
 //
 //
 
-const variant = 'saudi_riyal, IBM Plex Sans Arabic, -apple-system, Helvetica, Arial, sans-serif'
- 
+const variant = 'IBM Plex Sans Arabic, -apple-system, Helvetica, Arial, sans-serif';
 
 export const typography: ThemeOptions['typography'] = {
   fontFamily: variant,
