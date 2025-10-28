@@ -3,36 +3,30 @@ import { ThemeOptions } from '@mui/material';
 //
 //
 
-const variant1 = 'Suisse Intl, -apple-system, Helvetica, Arial, sans-serif';
-const variant2 = 'Codec Pro, -apple-system, Helvetica, Arial, sans-serif';
+const variant = 'IBM Plex Sans Arabic, -apple-system, Helvetica, Arial, sans-serif'
+ 
 
 export const typography: ThemeOptions['typography'] = {
-  fontFamily: variant1,
+  fontFamily: variant,
   h1: {
-    fontFamily: variant2,
     fontWeight: 400,
     letterSpacing: -1.5,
   },
   h2: {
-    fontFamily: variant2,
     fontWeight: 400,
     letterSpacing: -0.5,
   },
   h3: {
-    fontFamily: variant2,
     fontWeight: 400,
   },
   h4: {
-    fontFamily: variant2,
     fontWeight: 400,
     letterSpacing: 0.25,
   },
   h5: {
-    fontFamily: variant2,
     fontWeight: 400,
   },
   h6: {
-    fontFamily: variant2,
     fontWeight: 400,
     letterSpacing: 0.15,
   },
