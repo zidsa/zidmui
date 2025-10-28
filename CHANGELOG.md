@@ -1,5 +1,7 @@
 # Changelog
 
+## [1.3.2-dev.2](https://github.com/zidsa/zidmui/compare/v1.3.2-dev.1...v1.3.2-dev.2) (2025-10-28)
+
 ## [1.3.2-dev.1](https://github.com/zidsa/zidmui/compare/v1.3.2-dev.0...v1.3.2-dev.1) (2025-10-28)
 
 ## [1.3.2-dev.0](https://github.com/zidsa/zidmui/compare/v1.3.1...v1.3.2-dev.0) (2025-10-28)
