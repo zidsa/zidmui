@@ -22,7 +22,9 @@
     "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\" --fix",
     "lint-oxlint": "oxlint . --tsconfig tsconfig.json",
     "lint-check": "eslint \"src/**/*.{ts,tsx,js,jsx}\"",
-    "release": "release-it"
+    "release": "release-it",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "files": [
     "dist",
@@ -149,6 +151,9 @@
     "@commitlint/cli": "20.1.0",
     "@commitlint/config-conventional": "20.0.0",
     "@release-it/conventional-changelog": "10.0.1",
+    "@storybook/addon-docs": "10.0.3",
+    "@storybook/addon-themes": "10.0.3",
+    "@storybook/react-vite": "10.0.3",
     "@types/react": "19.2.0",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
@@ -161,11 +166,13 @@
     "eslint-plugin-prettier": "5.2.6",
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "4.6.2",
+    "eslint-plugin-storybook": "10.0.3",
     "glob": "11.0.3",
     "lefthook": "1.13.6",
     "oxlint": "1.19.0",
     "prettier": "3.6.2",
     "release-it": "19.0.5",
+    "storybook": "10.0.3",
     "typescript": "5.9.3",
     "vite": "7.1.9",
     "vite-plugin-dts": "4.5.4"
@@ -174,5 +181,8 @@
     "node": ">=22.14.0",
     "pnpm": ">=10.0.0",
     "npm": "please use pnpm"
+  },
+  "dependencies": {
+    "@emotion/styled": "11.14.1"
   }
 }

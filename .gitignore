@@ -37,3 +37,6 @@ lerna-debug.log*
 !.vscode/extensions.json
 
 tsconfig.tsbuildinfo
+
+*storybook.log
+storybook-static
