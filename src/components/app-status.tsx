@@ -33,7 +33,7 @@ export const AppStatus: React.FC<AppStatusProps> = ({
 }) => {
   if (color === 'default') color = 'neutral';
 
-  const element = <StatusElement ref={ref} size={size} data-color={color} {...props} />;
+  const element = <StatusElement color2={color} size={size} ref={ref} {...props} />;
 
   //
 
@@ -50,37 +50,55 @@ AppStatus.displayName = 'AppStatus';
 
 //
 
-const StatusElement = styled(Chip)(({ theme }) => ({
-  '&[data-color="success"]': {
-    backgroundColor: theme.palette.colors.green[300],
-    color: theme.palette.colors.green[900],
-  },
-  '&[data-color="error"]': {
-    backgroundColor: theme.palette.colors.red[200],
-    color: theme.palette.colors.red[900],
-  },
-  '&[data-color="warning"]': {
-    backgroundColor: theme.palette.colors.yellow[300],
-    color: theme.palette.colors.yellow[1000],
-  },
-  '&[data-color="neutral"]': {
-    backgroundColor: theme.palette.colors.neutrals[100],
-    color: theme.palette.colors.neutrals[600],
-  },
-  '&[data-color="disabled"]': {
-    backgroundColor: theme.palette.colors.neutrals[50],
-    color: theme.palette.colors.neutrals[400],
-  },
-  '&[data-color="info"]': {
-    backgroundColor: theme.palette.colors.primary[200],
-    color: theme.palette.colors.primary[800],
-  },
-  '&[data-color="orange"]': {
-    backgroundColor: theme.palette.colors.orange[200],
-    color: theme.palette.colors.orange[700],
-  },
-  '&[data-color="blue"]': {
-    backgroundColor: theme.palette.colors.blue[300],
-    color: theme.palette.colors.blue[900],
-  },
+const StatusElement = styled(Chip, {
+  shouldForwardProp: prop => prop !== 'color2',
+})<{ color2?: AppStatusProps['color'] }>(({ theme, color2 = 'neutral' }) => ({
+  ...(color2 === 'success'
+    ? {
+        backgroundColor: theme.palette.colors.green[300],
+        color: theme.palette.colors.green[900],
+      }
+    : undefined),
+  ...(color2 === 'error'
+    ? {
+        backgroundColor: theme.palette.colors.red[200],
+        color: theme.palette.colors.red[900],
+      }
+    : undefined),
+  ...(color2 === 'warning'
+    ? {
+        backgroundColor: theme.palette.colors.yellow[300],
+        color: theme.palette.colors.yellow[1000],
+      }
+    : undefined),
+  ...(color2 === 'neutral'
+    ? {
+        backgroundColor: theme.palette.colors.neutrals[100],
+        color: theme.palette.colors.neutrals[600],
+      }
+    : undefined),
+  ...(color2 === 'disabled'
+    ? {
+        backgroundColor: theme.palette.colors.neutrals[50],
+        color: theme.palette.colors.neutrals[400],
+      }
+    : undefined),
+  ...(color2 === 'info'
+    ? {
+        backgroundColor: theme.palette.colors.primary[200],
+        color: theme.palette.colors.primary[800],
+      }
+    : undefined),
+  ...(color2 === 'orange'
+    ? {
+        backgroundColor: theme.palette.colors.orange[200],
+        color: theme.palette.colors.orange[700],
+      }
+    : undefined),
+  ...(color2 === 'blue'
+    ? {
+        backgroundColor: theme.palette.colors.blue[300],
+        color: theme.palette.colors.blue[900],
+      }
+    : undefined),
 }));
