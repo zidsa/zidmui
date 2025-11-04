@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.2](https://github.com/zidsa/zidmui/compare/v1.3.1...v1.4.2) (2025-11-04)
+
+
+### Bug Fixes
+
+* small issue with app status ([a24c4a7](https://github.com/zidsa/zidmui/commit/a24c4a7062a88ddfcc8f74b221ccd9956e5e393e))
+
 ## [1.3.1](https://github.com/zidsa/zidmui/compare/v1.3.0...v1.3.1) (2025-10-04)
 
 # [1.3.0](https://github.com/zidsa/zidmui/compare/v1.2.2...v1.3.0) (2025-09-27)
