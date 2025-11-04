@@ -15,6 +15,19 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
+  argTypes: {
+    color: {
+      control: 'select',
+    },
+  },
+} satisfies Meta<typeof AppStatus>;
+
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+//
+
+export const Playground: Story = {
   args: {
     color: 'success',
     label: 'Text',
@@ -24,12 +37,7 @@ const meta = {
       placement: 'top',
     },
   },
-} satisfies Meta<typeof AppStatus>;
-
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-//
+};
 
 export const Variants: Story = {
   render: () => (
