@@ -19,32 +19,38 @@ export const typography: ThemeOptions['typography'] = {
     fontWeight: 400,
   },
   h4: {
-    fontWeight: 400,
+    fontWeight: 500,
     letterSpacing: 0.25,
   },
   h5: {
-    fontWeight: 400,
+    fontWeight: 500,
   },
   h6: {
-    fontWeight: 400,
+    fontWeight: 500,
     letterSpacing: 0.15,
   },
   body1: {
+    fontWeight: 400,
     letterSpacing: 0.15,
   },
   body2: {
+    fontWeight: 400,
     letterSpacing: 0.17,
   },
   subtitle1: {
     fontWeight: 500,
+    letterSpacing: 0.15,
   },
   subtitle2: {
+    fontWeight: 500,
     letterSpacing: 0.1,
   },
   overline: {
+    fontWeight: 400,
     letterSpacing: 1,
   },
   caption: {
+    fontWeight: 400,
     letterSpacing: 0.4,
   },
 };
