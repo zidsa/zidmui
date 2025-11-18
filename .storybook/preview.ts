@@ -1,8 +1,9 @@
 import type { Preview } from '@storybook/react-vite';
-import { CssBaseline, ThemeProvider } from '@mui/material';
+import { ThemeProvider } from '@mui/material/styles';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 
 import { themeParcel } from '../src/theme/theme';
+import CssBaseline from '@mui/material/CssBaseline';
 
 //
 //
