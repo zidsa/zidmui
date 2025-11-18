@@ -1,6 +1,6 @@
+import { MuiButton } from './components/button';
 import { MuiChip } from './components/chip';
 import { MuiTypography } from './components/typography';
-import { MuiButton } from './components/button';
 
 //
 //

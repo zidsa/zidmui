@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import { Divider, Stack } from '@mui/material';
+import Divider from '@mui/material/Divider';
+import Stack from '@mui/material/Stack';
 
 import { AppStatus } from '../components/app-status';
 

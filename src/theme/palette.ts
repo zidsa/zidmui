@@ -1,4 +1,4 @@
-import { ThemeOptions } from '@mui/material';
+import { ThemeOptions } from '@mui/material/styles';
 
 import { colors } from './colors';
 
@@ -8,7 +8,7 @@ import { colors } from './colors';
 export const palette: ThemeOptions['palette'] = {
   mode: 'light',
   colors,
-  components: {
+  _components: {
     button: {
       disabledText: '#A3A1A6',
       disabledBorder: '#E4E4E5',

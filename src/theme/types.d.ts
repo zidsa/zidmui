@@ -39,7 +39,7 @@ declare module '@mui/material/styles' {
 
   //
 
-  interface Components {
+  interface _Components {
     button: {
       disabledText: string;
       disabledBorder: string;
@@ -99,11 +99,11 @@ declare module '@mui/material/styles' {
 
   interface Palette {
     colors: Colors;
-    components: Components;
+    _components: _Components;
   }
 
   interface PaletteOptions {
     colors: Colors;
-    components: Components;
+    _components: _Components;
   }
 }

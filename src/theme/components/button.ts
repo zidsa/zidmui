@@ -1,4 +1,4 @@
-import { Components, CssVarsTheme, Theme } from '@mui/material';
+import { Components, CssVarsTheme, Theme } from '@mui/material/styles';
 
 //
 //
@@ -97,25 +97,25 @@ export const MuiButton: Components<
         {
           props: { color: 'primary' },
           style: {
-            backgroundColor: theme.palette.components.button.primary.contained,
-            color: theme.palette.components.button.primary.text,
-            borderColor: theme.palette.components.button.primary.contained,
+            backgroundColor: theme.palette._components.button.primary.contained,
+            color: theme.palette._components.button.primary.text,
+            borderColor: theme.palette._components.button.primary.contained,
             '&:hover': {
-              backgroundColor: theme.palette.components.button.primary.hover,
-              borderColor: theme.palette.components.button.primary.hover,
+              backgroundColor: theme.palette._components.button.primary.hover,
+              borderColor: theme.palette._components.button.primary.hover,
             },
             '&.Mui-focusVisible': {
-              backgroundColor: theme.palette.components.button.primary.focused,
+              backgroundColor: theme.palette._components.button.primary.focused,
               outline: `2px solid ${theme.palette.primary.dark}`,
               outlineOffset: '2px',
             },
             '&:active': {
-              backgroundColor: theme.palette.components.button.primary.pressed,
+              backgroundColor: theme.palette._components.button.primary.pressed,
             },
             '&.Mui-disabled': {
-              backgroundColor: theme.palette.components.button.primary.disabled,
-              borderColor: theme.palette.components.button.disabledBorder,
-              color: theme.palette.components.button.disabledText,
+              backgroundColor: theme.palette._components.button.primary.disabled,
+              borderColor: theme.palette._components.button.disabledBorder,
+              color: theme.palette._components.button.disabledText,
             },
           },
         },
@@ -126,22 +126,22 @@ export const MuiButton: Components<
             color: theme.palette.common.black,
             borderColor: theme.palette.primary.light,
             '&:hover': {
-              backgroundColor: theme.palette.components.button.primary.hover,
-              borderColor: theme.palette.components.button.primary.hover,
-              color: theme.palette.components.button.primary.text,
+              backgroundColor: theme.palette._components.button.primary.hover,
+              borderColor: theme.palette._components.button.primary.hover,
+              color: theme.palette._components.button.primary.text,
             },
             '&.Mui-focusVisible': {
-              backgroundColor: theme.palette.components.button.primary.focused,
+              backgroundColor: theme.palette._components.button.primary.focused,
               outline: `2px solid ${theme.palette.primary.dark}`,
               outlineOffset: '2px',
             },
             '&:active': {
-              backgroundColor: theme.palette.components.button.primary.pressed,
+              backgroundColor: theme.palette._components.button.primary.pressed,
             },
             '&.Mui-disabled': {
-              backgroundColor: theme.palette.components.button.primary.disabled,
-              borderColor: theme.palette.components.button.disabledBorder,
-              color: theme.palette.components.button.disabledText,
+              backgroundColor: theme.palette._components.button.primary.disabled,
+              borderColor: theme.palette._components.button.disabledBorder,
+              color: theme.palette._components.button.disabledText,
             },
           },
         },
@@ -149,20 +149,20 @@ export const MuiButton: Components<
           props: { color: 'secondary' },
           style: {
             backgroundColor: 'transparent',
-            color: theme.palette.components.button.secondary.text,
-            borderColor: theme.palette.components.button.secondary.border,
-            '&:hover': { backgroundColor: theme.palette.components.button.secondary.hover },
+            color: theme.palette._components.button.secondary.text,
+            borderColor: theme.palette._components.button.secondary.border,
+            '&:hover': { backgroundColor: theme.palette._components.button.secondary.hover },
             '&.Mui-focusVisible': {
               backgroundColor: 'transparent',
-              borderColor: theme.palette.components.button.secondary.border,
+              borderColor: theme.palette._components.button.secondary.border,
             },
             '&:active': {
-              backgroundColor: theme.palette.components.button.secondary.pressed,
+              backgroundColor: theme.palette._components.button.secondary.pressed,
             },
             '&.Mui-disabled': {
               backgroundColor: 'transparent',
-              borderColor: theme.palette.components.button.disabledBorder,
-              color: theme.palette.components.button.disabledText,
+              borderColor: theme.palette._components.button.disabledBorder,
+              color: theme.palette._components.button.disabledText,
             },
           },
         },
@@ -170,20 +170,20 @@ export const MuiButton: Components<
           props: { color: 'secondary', variant: 'text' },
           style: {
             backgroundColor: 'transparent',
-            color: theme.palette.components.button.secondary.text,
+            color: theme.palette._components.button.secondary.text,
             borderColor: 'transparent',
-            '&:hover': { backgroundColor: theme.palette.components.button.secondary.hover },
+            '&:hover': { backgroundColor: theme.palette._components.button.secondary.hover },
             '&.Mui-focusVisible': {
               backgroundColor: 'transparent',
               borderColor: 'transparent',
             },
             '&:active': {
-              backgroundColor: theme.palette.components.button.secondary.pressed,
+              backgroundColor: theme.palette._components.button.secondary.pressed,
             },
             '&.Mui-disabled': {
               backgroundColor: 'transparent',
               borderColor: 'transparent',
-              color: theme.palette.components.button.disabledText,
+              color: theme.palette._components.button.disabledText,
             },
           },
         },
@@ -191,7 +191,7 @@ export const MuiButton: Components<
           props: { color: 'primaryDark', variant: 'text' },
           style: {
             backgroundColor: 'transparent',
-            color: theme.palette.components.button.primaryDarkText.text,
+            color: theme.palette._components.button.primaryDarkText.text,
             borderColor: 'transparent',
             '&:hover': {
               backgroundColor: 'transparent',
@@ -208,30 +208,30 @@ export const MuiButton: Components<
             '&.Mui-disabled': {
               backgroundColor: 'transparent',
               borderColor: 'transparent',
-              color: theme.palette.components.button.primaryDarkText.disabled,
+              color: theme.palette._components.button.primaryDarkText.disabled,
             },
           },
         },
         {
           props: { color: 'error', variant: 'contained' },
           style: {
-            backgroundColor: theme.palette.components.button.error.contained,
-            color: theme.palette.components.button.error.text,
-            borderColor: theme.palette.components.button.error.border,
-            '&:hover': { backgroundColor: theme.palette.components.button.error.hover },
+            backgroundColor: theme.palette._components.button.error.contained,
+            color: theme.palette._components.button.error.text,
+            borderColor: theme.palette._components.button.error.border,
+            '&:hover': { backgroundColor: theme.palette._components.button.error.hover },
             '&.Mui-focusVisible': {
-              backgroundColor: theme.palette.components.button.error.focused,
+              backgroundColor: theme.palette._components.button.error.focused,
               color: theme.palette.common.white,
               borderColor: 'transparent',
             },
             '&:active': {
-              backgroundColor: theme.palette.components.button.error.pressed,
-              borderColor: theme.palette.components.button.error.activeBorder,
+              backgroundColor: theme.palette._components.button.error.pressed,
+              borderColor: theme.palette._components.button.error.activeBorder,
             },
             '&.Mui-disabled': {
-              backgroundColor: theme.palette.components.button.secondary.disabled,
-              borderColor: theme.palette.components.button.disabledBorder,
-              color: theme.palette.components.button.disabledText,
+              backgroundColor: theme.palette._components.button.secondary.disabled,
+              borderColor: theme.palette._components.button.disabledBorder,
+              color: theme.palette._components.button.disabledText,
             },
           },
         },
@@ -239,20 +239,20 @@ export const MuiButton: Components<
           props: { color: 'error', variant: 'outlined' },
           style: {
             backgroundColor: 'transparent',
-            color: theme.palette.components.button.error.outlinedText,
-            borderColor: theme.palette.components.button.error.border,
-            '&:hover': { backgroundColor: theme.palette.components.button.error.outlinedHover },
+            color: theme.palette._components.button.error.outlinedText,
+            borderColor: theme.palette._components.button.error.border,
+            '&:hover': { backgroundColor: theme.palette._components.button.error.outlinedHover },
             '&.Mui-focusVisible': {
               backgroundColor: 'transparent',
             },
             '&:active': {
-              backgroundColor: theme.palette.components.button.error.pressed,
-              borderColor: theme.palette.components.button.error.border,
+              backgroundColor: theme.palette._components.button.error.pressed,
+              borderColor: theme.palette._components.button.error.border,
             },
             '&.Mui-disabled': {
               backgroundColor: 'transparent',
-              borderColor: theme.palette.components.button.disabledBorder,
-              color: theme.palette.components.button.disabledText,
+              borderColor: theme.palette._components.button.disabledBorder,
+              color: theme.palette._components.button.disabledText,
             },
           },
         },
@@ -260,41 +260,41 @@ export const MuiButton: Components<
           props: { color: 'error', variant: 'text' },
           style: {
             backgroundColor: 'transparent',
-            color: theme.palette.components.button.error.outlinedText,
+            color: theme.palette._components.button.error.outlinedText,
             borderColor: 'transparent',
-            '&:hover': { backgroundColor: theme.palette.components.button.error.outlinedHover },
+            '&:hover': { backgroundColor: theme.palette._components.button.error.outlinedHover },
             '&.Mui-focusVisible': {
               backgroundColor: 'transparent',
             },
             '&:active': {
-              backgroundColor: theme.palette.components.button.error.pressed,
+              backgroundColor: theme.palette._components.button.error.pressed,
             },
             '&.Mui-disabled': {
               backgroundColor: 'transparent',
               borderColor: 'transparent',
-              color: theme.palette.components.button.disabledText,
+              color: theme.palette._components.button.disabledText,
             },
           },
         },
         {
           props: { color: 'tertiary', variant: 'contained' },
           style: {
-            backgroundColor: theme.palette.components.button.tertiary.contained,
-            color: theme.palette.components.button.tertiary.text,
+            backgroundColor: theme.palette._components.button.tertiary.contained,
+            color: theme.palette._components.button.tertiary.text,
             borderColor: 'transparent',
             boxShadow: '0px 1px 2px 0px #1018280D, 0px 1px 3px 0px #1018280D',
-            '&:hover': { backgroundColor: theme.palette.components.button.tertiary.hover },
+            '&:hover': { backgroundColor: theme.palette._components.button.tertiary.hover },
             '&.Mui-focusVisible': {
-              backgroundColor: theme.palette.components.button.tertiary.focused,
+              backgroundColor: theme.palette._components.button.tertiary.focused,
               borderColor: 'transparent',
             },
             '&:active': {
-              backgroundColor: theme.palette.components.button.tertiary.pressed,
+              backgroundColor: theme.palette._components.button.tertiary.pressed,
             },
             '&.Mui-disabled': {
-              backgroundColor: theme.palette.components.button.secondary.disabled,
-              borderColor: theme.palette.components.button.disabledBorder,
-              color: theme.palette.components.button.disabledText,
+              backgroundColor: theme.palette._components.button.secondary.disabled,
+              borderColor: theme.palette._components.button.disabledBorder,
+              color: theme.palette._components.button.disabledText,
             },
           },
         },

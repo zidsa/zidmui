@@ -1,4 +1,7 @@
-import { createSvgIcon } from '@mui/material';
+import { createSvgIcon } from '@mui/material/utils';
+
+//
+//
 
 export const IconGlobalLine = createSvgIcon(
   <svg
