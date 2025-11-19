@@ -58,13 +58,6 @@ export const Primary: Story = {
   args: {
     color: 'primary',
     variant: 'contained',
-    size: 'small',
-    children: 'Text',
-    disabled: false,
-    tooltip: 'Tooltip sample',
-    tooltipProps: {
-      placement: 'top',
-    },
   },
 };
 
