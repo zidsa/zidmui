@@ -3,7 +3,7 @@ import { useMemo, useState } from 'react';
 //
 //
 
-type UsePaginatedDataProps<T> = {
+export type UsePaginatedDataProps<T> = {
   data: T[];
   perPage?: number;
 };
