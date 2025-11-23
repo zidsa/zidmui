@@ -20,7 +20,6 @@
   "oxc.enable": true,
   "prettier.jsxSingleQuote": false,
   "prettier.singleQuote": true,
-  "typescript.preferences.autoImportSpecifierExcludeRegexes": ["^@mui/[^/]+$"],
   "typescript.preferences.includePackageJsonAutoImports": "on",
   "typescript.tsdk": "node_modules/typescript/lib"
 }

@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
+import { Box, Stack } from '@mui/material';
 
 import { AppAlert, AppAlertButton } from '../components/app-alert';
 import { AppTypography } from '../components/app-typography';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Stack, { StackProps } from '@mui/material/Stack';
+import { Stack, StackProps } from '@mui/material';
 
 //
 //

@@ -1,8 +1,6 @@
 import React from 'react';
 
-import Box from '@mui/material/Box';
-import Button, { ButtonProps } from '@mui/material/Button';
-import Tooltip, { TooltipProps } from '@mui/material/Tooltip';
+import { Box, Button, ButtonProps, Tooltip, TooltipProps } from '@mui/material';
 
 //
 //

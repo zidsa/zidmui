@@ -1,8 +1,12 @@
 import React from 'react';
 
-import Tooltip, { TooltipProps } from '@mui/material/Tooltip';
-import Typography, { TypographyProps } from '@mui/material/Typography';
-import { TypographyVariant } from '@mui/material/styles';
+import {
+  Typography,
+  TypographyProps,
+  TypographyVariant,
+  Tooltip,
+  TooltipProps,
+} from '@mui/material';
 
 //
 //

@@ -1,6 +1,4 @@
-import Alert, { AlertProps } from '@mui/material/Alert';
-import AlertTitle, { AlertTitleProps } from '@mui/material/AlertTitle';
-import CircularProgress from '@mui/material/CircularProgress';
+import { Alert, AlertProps, AlertTitle, AlertTitleProps, CircularProgress } from '@mui/material';
 
 import { AppButton, AppButtonProps } from './app-button';
 import { AppTypography } from './app-typography';

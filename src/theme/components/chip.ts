@@ -1,4 +1,4 @@
-import { Components, CssVarsTheme, Theme } from '@mui/material/styles';
+import { Components, CssVarsTheme, Theme } from '@mui/material';
 
 //
 //

@@ -1,7 +1,4 @@
-import Box from '@mui/material/Box';
-import { SvgIconOwnProps } from '@mui/material/SvgIcon';
-import Tooltip, { TooltipProps } from '@mui/material/Tooltip';
-import { styled } from '@mui/material/styles';
+import { Box, Tooltip, TooltipProps, SvgIconOwnProps, styled } from '@mui/material';
 
 import { IconInformationLine } from '../icons/system/information-line';
 
