@@ -23,6 +23,6 @@
     "noFallthroughCasesInSwitch": true,
     "declaration": true
   },
-  "include": ["src"],
+  "include": ["src", "src/theme/types.d.ts"],
   "exclude": ["node_modules"]
 }
