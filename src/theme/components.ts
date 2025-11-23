@@ -1,6 +1,7 @@
 import { MuiAlert } from './components/alert';
 import { MuiButton } from './components/button';
 import { MuiChip } from './components/chip';
+import { MuiList, MuiListItemText, MuiListItemIcon } from './components/list';
 import { MuiStack } from './components/stack';
 import { MuiTypography } from './components/typography';
 
@@ -15,4 +16,7 @@ export const components: Record<string, any> = {
   MuiButton,
   MuiAlert,
   MuiStack,
+  MuiList,
+  MuiListItemText,
+  MuiListItemIcon,
 };
