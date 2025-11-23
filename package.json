@@ -1,7 +1,7 @@
 {
   "name": "@zidsa/zidmui",
   "type": "module",
-  "version": "1.4.12",
+  "version": "1.4.13-dev.0",
   "description": "Zid MUI shared components and utilities",
   "author": "Abdulaziz Homaily <a.homaily@gmail.com>",
   "license": "UNLICENSED",
@@ -143,7 +143,7 @@
     }
   },
   "peerDependencies": {
-    "@mui/material": "7.3.5",
+    "@mui/material": "7.3.4",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "@mui/lab": "7.0.0-beta.11",
