@@ -190,6 +190,6 @@
     "npm": "please use pnpm"
   },
   "dependencies": {
-    "@emotion/styled": "11.14.0"
+    "@emotion/styled": "11.14.1"
   }
 }
