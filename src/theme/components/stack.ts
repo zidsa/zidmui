@@ -5,7 +5,7 @@ import { Components, CssVarsTheme, Theme } from '@mui/material';
 
 export const MuiStack: Components<Theme & CssVarsTheme>['MuiStack'] = {
   defaultProps: {
-    useFlexGap: true,
+    // useFlexGap: true,
   },
   styleOverrides: {
     root: {
