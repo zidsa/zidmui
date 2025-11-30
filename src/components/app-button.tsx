@@ -40,7 +40,7 @@ type TertiaryButtonProps = {
   variant?: 'contained' | 'outlined';
 };
 
-export type AppButtonProps = Omit<ButtonProps, 'color' | 'variant'> & {
+export type AppButtonProps = Omit<ButtonProps, 'color' | 'variant' | 'href'> & {
   content?: React.ReactNode;
   tooltip?: string | null;
   tooltipProps?: Omit<TooltipProps, 'children' | 'title'>;
