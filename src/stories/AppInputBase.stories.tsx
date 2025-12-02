@@ -65,6 +65,7 @@ export const Variants: Story = {
         placeholder="اسم المستخدم"
         size="small"
         endAdornmentText="$"
+        endAdornmentTextProps={{ typographyProps: { color: 'primary' } }}
       />
       <AppInputBase
         dir="rtl"
