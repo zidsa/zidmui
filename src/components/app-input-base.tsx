@@ -9,7 +9,6 @@ import { AppInputAdornmentText, AppInputAdornmentTextProps } from './app-input-a
 
 export type AppInputBaseProps = Omit<TextFieldProps, 'variant'> & {
   transformText?: (text: string) => string;
-  noTopMargin?: boolean;
   startAdornment?: React.JSX.Element;
   startAdornmentText?: React.JSX.Element | string;
   startAdornmentTextProps?: AppInputAdornmentTextProps;
@@ -21,7 +20,6 @@ export type AppInputBaseProps = Omit<TextFieldProps, 'variant'> & {
 
 export const AppInputBase: FC<AppInputBaseProps> = ({
   transformText,
-  noTopMargin,
   children,
   startAdornment,
   startAdornmentText,
@@ -33,11 +31,6 @@ export const AppInputBase: FC<AppInputBaseProps> = ({
   size = 'medium',
   ...props
 }) => {
-  if (noTopMargin) {
-    if (!props?.sx) props.sx = {};
-    props.sx = { ...props.sx, mt: 0 };
-  }
-
   let labelContent = props.label;
 
   if (props.label && labelSuffix) {
