@@ -1,8 +1,12 @@
 import { MuiAlert } from './components/alert';
 import { MuiButton } from './components/button';
 import { MuiChip } from './components/chip';
+import { MuiInputAdornment } from './components/input-adornment';
+import { MuiInputBase } from './components/input-base';
+import { MuiInputLabel } from './components/input-label';
 import { MuiList, MuiListItemText, MuiListItemIcon } from './components/list';
 import { MuiStack } from './components/stack';
+import { MuiTextField } from './components/text-field';
 import { MuiTypography } from './components/typography';
 
 //
@@ -19,4 +23,8 @@ export const components: Record<string, any> = {
   MuiList,
   MuiListItemText,
   MuiListItemIcon,
+  MuiTextField,
+  MuiInputBase,
+  MuiInputLabel,
+  MuiInputAdornment,
 };
