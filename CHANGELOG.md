@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.4.24](/compare/v1.4.22...v1.4.24) (2025-12-06)
+
+
+### Bug Fixes
+
+* security issue - CVE-2025-55182 (#11) 6f395a8, closes #11
+
+## [1.4.23](/compare/v1.4.22...v1.4.23) (2025-12-06)
+
+
+### Bug Fixes
+
+* security issue - CVE-2025-55182 (#11) 6f395a8, closes #11
+
 ## [1.4.22](/compare/v1.4.21...v1.4.22) (2025-12-02)
 
 ## [1.4.21](/compare/v1.4.19...v1.4.21) (2025-12-02)
