@@ -7,6 +7,7 @@ import { MuiInputLabel } from './components/input-label';
 import { MuiList, MuiListItemText, MuiListItemIcon } from './components/list';
 import { MuiStack } from './components/stack';
 import { MuiTextField } from './components/text-field';
+import { MuiTooltip } from './components/tooltip';
 import { MuiTypography } from './components/typography';
 
 //
@@ -27,4 +28,5 @@ export const components: Record<string, any> = {
   MuiInputBase,
   MuiInputLabel,
   MuiInputAdornment,
+  MuiTooltip,
 };

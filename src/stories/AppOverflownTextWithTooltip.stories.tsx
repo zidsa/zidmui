@@ -16,11 +16,7 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
-  argTypes: {
-    color: {
-      control: 'select',
-    },
-  },
+  argTypes: {},
 } satisfies Meta<typeof AppOverflownTextWithTooltip>;
 
 export default meta;

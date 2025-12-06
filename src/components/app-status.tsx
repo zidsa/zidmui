@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { styled, ChipProps, Chip, TooltipProps, Tooltip } from '@mui/material';
+import { styled, ChipProps, Chip, TooltipProps } from '@mui/material';
+
+import { AppTooltip } from './app-tooltip';
 
 //
 //
@@ -40,9 +42,9 @@ export const AppStatus: React.FC<AppStatusProps> = ({
   if (!tooltip) return element;
 
   return (
-    <Tooltip title={tooltip} placement="top" disableInteractive enterDelay={700} {...tooltipProps}>
+    <AppTooltip description={tooltip} {...tooltipProps}>
       {element}
-    </Tooltip>
+    </AppTooltip>
   );
 };
 

@@ -14,7 +14,7 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {
-    title: {
+    tooltip: {
       control: 'text',
     },
     accessibleAreaWidth: {
@@ -36,7 +36,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Variants: Story = {
   args: {
-    title: 'Tooltip sample',
+    tooltip: 'Tooltip sample',
     accessibleAreaWidth: '36px',
     accessibleAreaHeight: '36px',
   },

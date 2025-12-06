@@ -1,16 +1,18 @@
 import { useState } from 'react';
 
-import { styled, Tooltip, TooltipProps } from '@mui/material';
+import { styled } from '@mui/material';
 
+import { AppTooltip, AppTooltipProps } from './app-tooltip';
 import { AppTypographyProps, AppTypography } from './app-typography';
 
 //
 //
 
-export type AppOverflownTextWithTooltipProps = Omit<TooltipProps, 'title' | 'children'> & {
+export type AppOverflownTextWithTooltipProps = {
   title: string;
   typographyProps?: AppTypographyProps;
   twoLines?: boolean;
+  tooltipProps?: Omit<AppTooltipProps, 'children'>;
 };
 
 export const AppOverflownTextWithTooltip: React.FC<AppOverflownTextWithTooltipProps> = ({
@@ -40,7 +42,7 @@ export const AppOverflownTextWithTooltip: React.FC<AppOverflownTextWithTooltipPr
   };
 
   return (
-    <Tooltip title={isOverflown ? title : undefined} placement="top" {...props}>
+    <AppTooltip description={title} disable={!isOverflown} placement="top" {...props}>
       <Typography
         onMouseEnter={e =>
           twoLines ? checkIsOverflownTwoLines(e.currentTarget) : checkIsOverflown(e.currentTarget)
@@ -50,7 +52,7 @@ export const AppOverflownTextWithTooltip: React.FC<AppOverflownTextWithTooltipPr
       >
         {title}
       </Typography>
-    </Tooltip>
+    </AppTooltip>
   );
 };
 

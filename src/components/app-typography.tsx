@@ -1,12 +1,8 @@
 import React from 'react';
 
-import {
-  Typography,
-  TypographyProps,
-  TypographyVariant,
-  Tooltip,
-  TooltipProps,
-} from '@mui/material';
+import { Typography, TypographyProps, TypographyVariant } from '@mui/material';
+
+import { AppTooltip, AppTooltipProps } from './app-tooltip';
 
 //
 //
@@ -14,7 +10,7 @@ import {
 export type AppTypographyProps = Omit<TypographyProps, 'fontSize' | 'fontWeight' | 'fontStyle'> & {
   variant?: TypographyVariant;
   tooltip?: string | null;
-  tooltipProps?: Omit<TooltipProps, 'children' | 'title'>;
+  tooltipProps?: Omit<AppTooltipProps, 'children'>;
 };
 
 export const AppTypography: React.FC<AppTypographyProps> = ({
@@ -32,18 +28,9 @@ export const AppTypography: React.FC<AppTypographyProps> = ({
   );
 
   return tooltip ? (
-    <Tooltip
-      title={tooltip}
-      placement="bottom"
-      disableInteractive
-      enterDelay={700}
-      slotProps={{
-        popper: { modifiers: [{ name: 'offset', options: { offset: [0, -12] } }] },
-      }}
-      {...tooltipProps}
-    >
+    <AppTooltip description={tooltip} {...tooltipProps}>
       {element}
-    </Tooltip>
+    </AppTooltip>
   ) : (
     element
   );
