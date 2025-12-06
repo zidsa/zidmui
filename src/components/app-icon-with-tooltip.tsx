@@ -16,8 +16,8 @@ type AppIconWithTooltipProps = {
   accessibleAreaHeight?: string;
   icon?: React.ReactNode;
   iconProps?: SvgIconOwnProps;
-  tooltip?: AppTooltipProps['headline'];
-  tooltipProps?: AppTooltipProps;
+  tooltip?: AppTooltipProps['description'];
+  tooltipProps?: Omit<AppTooltipProps, 'children'>;
 };
 
 export const AppIconWithTooltip: React.FC<AppIconWithTooltipProps> = ({
