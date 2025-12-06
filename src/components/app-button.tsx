@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { Box, Button, ButtonProps, Tooltip, TooltipProps } from '@mui/material';
+import { Box, Button, ButtonProps } from '@mui/material';
+
+import { AppTooltip, AppTooltipProps } from './app-tooltip';
 
 //
 //
@@ -42,8 +44,8 @@ type TertiaryButtonProps = {
 
 export type AppButtonProps = Omit<ButtonProps, 'color' | 'variant' | 'href'> & {
   content?: React.ReactNode;
-  tooltip?: string | null;
-  tooltipProps?: Omit<TooltipProps, 'children' | 'title'>;
+  tooltip?: AppTooltipProps['headline'];
+  tooltipProps?: Omit<AppTooltipProps, 'children'>;
 } & (
     | PrimaryButtonProps
     | SecondaryButtonProps
@@ -87,9 +89,9 @@ export const AppButton = ({
   );
 
   return tooltip ? (
-    <Tooltip title={tooltip} placement="bottom" disableInteractive {...tooltipProps}>
+    <AppTooltip description={tooltip} {...tooltipProps}>
       {element}
-    </Tooltip>
+    </AppTooltip>
   ) : (
     element
   );

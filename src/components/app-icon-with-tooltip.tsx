@@ -1,7 +1,8 @@
-import { Box, Tooltip, TooltipProps, SvgIconOwnProps, styled } from '@mui/material';
+import { Box, SvgIconOwnProps, styled } from '@mui/material';
 
 import { IconInformationLine } from '../icons/system/information-line';
 
+import { AppTooltip, AppTooltipProps } from './app-tooltip';
 import { StackRow } from './stack-row';
 
 //
@@ -10,28 +11,30 @@ import { StackRow } from './stack-row';
 // NOTE: accessibleAreaWidth and accessibleAreaHeight are used to create non-visible area for
 //       the tooltip to be accessible on mobile
 
-type AppIconWithTooltipProps = Omit<TooltipProps, 'children'> & {
+type AppIconWithTooltipProps = {
   accessibleAreaWidth?: string;
   accessibleAreaHeight?: string;
   icon?: React.ReactNode;
   iconProps?: SvgIconOwnProps;
+  tooltip?: AppTooltipProps['headline'];
+  tooltipProps?: AppTooltipProps;
 };
 
 export const AppIconWithTooltip: React.FC<AppIconWithTooltipProps> = ({
-  title,
+  tooltip,
+  tooltipProps,
   accessibleAreaWidth = '36px',
   accessibleAreaHeight = '36px',
   icon,
   iconProps,
-  ...props
 }) => {
   return (
-    <Tooltip title={title} placement="top" {...props}>
+    <AppTooltip description={tooltip} {...tooltipProps}>
       <StackRow position="relative" alignItems="center" justifyContent="center">
         {icon ?? <IconInformationLine fontSize="inherit" color="action" {...iconProps} />}
         <TooltipArea width={accessibleAreaWidth} height={accessibleAreaHeight} />
       </StackRow>
-    </Tooltip>
+    </AppTooltip>
   );
 };
 

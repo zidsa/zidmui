@@ -114,7 +114,7 @@ export const AppListItem = ({
               {textLabel}
 
               {tooltip && (
-                <AppIconWithTooltip title={tooltip} iconProps={{ sx: { fontSize: 16 } }} />
+                <AppIconWithTooltip tooltip={tooltip} iconProps={{ sx: { fontSize: 16 } }} />
               )}
             </StackRow>
           }
