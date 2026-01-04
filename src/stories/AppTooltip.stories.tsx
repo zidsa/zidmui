@@ -102,6 +102,7 @@ const AppTooltips = (props: AppTooltipProps) => {
                 disablePortal: true,
               },
             }}
+            {...props}
           >
             <AppButton variant="outlined" onClick={toggle.on}>
               Click
