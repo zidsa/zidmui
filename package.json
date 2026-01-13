@@ -51,6 +51,11 @@
       "types": "./dist/types/icons/communication/*.d.ts",
       "import": "./dist/es/icons/communication/*.js"
     },
+    "./icons/currencies/*": {
+      "require": "./dist/cjs/icons/currencies/*.js",
+      "types": "./dist/types/icons/currencies/*.d.ts",
+      "import": "./dist/es/icons/currencies/*.js"
+    },
     "./icons/design/*": {
       "require": "./dist/cjs/icons/design/*.js",
       "types": "./dist/types/icons/design/*.d.ts",
