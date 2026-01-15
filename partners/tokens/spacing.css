@@ -1,0 +1,43 @@
+/**
+ * Zid Design System - Spacing Tokens
+ *
+ * This file contains all spacing-related CSS custom properties for the
+ * Zid design system. Partners can override these values by defining the same
+ * custom properties in their own stylesheets.
+ *
+ * Token naming convention: --zid-spacing-{N} where N * 4px = value
+ * The spacing system follows a 4px grid (base unit = 4px)
+ *
+ * Source: MUI 8px grid system
+ */
+
+:root {
+  /* ============================================
+   * Spacing Scale
+   * Based on 8px grid system: spacing-N = N * 8px
+   * ============================================ */
+  --zid-spacing-0: 0px;
+  --zid-spacing-0-5: 4px; /* 0.5 * 8px */
+  --zid-spacing-1: 8px; /* 1 * 8px */
+  --zid-spacing-1-5: 12px; /* 1.5 * 8px */
+  --zid-spacing-2: 16px; /* 2 * 8px */
+  --zid-spacing-2-5: 20px; /* 2.5 * 8px */
+  --zid-spacing-3: 24px; /* 3 * 8px */
+  --zid-spacing-4: 32px; /* 4 * 8px */
+  --zid-spacing-5: 40px; /* 5 * 8px */
+  --zid-spacing-6: 48px; /* 6 * 8px */
+  --zid-spacing-8: 64px; /* 8 * 8px */
+  --zid-spacing-10: 80px; /* 10 * 8px */
+  --zid-spacing-12: 96px; /* 12 * 8px */
+  --zid-spacing-16: 128px; /* 16 * 8px */
+
+  /* ============================================
+   * Border Radius
+   * Shape tokens for rounded corners
+   * Source: src/theme/theme.ts shape configuration
+   * ============================================ */
+  --zid-radius-sm: 4px;
+  --zid-radius-md: 8px; /* Default borderRadius from theme */
+  --zid-radius-lg: 12px; /* standardBorderRadius from theme */
+  --zid-radius-full: 9999px; /* For pill-shaped elements */
+}

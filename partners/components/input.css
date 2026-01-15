@@ -1,0 +1,274 @@
+/**
+ * Zid Design System - Input Component
+ *
+ * This file contains all input-related styles for the Zid design system.
+ * Partners can use these classes to create input fields matching Zid's design
+ * without requiring MUI JavaScript runtime.
+ *
+ * Class naming convention: .zid-input--{modifier}
+ *
+ * Usage:
+ * <div class="zid-input zid-input--outlined zid-input--medium">
+ *   <input type="text" class="zid-input__field" placeholder="Enter text..." />
+ * </div>
+ *
+ * With adornments:
+ * <div class="zid-input zid-input--outlined zid-input--medium">
+ *   <span class="zid-input__adornment-start">$</span>
+ *   <input type="text" class="zid-input__field" />
+ *   <span class="zid-input__adornment-end">.00</span>
+ * </div>
+ *
+ * Requirements: 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 10.1, 10.2, 12.1
+ */
+
+/* ============================================
+ * Base Input Container Styles
+ * Common styles applied to all input containers
+ * ============================================ */
+.zid-input {
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+
+  /* Typography */
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-body2);
+  font-weight: var(--zid-font-weight-regular);
+  line-height: var(--zid-spacing-3);
+  color: var(--zid-color-text-primary);
+
+  /* Box model */
+  border-width: 1px;
+  border-style: solid;
+  border-color: red;
+  border-radius: var(--zid-radius-md);
+  background-color: var(--zid-color-base-white);
+
+  /* Transitions */
+  transition-property: border-color, background-color, box-shadow;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+/* ============================================
+ * Input Field Element
+ * The actual input element inside the container
+ * ============================================ */
+.zid-input__field {
+  /* Reset */
+  appearance: none;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  /* Layout */
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+
+  /* Typography */
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+
+  /* Placeholder */
+  &::placeholder {
+    color: var(--zid-color-text-disabled);
+    opacity: 1;
+  }
+
+  /* Remove number input spinners */
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox number input */
+  &[type='number'] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+  }
+}
+
+/* ============================================
+ * Size Modifiers
+ * Define input dimensions for each size variant
+ * ============================================ */
+
+/* Small size */
+.zid-input--small {
+  min-height: var(--zid-spacing-5);
+  padding-block: var(--zid-spacing-1);
+  padding-inline: var(--zid-spacing-2);
+}
+
+.zid-input--small .zid-input__field {
+  padding: 0;
+}
+
+/* Medium size (default) */
+.zid-input--medium {
+  min-height: var(--zid-spacing-6);
+  padding-block: var(--zid-spacing-1);
+  padding-inline: var(--zid-spacing-2);
+}
+
+.zid-input--medium .zid-input__field {
+  padding: 0;
+}
+
+/* ============================================
+ * Variant Modifiers - Outlined
+ * Input with visible border (default variant)
+ * ============================================ */
+.zid-input--outlined {
+  border-color: var(--zid-color-input-outlined-enabled-border);
+  background-color: var(--zid-color-base-white);
+}
+
+/* ============================================
+ * State Styles - Hover
+ * Applied when the input container is hovered
+ * ============================================ */
+.zid-input:hover:not(.zid-input--disabled):not(.zid-input--error) {
+  border-color: var(--zid-color-input-outlined-hover-border);
+}
+
+/* ============================================
+ * State Styles - Focus
+ * Applied when the input field is focused
+ * ============================================ */
+.zid-input:focus-within:not(.zid-input--disabled):not(.zid-input--error) {
+  border-color: var(--zid-color-primary-main);
+  box-shadow: 0 0 0 1px var(--zid-color-primary-main);
+}
+
+/* Alternative focus class for JS-controlled focus state */
+.zid-input--focused:not(.zid-input--disabled):not(.zid-input--error) {
+  border-color: var(--zid-color-primary-main);
+  box-shadow: 0 0 0 1px var(--zid-color-primary-main);
+}
+
+/* ============================================
+ * State Styles - Error
+ * Applied when the input has validation errors
+ * ============================================ */
+.zid-input--error {
+  border-color: var(--zid-color-error-main);
+}
+
+.zid-input--error:hover {
+  border-color: var(--zid-color-error-main);
+}
+
+.zid-input--error:focus-within,
+.zid-input--error.zid-input--focused {
+  border-color: var(--zid-color-error-main);
+  box-shadow: 0 0 0 1px var(--zid-color-error-main);
+}
+
+/* ============================================
+ * State Styles - Disabled
+ * Applied when the input is disabled
+ * ============================================ */
+.zid-input--disabled {
+  background-color: var(--zid-color-action-hover);
+  border-color: var(--zid-color-input-outlined-enabled-border);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.zid-input--disabled .zid-input__field {
+  color: var(--zid-color-text-disabled);
+  -webkit-text-fill-color: var(--zid-color-text-disabled);
+  cursor: not-allowed;
+}
+
+.zid-input--disabled .zid-input__adornment-start,
+.zid-input--disabled .zid-input__adornment-end {
+  color: var(--zid-color-text-disabled);
+}
+
+/* Disabled hover state - no change */
+.zid-input--disabled:hover {
+  border-color: var(--zid-color-input-outlined-enabled-border);
+}
+
+/* ============================================
+ * Adornment Elements
+ * Start and end adornments for icons, text, etc.
+ * ============================================ */
+.zid-input__adornment-start,
+.zid-input__adornment-end {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--zid-color-text-secondary);
+}
+
+/* Start adornment - positioned at the beginning */
+.zid-input__adornment-start {
+  margin-inline-end: var(--zid-spacing-1);
+}
+
+/* End adornment - positioned at the end */
+.zid-input__adornment-end {
+  margin-inline-start: var(--zid-spacing-1);
+}
+
+/* ============================================
+ * Label Element (Optional)
+ * For inputs with associated labels
+ * ============================================ */
+.zid-input-label {
+  display: block;
+  margin-block-end: var(--zid-spacing-1);
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-body2);
+  font-weight: var(--zid-font-weight-regular);
+  color: var(--zid-color-text-secondary);
+  transform: none;
+  position: relative;
+}
+
+/* ============================================
+ * Helper Text Element (Optional)
+ * For displaying hints or error messages below input
+ * ============================================ */
+.zid-input-helper-text {
+  display: block;
+  margin-block-start: var(--zid-spacing-0-5);
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-caption);
+  font-weight: var(--zid-font-weight-regular);
+  color: var(--zid-color-text-tertiary);
+}
+
+.zid-input-helper-text--error {
+  color: var(--zid-color-error-main);
+}
+
+/* ============================================
+ * Full Width Modifier
+ * Input that spans full container width
+ * ============================================ */
+.zid-input--full-width {
+  width: 100%;
+}
+
+/* ============================================
+ * Input Wrapper (Optional)
+ * Container for label + input + helper text
+ * ============================================ */
+.zid-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

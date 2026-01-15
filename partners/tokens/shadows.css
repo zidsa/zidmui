@@ -1,0 +1,39 @@
+/**
+ * Zid Design System - Shadow/Elevation Tokens
+ *
+ * This file contains all shadow-related CSS custom properties extracted from
+ * the Zid MUI theme (src/theme/shadows.ts). Partners can override these values
+ * by defining the same custom properties in their own stylesheets.
+ *
+ * Token naming convention: --zid-shadow-{level}
+ *
+ * Shadow levels represent elevation in the UI:
+ * - 0: No shadow (flat elements)
+ * - 1: Subtle shadow (cards, containers)
+ * - 2: Light shadow (dropdowns, popovers)
+ * - 3: Medium shadow (modals, dialogs)
+ * - 4: Strong shadow (floating elements, tooltips)
+ */
+
+:root {
+  /* ============================================
+   * Elevation Shadows
+   * Box shadows for creating depth and hierarchy
+   * ============================================ */
+
+  /* Level 0: No shadow - flat elements */
+  --zid-shadow-0: none;
+
+  /* Level 1: Subtle shadow - cards, containers */
+  --zid-shadow-1: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+  /* Level 2: Light shadow - dropdowns, popovers */
+  --zid-shadow-2: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 1px 3px 0px rgba(16, 24, 40, 0.05);
+
+  /* Level 3: Medium shadow - modals, dialogs */
+  --zid-shadow-3: 0px 2px 4px -2px rgba(16, 24, 40, 0.05), 0px 4px 8px -2px rgba(16, 24, 40, 0.1);
+
+  /* Level 4: Strong shadow - floating elements, tooltips */
+  --zid-shadow-4:
+    0px 2px 6px -2px rgba(16, 24, 40, 0.03), 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+}

@@ -1,0 +1,464 @@
+/**
+ * Zid Design System - Color Tokens
+ *
+ * This file contains all color-related CSS custom properties extracted from
+ * the Zid MUI theme. Partners can override these values by defining the same
+ * custom properties in their own stylesheets.
+ *
+ * Token naming convention: --zid-color-{palette}-{shade}
+ */
+
+:root {
+  /* ============================================
+   * Base Colors
+   * Core foundational colors used throughout the system
+   * ============================================ */
+  --zid-color-base-white: #ffffff;
+  --zid-color-base-black: #000000;
+  --zid-color-base-neutral: #f5f4f6;
+  --zid-color-base-silver: #e8e4eb;
+
+  /* ============================================
+   * Primary Palette (Purple)
+   * Main brand color used for primary actions and emphasis
+   * ============================================ */
+  --zid-color-primary-50: #fbf9ff;
+  --zid-color-primary-100: #f8f5ff;
+  --zid-color-primary-200: #f1eaff;
+  --zid-color-primary-300: #e2d2ff;
+  --zid-color-primary-400: #d2b8ff;
+  --zid-color-primary-500: #c199ff;
+  --zid-color-primary-600: #ae72ff;
+  --zid-color-primary-700: #9c66e4;
+  --zid-color-primary-800: #8758c6;
+  --zid-color-primary-900: #6e48a1;
+  --zid-color-primary-1000: #4e3372;
+
+  /* Primary semantic aliases */
+  --zid-color-primary-main: #ae72ff;
+  --zid-color-primary-dark: #8758c6;
+  --zid-color-primary-light: #d2b8ff;
+  --zid-color-primary-contrast-text: #ffffff;
+
+  /* ============================================
+   * Secondary Palette
+   * Supporting color for secondary actions and UI elements
+   * ============================================ */
+  --zid-color-secondary-50: #f8f8f8;
+  --zid-color-secondary-100: #f3f2f3;
+  --zid-color-secondary-200: #e6e4e7;
+  --zid-color-secondary-300: #c9c6cd;
+  --zid-color-secondary-400: #a8a3ae;
+  --zid-color-secondary-500: #7e7589;
+  --zid-color-secondary-600: #3c1c54;
+  --zid-color-secondary-700: #36194b;
+  --zid-color-secondary-800: #2e1641;
+  --zid-color-secondary-900: #261235;
+  --zid-color-secondary-1000: #1b0d26;
+
+  /* Secondary semantic aliases */
+  --zid-color-secondary-main: #3c1c54;
+  --zid-color-secondary-dark: #2e1641;
+  --zid-color-secondary-light: #8a7798;
+  --zid-color-secondary-contrast-text: #ffffff;
+
+  /* ============================================
+   * Neutrals Palette
+   * Grayscale colors for text, borders, and backgrounds
+   * ============================================ */
+  --zid-color-neutrals-50: #f8f8f8;
+  --zid-color-neutrals-100: #f2f2f2;
+  --zid-color-neutrals-200: #e4e4e5;
+  --zid-color-neutrals-300: #c6c6c8;
+  --zid-color-neutrals-400: #a3a1a6;
+  --zid-color-neutrals-500: #75727b;
+  --zid-color-neutrals-600: #1f0433;
+  --zid-color-neutrals-700: #1c042e;
+  --zid-color-neutrals-800: #180328;
+  --zid-color-neutrals-900: #140320;
+  --zid-color-neutrals-1000: #0e0217;
+
+  /* ============================================
+   * Green Palette (Success)
+   * Used for success states, positive feedback, and confirmations
+   * ============================================ */
+  --zid-color-green-50: #fafdfa;
+  --zid-color-green-100: #f7fdf7;
+  --zid-color-green-200: #effbee;
+  --zid-color-green-300: #ddf8dc;
+  --zid-color-green-400: #caf4c8;
+  --zid-color-green-500: #b6f0b1;
+  --zid-color-green-600: #9eec98;
+  --zid-color-green-700: #8dd388;
+  --zid-color-green-800: #7ab776;
+  --zid-color-green-900: #649560;
+  --zid-color-green-1000: #476a44;
+
+  /* ============================================
+   * Blue Palette (Info)
+   * Used for informational states and neutral highlights
+   * ============================================ */
+  --zid-color-blue-50: #f9fdfd;
+  --zid-color-blue-100: #f4fcfc;
+  --zid-color-blue-200: #e9fafa;
+  --zid-color-blue-300: #d1f4f4;
+  --zid-color-blue-400: #b5efef;
+  --zid-color-blue-500: #95e9e9;
+  --zid-color-blue-600: #6be3e3;
+  --zid-color-blue-700: #60cbcb;
+  --zid-color-blue-800: #53b0b0;
+  --zid-color-blue-900: #449090;
+  --zid-color-blue-1000: #306666;
+
+  /* ============================================
+   * Yellow Palette (Warning)
+   * Used for warning states and cautionary messages
+   * ============================================ */
+  --zid-color-yellow-50: #fefdf9;
+  --zid-color-yellow-100: #fefdf5;
+  --zid-color-yellow-200: #fefaeb;
+  --zid-color-yellow-300: #fdf5d6;
+  --zid-color-yellow-400: #fbf0bf;
+  --zid-color-yellow-500: #faeba4;
+  --zid-color-yellow-600: #f9e683;
+  --zid-color-yellow-700: #dfce75;
+  --zid-color-yellow-800: #c1b265;
+  --zid-color-yellow-900: #9d9153;
+  --zid-color-yellow-1000: #6f673b;
+
+  /* ============================================
+   * Orange Palette
+   * Used for attention-grabbing elements and highlights
+   * ============================================ */
+  --zid-color-orange-50: #fffaf8;
+  --zid-color-orange-100: #fff6f3;
+  --zid-color-orange-200: #ffede6;
+  --zid-color-orange-300: #ffd8c9;
+  --zid-color-orange-400: #ffc2a7;
+  --zid-color-orange-500: #ffa97d;
+  --zid-color-orange-600: #ff8c3a;
+  --zid-color-orange-700: #e47d34;
+  --zid-color-orange-800: #c66c2d;
+  --zid-color-orange-900: #a15925;
+  --zid-color-orange-1000: #723f1a;
+
+  /* ============================================
+   * Red Palette (Error)
+   * Used for error states, destructive actions, and alerts
+   * ============================================ */
+  --zid-color-red-50: #fff8f9;
+  --zid-color-red-100: #fff3f4;
+  --zid-color-red-200: #fee5e9;
+  --zid-color-red-300: #fdc9d0;
+  --zid-color-red-400: #fca7b4;
+  --zid-color-red-500: #fb7c93;
+  --zid-color-red-600: #fa3768;
+  --zid-color-red-700: #e0315d;
+  --zid-color-red-800: #c22b51;
+  --zid-color-red-900: #9e2342;
+  --zid-color-red-1000: #70192f;
+
+  /* ============================================
+   * Semantic Color Aliases - Error
+   * ============================================ */
+  --zid-color-error-main: #fa3768;
+  --zid-color-error-dark: #c22b51;
+  --zid-color-error-light: #fca7b4;
+  --zid-color-error-contrast-text: #ffffff;
+
+  /* ============================================
+   * Semantic Color Aliases - Warning
+   * ============================================ */
+  --zid-color-warning-main: #f9e683;
+  --zid-color-warning-dark: #dfce75;
+  --zid-color-warning-light: #fbf0bf;
+  --zid-color-warning-contrast-text: #6f673b;
+
+  /* ============================================
+   * Semantic Color Aliases - Info
+   * ============================================ */
+  --zid-color-info-main: #60cbcb;
+  --zid-color-info-dark: #449090;
+  --zid-color-info-light: #95e9e9;
+  --zid-color-info-contrast-text: #ffffff;
+
+  /* ============================================
+   * Semantic Color Aliases - Success
+   * ============================================ */
+  --zid-color-success-main: #9eec98;
+  --zid-color-success-dark: #649560;
+  --zid-color-success-light: #ddf8dc;
+  --zid-color-success-contrast-text: #000000;
+
+  /* ============================================
+   * Text Colors
+   * Semantic colors for typography
+   * ============================================ */
+  --zid-color-text-primary: #0e0217;
+  --zid-color-text-secondary: #1f0433;
+  --zid-color-text-tertiary: #75727b;
+  --zid-color-text-disabled: #c6c6c8;
+  --zid-color-text-contrast: #a3a1a6;
+  --zid-color-text-primary-contrast: #ffffff;
+  --zid-color-text-deep-green: #1f541b;
+  --zid-color-text-dark-ochre: #544217;
+
+  /* ============================================
+   * Background Colors
+   * Semantic colors for surfaces and containers
+   * ============================================ */
+  --zid-color-background-default: #f8f8f8;
+  --zid-color-background-paper: #ffffff;
+  --zid-color-background-dark-backdrop: #b1afafcc;
+  --zid-color-background-white: #ffffff;
+  --zid-color-background-black: #000000;
+  --zid-color-background-gray: #f8f8f8;
+  --zid-color-background-gray-100: #f2f2f2;
+  --zid-color-background-gray-200: #e4e4e5;
+  --zid-color-background-disabled: #f2f2f2;
+  --zid-color-background-blur: rgba(255, 255, 255, 0.8);
+  --zid-color-background-green: #9eec99;
+  --zid-color-background-yellow: #fae684;
+  --zid-color-background-royal: #3e1c56;
+  --zid-color-background-mint-green: #84da7e;
+  --zid-color-background-golden-yellow: #ead469;
+  --zid-color-background-lavender-glow: #c498ff;
+  --zid-color-background-royal-purple: #532d6f;
+
+  /* ============================================
+   * Border/Outline Colors
+   * Semantic colors for borders and outlines
+   * ============================================ */
+  --zid-color-outlined: #e4e4e5;
+  --zid-color-outlined-2: #f2f2f2;
+  --zid-color-outlined-disabled: #c6c6c8;
+  --zid-color-divider: #f4f3f5;
+
+  /* ============================================
+   * Icon Colors
+   * Semantic colors for icons
+   * ============================================ */
+  --zid-color-icon-primary: #0e0217;
+  --zid-color-icon-secondary: #75727b;
+  --zid-color-icon-disabled: #c6c6c8;
+  --zid-color-icon-draggable: #634976;
+
+  /* ============================================
+   * Action State Colors
+   * Colors for interactive element states
+   * ============================================ */
+  --zid-color-action-active: rgba(31, 4, 51, 0.56);
+  --zid-color-action-hover: rgba(31, 4, 51, 0.04);
+  --zid-color-action-selected: rgba(31, 4, 51, 0.08);
+  --zid-color-action-focus: rgba(31, 4, 51, 0.12);
+  --zid-color-action-disabled: rgba(31, 4, 51, 0.38);
+  --zid-color-action-disabled-background: rgba(31, 4, 51, 0.12);
+
+  /* Primary state colors */
+  --zid-color-primary-state-hover: rgba(174, 114, 255, 0.04);
+  --zid-color-primary-state-selected: rgba(174, 114, 255, 0.08);
+  --zid-color-primary-state-focus: rgba(174, 114, 255, 0.12);
+  --zid-color-primary-state-focus-visible: rgba(174, 114, 255, 0.3);
+  --zid-color-primary-state-outlined-border: rgba(174, 114, 255, 0.5);
+
+  /* Secondary state colors */
+  --zid-color-secondary-state-hover: rgba(60, 28, 84, 0.04);
+  --zid-color-secondary-state-selected: rgba(60, 28, 84, 0.08);
+  --zid-color-secondary-state-focus: rgba(60, 28, 84, 0.12);
+  --zid-color-secondary-state-focus-visible: rgba(60, 28, 84, 0.3);
+  --zid-color-secondary-state-outlined-border: rgba(60, 28, 84, 0.5);
+
+  /* Error state colors */
+  --zid-color-error-state-hover: rgba(250, 55, 104, 0.04);
+  --zid-color-error-state-selected: rgba(250, 55, 104, 0.08);
+  --zid-color-error-state-focus-visible: rgba(250, 55, 104, 0.3);
+  --zid-color-error-state-outlined-border: rgba(250, 55, 104, 0.5);
+
+  /* Warning state colors */
+  --zid-color-warning-state-hover: rgba(193, 178, 101, 0.04);
+  --zid-color-warning-state-selected: rgba(193, 178, 101, 0.08);
+  --zid-color-warning-state-focus-visible: rgba(193, 178, 101, 0.3);
+  --zid-color-warning-state-outlined-border: rgba(193, 178, 101, 0.5);
+
+  /* Success state colors */
+  --zid-color-success-state-hover: rgba(46, 125, 50, 0.04);
+  --zid-color-success-state-focus-visible: rgba(46, 125, 50, 0.3);
+  --zid-color-success-state-outlined-border: rgba(46, 125, 50, 0.5);
+
+  /* Common state colors */
+  --zid-color-common-white-focus-visible: rgba(255, 255, 255, 0.3);
+  --zid-color-common-white-focus: rgba(255, 255, 255, 0.12);
+  --zid-color-common-black-focus: rgba(0, 0, 0, 0.12);
+  --zid-color-common-black-hover: rgba(0, 0, 0, 0.04);
+  --zid-color-common-black-selected: rgba(0, 0, 0, 0.08);
+
+  /* ============================================
+   * Component-Specific Colors - Button
+   * ============================================ */
+  --zid-color-button-disabled-text: #a3a1a6;
+  --zid-color-button-disabled-border: #e4e4e5;
+
+  /* Primary button */
+  --zid-color-button-primary-contained: #4e3372;
+  --zid-color-button-primary-hover: #6e48a1;
+  --zid-color-button-primary-focused: #6e48a1;
+  --zid-color-button-primary-pressed: #ae72ff;
+  --zid-color-button-primary-disabled: #f2f2f2;
+  --zid-color-button-primary-border: #ebe8ed;
+  --zid-color-button-primary-text: #ffffff;
+
+  /* Secondary button */
+  --zid-color-button-secondary-contained: #f4f3f5;
+  --zid-color-button-secondary-hover: #f4f3f5;
+  --zid-color-button-secondary-focused: #f1eaff;
+  --zid-color-button-secondary-pressed: #ebe8ed;
+  --zid-color-button-secondary-disabled: #f2f2f2;
+  --zid-color-button-secondary-border: #d8d2dd;
+  --zid-color-button-secondary-text: #1b0d26;
+
+  /* Tertiary button */
+  --zid-color-button-tertiary-contained: #ffffff;
+  --zid-color-button-tertiary-hover: #f1eaff;
+  --zid-color-button-tertiary-focused: #f1eaff;
+  --zid-color-button-tertiary-pressed: #e2d2ff;
+  --zid-color-button-tertiary-disabled: #f2f2f2;
+  --zid-color-button-tertiary-text: #1b0d26;
+  --zid-color-button-tertiary-outlined-hover: #e0d3ff;
+  --zid-color-button-tertiary-outlined-text: #4e3372;
+
+  /* Error button */
+  --zid-color-button-error-contained: #fee5e9;
+  --zid-color-button-error-hover: #fdc9d0;
+  --zid-color-button-error-focused: #fa3768;
+  --zid-color-button-error-pressed: #fdc9d0;
+  --zid-color-button-error-disabled: #f2f2f2;
+  --zid-color-button-error-border: #fca7b4;
+  --zid-color-button-error-text: #70192f;
+  --zid-color-button-error-outlined-hover: #fff3f4;
+  --zid-color-button-error-outlined-text: #c22b51;
+  --zid-color-button-error-active-border: #e0315d;
+
+  /* ============================================
+   * Component-Specific Colors - Input
+   * ============================================ */
+  --zid-color-input-state-hover: rgba(0, 0, 0, 0.04);
+  --zid-color-input-state-selected: rgba(0, 0, 0, 0.08);
+  --zid-color-input-state-focus-visible: rgba(0, 0, 0, 0.3);
+  --zid-color-input-outlined-enabled-border: #ebe8ed;
+  --zid-color-input-outlined-hover-border: #d8d2dd;
+
+  /* ============================================
+   * Component-Specific Colors - Alert
+   * ============================================ */
+  --zid-color-alert-error-color: #70192f;
+  --zid-color-alert-error-border: #fdc9d0;
+  --zid-color-alert-error-background: #fff3f4;
+
+  --zid-color-alert-warning-color: #6f673b;
+  --zid-color-alert-warning-border: #faeba4;
+  --zid-color-alert-warning-background: #fefdf5;
+
+  --zid-color-alert-info-color: #306666;
+  --zid-color-alert-info-border: #b5efef;
+  --zid-color-alert-info-background: #f4fcfc;
+
+  --zid-color-alert-success-color: #476a44;
+  --zid-color-alert-success-border: #caf4c8;
+  --zid-color-alert-success-background: #f7fdf7;
+
+  /* ============================================
+   * Component-Specific Colors - Switch
+   * ============================================ */
+  --zid-color-switch-knob-enabled: #f8f8f8;
+  --zid-color-switch-slide: #c6c6c8;
+  --zid-color-switch-knob-disabled: #f2f2f2;
+  --zid-color-switch-shadow: #e4e4e5;
+  --zid-color-switch-color: #ae72ff;
+  --zid-color-switch-background: #ffffff;
+  --zid-color-switch-error-active: #fa3768;
+  --zid-color-switch-error-pressed: #c22b51;
+  --zid-color-switch-error-shadow: rgba(250, 55, 104, 0.5);
+  --zid-color-switch-primary-active: #9eec98;
+  --zid-color-switch-primary-pressed: #649560;
+  --zid-color-switch-primary-shadow: rgba(46, 125, 50, 0.5);
+
+  /* ============================================
+   * Component-Specific Colors - Chip
+   * ============================================ */
+  --zid-color-chip-desert: #fdf5d6;
+
+  /* ============================================
+   * Component-Specific Colors - Avatar
+   * ============================================ */
+  --zid-color-avatar-fill: #a3a1a6;
+
+  /* ============================================
+   * Component-Specific Colors - Backdrop
+   * ============================================ */
+  --zid-color-backdrop-fill: rgba(0, 0, 0, 0.1);
+
+  /* ============================================
+   * Component-Specific Colors - AppBar
+   * ============================================ */
+  --zid-color-appbar-default-fill: #f2f2f2;
+
+  /* ============================================
+   * Component-Specific Colors - Stepper
+   * ============================================ */
+  --zid-color-stepper-connector: #a3a1a6;
+
+  /* ============================================
+   * Component-Specific Colors - Badge
+   * ============================================ */
+  --zid-color-badge-primary-color: #8758c6;
+  --zid-color-badge-primary-background: #f1eaff;
+
+  /* ============================================
+   * Component-Specific Colors - Card
+   * ============================================ */
+  --zid-color-card-selected-background: #fbf9ff;
+  --zid-color-card-selected-border: #e2d2ff;
+
+  /* ============================================
+   * Component-Specific Colors - Navbar
+   * ============================================ */
+  --zid-color-navbar-wallet-background: #f8f5ff;
+  --zid-color-navbar-wallet-border: #ebe8ed;
+  --zid-color-navbar-wallet-text: #1b0d26;
+  --zid-color-navbar-search-border: #efeff1;
+  --zid-color-navbar-search-background: #fbfbfb;
+
+  /* ============================================
+   * Component-Specific Colors - Icon Button
+   * ============================================ */
+  --zid-color-icon-button-default-hover: #0000001f;
+  --zid-color-icon-button-primary-text: #4e3372;
+  --zid-color-icon-button-primary-focused: #ae72ff4d;
+  --zid-color-icon-button-primary-hover: #fbf9ff;
+  --zid-color-icon-button-primary-focused-icon: #ae72ff;
+  --zid-color-icon-button-secondary-text: #1b0d26;
+  --zid-color-icon-button-secondary-focused: #3c1c544d;
+  --zid-color-icon-button-secondary-hover: #f4f3f5;
+  --zid-color-icon-button-secondary-focused-icon: #ae72ff;
+  --zid-color-icon-button-error-text: #1b0d26;
+  --zid-color-icon-button-error-focused: #fa37684d;
+  --zid-color-icon-button-error-hover: #f4f3f5;
+  --zid-color-icon-button-error-focused-icon: #ae72ff;
+
+  /* ============================================
+   * Native/Scrollbar Colors
+   * ============================================ */
+  --zid-color-scrollbar-bg: #e4e4e5;
+
+  /* ============================================
+   * Slider Indicator Colors
+   * ============================================ */
+  --zid-color-slider-indicator-background: rgba(255, 255, 255, 0.2);
+  --zid-color-slider-indicator-active: rgba(255, 255, 255, 1);
+  --zid-color-slider-indicator-inactive: rgba(255, 255, 255, 0.8);
+
+  /* ============================================
+   * Empty State Colors
+   * ============================================ */
+  --zid-color-empty-state-image-background: rgba(0, 0, 0, 0.04);
+}

@@ -1,0 +1,347 @@
+/**
+ * Zid Design System - Alert Component
+ *
+ * This file contains all alert-related styles for the Zid design system.
+ * Partners can use these classes to create alerts/notifications matching Zid's design
+ * without requiring MUI JavaScript runtime.
+ *
+ * Class naming convention: .zid-alert--{modifier}
+ *
+ * Usage:
+ * <div class="zid-alert zid-alert--standard zid-alert--error" role="alert">
+ *   <span class="zid-alert__icon">⚠️</span>
+ *   <div class="zid-alert__content">
+ *     <div class="zid-alert__title">Error Title</div>
+ *     <div class="zid-alert__message">Error message description.</div>
+ *   </div>
+ *   <button class="zid-alert__action" aria-label="Close">×</button>
+ * </div>
+ *
+ * Requirements: 6.1, 6.2, 6.3, 6.4, 6.5, 10.1, 10.2
+ */
+
+/* ============================================
+ * Base Alert Styles
+ * Common styles applied to all alerts
+ * ============================================ */
+.zid-alert {
+  /* Layout */
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--zid-spacing-2);
+
+  /* Box model */
+  padding-block: var(--zid-spacing-3);
+  padding-inline: var(--zid-spacing-3);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: var(--zid-radius-lg);
+
+  /* Typography */
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-body2);
+  line-height: 1.5;
+  color: inherit;
+}
+
+/* ============================================
+ * Alert Child Elements
+ * ============================================ */
+
+/* Icon container */
+.zid-alert__icon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  padding-block: var(--zid-spacing-0-5);
+  width: var(--zid-spacing-5);
+  height: var(--zid-spacing-5);
+}
+
+/* Content wrapper (contains title and message) */
+.zid-alert__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  padding-block: var(--zid-spacing-0-5);
+}
+
+/* Title text */
+.zid-alert__title {
+  font-weight: var(--zid-font-weight-medium);
+  font-size: var(--zid-font-size-body2);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Message/description text */
+.zid-alert__message {
+  font-weight: var(--zid-font-weight-regular);
+  font-size: var(--zid-font-size-body2);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Action button (close button) */
+.zid-alert__action {
+  /* Reset button styles */
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+
+  /* Layout */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  padding-block-start: var(--zid-spacing-0-5);
+  margin-inline-start: auto;
+
+  /* Interaction */
+  cursor: pointer;
+  color: inherit;
+
+  /* Transitions */
+  transition-property: opacity;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.zid-alert__action:hover {
+  opacity: 0.7;
+}
+
+.zid-alert__action:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  border-radius: var(--zid-radius-sm);
+}
+
+/* ============================================
+ * Variant Modifiers - Standard
+ * Default alert with light background and border
+ * ============================================ */
+.zid-alert--standard {
+  /* Base standard styles - colors applied via severity modifiers */
+}
+
+/* ============================================
+ * Variant Modifiers - Filled
+ * Alert with solid/darker background
+ * ============================================ */
+.zid-alert--filled {
+  /* Filled variant has more saturated background */
+}
+
+/* ============================================
+ * Variant Modifiers - Outlined
+ * Alert with transparent background and visible border
+ * ============================================ */
+.zid-alert--outlined {
+  background-color: transparent;
+}
+
+/* ============================================
+ * Severity Modifiers - Error
+ * Red/error colored alert
+ * ============================================ */
+
+/* Error Standard */
+.zid-alert--error.zid-alert--standard {
+  background-color: var(--zid-color-alert-error-background);
+  border-color: var(--zid-color-alert-error-border);
+  color: var(--zid-color-text-primary);
+}
+
+.zid-alert--error.zid-alert--standard .zid-alert__icon {
+  color: var(--zid-color-red-400);
+}
+
+.zid-alert--error.zid-alert--standard .zid-alert__action {
+  color: var(--zid-color-red-1000);
+}
+
+/* Error Filled */
+.zid-alert--error.zid-alert--filled {
+  background-color: var(--zid-color-red-300);
+  border-color: var(--zid-color-red-400);
+  color: var(--zid-color-alert-error-color);
+}
+
+.zid-alert--error.zid-alert--filled .zid-alert__icon {
+  color: var(--zid-color-red-800);
+}
+
+.zid-alert--error.zid-alert--filled .zid-alert__action {
+  color: var(--zid-color-red-1000);
+}
+
+/* Error Outlined */
+.zid-alert--error.zid-alert--outlined {
+  background-color: transparent;
+  border-color: var(--zid-color-alert-error-border);
+  color: var(--zid-color-text-primary);
+}
+
+.zid-alert--error.zid-alert--outlined .zid-alert__icon {
+  color: var(--zid-color-red-400);
+}
+
+.zid-alert--error.zid-alert--outlined .zid-alert__action {
+  color: var(--zid-color-red-1000);
+}
+
+/* ============================================
+ * Severity Modifiers - Warning
+ * Yellow/warning colored alert
+ * ============================================ */
+
+/* Warning Standard */
+.zid-alert--warning.zid-alert--standard {
+  background-color: var(--zid-color-alert-warning-background);
+  border-color: var(--zid-color-alert-warning-border);
+  color: var(--zid-color-text-primary);
+}
+
+.zid-alert--warning.zid-alert--standard .zid-alert__icon {
+  color: var(--zid-color-yellow-700);
+}
+
+.zid-alert--warning.zid-alert--standard .zid-alert__action {
+  color: var(--zid-color-alert-warning-color);
+}
+
+/* Warning Filled */
+.zid-alert--warning.zid-alert--filled {
+  background-color: var(--zid-color-yellow-300);
+  border-color: var(--zid-color-yellow-500);
+  color: var(--zid-color-alert-warning-color);
+}
+
+.zid-alert--warning.zid-alert--filled .zid-alert__icon {
+  color: var(--zid-color-yellow-900);
+}
+
+.zid-alert--warning.zid-alert--filled .zid-alert__action {
+  color: var(--zid-color-alert-warning-color);
+}
+
+/* Warning Outlined */
+.zid-alert--warning.zid-alert--outlined {
+  background-color: transparent;
+  border-color: var(--zid-color-alert-warning-border);
+  color: var(--zid-color-text-primary);
+}
+
+.zid-alert--warning.zid-alert--outlined .zid-alert__icon {
+  color: var(--zid-color-yellow-700);
+}
+
+.zid-alert--warning.zid-alert--outlined .zid-alert__action {
+  color: var(--zid-color-alert-warning-color);
+}
+
+/* ============================================
+ * Severity Modifiers - Info
+ * Blue/info colored alert
+ * ============================================ */
+
+/* Info Standard */
+.zid-alert--info.zid-alert--standard {
+  background-color: var(--zid-color-alert-info-background);
+  border-color: var(--zid-color-alert-info-border);
+  color: var(--zid-color-text-primary);
+}
+
+.zid-alert--info.zid-alert--standard .zid-alert__icon {
+  color: var(--zid-color-blue-900);
+}
+
+.zid-alert--info.zid-alert--standard .zid-alert__action {
+  color: var(--zid-color-blue-1000);
+}
+
+/* Info Filled */
+.zid-alert--info.zid-alert--filled {
+  background-color: var(--zid-color-blue-300);
+  border-color: var(--zid-color-blue-400);
+  color: var(--zid-color-alert-info-color);
+}
+
+.zid-alert--info.zid-alert--filled .zid-alert__icon {
+  color: var(--zid-color-blue-900);
+}
+
+.zid-alert--info.zid-alert--filled .zid-alert__action {
+  color: var(--zid-color-blue-1000);
+}
+
+/* Info Outlined */
+.zid-alert--info.zid-alert--outlined {
+  background-color: transparent;
+  border-color: var(--zid-color-alert-info-border);
+  color: var(--zid-color-text-primary);
+}
+
+.zid-alert--info.zid-alert--outlined .zid-alert__icon {
+  color: var(--zid-color-blue-900);
+}
+
+.zid-alert--info.zid-alert--outlined .zid-alert__action {
+  color: var(--zid-color-blue-1000);
+}
+
+/* ============================================
+ * Severity Modifiers - Success
+ * Green/success colored alert
+ * ============================================ */
+
+/* Success Standard */
+.zid-alert--success.zid-alert--standard {
+  background-color: var(--zid-color-alert-success-background);
+  border-color: var(--zid-color-alert-success-border);
+  color: var(--zid-color-text-primary);
+}
+
+.zid-alert--success.zid-alert--standard .zid-alert__icon {
+  color: var(--zid-color-green-600);
+}
+
+.zid-alert--success.zid-alert--standard .zid-alert__action {
+  color: var(--zid-color-green-1000);
+}
+
+/* Success Filled */
+.zid-alert--success.zid-alert--filled {
+  background-color: var(--zid-color-green-300);
+  border-color: var(--zid-color-green-400);
+  color: var(--zid-color-alert-success-color);
+}
+
+.zid-alert--success.zid-alert--filled .zid-alert__icon {
+  color: var(--zid-color-green-800);
+}
+
+.zid-alert--success.zid-alert--filled .zid-alert__action {
+  color: var(--zid-color-green-1000);
+}
+
+/* Success Outlined */
+.zid-alert--success.zid-alert--outlined {
+  background-color: transparent;
+  border-color: var(--zid-color-alert-success-border);
+  color: var(--zid-color-text-primary);
+}
+
+.zid-alert--success.zid-alert--outlined .zid-alert__icon {
+  color: var(--zid-color-green-600);
+}
+
+.zid-alert--success.zid-alert--outlined .zid-alert__action {
+  color: var(--zid-color-green-1000);
+}

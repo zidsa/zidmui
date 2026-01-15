@@ -1,0 +1,361 @@
+/**
+ * Zid Design System - Variables Template
+ *
+ * This file serves as a reference for all overridable CSS custom properties
+ * in the Zid Partner CSS Design System. Partners can copy this file and
+ * customize the values to match their brand.
+ *
+ * HOW TO USE:
+ * 1. Copy this file to your project
+ * 2. Rename it (e.g., `my-brand-overrides.css`)
+ * 3. Uncomment and modify the properties you want to override
+ * 4. Import your overrides file AFTER the Zid design system CSS
+ *
+ * EXAMPLE:
+ * ```css
+ * @import 'partners/index.css';
+ * @import 'my-brand-overrides.css';
+ * ```
+ *
+ * Or define overrides directly in your :root selector:
+ * ```css
+ * :root {
+ *   --zid-color-primary-main: #your-brand-color;
+ *   --zid-font-family: 'Your Font', sans-serif;
+ * }
+ * ```
+ */
+
+:root {
+  /* ============================================
+   * BASE COLORS
+   * Core foundational colors used throughout the system
+   * ============================================ */
+  /* --zid-color-base-white: #ffffff; */
+  /* --zid-color-base-black: #000000; */
+  /* --zid-color-base-neutral: #f5f4f6; */
+  /* --zid-color-base-silver: #e8e4eb; */
+
+  /* ============================================
+   * PRIMARY PALETTE
+   * Main brand color used for primary actions and emphasis
+   * Override these to match your brand's primary color
+   * ============================================ */
+  /* --zid-color-primary-50: #fbf9ff; */
+  /* --zid-color-primary-100: #f8f5ff; */
+  /* --zid-color-primary-200: #f1eaff; */
+  /* --zid-color-primary-300: #e2d2ff; */
+  /* --zid-color-primary-400: #d2b8ff; */
+  /* --zid-color-primary-500: #c199ff; */
+  /* --zid-color-primary-600: #ae72ff; */
+  /* --zid-color-primary-700: #9c66e4; */
+  /* --zid-color-primary-800: #8758c6; */
+  /* --zid-color-primary-900: #6e48a1; */
+  /* --zid-color-primary-1000: #4e3372; */
+
+  /* Primary semantic aliases - commonly overridden */
+  /* --zid-color-primary-main: #ae72ff; */
+  /* --zid-color-primary-dark: #8758c6; */
+  /* --zid-color-primary-light: #d2b8ff; */
+  /* --zid-color-primary-contrast-text: #ffffff; */
+
+  /* ============================================
+   * SECONDARY PALETTE
+   * Supporting color for secondary actions and UI elements
+   * ============================================ */
+  /* --zid-color-secondary-50: #f8f8f8; */
+  /* --zid-color-secondary-100: #f3f2f3; */
+  /* --zid-color-secondary-200: #e6e4e7; */
+  /* --zid-color-secondary-300: #c9c6cd; */
+  /* --zid-color-secondary-400: #a8a3ae; */
+  /* --zid-color-secondary-500: #7e7589; */
+  /* --zid-color-secondary-600: #3c1c54; */
+  /* --zid-color-secondary-700: #36194b; */
+  /* --zid-color-secondary-800: #2e1641; */
+  /* --zid-color-secondary-900: #261235; */
+  /* --zid-color-secondary-1000: #1b0d26; */
+
+  /* Secondary semantic aliases */
+  /* --zid-color-secondary-main: #3c1c54; */
+  /* --zid-color-secondary-dark: #2e1641; */
+  /* --zid-color-secondary-light: #8a7798; */
+  /* --zid-color-secondary-contrast-text: #ffffff; */
+
+  /* ============================================
+   * NEUTRALS PALETTE
+   * Grayscale colors for text, borders, and backgrounds
+   * ============================================ */
+  /* --zid-color-neutrals-50: #f8f8f8; */
+  /* --zid-color-neutrals-100: #f2f2f2; */
+  /* --zid-color-neutrals-200: #e4e4e5; */
+  /* --zid-color-neutrals-300: #c6c6c8; */
+  /* --zid-color-neutrals-400: #a3a1a6; */
+  /* --zid-color-neutrals-500: #75727b; */
+  /* --zid-color-neutrals-600: #1f0433; */
+  /* --zid-color-neutrals-700: #1c042e; */
+  /* --zid-color-neutrals-800: #180328; */
+  /* --zid-color-neutrals-900: #140320; */
+  /* --zid-color-neutrals-1000: #0e0217; */
+
+  /* ============================================
+   * SEMANTIC COLORS - ERROR
+   * Used for error states, destructive actions, and alerts
+   * ============================================ */
+  /* --zid-color-error-main: #fa3768; */
+  /* --zid-color-error-dark: #c22b51; */
+  /* --zid-color-error-light: #fca7b4; */
+  /* --zid-color-error-contrast-text: #ffffff; */
+
+  /* ============================================
+   * SEMANTIC COLORS - WARNING
+   * Used for warning states and cautionary messages
+   * ============================================ */
+  /* --zid-color-warning-main: #f9e683; */
+  /* --zid-color-warning-dark: #dfce75; */
+  /* --zid-color-warning-light: #fbf0bf; */
+  /* --zid-color-warning-contrast-text: #6f673b; */
+
+  /* ============================================
+   * SEMANTIC COLORS - INFO
+   * Used for informational states and neutral highlights
+   * ============================================ */
+  /* --zid-color-info-main: #60cbcb; */
+  /* --zid-color-info-dark: #449090; */
+  /* --zid-color-info-light: #95e9e9; */
+  /* --zid-color-info-contrast-text: #ffffff; */
+
+  /* ============================================
+   * SEMANTIC COLORS - SUCCESS
+   * Used for success states, positive feedback, and confirmations
+   * ============================================ */
+  /* --zid-color-success-main: #9eec98; */
+  /* --zid-color-success-dark: #649560; */
+  /* --zid-color-success-light: #ddf8dc; */
+  /* --zid-color-success-contrast-text: #000000; */
+
+  /* ============================================
+   * TEXT COLORS
+   * Semantic colors for typography
+   * ============================================ */
+  /* --zid-color-text-primary: #0e0217; */
+  /* --zid-color-text-secondary: #1f0433; */
+  /* --zid-color-text-tertiary: #75727b; */
+  /* --zid-color-text-disabled: #c6c6c8; */
+
+  /* ============================================
+   * BACKGROUND COLORS
+   * Semantic colors for surfaces and containers
+   * ============================================ */
+  /* --zid-color-background-default: #f8f8f8; */
+  /* --zid-color-background-paper: #ffffff; */
+  /* --zid-color-background-disabled: #f2f2f2; */
+
+  /* ============================================
+   * BORDER/OUTLINE COLORS
+   * Semantic colors for borders and outlines
+   * ============================================ */
+  /* --zid-color-outlined: #e4e4e5; */
+  /* --zid-color-divider: #f4f3f5; */
+
+  /* ============================================
+   * TYPOGRAPHY - FONT FAMILY
+   * Primary font stack for the design system
+   * ============================================ */
+  /* --zid-font-family: 'IBM Plex Sans Arabic', -apple-system, Helvetica, Arial, sans-serif; */
+
+  /* ============================================
+   * TYPOGRAPHY - FONT WEIGHTS
+   * Available font weight values
+   * ============================================ */
+  /* --zid-font-weight-regular: 400; */
+  /* --zid-font-weight-medium: 500; */
+
+  /* ============================================
+   * TYPOGRAPHY - FONT SIZES
+   * Typography scale for all text variants
+   * ============================================ */
+  /* Headings */
+  /* --zid-font-size-h1: 6rem; */
+  /* --zid-font-size-h2: 3.75rem; */
+  /* --zid-font-size-h3: 3rem; */
+  /* --zid-font-size-h4: 2.125rem; */
+  /* --zid-font-size-h5: 1.5rem; */
+  /* --zid-font-size-h6: 1.25rem; */
+
+  /* Body & Other Variants */
+  /* --zid-font-size-body1: 1rem; */
+  /* --zid-font-size-body2: 0.875rem; */
+  /* --zid-font-size-subtitle1: 1rem; */
+  /* --zid-font-size-subtitle2: 0.875rem; */
+  /* --zid-font-size-caption: 0.75rem; */
+  /* --zid-font-size-overline: 0.75rem; */
+
+  /* ============================================
+   * TYPOGRAPHY - LETTER SPACING
+   * Character spacing for each typography variant
+   * ============================================ */
+  /* --zid-letter-spacing-h1: -1.5px; */
+  /* --zid-letter-spacing-h2: -0.5px; */
+  /* --zid-letter-spacing-h3: 0; */
+  /* --zid-letter-spacing-h4: 0.25px; */
+  /* --zid-letter-spacing-h5: 0; */
+  /* --zid-letter-spacing-h6: 0.15px; */
+  /* --zid-letter-spacing-body1: 0.15px; */
+  /* --zid-letter-spacing-body2: 0.17px; */
+  /* --zid-letter-spacing-subtitle1: 0.15px; */
+  /* --zid-letter-spacing-subtitle2: 0.1px; */
+  /* --zid-letter-spacing-caption: 0.4px; */
+  /* --zid-letter-spacing-overline: 1px; */
+
+  /* ============================================
+   * TYPOGRAPHY - LINE HEIGHTS
+   * Line height values for each typography variant
+   * ============================================ */
+  /* --zid-line-height-h1: 1.167; */
+  /* --zid-line-height-h2: 1.2; */
+  /* --zid-line-height-h3: 1.167; */
+  /* --zid-line-height-h4: 1.235; */
+  /* --zid-line-height-h5: 1.334; */
+  /* --zid-line-height-h6: 1.6; */
+  /* --zid-line-height-body1: 1.5; */
+  /* --zid-line-height-body2: 1.43; */
+  /* --zid-line-height-subtitle1: 1.75; */
+  /* --zid-line-height-subtitle2: 1.57; */
+  /* --zid-line-height-caption: 1.66; */
+  /* --zid-line-height-overline: 2.66; */
+
+  /* ============================================
+   * TYPOGRAPHY - FONT WEIGHT PER VARIANT
+   * Specific font weights for each typography variant
+   * ============================================ */
+  /* --zid-font-weight-h1: 400; */
+  /* --zid-font-weight-h2: 400; */
+  /* --zid-font-weight-h3: 400; */
+  /* --zid-font-weight-h4: 500; */
+  /* --zid-font-weight-h5: 500; */
+  /* --zid-font-weight-h6: 500; */
+  /* --zid-font-weight-body1: 400; */
+  /* --zid-font-weight-body2: 400; */
+  /* --zid-font-weight-subtitle1: 500; */
+  /* --zid-font-weight-subtitle2: 500; */
+  /* --zid-font-weight-caption: 400; */
+  /* --zid-font-weight-overline: 400; */
+
+  /* ============================================
+   * SPACING SCALE
+   * Based on 8px grid system: spacing-N = N * 8px
+   * ============================================ */
+  /* --zid-spacing-0: 0px; */
+  /* --zid-spacing-0-5: 4px; */
+  /* --zid-spacing-1: 8px; */
+  /* --zid-spacing-1-5: 12px; */
+  /* --zid-spacing-2: 16px; */
+  /* --zid-spacing-2-5: 20px; */
+  /* --zid-spacing-3: 24px; */
+  /* --zid-spacing-4: 32px; */
+  /* --zid-spacing-5: 40px; */
+  /* --zid-spacing-6: 48px; */
+  /* --zid-spacing-8: 64px; */
+  /* --zid-spacing-10: 80px; */
+  /* --zid-spacing-12: 96px; */
+  /* --zid-spacing-16: 128px; */
+
+  /* ============================================
+   * BORDER RADIUS
+   * Shape tokens for rounded corners
+   * ============================================ */
+  /* --zid-radius-sm: 4px; */
+  /* --zid-radius-md: 8px; */
+  /* --zid-radius-lg: 12px; */
+  /* --zid-radius-full: 9999px; */
+
+  /* ============================================
+   * SHADOWS / ELEVATION
+   * Box shadows for creating depth and hierarchy
+   * ============================================ */
+  /* --zid-shadow-0: none; */
+  /* --zid-shadow-1: 0px 1px 2px 0px rgba(16, 24, 40, 0.05); */
+  /* --zid-shadow-2: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 1px 3px 0px rgba(16, 24, 40, 0.05); */
+  /* --zid-shadow-3: 0px 2px 4px -2px rgba(16, 24, 40, 0.05), 0px 4px 8px -2px rgba(16, 24, 40, 0.1); */
+  /* --zid-shadow-4: 0px 2px 6px -2px rgba(16, 24, 40, 0.03), 0px 12px 16px -4px rgba(16, 24, 40, 0.08); */
+
+  /* ============================================
+   * COMPONENT-SPECIFIC: BUTTON
+   * Override these to customize button appearance
+   * ============================================ */
+  /* Primary button */
+  /* --zid-color-button-primary-contained: #4e3372; */
+  /* --zid-color-button-primary-hover: #6e48a1; */
+  /* --zid-color-button-primary-text: #ffffff; */
+
+  /* Secondary button */
+  /* --zid-color-button-secondary-contained: #f4f3f5; */
+  /* --zid-color-button-secondary-hover: #f4f3f5; */
+  /* --zid-color-button-secondary-text: #1b0d26; */
+
+  /* Error button */
+  /* --zid-color-button-error-contained: #fee5e9; */
+  /* --zid-color-button-error-hover: #fdc9d0; */
+  /* --zid-color-button-error-text: #70192f; */
+
+  /* ============================================
+   * COMPONENT-SPECIFIC: INPUT
+   * Override these to customize input field appearance
+   * ============================================ */
+  /* --zid-color-input-outlined-enabled-border: #ebe8ed; */
+  /* --zid-color-input-outlined-hover-border: #d8d2dd; */
+
+  /* ============================================
+   * COMPONENT-SPECIFIC: ALERT
+   * Override these to customize alert appearance
+   * ============================================ */
+  /* Error alert */
+  /* --zid-color-alert-error-color: #70192f; */
+  /* --zid-color-alert-error-border: #fdc9d0; */
+  /* --zid-color-alert-error-background: #fff3f4; */
+
+  /* Warning alert */
+  /* --zid-color-alert-warning-color: #6f673b; */
+  /* --zid-color-alert-warning-border: #faeba4; */
+  /* --zid-color-alert-warning-background: #fefdf5; */
+
+  /* Info alert */
+  /* --zid-color-alert-info-color: #306666; */
+  /* --zid-color-alert-info-border: #b5efef; */
+  /* --zid-color-alert-info-background: #f4fcfc; */
+
+  /* Success alert */
+  /* --zid-color-alert-success-color: #476a44; */
+  /* --zid-color-alert-success-border: #caf4c8; */
+  /* --zid-color-alert-success-background: #f7fdf7; */
+}
+
+/**
+ * ============================================
+ * EXAMPLE: Brand Override
+ * ============================================
+ *
+ * Here's an example of how to override the primary color
+ * to match a different brand:
+ *
+ * :root {
+ *   --zid-color-primary-50: #e3f2fd;
+ *   --zid-color-primary-100: #bbdefb;
+ *   --zid-color-primary-200: #90caf9;
+ *   --zid-color-primary-300: #64b5f6;
+ *   --zid-color-primary-400: #42a5f5;
+ *   --zid-color-primary-500: #2196f3;
+ *   --zid-color-primary-600: #1e88e5;
+ *   --zid-color-primary-700: #1976d2;
+ *   --zid-color-primary-800: #1565c0;
+ *   --zid-color-primary-900: #0d47a1;
+ *   --zid-color-primary-1000: #0a3d91;
+ *
+ *   --zid-color-primary-main: #1e88e5;
+ *   --zid-color-primary-dark: #1565c0;
+ *   --zid-color-primary-light: #64b5f6;
+ *
+ *   --zid-color-button-primary-contained: #1565c0;
+ *   --zid-color-button-primary-hover: #0d47a1;
+ * }
+ */

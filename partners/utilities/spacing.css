@@ -1,0 +1,878 @@
+/**
+ * Zid Design System - Spacing Utility Classes
+ *
+ * This file contains spacing utility classes for applying consistent
+ * margins and padding without custom CSS. All classes use the `zid-` prefix
+ * and reference design tokens.
+ *
+ * Naming convention:
+ * - Margin: .zid-m-{N}, .zid-mt-{N}, .zid-mr-{N}, .zid-mb-{N}, .zid-ml-{N}, .zid-mx-{N}, .zid-my-{N}
+ * - Padding: .zid-p-{N}, .zid-pt-{N}, .zid-pr-{N}, .zid-pb-{N}, .zid-pl-{N}, .zid-px-{N}, .zid-py-{N}
+ *
+ * Note: Directional utilities use CSS logical properties for RTL support:
+ * - mt/mb → block-start/block-end
+ * - ml/mr → inline-start/inline-end
+ * - mx → inline
+ * - my → block
+ *
+ * Usage:
+ * <div class="zid-m-4">All margins</div>
+ * <div class="zid-px-2 zid-py-4">Horizontal and vertical padding</div>
+ *
+ * Source: partners/tokens/spacing.css
+ * Requirements: 9.1, 9.2, 9.3, 9.4, 10.1
+ */
+
+/* ============================================
+ * Margin Utilities - All Sides
+ * .zid-m-{N} applies margin to all sides
+ * ============================================ */
+
+.zid-m-0 {
+  margin: var(--zid-spacing-0);
+}
+
+.zid-m-0-5 {
+  margin: var(--zid-spacing-0-5);
+}
+
+.zid-m-1 {
+  margin: var(--zid-spacing-1);
+}
+
+.zid-m-1-5 {
+  margin: var(--zid-spacing-1-5);
+}
+
+.zid-m-2 {
+  margin: var(--zid-spacing-2);
+}
+
+.zid-m-2-5 {
+  margin: var(--zid-spacing-2-5);
+}
+
+.zid-m-3 {
+  margin: var(--zid-spacing-3);
+}
+
+.zid-m-4 {
+  margin: var(--zid-spacing-4);
+}
+
+.zid-m-5 {
+  margin: var(--zid-spacing-5);
+}
+
+.zid-m-6 {
+  margin: var(--zid-spacing-6);
+}
+
+.zid-m-8 {
+  margin: var(--zid-spacing-8);
+}
+
+.zid-m-10 {
+  margin: var(--zid-spacing-10);
+}
+
+.zid-m-12 {
+  margin: var(--zid-spacing-12);
+}
+
+.zid-m-16 {
+  margin: var(--zid-spacing-16);
+}
+
+/* ============================================
+ * Margin Utilities - Top (Block Start)
+ * .zid-mt-{N} applies margin to top (block-start for RTL)
+ * ============================================ */
+
+.zid-mt-0 {
+  margin-block-start: var(--zid-spacing-0);
+}
+
+.zid-mt-0-5 {
+  margin-block-start: var(--zid-spacing-0-5);
+}
+
+.zid-mt-1 {
+  margin-block-start: var(--zid-spacing-1);
+}
+
+.zid-mt-1-5 {
+  margin-block-start: var(--zid-spacing-1-5);
+}
+
+.zid-mt-2 {
+  margin-block-start: var(--zid-spacing-2);
+}
+
+.zid-mt-2-5 {
+  margin-block-start: var(--zid-spacing-2-5);
+}
+
+.zid-mt-3 {
+  margin-block-start: var(--zid-spacing-3);
+}
+
+.zid-mt-4 {
+  margin-block-start: var(--zid-spacing-4);
+}
+
+.zid-mt-5 {
+  margin-block-start: var(--zid-spacing-5);
+}
+
+.zid-mt-6 {
+  margin-block-start: var(--zid-spacing-6);
+}
+
+.zid-mt-8 {
+  margin-block-start: var(--zid-spacing-8);
+}
+
+.zid-mt-10 {
+  margin-block-start: var(--zid-spacing-10);
+}
+
+.zid-mt-12 {
+  margin-block-start: var(--zid-spacing-12);
+}
+
+.zid-mt-16 {
+  margin-block-start: var(--zid-spacing-16);
+}
+
+/* ============================================
+ * Margin Utilities - Right (Inline End)
+ * .zid-mr-{N} applies margin to right (inline-end for RTL)
+ * ============================================ */
+
+.zid-mr-0 {
+  margin-inline-end: var(--zid-spacing-0);
+}
+
+.zid-mr-0-5 {
+  margin-inline-end: var(--zid-spacing-0-5);
+}
+
+.zid-mr-1 {
+  margin-inline-end: var(--zid-spacing-1);
+}
+
+.zid-mr-1-5 {
+  margin-inline-end: var(--zid-spacing-1-5);
+}
+
+.zid-mr-2 {
+  margin-inline-end: var(--zid-spacing-2);
+}
+
+.zid-mr-2-5 {
+  margin-inline-end: var(--zid-spacing-2-5);
+}
+
+.zid-mr-3 {
+  margin-inline-end: var(--zid-spacing-3);
+}
+
+.zid-mr-4 {
+  margin-inline-end: var(--zid-spacing-4);
+}
+
+.zid-mr-5 {
+  margin-inline-end: var(--zid-spacing-5);
+}
+
+.zid-mr-6 {
+  margin-inline-end: var(--zid-spacing-6);
+}
+
+.zid-mr-8 {
+  margin-inline-end: var(--zid-spacing-8);
+}
+
+.zid-mr-10 {
+  margin-inline-end: var(--zid-spacing-10);
+}
+
+.zid-mr-12 {
+  margin-inline-end: var(--zid-spacing-12);
+}
+
+.zid-mr-16 {
+  margin-inline-end: var(--zid-spacing-16);
+}
+
+/* ============================================
+ * Margin Utilities - Bottom (Block End)
+ * .zid-mb-{N} applies margin to bottom (block-end for RTL)
+ * ============================================ */
+
+.zid-mb-0 {
+  margin-block-end: var(--zid-spacing-0);
+}
+
+.zid-mb-0-5 {
+  margin-block-end: var(--zid-spacing-0-5);
+}
+
+.zid-mb-1 {
+  margin-block-end: var(--zid-spacing-1);
+}
+
+.zid-mb-1-5 {
+  margin-block-end: var(--zid-spacing-1-5);
+}
+
+.zid-mb-2 {
+  margin-block-end: var(--zid-spacing-2);
+}
+
+.zid-mb-2-5 {
+  margin-block-end: var(--zid-spacing-2-5);
+}
+
+.zid-mb-3 {
+  margin-block-end: var(--zid-spacing-3);
+}
+
+.zid-mb-4 {
+  margin-block-end: var(--zid-spacing-4);
+}
+
+.zid-mb-5 {
+  margin-block-end: var(--zid-spacing-5);
+}
+
+.zid-mb-6 {
+  margin-block-end: var(--zid-spacing-6);
+}
+
+.zid-mb-8 {
+  margin-block-end: var(--zid-spacing-8);
+}
+
+.zid-mb-10 {
+  margin-block-end: var(--zid-spacing-10);
+}
+
+.zid-mb-12 {
+  margin-block-end: var(--zid-spacing-12);
+}
+
+.zid-mb-16 {
+  margin-block-end: var(--zid-spacing-16);
+}
+
+/* ============================================
+ * Margin Utilities - Left (Inline Start)
+ * .zid-ml-{N} applies margin to left (inline-start for RTL)
+ * ============================================ */
+
+.zid-ml-0 {
+  margin-inline-start: var(--zid-spacing-0);
+}
+
+.zid-ml-0-5 {
+  margin-inline-start: var(--zid-spacing-0-5);
+}
+
+.zid-ml-1 {
+  margin-inline-start: var(--zid-spacing-1);
+}
+
+.zid-ml-1-5 {
+  margin-inline-start: var(--zid-spacing-1-5);
+}
+
+.zid-ml-2 {
+  margin-inline-start: var(--zid-spacing-2);
+}
+
+.zid-ml-2-5 {
+  margin-inline-start: var(--zid-spacing-2-5);
+}
+
+.zid-ml-3 {
+  margin-inline-start: var(--zid-spacing-3);
+}
+
+.zid-ml-4 {
+  margin-inline-start: var(--zid-spacing-4);
+}
+
+.zid-ml-5 {
+  margin-inline-start: var(--zid-spacing-5);
+}
+
+.zid-ml-6 {
+  margin-inline-start: var(--zid-spacing-6);
+}
+
+.zid-ml-8 {
+  margin-inline-start: var(--zid-spacing-8);
+}
+
+.zid-ml-10 {
+  margin-inline-start: var(--zid-spacing-10);
+}
+
+.zid-ml-12 {
+  margin-inline-start: var(--zid-spacing-12);
+}
+
+.zid-ml-16 {
+  margin-inline-start: var(--zid-spacing-16);
+}
+
+/* ============================================
+ * Margin Utilities - Horizontal (Inline)
+ * .zid-mx-{N} applies margin to left and right (inline for RTL)
+ * ============================================ */
+
+.zid-mx-0 {
+  margin-inline: var(--zid-spacing-0);
+}
+
+.zid-mx-0-5 {
+  margin-inline: var(--zid-spacing-0-5);
+}
+
+.zid-mx-1 {
+  margin-inline: var(--zid-spacing-1);
+}
+
+.zid-mx-1-5 {
+  margin-inline: var(--zid-spacing-1-5);
+}
+
+.zid-mx-2 {
+  margin-inline: var(--zid-spacing-2);
+}
+
+.zid-mx-2-5 {
+  margin-inline: var(--zid-spacing-2-5);
+}
+
+.zid-mx-3 {
+  margin-inline: var(--zid-spacing-3);
+}
+
+.zid-mx-4 {
+  margin-inline: var(--zid-spacing-4);
+}
+
+.zid-mx-5 {
+  margin-inline: var(--zid-spacing-5);
+}
+
+.zid-mx-6 {
+  margin-inline: var(--zid-spacing-6);
+}
+
+.zid-mx-8 {
+  margin-inline: var(--zid-spacing-8);
+}
+
+.zid-mx-10 {
+  margin-inline: var(--zid-spacing-10);
+}
+
+.zid-mx-12 {
+  margin-inline: var(--zid-spacing-12);
+}
+
+.zid-mx-16 {
+  margin-inline: var(--zid-spacing-16);
+}
+
+/* ============================================
+ * Margin Utilities - Vertical (Block)
+ * .zid-my-{N} applies margin to top and bottom (block for RTL)
+ * ============================================ */
+
+.zid-my-0 {
+  margin-block: var(--zid-spacing-0);
+}
+
+.zid-my-0-5 {
+  margin-block: var(--zid-spacing-0-5);
+}
+
+.zid-my-1 {
+  margin-block: var(--zid-spacing-1);
+}
+
+.zid-my-1-5 {
+  margin-block: var(--zid-spacing-1-5);
+}
+
+.zid-my-2 {
+  margin-block: var(--zid-spacing-2);
+}
+
+.zid-my-2-5 {
+  margin-block: var(--zid-spacing-2-5);
+}
+
+.zid-my-3 {
+  margin-block: var(--zid-spacing-3);
+}
+
+.zid-my-4 {
+  margin-block: var(--zid-spacing-4);
+}
+
+.zid-my-5 {
+  margin-block: var(--zid-spacing-5);
+}
+
+.zid-my-6 {
+  margin-block: var(--zid-spacing-6);
+}
+
+.zid-my-8 {
+  margin-block: var(--zid-spacing-8);
+}
+
+.zid-my-10 {
+  margin-block: var(--zid-spacing-10);
+}
+
+.zid-my-12 {
+  margin-block: var(--zid-spacing-12);
+}
+
+.zid-my-16 {
+  margin-block: var(--zid-spacing-16);
+}
+
+/* ============================================
+ * Padding Utilities - All Sides
+ * .zid-p-{N} applies padding to all sides
+ * ============================================ */
+
+.zid-p-0 {
+  padding: var(--zid-spacing-0);
+}
+
+.zid-p-0-5 {
+  padding: var(--zid-spacing-0-5);
+}
+
+.zid-p-1 {
+  padding: var(--zid-spacing-1);
+}
+
+.zid-p-1-5 {
+  padding: var(--zid-spacing-1-5);
+}
+
+.zid-p-2 {
+  padding: var(--zid-spacing-2);
+}
+
+.zid-p-2-5 {
+  padding: var(--zid-spacing-2-5);
+}
+
+.zid-p-3 {
+  padding: var(--zid-spacing-3);
+}
+
+.zid-p-4 {
+  padding: var(--zid-spacing-4);
+}
+
+.zid-p-5 {
+  padding: var(--zid-spacing-5);
+}
+
+.zid-p-6 {
+  padding: var(--zid-spacing-6);
+}
+
+.zid-p-8 {
+  padding: var(--zid-spacing-8);
+}
+
+.zid-p-10 {
+  padding: var(--zid-spacing-10);
+}
+
+.zid-p-12 {
+  padding: var(--zid-spacing-12);
+}
+
+.zid-p-16 {
+  padding: var(--zid-spacing-16);
+}
+
+/* ============================================
+ * Padding Utilities - Top (Block Start)
+ * .zid-pt-{N} applies padding to top (block-start for RTL)
+ * ============================================ */
+
+.zid-pt-0 {
+  padding-block-start: var(--zid-spacing-0);
+}
+
+.zid-pt-0-5 {
+  padding-block-start: var(--zid-spacing-0-5);
+}
+
+.zid-pt-1 {
+  padding-block-start: var(--zid-spacing-1);
+}
+
+.zid-pt-1-5 {
+  padding-block-start: var(--zid-spacing-1-5);
+}
+
+.zid-pt-2 {
+  padding-block-start: var(--zid-spacing-2);
+}
+
+.zid-pt-2-5 {
+  padding-block-start: var(--zid-spacing-2-5);
+}
+
+.zid-pt-3 {
+  padding-block-start: var(--zid-spacing-3);
+}
+
+.zid-pt-4 {
+  padding-block-start: var(--zid-spacing-4);
+}
+
+.zid-pt-5 {
+  padding-block-start: var(--zid-spacing-5);
+}
+
+.zid-pt-6 {
+  padding-block-start: var(--zid-spacing-6);
+}
+
+.zid-pt-8 {
+  padding-block-start: var(--zid-spacing-8);
+}
+
+.zid-pt-10 {
+  padding-block-start: var(--zid-spacing-10);
+}
+
+.zid-pt-12 {
+  padding-block-start: var(--zid-spacing-12);
+}
+
+.zid-pt-16 {
+  padding-block-start: var(--zid-spacing-16);
+}
+
+/* ============================================
+ * Padding Utilities - Right (Inline End)
+ * .zid-pr-{N} applies padding to right (inline-end for RTL)
+ * ============================================ */
+
+.zid-pr-0 {
+  padding-inline-end: var(--zid-spacing-0);
+}
+
+.zid-pr-0-5 {
+  padding-inline-end: var(--zid-spacing-0-5);
+}
+
+.zid-pr-1 {
+  padding-inline-end: var(--zid-spacing-1);
+}
+
+.zid-pr-1-5 {
+  padding-inline-end: var(--zid-spacing-1-5);
+}
+
+.zid-pr-2 {
+  padding-inline-end: var(--zid-spacing-2);
+}
+
+.zid-pr-2-5 {
+  padding-inline-end: var(--zid-spacing-2-5);
+}
+
+.zid-pr-3 {
+  padding-inline-end: var(--zid-spacing-3);
+}
+
+.zid-pr-4 {
+  padding-inline-end: var(--zid-spacing-4);
+}
+
+.zid-pr-5 {
+  padding-inline-end: var(--zid-spacing-5);
+}
+
+.zid-pr-6 {
+  padding-inline-end: var(--zid-spacing-6);
+}
+
+.zid-pr-8 {
+  padding-inline-end: var(--zid-spacing-8);
+}
+
+.zid-pr-10 {
+  padding-inline-end: var(--zid-spacing-10);
+}
+
+.zid-pr-12 {
+  padding-inline-end: var(--zid-spacing-12);
+}
+
+.zid-pr-16 {
+  padding-inline-end: var(--zid-spacing-16);
+}
+
+/* ============================================
+ * Padding Utilities - Bottom (Block End)
+ * .zid-pb-{N} applies padding to bottom (block-end for RTL)
+ * ============================================ */
+
+.zid-pb-0 {
+  padding-block-end: var(--zid-spacing-0);
+}
+
+.zid-pb-0-5 {
+  padding-block-end: var(--zid-spacing-0-5);
+}
+
+.zid-pb-1 {
+  padding-block-end: var(--zid-spacing-1);
+}
+
+.zid-pb-1-5 {
+  padding-block-end: var(--zid-spacing-1-5);
+}
+
+.zid-pb-2 {
+  padding-block-end: var(--zid-spacing-2);
+}
+
+.zid-pb-2-5 {
+  padding-block-end: var(--zid-spacing-2-5);
+}
+
+.zid-pb-3 {
+  padding-block-end: var(--zid-spacing-3);
+}
+
+.zid-pb-4 {
+  padding-block-end: var(--zid-spacing-4);
+}
+
+.zid-pb-5 {
+  padding-block-end: var(--zid-spacing-5);
+}
+
+.zid-pb-6 {
+  padding-block-end: var(--zid-spacing-6);
+}
+
+.zid-pb-8 {
+  padding-block-end: var(--zid-spacing-8);
+}
+
+.zid-pb-10 {
+  padding-block-end: var(--zid-spacing-10);
+}
+
+.zid-pb-12 {
+  padding-block-end: var(--zid-spacing-12);
+}
+
+.zid-pb-16 {
+  padding-block-end: var(--zid-spacing-16);
+}
+
+/* ============================================
+ * Padding Utilities - Left (Inline Start)
+ * .zid-pl-{N} applies padding to left (inline-start for RTL)
+ * ============================================ */
+
+.zid-pl-0 {
+  padding-inline-start: var(--zid-spacing-0);
+}
+
+.zid-pl-0-5 {
+  padding-inline-start: var(--zid-spacing-0-5);
+}
+
+.zid-pl-1 {
+  padding-inline-start: var(--zid-spacing-1);
+}
+
+.zid-pl-1-5 {
+  padding-inline-start: var(--zid-spacing-1-5);
+}
+
+.zid-pl-2 {
+  padding-inline-start: var(--zid-spacing-2);
+}
+
+.zid-pl-2-5 {
+  padding-inline-start: var(--zid-spacing-2-5);
+}
+
+.zid-pl-3 {
+  padding-inline-start: var(--zid-spacing-3);
+}
+
+.zid-pl-4 {
+  padding-inline-start: var(--zid-spacing-4);
+}
+
+.zid-pl-5 {
+  padding-inline-start: var(--zid-spacing-5);
+}
+
+.zid-pl-6 {
+  padding-inline-start: var(--zid-spacing-6);
+}
+
+.zid-pl-8 {
+  padding-inline-start: var(--zid-spacing-8);
+}
+
+.zid-pl-10 {
+  padding-inline-start: var(--zid-spacing-10);
+}
+
+.zid-pl-12 {
+  padding-inline-start: var(--zid-spacing-12);
+}
+
+.zid-pl-16 {
+  padding-inline-start: var(--zid-spacing-16);
+}
+
+/* ============================================
+ * Padding Utilities - Horizontal (Inline)
+ * .zid-px-{N} applies padding to left and right (inline for RTL)
+ * ============================================ */
+
+.zid-px-0 {
+  padding-inline: var(--zid-spacing-0);
+}
+
+.zid-px-0-5 {
+  padding-inline: var(--zid-spacing-0-5);
+}
+
+.zid-px-1 {
+  padding-inline: var(--zid-spacing-1);
+}
+
+.zid-px-1-5 {
+  padding-inline: var(--zid-spacing-1-5);
+}
+
+.zid-px-2 {
+  padding-inline: var(--zid-spacing-2);
+}
+
+.zid-px-2-5 {
+  padding-inline: var(--zid-spacing-2-5);
+}
+
+.zid-px-3 {
+  padding-inline: var(--zid-spacing-3);
+}
+
+.zid-px-4 {
+  padding-inline: var(--zid-spacing-4);
+}
+
+.zid-px-5 {
+  padding-inline: var(--zid-spacing-5);
+}
+
+.zid-px-6 {
+  padding-inline: var(--zid-spacing-6);
+}
+
+.zid-px-8 {
+  padding-inline: var(--zid-spacing-8);
+}
+
+.zid-px-10 {
+  padding-inline: var(--zid-spacing-10);
+}
+
+.zid-px-12 {
+  padding-inline: var(--zid-spacing-12);
+}
+
+.zid-px-16 {
+  padding-inline: var(--zid-spacing-16);
+}
+
+/* ============================================
+ * Padding Utilities - Vertical (Block)
+ * .zid-py-{N} applies padding to top and bottom (block for RTL)
+ * ============================================ */
+
+.zid-py-0 {
+  padding-block: var(--zid-spacing-0);
+}
+
+.zid-py-0-5 {
+  padding-block: var(--zid-spacing-0-5);
+}
+
+.zid-py-1 {
+  padding-block: var(--zid-spacing-1);
+}
+
+.zid-py-1-5 {
+  padding-block: var(--zid-spacing-1-5);
+}
+
+.zid-py-2 {
+  padding-block: var(--zid-spacing-2);
+}
+
+.zid-py-2-5 {
+  padding-block: var(--zid-spacing-2-5);
+}
+
+.zid-py-3 {
+  padding-block: var(--zid-spacing-3);
+}
+
+.zid-py-4 {
+  padding-block: var(--zid-spacing-4);
+}
+
+.zid-py-5 {
+  padding-block: var(--zid-spacing-5);
+}
+
+.zid-py-6 {
+  padding-block: var(--zid-spacing-6);
+}
+
+.zid-py-8 {
+  padding-block: var(--zid-spacing-8);
+}
+
+.zid-py-10 {
+  padding-block: var(--zid-spacing-10);
+}
+
+.zid-py-12 {
+  padding-block: var(--zid-spacing-12);
+}
+
+.zid-py-16 {
+  padding-block: var(--zid-spacing-16);
+}

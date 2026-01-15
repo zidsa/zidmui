@@ -1,0 +1,469 @@
+/**
+ * Zid Design System - Button Component
+ *
+ * This file contains all button-related styles for the Zid design system.
+ * Partners can use these classes to create buttons matching Zid's design
+ * without requiring MUI JavaScript runtime.
+ *
+ * Class naming convention: .zid-button--{modifier}
+ *
+ * Usage:
+ * <button class="zid-button zid-button--contained zid-button--primary zid-button--medium">
+ *   Button Text
+ * </button>
+ *
+ * Requirements: 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 10.1, 10.2, 12.1
+ */
+
+/* ============================================
+ * Base Button Styles
+ * Common styles applied to all buttons
+ * ============================================ */
+.zid-button {
+  /* Typography */
+  font-family: var(--zid-font-family);
+  font-weight: var(--zid-font-weight-regular);
+  text-transform: none;
+  text-align: center;
+  white-space: nowrap;
+
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--zid-spacing-1);
+
+  /* Box model */
+  border-width: 1px;
+  border-style: solid;
+  border-radius: var(--zid-radius-full);
+
+  /* Text overflow handling */
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  /* Interaction */
+  cursor: pointer;
+  user-select: none;
+
+  /* Transitions */
+  transition-property: background-color, border-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+/* ============================================
+ * Size Modifiers
+ * Define button dimensions for each size variant
+ * ============================================ */
+
+/* Small size */
+.zid-button--small {
+  min-width: var(--zid-spacing-9, 36px);
+  min-height: var(--zid-spacing-4);
+  max-height: var(--zid-spacing-4);
+  padding-block: var(--zid-spacing-0-5);
+  padding-inline: var(--zid-spacing-4);
+  font-size: var(--zid-spacing-1-5, 12px);
+  line-height: var(--zid-spacing-2-5, 11px);
+}
+
+/* Medium size (default) */
+.zid-button--medium {
+  min-width: var(--zid-spacing-12, 52px);
+  min-height: var(--zid-spacing-5, 40px);
+  max-height: var(--zid-spacing-5, 40px);
+  padding-block: var(--zid-spacing-1, 7px);
+  padding-inline: var(--zid-spacing-4);
+  font-size: var(--zid-font-size-body2);
+  line-height: var(--zid-spacing-3);
+}
+
+/* Large size */
+.zid-button--large {
+  min-width: var(--zid-spacing-16, 61px);
+  min-height: var(--zid-spacing-6);
+  max-height: var(--zid-spacing-6);
+  padding-block: var(--zid-spacing-1-5, 10px);
+  padding-inline: var(--zid-spacing-4);
+  font-size: var(--zid-spacing-4, 16px);
+  line-height: var(--zid-spacing-3, 13px);
+}
+
+/* ============================================
+ * Variant Modifiers - Contained
+ * Filled button with solid background
+ * Base contained styles are applied via color modifiers below
+ * ============================================ */
+
+/* ============================================
+ * Variant Modifiers - Outlined
+ * Button with transparent background and visible border
+ * ============================================ */
+.zid-button--outlined {
+  background-color: transparent;
+}
+
+/* ============================================
+ * Variant Modifiers - Text
+ * Button with no background or border
+ * ============================================ */
+.zid-button--text {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/* ============================================
+ * Color Modifiers - Primary
+ * Purple/brand colored button
+ * ============================================ */
+
+/* Primary Contained */
+.zid-button--primary.zid-button--contained {
+  background-color: var(--zid-color-button-primary-contained);
+  color: var(--zid-color-button-primary-text);
+  border-color: var(--zid-color-button-primary-contained);
+}
+
+.zid-button--primary.zid-button--contained:hover {
+  background-color: var(--zid-color-button-primary-hover);
+  border-color: var(--zid-color-button-primary-hover);
+}
+
+.zid-button--primary.zid-button--contained:focus-visible {
+  background-color: var(--zid-color-button-primary-focused);
+  outline: 2px solid var(--zid-color-primary-dark);
+  outline-offset: 2px;
+}
+
+.zid-button--primary.zid-button--contained:active {
+  background-color: var(--zid-color-button-primary-pressed);
+}
+
+.zid-button--primary.zid-button--contained:disabled,
+.zid-button--primary.zid-button--contained.zid-button--disabled {
+  background-color: var(--zid-color-button-primary-disabled);
+  border-color: var(--zid-color-button-disabled-border);
+  color: var(--zid-color-button-disabled-text);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Primary Outlined */
+.zid-button--primary.zid-button--outlined {
+  background-color: transparent;
+  color: var(--zid-color-button-primary-contained);
+  border-color: var(--zid-color-button-primary-border);
+}
+
+.zid-button--primary.zid-button--outlined:hover {
+  background-color: var(--zid-color-primary-state-hover);
+}
+
+.zid-button--primary.zid-button--outlined:focus-visible {
+  outline: 2px solid var(--zid-color-primary-dark);
+  outline-offset: 2px;
+}
+
+.zid-button--primary.zid-button--outlined:active {
+  background-color: var(--zid-color-primary-state-selected);
+}
+
+.zid-button--primary.zid-button--outlined:disabled,
+.zid-button--primary.zid-button--outlined.zid-button--disabled {
+  background-color: transparent;
+  border-color: var(--zid-color-button-disabled-border);
+  color: var(--zid-color-button-disabled-text);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Primary Text */
+.zid-button--primary.zid-button--text {
+  background-color: transparent;
+  color: var(--zid-color-button-primary-contained);
+  border-color: transparent;
+}
+
+.zid-button--primary.zid-button--text:hover {
+  background-color: var(--zid-color-primary-state-hover);
+}
+
+.zid-button--primary.zid-button--text:focus-visible {
+  outline: 2px solid var(--zid-color-primary-dark);
+  outline-offset: 2px;
+}
+
+.zid-button--primary.zid-button--text:active {
+  background-color: var(--zid-color-primary-state-selected);
+}
+
+.zid-button--primary.zid-button--text:disabled,
+.zid-button--primary.zid-button--text.zid-button--disabled {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--zid-color-button-disabled-text);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ============================================
+ * Color Modifiers - Secondary
+ * Neutral/gray colored button
+ * ============================================ */
+
+/* Secondary Contained */
+.zid-button--secondary.zid-button--contained {
+  background-color: transparent;
+  color: var(--zid-color-button-secondary-text);
+  border-color: var(--zid-color-button-secondary-border);
+}
+
+.zid-button--secondary.zid-button--contained:hover {
+  background-color: var(--zid-color-button-secondary-hover);
+}
+
+.zid-button--secondary.zid-button--contained:focus-visible {
+  background-color: transparent;
+  border-color: var(--zid-color-button-secondary-border);
+  outline: 2px solid var(--zid-color-primary-dark);
+  outline-offset: 2px;
+}
+
+.zid-button--secondary.zid-button--contained:active {
+  background-color: var(--zid-color-button-secondary-pressed);
+}
+
+.zid-button--secondary.zid-button--contained:disabled,
+.zid-button--secondary.zid-button--contained.zid-button--disabled {
+  background-color: transparent;
+  border-color: var(--zid-color-button-disabled-border);
+  color: var(--zid-color-button-disabled-text);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Secondary Outlined */
+.zid-button--secondary.zid-button--outlined {
+  background-color: transparent;
+  color: var(--zid-color-button-secondary-text);
+  border-color: var(--zid-color-button-secondary-border);
+}
+
+.zid-button--secondary.zid-button--outlined:hover {
+  background-color: var(--zid-color-button-secondary-hover);
+}
+
+.zid-button--secondary.zid-button--outlined:focus-visible {
+  background-color: transparent;
+  border-color: var(--zid-color-button-secondary-border);
+  outline: 2px solid var(--zid-color-primary-dark);
+  outline-offset: 2px;
+}
+
+.zid-button--secondary.zid-button--outlined:active {
+  background-color: var(--zid-color-button-secondary-pressed);
+}
+
+.zid-button--secondary.zid-button--outlined:disabled,
+.zid-button--secondary.zid-button--outlined.zid-button--disabled {
+  background-color: transparent;
+  border-color: var(--zid-color-button-disabled-border);
+  color: var(--zid-color-button-disabled-text);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Secondary Text */
+.zid-button--secondary.zid-button--text {
+  background-color: transparent;
+  color: var(--zid-color-button-secondary-text);
+  border-color: transparent;
+}
+
+.zid-button--secondary.zid-button--text:hover {
+  background-color: var(--zid-color-button-secondary-hover);
+}
+
+.zid-button--secondary.zid-button--text:focus-visible {
+  background-color: transparent;
+  border-color: transparent;
+  outline: 2px solid var(--zid-color-primary-dark);
+  outline-offset: 2px;
+}
+
+.zid-button--secondary.zid-button--text:active {
+  background-color: var(--zid-color-button-secondary-pressed);
+}
+
+.zid-button--secondary.zid-button--text:disabled,
+.zid-button--secondary.zid-button--text.zid-button--disabled {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--zid-color-button-disabled-text);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ============================================
+ * Color Modifiers - Error
+ * Red/destructive colored button
+ * ============================================ */
+
+/* Error Contained */
+.zid-button--error.zid-button--contained {
+  background-color: var(--zid-color-button-error-contained);
+  color: var(--zid-color-button-error-text);
+  border-color: var(--zid-color-button-error-border);
+}
+
+.zid-button--error.zid-button--contained:hover {
+  background-color: var(--zid-color-button-error-hover);
+}
+
+.zid-button--error.zid-button--contained:focus-visible {
+  background-color: var(--zid-color-button-error-focused);
+  color: var(--zid-color-base-white);
+  border-color: transparent;
+  outline: 2px solid var(--zid-color-error-dark);
+  outline-offset: 2px;
+}
+
+.zid-button--error.zid-button--contained:active {
+  background-color: var(--zid-color-button-error-pressed);
+  border-color: var(--zid-color-button-error-active-border);
+}
+
+.zid-button--error.zid-button--contained:disabled,
+.zid-button--error.zid-button--contained.zid-button--disabled {
+  background-color: var(--zid-color-button-secondary-disabled);
+  border-color: var(--zid-color-button-disabled-border);
+  color: var(--zid-color-button-disabled-text);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Error Outlined */
+.zid-button--error.zid-button--outlined {
+  background-color: transparent;
+  color: var(--zid-color-button-error-outlined-text);
+  border-color: var(--zid-color-button-error-border);
+}
+
+.zid-button--error.zid-button--outlined:hover {
+  background-color: var(--zid-color-button-error-outlined-hover);
+}
+
+.zid-button--error.zid-button--outlined:focus-visible {
+  background-color: transparent;
+  outline: 2px solid var(--zid-color-error-dark);
+  outline-offset: 2px;
+}
+
+.zid-button--error.zid-button--outlined:active {
+  background-color: var(--zid-color-button-error-pressed);
+  border-color: var(--zid-color-button-error-border);
+}
+
+.zid-button--error.zid-button--outlined:disabled,
+.zid-button--error.zid-button--outlined.zid-button--disabled {
+  background-color: transparent;
+  border-color: var(--zid-color-button-disabled-border);
+  color: var(--zid-color-button-disabled-text);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Error Text */
+.zid-button--error.zid-button--text {
+  background-color: transparent;
+  color: var(--zid-color-button-error-outlined-text);
+  border-color: transparent;
+}
+
+.zid-button--error.zid-button--text:hover {
+  background-color: var(--zid-color-button-error-outlined-hover);
+}
+
+.zid-button--error.zid-button--text:focus-visible {
+  background-color: transparent;
+  outline: 2px solid var(--zid-color-error-dark);
+  outline-offset: 2px;
+}
+
+.zid-button--error.zid-button--text:active {
+  background-color: var(--zid-color-button-error-pressed);
+}
+
+.zid-button--error.zid-button--text:disabled,
+.zid-button--error.zid-button--text.zid-button--disabled {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--zid-color-button-disabled-text);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ============================================
+ * Icon Support
+ * Styles for buttons with icons
+ * ============================================ */
+.zid-button__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.zid-button__icon--start {
+  margin-inline-end: var(--zid-spacing-1);
+}
+
+.zid-button__icon--end {
+  margin-inline-start: var(--zid-spacing-1);
+}
+
+/* Icon sizes based on button size */
+.zid-button--small .zid-button__icon {
+  width: var(--zid-spacing-4);
+  height: var(--zid-spacing-4);
+}
+
+.zid-button--medium .zid-button__icon {
+  width: var(--zid-spacing-5, 20px);
+  height: var(--zid-spacing-5, 20px);
+}
+
+.zid-button--large .zid-button__icon {
+  width: var(--zid-spacing-6);
+  height: var(--zid-spacing-6);
+}
+
+/* ============================================
+ * Full Width Modifier
+ * Button that spans full container width
+ * ============================================ */
+.zid-button--full-width {
+  width: 100%;
+}
+
+/* ============================================
+ * Loading State
+ * Styles for buttons in loading state
+ * ============================================ */
+.zid-button--loading {
+  position: relative;
+  color: transparent;
+  pointer-events: none;
+}
+
+.zid-button--loading .zid-button__text {
+  visibility: hidden;
+}
+
+.zid-button__loader {
+  position: absolute;
+  inset-inline-start: 50%;
+  inset-block-start: 50%;
+  transform: translate(-50%, -50%);
+}

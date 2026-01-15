@@ -1,0 +1,111 @@
+/**
+ * Zid Design System - Typography Tokens
+ *
+ * This file contains all typography-related CSS custom properties extracted from
+ * the Zid MUI theme. Partners can override these values by defining the same
+ * custom properties in their own stylesheets.
+ *
+ * Token naming convention: --zid-{category}-{property}[-{variant}]
+ *
+ * Source: src/theme/typography.ts
+ */
+
+:root {
+  /* ============================================
+   * Font Family
+   * Primary font stack for the design system
+   * ============================================ */
+  --zid-font-family: 'IBM Plex Sans Arabic', -apple-system, Helvetica, Arial, sans-serif;
+
+  /* ============================================
+   * Font Weights
+   * Available font weight values
+   * ============================================ */
+  --zid-font-weight-regular: 400;
+  --zid-font-weight-medium: 500;
+
+  /* ============================================
+   * Font Sizes - Headings
+   * Typography scale for heading elements
+   * ============================================ */
+  --zid-font-size-h1: 6rem;
+  --zid-font-size-h2: 3.75rem;
+  --zid-font-size-h3: 3rem;
+  --zid-font-size-h4: 2.125rem;
+  --zid-font-size-h5: 1.5rem;
+  --zid-font-size-h6: 1.25rem;
+
+  /* ============================================
+   * Font Sizes - Body & Other Variants
+   * Typography scale for body text and other variants
+   * ============================================ */
+  --zid-font-size-body1: 1rem;
+  --zid-font-size-body2: 0.875rem;
+  --zid-font-size-subtitle1: 1rem;
+  --zid-font-size-subtitle2: 0.875rem;
+  --zid-font-size-caption: 0.75rem;
+  --zid-font-size-overline: 0.75rem;
+
+  /* ============================================
+   * Letter Spacing - Headings
+   * Character spacing for heading elements
+   * ============================================ */
+  --zid-letter-spacing-h1: -1.5px;
+  --zid-letter-spacing-h2: -0.5px;
+  --zid-letter-spacing-h3: 0;
+  --zid-letter-spacing-h4: 0.25px;
+  --zid-letter-spacing-h5: 0;
+  --zid-letter-spacing-h6: 0.15px;
+
+  /* ============================================
+   * Letter Spacing - Body & Other Variants
+   * Character spacing for body text and other variants
+   * ============================================ */
+  --zid-letter-spacing-body1: 0.15px;
+  --zid-letter-spacing-body2: 0.17px;
+  --zid-letter-spacing-subtitle1: 0.15px;
+  --zid-letter-spacing-subtitle2: 0.1px;
+  --zid-letter-spacing-caption: 0.4px;
+  --zid-letter-spacing-overline: 1px;
+
+  /* ============================================
+   * Line Heights - Headings
+   * Line height values for heading elements
+   * Based on MUI default typography scale
+   * ============================================ */
+  --zid-line-height-h1: 1.167;
+  --zid-line-height-h2: 1.2;
+  --zid-line-height-h3: 1.167;
+  --zid-line-height-h4: 1.235;
+  --zid-line-height-h5: 1.334;
+  --zid-line-height-h6: 1.6;
+
+  /* ============================================
+   * Line Heights - Body & Other Variants
+   * Line height values for body text and other variants
+   * Based on MUI default typography scale
+   * ============================================ */
+  --zid-line-height-body1: 1.5;
+  --zid-line-height-body2: 1.43;
+  --zid-line-height-subtitle1: 1.75;
+  --zid-line-height-subtitle2: 1.57;
+  --zid-line-height-caption: 1.66;
+  --zid-line-height-overline: 2.66;
+
+  /* ============================================
+   * Font Weight per Variant
+   * Specific font weights for each typography variant
+   * ============================================ */
+  --zid-font-weight-h1: 400;
+  --zid-font-weight-h2: 400;
+  --zid-font-weight-h3: 400;
+  --zid-font-weight-h4: 500;
+  --zid-font-weight-h5: 500;
+  --zid-font-weight-h6: 500;
+  --zid-font-weight-body1: 400;
+  --zid-font-weight-body2: 400;
+  --zid-font-weight-subtitle1: 500;
+  --zid-font-weight-subtitle2: 500;
+  --zid-font-weight-caption: 400;
+  --zid-font-weight-overline: 400;
+}

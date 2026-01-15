@@ -1,0 +1,107 @@
+/**
+ * Zid Design System - Root Styles
+ *
+ * This file imports all token files and defines base styles for the design system.
+ * It serves as the foundation layer that must be imported before any component
+ * or utility styles.
+ *
+ * Contents:
+ * 1. Token imports (colors, typography, spacing, shadows)
+ * 2. CSS reset/normalize basics
+ * 3. Base element styles
+ */
+
+/* ============================================
+ * Token Imports
+ * Import all design token files
+ * ============================================ */
+@import './tokens/colors.css';
+@import './tokens/typography.css';
+@import './tokens/spacing.css';
+@import './tokens/shadows.css';
+
+/* ============================================
+ * CSS Reset / Normalize Basics
+ * Minimal reset for consistent cross-browser rendering
+ * ============================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ============================================
+ * Base Element Styles
+ * Default styles applied to the document
+ * ============================================ */
+
+:root {
+  /* Apply the design system font family as the default */
+  font-family: var(--zid-font-family);
+}
+
+html {
+  /* Prevent font size inflation on mobile */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-body1);
+  font-weight: var(--zid-font-weight-regular);
+  line-height: var(--zid-line-height-body1);
+  color: var(--zid-color-text-primary);
+  background-color: var(--zid-color-background-default);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove default margins from common elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Ensure images are responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Remove default button styles for easier customization */
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+/* Remove default input styles for easier customization */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Ensure focus styles are visible for accessibility */
+:focus-visible {
+  outline: 2px solid var(--zid-color-primary-main);
+  outline-offset: 2px;
+}
+
+/* Remove focus outline for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}

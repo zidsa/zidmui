@@ -1,0 +1,152 @@
+/**
+ * Zid Design System - Typography Utility Classes
+ *
+ * This file contains typography utility classes for applying consistent
+ * text styles without custom CSS. All classes use the `zid-` prefix
+ * and reference design tokens.
+ *
+ * Usage:
+ * <h1 class="zid-typography-h1">Heading 1</h1>
+ * <p class="zid-typography-body1 zid-text-secondary">Body text</p>
+ *
+ * Source: src/theme/typography.ts
+ * Requirements: 8.1, 8.2, 8.3, 10.1
+ */
+
+/* ============================================
+ * Typography Variant Classes - Headings
+ * Apply complete typography styles for heading variants
+ * ============================================ */
+
+.zid-typography-h1 {
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-h1);
+  font-weight: var(--zid-font-weight-h1);
+  letter-spacing: var(--zid-letter-spacing-h1);
+  line-height: var(--zid-line-height-h1);
+}
+
+.zid-typography-h2 {
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-h2);
+  font-weight: var(--zid-font-weight-h2);
+  letter-spacing: var(--zid-letter-spacing-h2);
+  line-height: var(--zid-line-height-h2);
+}
+
+.zid-typography-h3 {
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-h3);
+  font-weight: var(--zid-font-weight-h3);
+  letter-spacing: var(--zid-letter-spacing-h3);
+  line-height: var(--zid-line-height-h3);
+}
+
+.zid-typography-h4 {
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-h4);
+  font-weight: var(--zid-font-weight-h4);
+  letter-spacing: var(--zid-letter-spacing-h4);
+  line-height: var(--zid-line-height-h4);
+}
+
+.zid-typography-h5 {
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-h5);
+  font-weight: var(--zid-font-weight-h5);
+  letter-spacing: var(--zid-letter-spacing-h5);
+  line-height: var(--zid-line-height-h5);
+}
+
+.zid-typography-h6 {
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-h6);
+  font-weight: var(--zid-font-weight-h6);
+  letter-spacing: var(--zid-letter-spacing-h6);
+  line-height: var(--zid-line-height-h6);
+}
+
+/* ============================================
+ * Typography Variant Classes - Body
+ * Apply complete typography styles for body text variants
+ * ============================================ */
+
+.zid-typography-body1 {
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-body1);
+  font-weight: var(--zid-font-weight-body1);
+  letter-spacing: var(--zid-letter-spacing-body1);
+  line-height: var(--zid-line-height-body1);
+}
+
+.zid-typography-body2 {
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-body2);
+  font-weight: var(--zid-font-weight-body2);
+  letter-spacing: var(--zid-letter-spacing-body2);
+  line-height: var(--zid-line-height-body2);
+}
+
+/* ============================================
+ * Typography Variant Classes - Subtitle
+ * Apply complete typography styles for subtitle variants
+ * ============================================ */
+
+.zid-typography-subtitle1 {
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-subtitle1);
+  font-weight: var(--zid-font-weight-subtitle1);
+  letter-spacing: var(--zid-letter-spacing-subtitle1);
+  line-height: var(--zid-line-height-subtitle1);
+}
+
+.zid-typography-subtitle2 {
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-subtitle2);
+  font-weight: var(--zid-font-weight-subtitle2);
+  letter-spacing: var(--zid-letter-spacing-subtitle2);
+  line-height: var(--zid-line-height-subtitle2);
+}
+
+/* ============================================
+ * Typography Variant Classes - Other
+ * Apply complete typography styles for caption and overline
+ * ============================================ */
+
+.zid-typography-caption {
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-caption);
+  font-weight: var(--zid-font-weight-caption);
+  letter-spacing: var(--zid-letter-spacing-caption);
+  line-height: var(--zid-line-height-caption);
+}
+
+.zid-typography-overline {
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-overline);
+  font-weight: var(--zid-font-weight-overline);
+  letter-spacing: var(--zid-letter-spacing-overline);
+  line-height: var(--zid-line-height-overline);
+  text-transform: uppercase;
+}
+
+/* ============================================
+ * Text Color Utility Classes
+ * Apply semantic text colors
+ * ============================================ */
+
+.zid-text-primary {
+  color: var(--zid-color-text-primary);
+}
+
+.zid-text-secondary {
+  color: var(--zid-color-text-secondary);
+}
+
+.zid-text-tertiary {
+  color: var(--zid-color-text-tertiary);
+}
+
+.zid-text-disabled {
+  color: var(--zid-color-text-disabled);
+}

@@ -1,0 +1,40 @@
+/**
+ * Zid Partner CSS Design System
+ * Entry point for all partner CSS styles
+ *
+ * This file imports all CSS files in the correct order:
+ * 1. Root styles (includes tokens and CSS reset)
+ * 2. Component styles
+ * 3. Utility classes
+ *
+ * Usage:
+ * Import this single file to get the complete design system:
+ * @import 'path/to/partners/index.css';
+ *
+ * Or in HTML:
+ * <link rel="stylesheet" href="path/to/partners/index.css">
+ */
+
+/* ============================================
+ * Root Styles
+ * Imports all tokens and base styles
+ * This must be imported first
+ * ============================================ */
+@import './root.css';
+
+/* ============================================
+ * Component Styles
+ * Pre-built component styles matching Zid's design
+ * ============================================ */
+@import './components/button.css';
+@import './components/input.css';
+@import './components/chip.css';
+@import './components/alert.css';
+@import './components/tooltip.css';
+
+/* ============================================
+ * Utility Classes
+ * Helper classes for typography and spacing
+ * ============================================ */
+@import './utilities/typography.css';
+@import './utilities/spacing.css';

@@ -1,0 +1,486 @@
+/**
+ * Zid Design System - Chip Component
+ *
+ * This file contains all chip-related styles for the Zid design system.
+ * Partners can use these classes to create chips/tags matching Zid's design
+ * without requiring MUI JavaScript runtime.
+ *
+ * Class naming convention: .zid-chip--{modifier}
+ *
+ * Usage:
+ * <span class="zid-chip zid-chip--filled zid-chip--primary zid-chip--medium">
+ *   Chip Label
+ * </span>
+ *
+ * With delete icon:
+ * <span class="zid-chip zid-chip--filled zid-chip--primary zid-chip--medium">
+ *   Chip Label
+ *   <button class="zid-chip__delete-icon" aria-label="Remove">×</button>
+ * </span>
+ *
+ * Requirements: 5.1, 5.2, 5.3, 5.4, 5.5, 10.1, 10.2
+ */
+
+/* ============================================
+ * Base Chip Styles
+ * Common styles applied to all chips
+ * ============================================ */
+.zid-chip {
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--zid-spacing-1);
+  min-width: var(--zid-spacing-8);
+
+  /* Typography */
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-caption);
+  font-weight: var(--zid-font-weight-regular);
+  line-height: 1.125rem;
+
+  /* Box model */
+  border-width: 1px;
+  border-style: solid;
+  border-radius: var(--zid-radius-full);
+
+  /* Text overflow handling */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  /* Transitions */
+  transition-property: background-color, border-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+/* ============================================
+ * Size Modifiers
+ * Define chip dimensions for each size variant
+ * ============================================ */
+
+/* Small size */
+.zid-chip--small {
+  min-height: var(--zid-spacing-2);
+  padding-block: var(--zid-spacing-0-5);
+  padding-inline: var(--zid-spacing-2);
+}
+
+/* Medium size (default) */
+.zid-chip--medium {
+  min-height: var(--zid-spacing-4);
+  padding-block: var(--zid-spacing-1);
+  padding-inline: var(--zid-spacing-2);
+}
+
+/* ============================================
+ * Variant Modifiers - Filled
+ * Chip with solid background
+ * ============================================ */
+.zid-chip--filled {
+  border-color: transparent;
+}
+
+/* ============================================
+ * Variant Modifiers - Outlined
+ * Chip with transparent background and visible border
+ * ============================================ */
+.zid-chip--outlined {
+  background-color: transparent;
+}
+
+/* ============================================
+ * Color Modifiers - Default
+ * Neutral/gray colored chip
+ * ============================================ */
+
+/* Default Filled */
+.zid-chip--default.zid-chip--filled {
+  background-color: var(--zid-color-neutrals-100);
+  border-color: transparent;
+  color: var(--zid-color-text-primary);
+}
+
+/* Default Outlined */
+.zid-chip--default.zid-chip--outlined {
+  background-color: transparent;
+  border-color: var(--zid-color-neutrals-300);
+  color: var(--zid-color-text-primary);
+}
+
+/* ============================================
+ * Color Modifiers - Primary
+ * Purple/brand colored chip
+ * ============================================ */
+
+/* Primary Filled */
+.zid-chip--primary.zid-chip--filled {
+  background-color: var(--zid-color-primary-200);
+  border-color: transparent;
+  color: var(--zid-color-primary-1000);
+}
+
+/* Primary Outlined */
+.zid-chip--primary.zid-chip--outlined {
+  background-color: transparent;
+  border-color: var(--zid-color-primary-400);
+  color: var(--zid-color-primary-main);
+}
+
+/* ============================================
+ * Color Modifiers - Secondary
+ * Secondary colored chip
+ * ============================================ */
+
+/* Secondary Filled */
+.zid-chip--secondary.zid-chip--filled {
+  background-color: var(--zid-color-secondary-200);
+  border-color: transparent;
+  color: var(--zid-color-secondary-main);
+}
+
+/* Secondary Outlined */
+.zid-chip--secondary.zid-chip--outlined {
+  background-color: transparent;
+  border-color: var(--zid-color-secondary-300);
+  color: var(--zid-color-secondary-main);
+}
+
+/* ============================================
+ * Color Modifiers - Error
+ * Red/error colored chip
+ * ============================================ */
+
+/* Error Filled */
+.zid-chip--error.zid-chip--filled {
+  background-color: var(--zid-color-alert-error-background);
+  border-color: transparent;
+  color: var(--zid-color-alert-error-color);
+}
+
+/* Error Outlined */
+.zid-chip--error.zid-chip--outlined {
+  background-color: transparent;
+  border-color: var(--zid-color-alert-error-border);
+  color: var(--zid-color-error-main);
+}
+
+/* ============================================
+ * Color Modifiers - Warning
+ * Yellow/warning colored chip
+ * ============================================ */
+
+/* Warning Filled */
+.zid-chip--warning.zid-chip--filled {
+  background-color: var(--zid-color-alert-warning-background);
+  border-color: transparent;
+  color: var(--zid-color-alert-warning-color);
+}
+
+/* Warning Outlined */
+.zid-chip--warning.zid-chip--outlined {
+  background-color: transparent;
+  border-color: var(--zid-color-alert-warning-border);
+  color: var(--zid-color-warning-dark);
+}
+
+/* ============================================
+ * Color Modifiers - Info
+ * Blue/info colored chip
+ * ============================================ */
+
+/* Info Filled */
+.zid-chip--info.zid-chip--filled {
+  background-color: var(--zid-color-alert-info-background);
+  border-color: transparent;
+  color: var(--zid-color-alert-info-color);
+}
+
+/* Info Outlined */
+.zid-chip--info.zid-chip--outlined {
+  background-color: transparent;
+  border-color: var(--zid-color-alert-info-border);
+  color: var(--zid-color-info-dark);
+}
+
+/* ============================================
+ * Color Modifiers - Success
+ * Green/success colored chip
+ * ============================================ */
+
+/* Success Filled */
+.zid-chip--success.zid-chip--filled {
+  background-color: var(--zid-color-alert-success-background);
+  border-color: transparent;
+  color: var(--zid-color-alert-success-color);
+}
+
+/* Success Outlined */
+.zid-chip--success.zid-chip--outlined {
+  background-color: transparent;
+  border-color: var(--zid-color-alert-success-border);
+  color: var(--zid-color-success-dark);
+}
+
+/* ============================================
+ * Clickable State
+ * Applied when chip is interactive/clickable
+ * ============================================ */
+.zid-chip--clickable {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Clickable Default Filled - Hover */
+.zid-chip--clickable.zid-chip--default.zid-chip--filled:hover {
+  background-color: var(--zid-color-neutrals-200);
+}
+
+/* Clickable Default Filled - Focus */
+.zid-chip--clickable.zid-chip--default.zid-chip--filled:focus-visible {
+  outline: 2px solid var(--zid-color-neutrals-500);
+  outline-offset: 2px;
+}
+
+/* Clickable Default Outlined - Hover */
+.zid-chip--clickable.zid-chip--default.zid-chip--outlined:hover {
+  background-color: var(--zid-color-action-hover);
+}
+
+/* Clickable Default Outlined - Focus */
+.zid-chip--clickable.zid-chip--default.zid-chip--outlined:focus-visible {
+  outline: 2px solid var(--zid-color-neutrals-500);
+  outline-offset: 2px;
+}
+
+/* Clickable Primary Filled - Hover */
+.zid-chip--clickable.zid-chip--primary.zid-chip--filled:hover {
+  background-color: var(--zid-color-primary-300);
+}
+
+/* Clickable Primary Filled - Focus */
+.zid-chip--clickable.zid-chip--primary.zid-chip--filled:focus-visible {
+  outline: 2px solid var(--zid-color-primary-dark);
+  outline-offset: 2px;
+}
+
+/* Clickable Primary Outlined - Hover */
+.zid-chip--clickable.zid-chip--primary.zid-chip--outlined:hover {
+  background-color: var(--zid-color-primary-state-hover);
+}
+
+/* Clickable Primary Outlined - Focus */
+.zid-chip--clickable.zid-chip--primary.zid-chip--outlined:focus-visible {
+  outline: 2px solid var(--zid-color-primary-dark);
+  outline-offset: 2px;
+}
+
+/* Clickable Secondary Filled - Hover */
+.zid-chip--clickable.zid-chip--secondary.zid-chip--filled:hover {
+  background-color: var(--zid-color-secondary-300);
+}
+
+/* Clickable Secondary Filled - Focus */
+.zid-chip--clickable.zid-chip--secondary.zid-chip--filled:focus-visible {
+  outline: 2px solid var(--zid-color-secondary-dark);
+  outline-offset: 2px;
+}
+
+/* Clickable Secondary Outlined - Hover */
+.zid-chip--clickable.zid-chip--secondary.zid-chip--outlined:hover {
+  background-color: var(--zid-color-secondary-state-hover);
+}
+
+/* Clickable Secondary Outlined - Focus */
+.zid-chip--clickable.zid-chip--secondary.zid-chip--outlined:focus-visible {
+  outline: 2px solid var(--zid-color-secondary-dark);
+  outline-offset: 2px;
+}
+
+/* Clickable Error Filled - Hover */
+.zid-chip--clickable.zid-chip--error.zid-chip--filled:hover {
+  background-color: var(--zid-color-red-200);
+}
+
+/* Clickable Error Filled - Focus */
+.zid-chip--clickable.zid-chip--error.zid-chip--filled:focus-visible {
+  outline: 2px solid var(--zid-color-error-dark);
+  outline-offset: 2px;
+}
+
+/* Clickable Error Outlined - Hover */
+.zid-chip--clickable.zid-chip--error.zid-chip--outlined:hover {
+  background-color: var(--zid-color-error-state-hover);
+}
+
+/* Clickable Error Outlined - Focus */
+.zid-chip--clickable.zid-chip--error.zid-chip--outlined:focus-visible {
+  outline: 2px solid var(--zid-color-error-dark);
+  outline-offset: 2px;
+}
+
+/* Clickable Warning Filled - Hover */
+.zid-chip--clickable.zid-chip--warning.zid-chip--filled:hover {
+  background-color: var(--zid-color-yellow-300);
+}
+
+/* Clickable Warning Filled - Focus */
+.zid-chip--clickable.zid-chip--warning.zid-chip--filled:focus-visible {
+  outline: 2px solid var(--zid-color-warning-dark);
+  outline-offset: 2px;
+}
+
+/* Clickable Warning Outlined - Hover */
+.zid-chip--clickable.zid-chip--warning.zid-chip--outlined:hover {
+  background-color: var(--zid-color-warning-state-hover);
+}
+
+/* Clickable Warning Outlined - Focus */
+.zid-chip--clickable.zid-chip--warning.zid-chip--outlined:focus-visible {
+  outline: 2px solid var(--zid-color-warning-dark);
+  outline-offset: 2px;
+}
+
+/* Clickable Info Filled - Hover */
+.zid-chip--clickable.zid-chip--info.zid-chip--filled:hover {
+  background-color: var(--zid-color-blue-200);
+}
+
+/* Clickable Info Filled - Focus */
+.zid-chip--clickable.zid-chip--info.zid-chip--filled:focus-visible {
+  outline: 2px solid var(--zid-color-info-dark);
+  outline-offset: 2px;
+}
+
+/* Clickable Info Outlined - Hover */
+.zid-chip--clickable.zid-chip--info.zid-chip--outlined:hover {
+  background-color: var(--zid-color-blue-100);
+}
+
+/* Clickable Info Outlined - Focus */
+.zid-chip--clickable.zid-chip--info.zid-chip--outlined:focus-visible {
+  outline: 2px solid var(--zid-color-info-dark);
+  outline-offset: 2px;
+}
+
+/* Clickable Success Filled - Hover */
+.zid-chip--clickable.zid-chip--success.zid-chip--filled:hover {
+  background-color: var(--zid-color-green-200);
+}
+
+/* Clickable Success Filled - Focus */
+.zid-chip--clickable.zid-chip--success.zid-chip--filled:focus-visible {
+  outline: 2px solid var(--zid-color-success-dark);
+  outline-offset: 2px;
+}
+
+/* Clickable Success Outlined - Hover */
+.zid-chip--clickable.zid-chip--success.zid-chip--outlined:hover {
+  background-color: var(--zid-color-success-state-hover);
+}
+
+/* Clickable Success Outlined - Focus */
+.zid-chip--clickable.zid-chip--success.zid-chip--outlined:focus-visible {
+  outline: 2px solid var(--zid-color-success-dark);
+  outline-offset: 2px;
+}
+
+/* ============================================
+ * Delete Icon Element
+ * Button/icon for removing the chip
+ * ============================================ */
+.zid-chip__delete-icon {
+  /* Reset button styles */
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: var(--zid-spacing-4);
+  height: var(--zid-spacing-4);
+  margin-inline-start: var(--zid-spacing-0-5);
+  margin-inline-end: calc(var(--zid-spacing-1) * -1);
+
+  /* Appearance */
+  border-radius: var(--zid-radius-full);
+  cursor: pointer;
+  color: inherit;
+  opacity: 0.7;
+
+  /* Transitions */
+  transition-property: opacity, background-color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.zid-chip__delete-icon:hover {
+  opacity: 1;
+  background-color: var(--zid-color-action-hover);
+}
+
+.zid-chip__delete-icon:focus-visible {
+  opacity: 1;
+  outline: 2px solid currentColor;
+  outline-offset: 1px;
+}
+
+/* Delete icon size adjustments for small chips */
+.zid-chip--small .zid-chip__delete-icon {
+  width: var(--zid-spacing-3);
+  height: var(--zid-spacing-3);
+  margin-inline-end: calc(var(--zid-spacing-0-5) * -1);
+}
+
+/* ============================================
+ * Chip Icon Element (Optional)
+ * Icon displayed at the start of the chip
+ * ============================================ */
+.zid-chip__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: var(--zid-spacing-4);
+  height: var(--zid-spacing-4);
+  margin-inline-start: calc(var(--zid-spacing-1) * -1);
+  margin-inline-end: var(--zid-spacing-0-5);
+  color: inherit;
+}
+
+/* Icon size adjustments for small chips */
+.zid-chip--small .zid-chip__icon {
+  width: var(--zid-spacing-3);
+  height: var(--zid-spacing-3);
+  margin-inline-start: calc(var(--zid-spacing-0-5) * -1);
+}
+
+/* ============================================
+ * Chip Label Element (Optional)
+ * Text content wrapper for the chip
+ * ============================================ */
+.zid-chip__label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ============================================
+ * Disabled State
+ * Applied when chip is disabled
+ * ============================================ */
+.zid-chip--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.zid-chip--disabled .zid-chip__delete-icon {
+  pointer-events: none;
+}

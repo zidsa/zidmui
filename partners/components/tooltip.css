@@ -1,0 +1,129 @@
+/**
+ * Zid Design System - Tooltip Component
+ *
+ * This file contains all tooltip-related styles for the Zid design system.
+ * Partners can use these classes to create tooltips matching Zid's design
+ * without requiring MUI JavaScript runtime.
+ *
+ * Class naming convention: .zid-tooltip--{modifier}
+ *
+ * Usage:
+ * <div class="zid-tooltip zid-tooltip--top">
+ *   Tooltip content
+ *   <span class="zid-tooltip__arrow"></span>
+ * </div>
+ *
+ * Note: Positioning and visibility logic must be handled by JavaScript.
+ * These styles only define the visual appearance.
+ *
+ * Requirements: 7.1, 7.2, 7.3, 7.4, 10.1, 10.2
+ */
+
+/* ============================================
+ * Base Tooltip Styles
+ * Common styles applied to all tooltips
+ * Source: src/theme/components/tooltip.ts
+ * ============================================ */
+.zid-tooltip {
+  /* Box model */
+  padding-block: var(--zid-spacing-1);
+  padding-inline: var(--zid-spacing-1-5);
+  border-radius: var(--zid-radius-sm);
+
+  /* Colors - neutrals-1000 background per theme */
+  background-color: var(--zid-color-neutrals-1000);
+  color: var(--zid-color-base-white);
+
+  /* Typography */
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-caption);
+  line-height: 1.5;
+
+  /* Positioning context for arrow */
+  position: relative;
+
+  /* Ensure tooltip appears above other content */
+  z-index: 1500;
+
+  /* Prevent text wrapping for short tooltips */
+  white-space: nowrap;
+
+  /* Allow wrapping for longer content */
+  max-width: 300px;
+}
+
+/* Allow text wrapping when content is long */
+.zid-tooltip[data-multiline='true'] {
+  white-space: normal;
+}
+
+/* ============================================
+ * Arrow Element
+ * Pointer/arrow that connects tooltip to trigger
+ * ============================================ */
+.zid-tooltip__arrow {
+  /* Make arrow a block element */
+  display: block;
+  position: absolute;
+
+  /* Arrow dimensions */
+  width: 0;
+  height: 0;
+
+  /* Arrow color matches tooltip background */
+  border-style: solid;
+  border-color: transparent;
+}
+
+/* ============================================
+ * Placement Modifiers
+ * Position the tooltip and arrow relative to trigger
+ * ============================================ */
+
+/* Top placement - tooltip appears above trigger */
+.zid-tooltip--top .zid-tooltip__arrow {
+  /* Position arrow at bottom center of tooltip */
+  inset-block-end: calc(var(--zid-spacing-1) * -1);
+  inset-inline-start: 50%;
+  transform: translateX(-50%);
+
+  /* Arrow pointing down */
+  border-width: var(--zid-spacing-1) var(--zid-spacing-1) 0 var(--zid-spacing-1);
+  border-block-start-color: var(--zid-color-neutrals-1000);
+}
+
+/* Bottom placement - tooltip appears below trigger */
+.zid-tooltip--bottom .zid-tooltip__arrow {
+  /* Position arrow at top center of tooltip */
+  inset-block-start: calc(var(--zid-spacing-1) * -1);
+  inset-inline-start: 50%;
+  transform: translateX(-50%);
+
+  /* Arrow pointing up */
+  border-width: 0 var(--zid-spacing-1) var(--zid-spacing-1) var(--zid-spacing-1);
+  border-block-end-color: var(--zid-color-neutrals-1000);
+}
+
+/* Left placement - tooltip appears to the left of trigger */
+.zid-tooltip--left .zid-tooltip__arrow {
+  /* Position arrow at right center of tooltip */
+  inset-inline-end: calc(var(--zid-spacing-1) * -1);
+  inset-block-start: 50%;
+  transform: translateY(-50%);
+
+  /* Arrow pointing right */
+  border-width: var(--zid-spacing-1) 0 var(--zid-spacing-1) var(--zid-spacing-1);
+  border-inline-start-color: var(--zid-color-neutrals-1000);
+}
+
+/* Right placement - tooltip appears to the right of trigger */
+.zid-tooltip--right .zid-tooltip__arrow {
+  /* Position arrow at left center of tooltip */
+  inset-inline-start: calc(var(--zid-spacing-1) * -1);
+  inset-block-start: 50%;
+  transform: translateY(-50%);
+
+  /* Arrow pointing left */
+  border-width: var(--zid-spacing-1) var(--zid-spacing-1) var(--zid-spacing-1) 0;
+  border-inline-end-color: var(--zid-color-neutrals-1000);
+}
