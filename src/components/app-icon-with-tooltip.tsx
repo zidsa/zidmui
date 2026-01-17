@@ -28,6 +28,8 @@ export const AppIconWithTooltip: React.FC<AppIconWithTooltipProps> = ({
   icon,
   iconProps,
 }) => {
+  if (!tooltip) return;
+
   return (
     <AppTooltip description={tooltip} {...tooltipProps}>
       <StackRow position="relative" alignItems="center" justifyContent="center">
