@@ -36,13 +36,13 @@ export const palette: ThemeOptions['palette'] = {
   outlined: {
     outlined: '#E4E4E5',
     'outlined 2': '#F2F2F2',
-    outlinedDisable: '#C6C6C8',
+    outlinedDisable: colors.neutrals[400],
   },
   text: {
     primary: '#0E0217',
     secondary: '#1F0433',
     tertiary: '#75727B',
-    disabled: '#C6C6C8',
+    disabled: colors.neutrals[400],
     deepGreen: '#1F541B',
     darkOchre: '#544217',
     contrastText: '#A3A1A6',
@@ -54,7 +54,7 @@ export const palette: ThemeOptions['palette'] = {
   icon: {
     primary: '#0E0217',
     secondary: '#75727B',
-    disabled: '#C6C6C8',
+    disabled: colors.neutrals[400],
     draggable: '#634976',
   },
   tabs: {
@@ -241,7 +241,7 @@ export const palette: ThemeOptions['palette'] = {
     },
     switch: {
       knobFillEnabled: '#F8F8F8',
-      slideFill: '#C6C6C8',
+      slideFill: colors.neutrals[400],
       knowFillDisabled: '#F2F2F2',
       shadow: '#E4E4E5',
       color: '#AE72FF',
