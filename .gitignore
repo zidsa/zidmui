@@ -40,3 +40,6 @@ tsconfig.tsbuildinfo
 
 *storybook.log
 storybook-static
+
+# .Kiro
+.kiro/settings/mcp.json

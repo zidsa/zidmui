@@ -3,6 +3,7 @@ export const base = {
   neutral: '#F5F4F6',
   silver: '#E8E4EB',
   black: '#000000',
+  blur: 'rgba(255, 255, 255, 0.8)',
 };
 
 export const primary = {
