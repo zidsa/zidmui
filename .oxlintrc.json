@@ -11,19 +11,10 @@
     ".eslint-cache",
     "public/tinymce/**/*"
   ],
-  "plugins": [
-    "react",
-    "unicorn",
-    "typescript",
-    "oxc",
-    "import",
-    "react-hooks",
-    "jsx-a11y",
-    "react-perf"
-  ],
+  "plugins": ["react", "unicorn", "typescript", "oxc", "import", "jsx-a11y", "react-perf"],
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "rules": {
-    "eslint/max-lines": ["error", { "max": 450, "skipBlankLines": "true", "skipComments": "true" }],
+    "eslint/max-lines": ["error", { "max": 450, "skipBlankLines": true, "skipComments": true }],
     "eslint/no-console": "error",
     "eslint/no-constant-binary-expression": "off",
     "eslint/no-extra-boolean-cast": "off",
