@@ -158,7 +158,7 @@
   "devDependencies": {
     "@commitlint/cli": "20.4.1",
     "@commitlint/config-conventional": "20.4.1",
-    "@release-it/conventional-changelog": "10.0.2",
+    "@release-it/conventional-changelog": "10.0.5",
     "@storybook/addon-docs": "10.2.8",
     "@storybook/addon-themes": "10.2.8",
     "@storybook/react-vite": "10.2.8",
