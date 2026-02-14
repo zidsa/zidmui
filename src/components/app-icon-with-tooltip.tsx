@@ -11,7 +11,7 @@ import { StackRow } from './stack-row';
 // NOTE: accessibleAreaWidth and accessibleAreaHeight are used to create non-visible area for
 //       the tooltip to be accessible on mobile
 
-type AppIconWithTooltipProps = {
+export type AppIconWithTooltipProps = {
   accessibleAreaWidth?: string;
   accessibleAreaHeight?: string;
   icon?: React.ReactNode;
