@@ -7,7 +7,7 @@ import { AppTooltip } from './app-tooltip';
 //
 //
 
-type AppStatusColor =
+export type AppStatusColor =
   | 'success'
   | 'warning'
   | 'error'
