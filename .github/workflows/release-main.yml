@@ -15,7 +15,6 @@ jobs:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     permissions:
-      packages: write
       contents: write
 
     steps:
@@ -28,16 +27,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
-          registry-url: https://npm.pkg.github.com/
+          registry-url: https://registry.npmjs.org/
           scope: '@zidsa'
           cache: 'pnpm'
-
-      - name: Set github registry & auth for private dependencies
-        env:
-          GPR_TOKEN: ${{ secrets.GPR_AUTH_TOKEN }}
-        run: |
-          pnpm config set @zidsa:registry https://npm.pkg.github.com/
-          pnpm config set //npm.pkg.github.com/:_authToken $GPR_TOKEN
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -47,8 +39,7 @@ jobs:
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 
-      - name: Update GPR auth token for release
-        run: pnpm config set //npm.pkg.github.com/:_authToken ${{ secrets.GITHUB_TOKEN }}
-
       - name: Release
         run: pnpm run release --ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

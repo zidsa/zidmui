@@ -4,9 +4,10 @@
   "version": "1.4.33",
   "description": "Zid MUI shared components and utilities",
   "author": "Abdulaziz Homaily <a.homaily@gmail.com>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "homepage": "https://github.com/zidsa/zidmui#readme",
   "repository": "https://github.com/zidsa/zidmui",
