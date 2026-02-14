@@ -5,7 +5,7 @@ import { Stack, StackProps } from '@mui/material';
 //
 //
 
-type StackRowProps = Omit<StackProps, 'spacing'> & {
+export type StackRowProps = Omit<StackProps, 'spacing'> & {
   ref?: React.Ref<HTMLDivElement>;
 };
 
