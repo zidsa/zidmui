@@ -21,6 +21,7 @@
     "jsx-a11y",
     "react-perf"
   ],
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
   "rules": {
     "eslint/max-lines": ["error", { "max": 450, "skipBlankLines": "true", "skipComments": "true" }],
     "eslint/no-console": "error",

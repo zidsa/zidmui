@@ -4,7 +4,7 @@ pre-commit:
     lint:
       files: git diff --name-only --staged
       glob: "src/**/*.{js,ts,jsx,tsx}"
-      run: npx eslint {files}
+      run: npx oxlint {files}
 
     types:
       files: git diff --name-only --staged

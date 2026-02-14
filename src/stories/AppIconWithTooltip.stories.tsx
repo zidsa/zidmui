@@ -39,5 +39,6 @@ export const Variants: Story = {
     tooltip: 'Tooltip sample',
     accessibleAreaWidth: '36px',
     accessibleAreaHeight: '36px',
+    tooltipProps: { enterDelay: 250 },
   },
 };

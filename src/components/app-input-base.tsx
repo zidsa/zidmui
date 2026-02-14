@@ -41,6 +41,9 @@ export const AppInputBase: FC<AppInputBaseProps> = ({
     );
   }
 
+  const inputSlotProps =
+    typeof props.slotProps?.input === 'function' ? {} : props.slotProps?.input || {};
+
   props.slotProps = {
     ...props?.slotProps,
     input: {
@@ -58,7 +61,7 @@ export const AppInputBase: FC<AppInputBaseProps> = ({
           {endAdornmentText}
         </AppInputAdornmentText>
       ) : undefined,
-      ...props.slotProps?.input,
+      ...inputSlotProps,
 
       // FIX: autocomplete inputs gets broken
       // oxlint-disable-next-line @typescript-eslint/no-explicit-any

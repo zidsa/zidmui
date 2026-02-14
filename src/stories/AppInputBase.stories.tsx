@@ -1,7 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import { Divider } from '@mui/material';
-
 import { AppInputBase } from '../components/app-input-base';
 import { StackColumn } from '../components/stack-column';
 
@@ -30,7 +28,7 @@ export const Variants: Story = {
   },
   render: () => (
     <StackColumn sx={{ background: 'white' }} padding={10} gap={4}>
-      <AppInputBase />
+      {/* <AppInputBase />
       <AppInputBase label="User name" />
       <AppInputBase label="User name" placeholder="User name for..." size="small" error />
 
@@ -81,7 +79,7 @@ export const Variants: Story = {
         placeholder="هذا النص طويل جداً جداً جداً جداً جداً جداً جداً جداً جداً للاختبار"
         endAdornmentText="Kg"
         multiline
-      />
+      /> */}
     </StackColumn>
   ),
 };

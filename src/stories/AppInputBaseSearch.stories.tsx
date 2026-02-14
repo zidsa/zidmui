@@ -1,7 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import { Divider } from '@mui/material';
-
 import { AppInputBaseSearch } from '../components/app-input-base-search';
 import { StackColumn } from '../components/stack-column';
 
@@ -30,7 +28,7 @@ export const Variants: Story = {
   },
   render: () => (
     <StackColumn gap={4}>
-      <AppInputBaseSearch name="search" />
+      {/* <AppInputBaseSearch name="search" />
       <AppInputBaseSearch name="search" label="Search" />
       <AppInputBaseSearch name="search" label="Search" placeholder="Search for..." />
       <AppInputBaseSearch
@@ -53,7 +51,7 @@ export const Variants: Story = {
         placeholder="ابحث عن..."
         size="small"
         error
-      />
+      /> */}
     </StackColumn>
   ),
 };
