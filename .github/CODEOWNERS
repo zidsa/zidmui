@@ -1,4 +1,4 @@
-* @zidsa/project-hermes
+* @zidsa/frontend
 
 # Make CODEOWNERS file have no code owners (to avoid spamming people assigned to .github/)
 /.github/CODEOWNERS
