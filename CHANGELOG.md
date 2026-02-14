@@ -1,5 +1,7 @@
 # Changelog
 
+## [1.4.37](https://github.com/zidsa/zidmui/compare/v1.4.36...v1.4.37) (2026-02-14)
+
 ## [1.4.36](https://github.com/zidsa/zidmui/compare/v1.4.33...v1.4.36) (2026-02-14)
 
 ## [1.4.35](https://github.com/zidsa/zidmui/compare/v1.4.34...v1.4.35) (2026-02-14)

@@ -1,7 +1,7 @@
 {
   "name": "@zidsa/zidmui",
   "type": "module",
-  "version": "1.4.36",
+  "version": "1.4.37",
   "description": "Zid MUI shared components and utilities",
   "author": "Abdulaziz Homaily <a.homaily@gmail.com>",
   "license": "MIT",
