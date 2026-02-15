@@ -37,7 +37,7 @@ declare module '@mui/material' {
     };
     outlined?: {
       outlined?: string;
-      'outlined 2'?: string;
+      outlined_2?: string;
       outlinedDisable?: string;
     };
     tabs: {
@@ -249,7 +249,7 @@ declare module '@mui/material' {
     };
     primary: { [key in ColorShadesKey]: string };
     secondary: { [key in ColorShadesKey]: string };
-    neutrals: { [key in ColorShadesKey]: string };
+    neutral: { [key in ColorShadesKey]: string };
     green: { [key in ColorShadesKey]: string };
     blue: { [key in ColorShadesKey]: string };
     yellow: { [key in ColorShadesKey]: string };
@@ -275,6 +275,9 @@ declare module '@mui/material' {
     contrastText: string;
     primaryContrastTest: string;
     _states: {
+      hover: string;
+      selected: string;
+      focus: string;
       focusVisible: string;
     };
   }

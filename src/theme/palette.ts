@@ -1,6 +1,7 @@
 import { ThemeOptions } from '@mui/material';
 
 import { colors } from './colors';
+import { alpha } from '@mui/material/styles';
 
 //
 //
@@ -21,9 +22,9 @@ export const palette: ThemeOptions['palette'] = {
     white: '#FFFFFF',
     black: '#000000',
     gray: '#F8F8F8',
-    gray200: '#E4E4E5',
-    gray100: '#F2F2F2',
-    backgroundDisable: '#F2F2F2',
+    gray200: colors.neutral[200],
+    gray100: colors.neutral[100],
+    backgroundDisable: colors.neutral[100],
     Blur: 'rgba(255, 255, 255, 0.8)',
     green: '#9EEC99',
     yellow: '#FAE684',
@@ -34,27 +35,30 @@ export const palette: ThemeOptions['palette'] = {
     royalPurple: '#532D6F',
   },
   outlined: {
-    outlined: '#E4E4E5',
-    'outlined 2': '#F2F2F2',
-    outlinedDisable: colors.neutrals[400],
+    outlined: colors.neutral[200],
+    outlined_2: colors.neutral[100],
+    outlinedDisable: colors.neutral[300],
   },
   text: {
-    primary: '#0E0217',
-    secondary: '#1F0433',
-    tertiary: '#75727B',
-    disabled: colors.neutrals[400],
+    primary: colors.neutral[1000],
+    secondary: colors.neutral[600],
+    tertiary: colors.neutral[500],
+    disabled: colors.neutral[400],
     deepGreen: '#1F541B',
     darkOchre: '#544217',
     contrastText: '#A3A1A6',
     primaryContrastTest: '#FFFFFF',
     _states: {
-      focusVisible: 'rgba(0, 0, 0, 0.3)',
+      hover: alpha(colors.base.black, 0.04),
+      selected: alpha(colors.base.black, 0.08),
+      focus: alpha(colors.base.black, 0.12),
+      focusVisible: alpha(colors.base.black, 0.3),
     },
   },
   icon: {
     primary: '#0E0217',
     secondary: '#75727B',
-    disabled: colors.neutrals[400],
+    disabled: colors.neutral[400],
     draggable: '#634976',
   },
   tabs: {
@@ -96,12 +100,12 @@ export const palette: ThemeOptions['palette'] = {
     },
   },
   action: {
-    active: 'rgba(31, 4, 51, 0.56)',
-    hover: 'rgba(31, 4, 51, 0.04)',
-    selected: 'rgba(31, 4, 51, 0.08)',
-    focus: 'rgba(31, 4, 51, 0.12)',
-    disabled: 'rgba(31, 4, 51, 0.38)',
-    disabledBackground: 'rgba(31, 4, 51, 0.12)',
+    active: alpha(colors.neutral[600], 0.56),
+    hover: alpha(colors.neutral[600], 0.04),
+    selected: alpha(colors.neutral[600], 0.08),
+    focus: alpha(colors.neutral[600], 0.12),
+    disabled: alpha(colors.neutral[600], 0.38),
+    disabledBackground: alpha(colors.neutral[600], 0.12),
   },
   error: {
     main: '#FA3768',
@@ -145,13 +149,13 @@ export const palette: ThemeOptions['palette'] = {
       hover: 'rgba(46, 125, 50, 0.04)',
     },
   },
-  divider: '#F4F3F5',
+  divider: colors.secondary[50],
   _components: {
     button: {
-      disabledText: colors.neutrals[400],
-      disabledBorder: colors.neutrals[200],
+      disabledText: colors.neutral[400],
+      disabledBorder: colors.neutral[200],
       primaryDarkText: {
-        disabled: colors.neutrals[100],
+        disabled: colors.neutral[100],
         text: colors.primary[800],
         loadingText: colors.primary[800],
       },
@@ -160,17 +164,17 @@ export const palette: ThemeOptions['palette'] = {
         hover: colors.primary[900],
         focused: colors.primary[900],
         pressed: colors.primary[600],
-        disabled: colors.neutrals[100],
+        disabled: colors.neutral[100],
         border: '#EBE8ED',
         text: colors.base.white,
         loadingText: colors.primary[1000],
       },
       secondary: {
-        contained: '#F4F3F5',
-        hover: '#F4F3F5',
+        contained: colors.secondary[50],
+        hover: colors.secondary[50],
         focused: colors.primary[200],
         pressed: '#EBE8ED',
-        disabled: colors.neutrals[100],
+        disabled: colors.neutral[100],
         border: '#D8D2DD',
         text: colors.secondary[1000],
         loadingText: colors.secondary[1000],
@@ -180,7 +184,7 @@ export const palette: ThemeOptions['palette'] = {
         hover: colors.primary[200],
         focused: colors.primary[200],
         pressed: colors.primary[300],
-        disabled: colors.neutrals[100],
+        disabled: colors.neutral[100],
         text: colors.secondary[1000],
         loadingText: colors.secondary[1000],
         outlinedHover: '#E0D3FF',
@@ -191,7 +195,7 @@ export const palette: ThemeOptions['palette'] = {
         hover: colors.red[300],
         focused: colors.red[600],
         pressed: colors.red[300],
-        disabled: colors.neutrals[100],
+        disabled: colors.neutral[100],
         border: colors.red[400],
         text: colors.red[1000],
         outlinedHover: colors.red[100],
@@ -241,9 +245,9 @@ export const palette: ThemeOptions['palette'] = {
     },
     switch: {
       knobFillEnabled: '#F8F8F8',
-      slideFill: colors.neutrals[400],
-      knowFillDisabled: '#F2F2F2',
-      shadow: '#E4E4E5',
+      slideFill: colors.neutral[400],
+      knowFillDisabled: colors.neutral[100],
+      shadow: colors.neutral[200],
       color: '#AE72FF',
       background: '#FFFFFF',
       error: {
@@ -264,7 +268,7 @@ export const palette: ThemeOptions['palette'] = {
       fill: 'rgba(0, 0, 0, 0.1)',
     },
     appBar: {
-      defaultFill: '#F2F2F2',
+      defaultFill: colors.neutral[100],
     },
     alert: {
       error: {
@@ -304,19 +308,19 @@ export const palette: ThemeOptions['palette'] = {
       secondary: {
         text: '#1B0D26',
         focused: '#3c1c544d',
-        hover: '#F4F3F5',
+        hover: colors.secondary[50],
         focusedIcon: '#ae72ff',
       },
       error: {
         text: '#1B0D26',
         focused: '#fa37684d',
-        hover: '#F4F3F5',
+        hover: colors.secondary[50],
         focusedIcon: '#ae72ff',
       },
     },
   },
   _native: {
-    'scrollbar-bg': '#E4E4E5',
+    'scrollbar-bg': colors.neutral[200],
   },
   common: {
     black: '#000000',

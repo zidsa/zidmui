@@ -135,7 +135,7 @@ const ColorsDisplay = () => {
   const colorScales = [
     { name: 'Primary', colors: colors.primary },
     { name: 'Secondary', colors: colors.secondary },
-    { name: 'Neutrals', colors: colors.neutrals },
+    { name: 'Neutral', colors: colors.neutral },
     { name: 'Green', colors: colors.green },
     { name: 'Blue', colors: colors.blue },
     { name: 'Yellow', colors: colors.yellow },

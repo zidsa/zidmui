@@ -21,12 +21,12 @@ export const primary = {
 };
 
 export const secondary = {
-  50: '#F8F8F8',
-  100: '#F3F2F3',
-  200: '#E6E4E7',
-  300: '#C9C6CD',
-  400: '#A8A3AE',
-  500: '#7E7589',
+  50: '#F4F3F5',
+  100: '#EBE8ED',
+  200: '#D8D2DD',
+  300: '#B1A4BB',
+  400: '#8A7798',
+  500: '#634976',
   600: '#3C1C54',
   700: '#36194B',
   800: '#2E1641',
@@ -34,7 +34,7 @@ export const secondary = {
   1000: '#1B0D26',
 };
 
-export const neutrals = {
+export const neutral = {
   50: '#F8F8F8',
   100: '#F2F2F2',
   200: '#E4E4E5',
@@ -122,7 +122,7 @@ export const colors = {
   primary,
   secondary,
   base,
-  neutrals,
+  neutral,
   green,
   blue,
   yellow,
