@@ -13,7 +13,7 @@
 
 </div>
 
-[Zid MUI](https://kit.zid.sa) is a React component library built on the [Parcel](https://brand.zid.sa) design system, adhering to [Zid's brand guidelines](https://brand.zid.sa). It provides shared components, icons, hooks, and theme utilities for building consistent UIs across Zid products.
+[Zid MUI](https://ui.zid.sa) is a React component library built on the [Parcel](https://brand.zid.sa) design system, adhering to [Zid's brand guidelines](https://brand.zid.sa). It provides shared components, icons, hooks, and theme utilities for building consistent UIs across Zid products.
 
 ## Installation
 
@@ -21,9 +21,15 @@
 pnpm add @zidsa/zidmui
 ```
 
+### Peer dependencies
+
+```sh
+pnpm add @mui/material @mui/lab react react-dom react-hook-form use-debounce
+```
+
 ## Documentation
 
-Get started in the [Zid MUI documentation](https://kit.zid.sa).
+Get started in the [Zid MUI documentation](https://ui.zid.sa).
 
 ## Questions
 
