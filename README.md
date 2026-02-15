@@ -1,6 +1,6 @@
 <!-- markdownlint-disable-next-line -->
 <p align="center">
-  <a href="https://zid.sa/en/" rel="noopener" target="_blank"><img width="200" src="https://firebasestorage.googleapis.com/v0/b/standards-site-beta.appspot.com/o/documents%2Fd2n52d1l8uy%2F72b4eea4275%2F%5BZid%5D%20Logo_EN_1733924236833_2500x2500.png?alt=media&token=3387b769f69" alt="Zid logo"></a>
+  <a href="https://zid.sa/en/" rel="noopener" target="_blank"><img width="200" src=".storybook/zid-logo.png" alt="Zid logo"></a>
 </p>
 
 <h1 align="center">Zid MUI</h1>

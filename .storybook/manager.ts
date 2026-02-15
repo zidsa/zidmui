@@ -4,7 +4,7 @@ import { create } from 'storybook/theming';
 import brandImage from './zid-logo.svg';
 
 const theme = create({
-  base: 'light',
+  base: 'dark',
   brandTitle: 'Zid MUI',
   brandUrl: 'https://ui.zid.sa',
   brandImage,
