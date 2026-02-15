@@ -105,14 +105,14 @@ const AppTooltipTitle = ({
 //
 
 const HeadlineTypography = styled(Typography)(({ theme }) => ({
-  color: theme.palette.colors.neutrals[50],
+  color: theme.palette.colors.neutral[50],
   lineHeight: theme.spacing(2.5),
   fontWeight: 600,
   fontSize: theme.spacing(1.625),
 }));
 
 const DescriptionTypography = styled(Typography)(({ theme }) => ({
-  color: theme.palette.colors.neutrals[50],
+  color: theme.palette.colors.neutral[50],
   fontWeight: 400,
   fontSize: theme.spacing(1.5),
 }));

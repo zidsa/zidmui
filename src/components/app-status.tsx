@@ -75,14 +75,14 @@ const StatusElement = styled(Chip, {
     : undefined),
   ...(color2 === 'neutral'
     ? {
-        backgroundColor: theme.palette.colors.neutrals[100],
-        color: theme.palette.colors.neutrals[600],
+        backgroundColor: theme.palette.colors.neutral[100],
+        color: theme.palette.colors.neutral[600],
       }
     : undefined),
   ...(color2 === 'disabled'
     ? {
-        backgroundColor: theme.palette.colors.neutrals[50],
-        color: theme.palette.colors.neutrals[400],
+        backgroundColor: theme.palette.colors.neutral[50],
+        color: theme.palette.colors.neutral[400],
       }
     : undefined),
   ...(color2 === 'info'

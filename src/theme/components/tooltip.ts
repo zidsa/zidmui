@@ -8,13 +8,13 @@ export const MuiTooltip: Components<Theme & CssVarsTheme>['MuiTooltip'] = {
   styleOverrides: {
     tooltip: ({ theme }) => {
       return {
-        backgroundColor: theme.palette.colors.neutrals[1000],
+        backgroundColor: theme.palette.colors.neutral[1000],
         paddingBlock: theme.spacing(1),
         paddingInline: theme.spacing(1.5),
       };
     },
     arrow: ({ theme }) => {
-      return { color: theme.palette.colors.neutrals[1000] };
+      return { color: theme.palette.colors.neutral[1000] };
     },
   },
 };
