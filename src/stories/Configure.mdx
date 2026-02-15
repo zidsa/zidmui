@@ -1,0 +1,78 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Configure" />
+
+<p align="center">
+  <a href="https://zid.sa/en/" rel="noopener" target="_blank">
+    <img
+      style={{ maxWidth: 200, width: '100%', height: 'auto' }}
+      src="zid-logo.png"
+      alt="Zid logo"
+    />
+  </a>
+</p>
+
+<h1 align="center">Zid MUI</h1>
+
+[Zid MUI](https://ui.zid.sa) is a React component library built on the [Parcel](https://brand.zid.sa) design system, adhering to [Zid's brand guidelines](https://brand.zid.sa). It provides shared components, icons, hooks, and theme utilities for building consistent UIs across Zid products.
+
+## Installation
+
+```bash
+pnpm add @zidsa/zidmui
+```
+
+### Peer dependencies
+
+Make sure the following peer dependencies are installed in your project:
+
+```bash
+pnpm add @mui/material @mui/lab react react-dom react-hook-form use-debounce
+```
+
+## Theme setup
+
+Wrap your application with the zidmui theme provider:
+
+```tsx
+import { ThemeProvider, CssBaseline } from '@mui/material';
+import { themeParcel } from '@zidsa/zidmui/theme/theme';
+
+function App({ children }) {
+  return (
+    <ThemeProvider theme={themeParcel}>
+      <CssBaseline />
+      {children}
+    </ThemeProvider>
+  );
+}
+```
+
+## Usage
+
+Import components, icons, hooks, and theme utilities from their respective paths:
+
+```tsx
+// Components
+import { AppButton } from '@zidsa/zidmui/components/app-button';
+import { AppInputBase } from '@zidsa/zidmui/components/app-input-base';
+import { AppListItem } from '@zidsa/zidmui/components/app-list-item';
+
+// Icons
+import { IconSearchLine } from '@zidsa/zidmui/icons/system/search-line';
+import { IconBankLine } from '@zidsa/zidmui/icons/buildings/bank-line';
+
+// Hooks
+import { useToggle } from '@zidsa/zidmui/hooks/use-toggle';
+
+// Theme
+import { themeParcel } from '@zidsa/zidmui/theme/theme';
+```
+
+## What's included
+
+- **Components** — Form inputs, buttons, alerts, tooltips, list items, and more
+- **Icons** — Categorized SVG icons (arrows, buildings, communication, system, etc.)
+- **Hooks** — Reusable React hooks
+- **Theme** — MUI theme with custom palette, colors, spacing, and shadows
+- **RTL support** — All components support right-to-left layouts
