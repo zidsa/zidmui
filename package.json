@@ -1,7 +1,7 @@
 {
   "name": "@zidsa/zidmui",
   "type": "module",
-  "version": "1.4.41",
+  "version": "1.5.0",
   "description": "Zid MUI shared components and utilities",
   "author": "Abdulaziz Homaily <a.homaily@gmail.com>",
   "license": "MIT",
@@ -154,7 +154,9 @@
       "require": "./dist/cjs/components/*.js",
       "types": "./dist/types/components/*.d.ts",
       "import": "./dist/es/components/*.js"
-    }
+    },
+    "./styles/*": "./dist/styles/*",
+    "./styles/components/*": "./dist/styles/components/*"
   },
   "peerDependencies": {
     "@mui/lab": "7.0.0-beta.11",
@@ -183,7 +185,8 @@
     "storybook": "10.2.8",
     "typescript": "5.9.3",
     "vite": "7.3.1",
-    "vite-plugin-dts": "4.5.4"
+    "vite-plugin-dts": "4.5.4",
+    "vite-plugin-static-copy": "3.2.0"
   },
   "engines": {
     "node": ">=22.14.0",

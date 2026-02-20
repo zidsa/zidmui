@@ -1,0 +1,46 @@
+/**
+ * Typography Tokens
+ * Derived from MUI theme typography
+ */
+
+:root {
+  /* ========================================
+   * Font Family
+   * ======================================== */
+  --zid-font-family: 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+
+  /* ========================================
+   * Font Sizes
+   * ======================================== */
+  --zid-font-size-xs: 0.75rem;    /* 12px */
+  --zid-font-size-sm: 0.875rem;   /* 14px */
+  --zid-font-size-base: 1rem;     /* 16px */
+  --zid-font-size-lg: 1.125rem;   /* 18px */
+  --zid-font-size-xl: 1.25rem;    /* 20px */
+  --zid-font-size-2xl: 1.5rem;    /* 24px */
+  --zid-font-size-3xl: 1.875rem;  /* 30px */
+  --zid-font-size-4xl: 2.25rem;   /* 36px */
+
+  /* ========================================
+   * Font Weights
+   * ======================================== */
+  --zid-font-weight-regular: 400;
+  --zid-font-weight-medium: 500;
+  --zid-font-weight-semibold: 600;
+  --zid-font-weight-bold: 700;
+
+  /* ========================================
+   * Line Heights
+   * ======================================== */
+  --zid-line-height-tight: 1.25;
+  --zid-line-height-normal: 1.5;
+  --zid-line-height-relaxed: 1.75;
+
+  /* ========================================
+   * Letter Spacing
+   * ======================================== */
+  --zid-letter-spacing-tight: -0.5px;
+  --zid-letter-spacing-normal: 0;
+  --zid-letter-spacing-wide: 0.15px;
+  --zid-letter-spacing-wider: 0.25px;
+}

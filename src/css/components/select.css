@@ -1,0 +1,174 @@
+/**
+ * Select Component
+ * States: default, hover, focus, error, disabled
+ * Sizes: sm, md, lg
+ */
+
+/* ========================================
+ * Base Select
+ * ======================================== */
+:where(.zid-select) {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--zid-spacing-1);
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-base);
+  line-height: var(--zid-line-height-normal);
+  color: var(--zid-text-primary);
+  background-color: var(--zid-bg-paper);
+  border: 1px solid #EBE8ED;
+  border-radius: var(--zid-radius-standard);
+  cursor: pointer;
+  transition: border-color var(--zid-transition-fast),
+              box-shadow var(--zid-transition-fast);
+  width: 100%;
+}
+
+/* ========================================
+ * Size Modifiers
+ * ======================================== */
+.zid-select--sm {
+  padding: var(--zid-spacing-0-5) var(--zid-spacing-1);
+  font-size: var(--zid-font-size-sm);
+  min-height: 32px;
+}
+
+.zid-select--md {
+  padding: var(--zid-spacing-1) var(--zid-spacing-1-5);
+  font-size: var(--zid-font-size-base);
+  min-height: 40px;
+}
+
+.zid-select--lg {
+  padding: var(--zid-spacing-1-5) var(--zid-spacing-2);
+  font-size: var(--zid-font-size-lg);
+  min-height: 48px;
+}
+
+/* ========================================
+ * Native Select Element
+ * ======================================== */
+.zid-select__native {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* ========================================
+ * Select Arrow Icon
+ * ======================================== */
+.zid-select__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--zid-text-secondary);
+  flex-shrink: 0;
+  pointer-events: none;
+  transition: transform var(--zid-transition-fast);
+}
+
+.zid-select--open .zid-select__icon {
+  transform: rotate(180deg);
+}
+
+/* ========================================
+ * Placeholder
+ * ======================================== */
+.zid-select__placeholder {
+  color: var(--zid-text-disabled);
+}
+
+/* ========================================
+ * Hover State
+ * ======================================== */
+.zid-select:hover:not(.zid-select--disabled):not(.zid-select--error) {
+  border-color: #D8D2DD;
+}
+
+/* ========================================
+ * Focus State
+ * ======================================== */
+.zid-select:focus-within:not(.zid-select--disabled):not(.zid-select--error) {
+  border-color: var(--zid-primary-main);
+  outline: 2px solid var(--zid-primary-main);
+  outline-offset: 2px;
+}
+
+/* ========================================
+ * Error State
+ * ======================================== */
+.zid-select--error {
+  border-color: var(--zid-error-main);
+}
+
+.zid-select--error:focus-within {
+  border-color: var(--zid-error-main);
+  outline: 2px solid var(--zid-error-main);
+  outline-offset: 2px;
+}
+
+/* ========================================
+ * Disabled State
+ * ======================================== */
+.zid-select--disabled {
+  background-color: var(--zid-action-disabled-background);
+  border-color: var(--zid-color-neutral-200);
+  color: var(--zid-text-disabled);
+  cursor: not-allowed;
+}
+
+.zid-select--disabled .zid-select__native {
+  cursor: not-allowed;
+}
+
+/* ========================================
+ * Select Menu (Dropdown)
+ * ======================================== */
+.zid-select-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: var(--zid-spacing-0-5);
+  background-color: var(--zid-bg-paper);
+  border: 1px solid var(--zid-divider);
+  border-radius: var(--zid-radius-standard);
+  box-shadow: var(--zid-shadow-4);
+  z-index: 1000;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* ========================================
+ * Select Option
+ * ======================================== */
+.zid-select-option {
+  padding: var(--zid-spacing-1) var(--zid-spacing-1-5);
+  cursor: pointer;
+  transition: background-color var(--zid-transition-fast);
+}
+
+.zid-select-option:hover {
+  background-color: var(--zid-action-hover);
+}
+
+.zid-select-option--selected {
+  background-color: var(--zid-action-selected);
+}
+
+.zid-select-option--disabled {
+  color: var(--zid-text-disabled);
+  cursor: not-allowed;
+}

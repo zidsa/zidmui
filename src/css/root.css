@@ -1,0 +1,53 @@
+/**
+ * Root Tokens
+ * Shape and shadow definitions
+ */
+
+:root {
+  /* ========================================
+   * Border Radius
+   * ======================================== */
+  --zid-radius-none: 0;
+  --zid-radius-sm: 4px;
+  --zid-radius-standard: 8px;
+  --zid-radius-md: 12px;
+  --zid-radius-lg: 16px;
+  --zid-radius-xl: 24px;
+  --zid-radius-full: 9999px;
+
+  /* ========================================
+   * Shadows (Elevation Scale 0-24)
+   * ======================================== */
+  --zid-shadow-0: none;
+  --zid-shadow-1: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  --zid-shadow-2: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 1px 3px 0px rgba(16, 24, 40, 0.05);
+  --zid-shadow-3: 0px 2px 4px -2px rgba(16, 24, 40, 0.05), 0px 4px 8px -2px rgba(16, 24, 40, 0.10);
+  --zid-shadow-4: 0px 2px 6px -2px rgba(16, 24, 40, 0.03), 0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+  --zid-shadow-5: 0px 3px 5px -1px rgba(0, 0, 0, 0.20), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  --zid-shadow-6: 0px 3px 5px -1px rgba(0, 0, 0, 0.20), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  --zid-shadow-7: 0px 4px 5px -2px rgba(0, 0, 0, 0.20), 0px 7px 10px 1px rgba(0, 0, 0, 0.14), 0px 2px 16px 1px rgba(0, 0, 0, 0.12);
+  --zid-shadow-8: 0px 4px 5px -2px rgba(0, 0, 0, 0.20), 0px 7px 10px 1px rgba(0, 0, 0, 0.14), 0px 2px 16px 1px rgba(0, 0, 0, 0.12);
+  --zid-shadow-9: 0px 5px 5px -3px rgba(0, 0, 0, 0.20), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+  --zid-shadow-10: 0px 5px 6px -3px rgba(0, 0, 0, 0.20), 0px 9px 12px 1px rgba(0, 0, 0, 0.14), 0px 3px 16px 2px rgba(0, 0, 0, 0.12);
+  --zid-shadow-11: 0px 6px 6px -3px rgba(0, 0, 0, 0.20), 0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
+  --zid-shadow-12: 0px 6px 7px -4px rgba(0, 0, 0, 0.20), 0px 11px 15px 1px rgba(0, 0, 0, 0.14), 0px 4px 20px 3px rgba(0, 0, 0, 0.12);
+  --zid-shadow-13: 0px 7px 8px -4px rgba(0, 0, 0, 0.20), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+  --zid-shadow-14: 0px 7px 8px -4px rgba(0, 0, 0, 0.20), 0px 13px 19px 2px rgba(0, 0, 0, 0.14), 0px 5px 24px 4px rgba(0, 0, 0, 0.12);
+  --zid-shadow-15: 0px 7px 9px -4px rgba(0, 0, 0, 0.20), 0px 14px 21px 2px rgba(0, 0, 0, 0.14), 0px 5px 26px 4px rgba(0, 0, 0, 0.12);
+  --zid-shadow-16: 0px 8px 9px -5px rgba(0, 0, 0, 0.20), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
+  --zid-shadow-17: 0px 8px 10px -5px rgba(0, 0, 0, 0.20), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+  --zid-shadow-18: 0px 8px 11px -5px rgba(0, 0, 0, 0.20), 0px 17px 26px 2px rgba(0, 0, 0, 0.14), 0px 6px 32px 5px rgba(0, 0, 0, 0.12);
+  --zid-shadow-19: 0px 9px 11px -5px rgba(0, 0, 0, 0.20), 0px 18px 28px 2px rgba(0, 0, 0, 0.14), 0px 7px 34px 6px rgba(0, 0, 0, 0.12);
+  --zid-shadow-20: 0px 9px 12px -6px rgba(0, 0, 0, 0.20), 0px 19px 29px 2px rgba(0, 0, 0, 0.14), 0px 7px 36px 6px rgba(0, 0, 0, 0.12);
+  --zid-shadow-21: 0px 10px 13px -6px rgba(0, 0, 0, 0.20), 0px 20px 31px 3px rgba(0, 0, 0, 0.14), 0px 8px 38px 7px rgba(0, 0, 0, 0.12);
+  --zid-shadow-22: 0px 10px 13px -6px rgba(0, 0, 0, 0.20), 0px 21px 33px 3px rgba(0, 0, 0, 0.14), 0px 8px 40px 7px rgba(0, 0, 0, 0.12);
+  --zid-shadow-23: 0px 10px 14px -6px rgba(0, 0, 0, 0.20), 0px 22px 35px 3px rgba(0, 0, 0, 0.14), 0px 8px 42px 7px rgba(0, 0, 0, 0.12);
+  --zid-shadow-24: 0px 11px 14px -7px rgba(0, 0, 0, 0.20), 0px 23px 36px 3px rgba(0, 0, 0, 0.14), 0px 9px 44px 8px rgba(0, 0, 0, 0.12);
+
+  /* ========================================
+   * Transitions
+   * ======================================== */
+  --zid-transition-fast: 150ms ease-in-out;
+  --zid-transition-normal: 200ms ease-in-out;
+  --zid-transition-slow: 300ms ease-in-out;
+}

@@ -1,0 +1,29 @@
+/**
+ * Spacing Tokens
+ * Based on 8px baseline with half-step support
+ */
+
+:root {
+  /* ========================================
+   * Spacing Scale
+   * ======================================== */
+  --zid-spacing-0: 0;
+  --zid-spacing-0-25: 2px;
+  --zid-spacing-0-5: 4px;
+  --zid-spacing-0-75: 6px;
+  --zid-spacing-1: 8px;
+  --zid-spacing-1-5: 12px;
+  --zid-spacing-2: 16px;
+  --zid-spacing-2-5: 20px;
+  --zid-spacing-3: 24px;
+  --zid-spacing-3-5: 28px;
+  --zid-spacing-4: 32px;
+  --zid-spacing-5: 40px;
+  --zid-spacing-6: 48px;
+  --zid-spacing-7: 56px;
+  --zid-spacing-8: 64px;
+  --zid-spacing-9: 72px;
+  --zid-spacing-10: 80px;
+  --zid-spacing-11: 88px;
+  --zid-spacing-12: 96px;
+}

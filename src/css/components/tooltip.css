@@ -1,0 +1,133 @@
+/**
+ * Tooltip Component
+ * Dark background with light text
+ */
+
+/* ========================================
+ * Base Tooltip
+ * ======================================== */
+:where(.zid-tooltip) {
+  position: relative;
+  display: inline-block;
+}
+
+/* ========================================
+ * Tooltip Content
+ * ======================================== */
+.zid-tooltip__content {
+  position: absolute;
+  z-index: 1500;
+  padding: var(--zid-spacing-1) var(--zid-spacing-1-5);
+  background-color: var(--zid-color-neutral-1000);
+  color: var(--zid-color-neutral-50);
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-sm);
+  line-height: var(--zid-line-height-normal);
+  border-radius: var(--zid-radius-sm);
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--zid-transition-fast),
+              visibility var(--zid-transition-fast);
+  pointer-events: none;
+}
+
+.zid-tooltip:hover .zid-tooltip__content,
+.zid-tooltip--open .zid-tooltip__content {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ========================================
+ * Tooltip Positions
+ * ======================================== */
+.zid-tooltip__content--top {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: var(--zid-spacing-1);
+}
+
+.zid-tooltip__content--bottom {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: var(--zid-spacing-1);
+}
+
+.zid-tooltip__content--left {
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: var(--zid-spacing-1);
+}
+
+.zid-tooltip__content--right {
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: var(--zid-spacing-1);
+}
+
+/* ========================================
+ * Tooltip Arrow
+ * ======================================== */
+.zid-tooltip__content::after {
+  content: '';
+  position: absolute;
+  border: 6px solid transparent;
+}
+
+.zid-tooltip__content--top::after {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-color: var(--zid-color-neutral-1000);
+}
+
+.zid-tooltip__content--bottom::after {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-color: var(--zid-color-neutral-1000);
+}
+
+.zid-tooltip__content--left::after {
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left-color: var(--zid-color-neutral-1000);
+}
+
+.zid-tooltip__content--right::after {
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-right-color: var(--zid-color-neutral-1000);
+}
+
+/* ========================================
+ * Tooltip Title
+ * ======================================== */
+.zid-tooltip__title {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: var(--zid-spacing-0-5);
+}
+
+/* ========================================
+ * Tooltip Description
+ * ======================================== */
+.zid-tooltip__description {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+/* ========================================
+ * Multiline Tooltip
+ * ======================================== */
+.zid-tooltip__content--multiline {
+  white-space: normal;
+  max-width: 300px;
+}

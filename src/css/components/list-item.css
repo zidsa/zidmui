@@ -1,0 +1,149 @@
+/**
+ * List Item Component
+ * Icon, text, and content slots
+ */
+
+/* ========================================
+ * Base List Item
+ * ======================================== */
+:where(.zid-list-item) {
+  display: flex;
+  align-items: center;
+  gap: var(--zid-spacing-1-5);
+  padding: var(--zid-spacing-1-5) 0;
+  font-family: var(--zid-font-family);
+  border-bottom: 1px solid var(--zid-divider);
+}
+
+.zid-list-item:first-child {
+  padding-top: 0;
+}
+
+.zid-list-item:last-child {
+  border-bottom: none;
+}
+
+/* ========================================
+ * List Item Icon
+ * ======================================== */
+.zid-list-item__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: auto;
+  color: var(--zid-text-secondary);
+}
+
+.zid-list-item__icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ========================================
+ * List Item Text Container
+ * ======================================== */
+.zid-list-item__text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--zid-spacing-0-5);
+}
+
+/* ========================================
+ * Primary Text
+ * ======================================== */
+.zid-list-item__primary {
+  font-size: var(--zid-font-size-sm);
+  font-weight: var(--zid-font-weight-regular);
+  color: var(--zid-text-primary);
+  line-height: var(--zid-line-height-normal);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ========================================
+ * Secondary Text (Description)
+ * ======================================== */
+.zid-list-item__secondary {
+  font-size: var(--zid-font-size-xs);
+  font-weight: var(--zid-font-weight-regular);
+  color: var(--zid-text-tertiary);
+  line-height: var(--zid-line-height-normal);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ========================================
+ * Right-side Content
+ * ======================================== */
+.zid-list-item__content {
+  display: flex;
+  align-items: center;
+  gap: var(--zid-spacing-1);
+  flex-shrink: 0;
+  color: var(--zid-text-secondary);
+}
+
+/* ========================================
+ * Clickable List Item
+ * ======================================== */
+.zid-list-item--clickable {
+  cursor: pointer;
+  transition: background-color var(--zid-transition-fast);
+  margin: 0 calc(var(--zid-spacing-1-5) * -1);
+  padding-left: var(--zid-spacing-1-5);
+  padding-right: var(--zid-spacing-1-5);
+  border-radius: var(--zid-radius-standard);
+}
+
+.zid-list-item--clickable:hover {
+  background-color: var(--zid-action-hover);
+}
+
+.zid-list-item--clickable:active {
+  background-color: var(--zid-action-selected);
+}
+
+/* ========================================
+ * Selected List Item
+ * ======================================== */
+.zid-list-item--selected {
+  background-color: var(--zid-action-selected);
+}
+
+/* ========================================
+ * Disabled List Item
+ * ======================================== */
+.zid-list-item--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* ========================================
+ * Dense List Item
+ * ======================================== */
+.zid-list-item--dense {
+  padding: var(--zid-spacing-1) 0;
+  gap: var(--zid-spacing-1-5);
+}
+
+.zid-list-item--dense .zid-list-item__primary {
+  font-size: var(--zid-font-size-xs);
+}
+
+.zid-list-item--dense .zid-list-item__secondary {
+  font-size: var(--zid-font-size-xs);
+}
+
+/* ========================================
+ * List Container
+ * ======================================== */
+.zid-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,155 @@
+/**
+ * Switch Component
+ * States: checked, unchecked, disabled
+ * Colors: primary, secondary
+ */
+
+/* ========================================
+ * Base Switch
+ * ======================================== */
+:where(.zid-switch) {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--zid-spacing-1);
+  cursor: pointer;
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-base);
+  color: var(--zid-text-primary);
+}
+
+/* ========================================
+ * Switch Input (visually hidden)
+ * ======================================== */
+.zid-switch__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* ========================================
+ * Switch Track
+ * ======================================== */
+.zid-switch__track {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  background-color: var(--zid-color-neutral-400);
+  border-radius: var(--zid-radius-full);
+  transition: background-color var(--zid-transition-fast),
+              box-shadow var(--zid-transition-fast);
+}
+
+/* ========================================
+ * Switch Thumb
+ * ======================================== */
+.zid-switch__thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--zid-color-neutral-50);
+  border-radius: var(--zid-radius-full);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: transform var(--zid-transition-fast),
+              background-color var(--zid-transition-fast);
+}
+
+/* ========================================
+ * Checked State - Primary (Success/Green)
+ * ======================================== */
+.zid-switch--primary .zid-switch__input:checked + .zid-switch__track {
+  background-color: var(--zid-success-main);
+}
+
+.zid-switch--primary .zid-switch__input:checked + .zid-switch__track .zid-switch__thumb {
+  transform: translateX(20px);
+  background-color: var(--zid-bg-paper);
+}
+
+/* ========================================
+ * Checked State - Secondary (Primary Purple)
+ * ======================================== */
+.zid-switch--secondary .zid-switch__input:checked + .zid-switch__track {
+  background-color: var(--zid-primary-main);
+}
+
+.zid-switch--secondary .zid-switch__input:checked + .zid-switch__track .zid-switch__thumb {
+  transform: translateX(20px);
+  background-color: var(--zid-bg-paper);
+}
+
+/* ========================================
+ * Checked State - Error
+ * ======================================== */
+.zid-switch--error .zid-switch__input:checked + .zid-switch__track {
+  background-color: var(--zid-error-main);
+}
+
+.zid-switch--error .zid-switch__input:checked + .zid-switch__track .zid-switch__thumb {
+  transform: translateX(20px);
+  background-color: var(--zid-bg-paper);
+}
+
+/* ========================================
+ * Hover State
+ * ======================================== */
+.zid-switch:hover:not(.zid-switch--disabled) .zid-switch__track {
+  background-color: var(--zid-color-neutral-500);
+}
+
+.zid-switch--primary:hover:not(.zid-switch--disabled) .zid-switch__input:checked + .zid-switch__track {
+  background-color: var(--zid-success-dark);
+}
+
+.zid-switch--secondary:hover:not(.zid-switch--disabled) .zid-switch__input:checked + .zid-switch__track {
+  background-color: var(--zid-primary-dark);
+}
+
+.zid-switch--error:hover:not(.zid-switch--disabled) .zid-switch__input:checked + .zid-switch__track {
+  background-color: var(--zid-error-dark);
+}
+
+/* ========================================
+ * Focus Visible State
+ * ======================================== */
+.zid-switch__input:focus-visible + .zid-switch__track {
+  outline: 2px solid var(--zid-primary-main);
+  outline-offset: 2px;
+}
+
+.zid-switch--primary .zid-switch__input:focus-visible:checked + .zid-switch__track {
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.5);
+}
+
+.zid-switch--error .zid-switch__input:focus-visible:checked + .zid-switch__track {
+  box-shadow: 0 0 0 3px rgba(250, 55, 104, 0.5);
+}
+
+/* ========================================
+ * Disabled State
+ * ======================================== */
+.zid-switch--disabled {
+  cursor: not-allowed;
+  color: var(--zid-text-disabled);
+}
+
+.zid-switch--disabled .zid-switch__track {
+  background-color: var(--zid-color-neutral-200);
+}
+
+.zid-switch--disabled .zid-switch__thumb {
+  background-color: var(--zid-color-neutral-100);
+}
+
+.zid-switch--disabled .zid-switch__input:checked + .zid-switch__track {
+  background-color: var(--zid-color-neutral-300);
+}
+
+/* ========================================
+ * Label
+ * ======================================== */
+.zid-switch__label {
+  user-select: none;
+}

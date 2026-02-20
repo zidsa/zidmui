@@ -1,0 +1,159 @@
+/**
+ * Alert Component
+ * Matches MUI Alert styling exactly
+ * Severity variants: success, info, warning, error
+ */
+
+/* ========================================
+ * Base Alert
+ * ======================================== */
+:where(.zid-alert) {
+  display: flex;
+  padding: 6px 16px;
+  font-family: var(--zid-font-family);
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  border-radius: 12px;
+  border-style: solid;
+  border-width: 1px;
+  flex-wrap: wrap;
+}
+
+/* ========================================
+ * Alert Icon
+ * ======================================== */
+.zid-alert__icon {
+  display: flex;
+  flex: 0;
+  padding-block: 6px;
+  align-items: flex-start;
+  margin-right: 12px;
+  opacity: 0.9;
+}
+
+.zid-alert__icon svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+/* ========================================
+ * Alert Content
+ * ======================================== */
+.zid-alert__content {
+  flex: 1;
+  padding-block: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.zid-alert__title {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.57;
+  letter-spacing: 0.00714em;
+  margin: 0;
+}
+
+.zid-alert__message {
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+}
+
+/* ========================================
+ * Alert Close Button
+ * ======================================== */
+.zid-alert__close {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 2px;
+  margin-right: 0;
+  margin-left: auto;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.zid-alert__close:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.zid-alert__close svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* ========================================
+ * Success Variant
+ * ======================================== */
+.zid-alert--success {
+  background-color: #F7FDF7;
+  border-color: #CAF4C8;
+  color: inherit;
+}
+
+.zid-alert--success .zid-alert__icon {
+  color: #9EEC98;
+}
+
+.zid-alert--success .zid-alert__close {
+  color: #476A44;
+}
+
+/* ========================================
+ * Info Variant
+ * ======================================== */
+.zid-alert--info {
+  background-color: #F4FCFC;
+  border-color: #B5EFEF;
+  color: inherit;
+}
+
+.zid-alert--info .zid-alert__icon {
+  color: #449090;
+}
+
+.zid-alert--info .zid-alert__close {
+  color: #306666;
+}
+
+/* ========================================
+ * Warning Variant
+ * ======================================== */
+.zid-alert--warning {
+  background-color: #FEFDF5;
+  border-color: #FAEBA4;
+  color: inherit;
+}
+
+.zid-alert--warning .zid-alert__icon {
+  color: #DFCE75;
+}
+
+.zid-alert--warning .zid-alert__close {
+  color: #6F673B;
+}
+
+/* ========================================
+ * Error Variant
+ * ======================================== */
+.zid-alert--error {
+  background-color: #FFF3F4;
+  border-color: #FDC9D0;
+  color: inherit;
+}
+
+.zid-alert--error .zid-alert__icon {
+  color: #FCA7B4;
+}
+
+.zid-alert--error .zid-alert__close {
+  color: #70192F;
+}
