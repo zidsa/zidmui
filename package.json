@@ -1,7 +1,7 @@
 {
   "name": "@zidsa/zidmui",
   "type": "module",
-  "version": "1.5.1",
+  "version": "1.5.2-beta.0",
   "description": "Zid MUI shared components and utilities",
   "author": "Abdulaziz Homaily <a.homaily@gmail.com>",
   "license": "MIT",
@@ -159,6 +159,7 @@
     "./styles/components/*": "./dist/styles/components/*"
   },
   "peerDependencies": {
+    "@emotion/styled": "11.14.1",
     "@mui/lab": "7.0.0-beta.11",
     "@mui/material": "7.3.5",
     "react": "19.2.4",
@@ -192,8 +193,5 @@
     "node": ">=22.14.0",
     "pnpm": ">=10.0.0",
     "npm": "please use pnpm"
-  },
-  "dependencies": {
-    "@emotion/styled": "11.14.1"
   }
 }
