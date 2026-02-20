@@ -164,8 +164,27 @@
     "@mui/material": "7.3.5",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "react-hook-form": "7.71.1",
     "use-debounce": "10.1.0"
+  },
+  "peerDependenciesMeta": {
+    "@emotion/styled": {
+      "optional": true
+    },
+    "@mui/lab": {
+      "optional": true
+    },
+    "@mui/material": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    },
+    "use-debounce": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@commitlint/cli": "20.4.1",
