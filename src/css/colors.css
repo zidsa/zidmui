@@ -1,0 +1,203 @@
+/**
+ * Color Tokens
+ * Derived from MUI theme palette
+ */
+
+:root {
+  /* ========================================
+   * Base Colors
+   * ======================================== */
+  --zid-base-white: #FFFFFF;
+  --zid-base-black: #000000;
+  --zid-base-neutral: #F5F4F6;
+  --zid-base-silver: #E8E4EB;
+  --zid-base-blur: rgba(255, 255, 255, 0.8);
+
+  /* ========================================
+   * Primary Scale
+   * ======================================== */
+  --zid-color-primary-50: #FBF9FF;
+  --zid-color-primary-100: #F8F5FF;
+  --zid-color-primary-200: #F1EAFF;
+  --zid-color-primary-300: #E2D2FF;
+  --zid-color-primary-400: #D2B8FF;
+  --zid-color-primary-500: #C199FF;
+  --zid-color-primary-600: #AE72FF;
+  --zid-color-primary-700: #9C66E4;
+  --zid-color-primary-800: #8758C6;
+  --zid-color-primary-900: #6E48A1;
+  --zid-color-primary-1000: #4E3372;
+
+  /* ========================================
+   * Secondary Scale
+   * ======================================== */
+  --zid-color-secondary-50: #F4F3F5;
+  --zid-color-secondary-100: #EBE8ED;
+  --zid-color-secondary-200: #D8D2DD;
+  --zid-color-secondary-300: #B1A4BB;
+  --zid-color-secondary-400: #8A7798;
+  --zid-color-secondary-500: #634976;
+  --zid-color-secondary-600: #3C1C54;
+  --zid-color-secondary-700: #36194B;
+  --zid-color-secondary-800: #2E1641;
+  --zid-color-secondary-900: #261235;
+  --zid-color-secondary-1000: #1B0D26;
+
+  /* ========================================
+   * Neutral Scale
+   * ======================================== */
+  --zid-color-neutral-50: #F8F8F8;
+  --zid-color-neutral-100: #F2F2F2;
+  --zid-color-neutral-200: #E4E4E5;
+  --zid-color-neutral-300: #C6C6C8;
+  --zid-color-neutral-400: #A3A1A6;
+  --zid-color-neutral-500: #75727B;
+  --zid-color-neutral-600: #1F0433;
+  --zid-color-neutral-700: #1C042E;
+  --zid-color-neutral-800: #180328;
+  --zid-color-neutral-900: #140320;
+  --zid-color-neutral-1000: #0E0217;
+
+
+  /* ========================================
+   * Green Scale
+   * ======================================== */
+  --zid-color-green-50: #FAFDFA;
+  --zid-color-green-100: #F7FDF7;
+  --zid-color-green-200: #EFFBEE;
+  --zid-color-green-300: #DDF8DC;
+  --zid-color-green-400: #CAF4C8;
+  --zid-color-green-500: #B6F0B1;
+  --zid-color-green-600: #9EEC98;
+  --zid-color-green-700: #8DD388;
+  --zid-color-green-800: #7AB776;
+  --zid-color-green-900: #649560;
+  --zid-color-green-1000: #476A44;
+
+  /* ========================================
+   * Blue Scale
+   * ======================================== */
+  --zid-color-blue-50: #F9FDFD;
+  --zid-color-blue-100: #F4FCFC;
+  --zid-color-blue-200: #E9FAFA;
+  --zid-color-blue-300: #D1F4F4;
+  --zid-color-blue-400: #B5EFEF;
+  --zid-color-blue-500: #95E9E9;
+  --zid-color-blue-600: #6BE3E3;
+  --zid-color-blue-700: #60CBCB;
+  --zid-color-blue-800: #53B0B0;
+  --zid-color-blue-900: #449090;
+  --zid-color-blue-1000: #306666;
+
+  /* ========================================
+   * Yellow Scale
+   * ======================================== */
+  --zid-color-yellow-50: #FEFDF9;
+  --zid-color-yellow-100: #FEFDF5;
+  --zid-color-yellow-200: #FEFAEB;
+  --zid-color-yellow-300: #FDF5D6;
+  --zid-color-yellow-400: #FBF0BF;
+  --zid-color-yellow-500: #FAEBA4;
+  --zid-color-yellow-600: #F9E683;
+  --zid-color-yellow-700: #DFCE75;
+  --zid-color-yellow-800: #C1B265;
+  --zid-color-yellow-900: #9D9153;
+  --zid-color-yellow-1000: #6F673B;
+
+  /* ========================================
+   * Orange Scale
+   * ======================================== */
+  --zid-color-orange-50: #FFFAF8;
+  --zid-color-orange-100: #FFF6F3;
+  --zid-color-orange-200: #FFEDE6;
+  --zid-color-orange-300: #FFD8C9;
+  --zid-color-orange-400: #FFC2A7;
+  --zid-color-orange-500: #FFA97D;
+  --zid-color-orange-600: #FF8C3A;
+  --zid-color-orange-700: #E47D34;
+  --zid-color-orange-800: #C66C2D;
+  --zid-color-orange-900: #A15925;
+  --zid-color-orange-1000: #723F1A;
+
+  /* ========================================
+   * Red Scale
+   * ======================================== */
+  --zid-color-red-50: #FFF8F9;
+  --zid-color-red-100: #FFF3F4;
+  --zid-color-red-200: #FEE5E9;
+  --zid-color-red-300: #FDC9D0;
+  --zid-color-red-400: #FCA7B4;
+  --zid-color-red-500: #FB7C93;
+  --zid-color-red-600: #FA3768;
+  --zid-color-red-700: #E0315D;
+  --zid-color-red-800: #C22B51;
+  --zid-color-red-900: #9E2342;
+  --zid-color-red-1000: #70192F;
+
+  /* ========================================
+   * Semantic Tokens - Primary
+   * ======================================== */
+  --zid-primary-main: #AE72FF;
+  --zid-primary-dark: #8758C6;
+  --zid-primary-light: #D2B8FF;
+  --zid-primary-contrast-text: #FFFFFF;
+
+  /* ========================================
+   * Semantic Tokens - Secondary
+   * ======================================== */
+  --zid-secondary-main: #3C1C54;
+  --zid-secondary-dark: #2E1641;
+  --zid-secondary-light: #8A7798;
+  --zid-secondary-contrast-text: #FFFFFF;
+
+  /* ========================================
+   * Semantic Tokens - Error
+   * ======================================== */
+  --zid-error-main: #FA3768;
+  --zid-error-dark: #C22B51;
+  --zid-error-light: #FCA7B4;
+  --zid-error-contrast-text: #FFFFFF;
+
+  /* ========================================
+   * Semantic Tokens - Warning
+   * ======================================== */
+  --zid-warning-main: #F9E683;
+  --zid-warning-dark: #DFCE75;
+  --zid-warning-light: #FBF0BF;
+  --zid-warning-contrast-text: #6F673B;
+
+  /* ========================================
+   * Semantic Tokens - Info
+   * ======================================== */
+  --zid-info-main: #60CBCB;
+  --zid-info-dark: #449090;
+  --zid-info-light: #95E9E9;
+  --zid-info-contrast-text: #FFFFFF;
+
+  /* ========================================
+   * Semantic Tokens - Success
+   * ======================================== */
+  --zid-success-main: #9EEC98;
+  --zid-success-dark: #649560;
+  --zid-success-light: #DDF8DC;
+  --zid-success-contrast-text: #000000;
+
+  /* ========================================
+   * Text Colors
+   * ======================================== */
+  --zid-text-primary: var(--zid-color-neutral-1000);
+  --zid-text-secondary: var(--zid-color-neutral-600);
+  --zid-text-tertiary: var(--zid-color-neutral-500);
+  --zid-text-disabled: var(--zid-color-neutral-400);
+
+  /* ========================================
+   * Background Colors
+   * ======================================== */
+  --zid-bg-default: #F8F8F8;
+  --zid-bg-paper: var(--zid-base-white);
+
+  /* ========================================
+   * Divider
+   * ======================================== */
+  --zid-divider: var(--zid-color-secondary-50);
+}

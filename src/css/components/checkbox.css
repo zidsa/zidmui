@@ -1,0 +1,126 @@
+/**
+ * Checkbox Component
+ * States: checked, unchecked, disabled, indeterminate
+ */
+
+/* ========================================
+ * Base Checkbox
+ * ======================================== */
+:where(.zid-checkbox) {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--zid-spacing-1);
+  cursor: pointer;
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-base);
+  color: var(--zid-text-primary);
+}
+
+/* ========================================
+ * Checkbox Input (visually hidden)
+ * ======================================== */
+.zid-checkbox__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* ========================================
+ * Checkbox Box
+ * ======================================== */
+.zid-checkbox__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--zid-color-neutral-400);
+  border-radius: var(--zid-radius-sm);
+  background-color: var(--zid-bg-paper);
+  transition: background-color var(--zid-transition-fast),
+              border-color var(--zid-transition-fast),
+              box-shadow var(--zid-transition-fast);
+}
+
+.zid-checkbox__box svg {
+  width: 14px;
+  height: 14px;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity var(--zid-transition-fast),
+              transform var(--zid-transition-fast);
+}
+
+/* ========================================
+ * Checked State
+ * ======================================== */
+.zid-checkbox__input:checked + .zid-checkbox__box {
+  background-color: var(--zid-color-primary-1000);
+  border-color: var(--zid-color-primary-1000);
+}
+
+.zid-checkbox__input:checked + .zid-checkbox__box svg {
+  opacity: 1;
+  transform: scale(1);
+  color: var(--zid-base-white);
+}
+
+/* ========================================
+ * Indeterminate State
+ * ======================================== */
+.zid-checkbox--indeterminate .zid-checkbox__box {
+  background-color: var(--zid-color-primary-1000);
+  border-color: var(--zid-color-primary-1000);
+}
+
+.zid-checkbox--indeterminate .zid-checkbox__box svg {
+  opacity: 1;
+  transform: scale(1);
+  color: var(--zid-base-white);
+}
+
+/* ========================================
+ * Hover State
+ * ======================================== */
+.zid-checkbox:hover:not(.zid-checkbox--disabled) .zid-checkbox__box {
+  border-color: var(--zid-color-neutral-500);
+}
+
+.zid-checkbox:hover:not(.zid-checkbox--disabled) .zid-checkbox__input:checked + .zid-checkbox__box {
+  background-color: var(--zid-color-primary-900);
+  border-color: var(--zid-color-primary-900);
+}
+
+/* ========================================
+ * Focus Visible State
+ * ======================================== */
+.zid-checkbox__input:focus-visible + .zid-checkbox__box {
+  outline: 2px solid var(--zid-color-primary-1000);
+  outline-offset: 2px;
+}
+
+/* ========================================
+ * Disabled State
+ * ======================================== */
+.zid-checkbox--disabled {
+  cursor: not-allowed;
+  color: var(--zid-text-disabled);
+}
+
+.zid-checkbox--disabled .zid-checkbox__box {
+  background-color: var(--zid-action-disabled-background);
+  border-color: var(--zid-color-neutral-300);
+}
+
+.zid-checkbox--disabled .zid-checkbox__input:checked + .zid-checkbox__box {
+  background-color: var(--zid-color-neutral-300);
+  border-color: var(--zid-color-neutral-300);
+}
+
+/* ========================================
+ * Label
+ * ======================================== */
+.zid-checkbox__label {
+  user-select: none;
+}

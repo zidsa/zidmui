@@ -1,0 +1,66 @@
+/**
+ * Action State Tokens
+ * Derived from MUI theme action states
+ */
+
+:root {
+  /* ========================================
+   * Action States (based on neutral-600)
+   * ======================================== */
+  --zid-action-active: rgba(31, 4, 51, 0.56);
+  --zid-action-hover: rgba(31, 4, 51, 0.04);
+  --zid-action-selected: rgba(31, 4, 51, 0.08);
+  --zid-action-focus: rgba(31, 4, 51, 0.12);
+  --zid-action-disabled: rgba(31, 4, 51, 0.38);
+  --zid-action-disabled-background: rgba(31, 4, 51, 0.12);
+
+  /* ========================================
+   * Primary States
+   * ======================================== */
+  --zid-primary-state-hover: rgba(174, 114, 255, 0.04);
+  --zid-primary-state-selected: rgba(174, 114, 255, 0.08);
+  --zid-primary-state-focus: rgba(174, 114, 255, 0.12);
+  --zid-primary-state-focus-visible: rgba(174, 114, 255, 0.3);
+  --zid-primary-state-outlined-border: rgba(174, 114, 255, 0.5);
+
+  /* ========================================
+   * Secondary States
+   * ======================================== */
+  --zid-secondary-state-hover: rgba(60, 28, 84, 0.04);
+  --zid-secondary-state-selected: rgba(60, 28, 84, 0.08);
+  --zid-secondary-state-focus: rgba(60, 28, 84, 0.12);
+  --zid-secondary-state-focus-visible: rgba(60, 28, 84, 0.3);
+  --zid-secondary-state-outlined-border: rgba(60, 28, 84, 0.5);
+
+  /* ========================================
+   * Error States
+   * ======================================== */
+  --zid-error-state-hover: rgba(250, 55, 104, 0.04);
+  --zid-error-state-selected: rgba(250, 55, 104, 0.08);
+  --zid-error-state-focus-visible: rgba(250, 55, 104, 0.3);
+  --zid-error-state-outlined-border: rgba(250, 55, 104, 0.5);
+
+  /* ========================================
+   * Success States
+   * ======================================== */
+  --zid-success-state-hover: rgba(46, 125, 50, 0.04);
+  --zid-success-state-focus-visible: rgba(46, 125, 50, 0.3);
+  --zid-success-state-outlined-border: rgba(46, 125, 50, 0.5);
+
+  /* ========================================
+   * Warning States
+   * ======================================== */
+  --zid-warning-state-hover: rgba(193, 178, 101, 0.04);
+  --zid-warning-state-selected: rgba(193, 178, 101, 0.08);
+  --zid-warning-state-focus-visible: rgba(193, 178, 101, 0.3);
+  --zid-warning-state-outlined-border: rgba(193, 178, 101, 0.5);
+
+  /* ========================================
+   * Common States
+   * ======================================== */
+  --zid-common-black-hover: rgba(0, 0, 0, 0.04);
+  --zid-common-black-selected: rgba(0, 0, 0, 0.08);
+  --zid-common-black-focus: rgba(0, 0, 0, 0.12);
+  --zid-common-white-focus: rgba(255, 255, 255, 0.12);
+  --zid-common-white-focus-visible: rgba(255, 255, 255, 0.3);
+}

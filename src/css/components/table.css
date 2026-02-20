@@ -1,0 +1,132 @@
+/**
+ * Table Component
+ * Header, rows, cells with hover states
+ */
+
+/* ========================================
+ * Base Table
+ * ======================================== */
+:where(.zid-table) {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--zid-font-family);
+  font-size: var(--zid-font-size-base);
+  color: var(--zid-text-primary);
+}
+
+/* ========================================
+ * Table Head
+ * ======================================== */
+.zid-table__head {
+  background-color: var(--zid-color-neutral-50);
+}
+
+.zid-table__head .zid-table__cell {
+  font-weight: var(--zid-font-weight-semibold);
+  color: var(--zid-text-secondary);
+  text-align: left;
+}
+
+/* ========================================
+ * Table Row
+ * ======================================== */
+.zid-table__row {
+  border-bottom: 1px solid var(--zid-divider);
+  transition: background-color var(--zid-transition-fast);
+}
+
+.zid-table__body .zid-table__row:hover {
+  background-color: var(--zid-action-hover);
+}
+
+.zid-table__row--selected {
+  background-color: var(--zid-action-selected);
+}
+
+.zid-table__body .zid-table__row--selected:hover {
+  background-color: var(--zid-action-selected);
+}
+
+/* ========================================
+ * Table Cell
+ * ======================================== */
+.zid-table__cell {
+  padding: var(--zid-spacing-1-5) var(--zid-spacing-2);
+  vertical-align: middle;
+  line-height: var(--zid-line-height-normal);
+}
+
+/* ========================================
+ * Cell Alignment
+ * ======================================== */
+.zid-table__cell--left {
+  text-align: left;
+}
+
+.zid-table__cell--center {
+  text-align: center;
+}
+
+.zid-table__cell--right {
+  text-align: right;
+}
+
+/* ========================================
+ * Compact Table
+ * ======================================== */
+.zid-table--compact .zid-table__cell {
+  padding: var(--zid-spacing-1) var(--zid-spacing-1-5);
+}
+
+/* ========================================
+ * Bordered Table
+ * ======================================== */
+.zid-table--bordered {
+  border: 1px solid var(--zid-divider);
+}
+
+.zid-table--bordered .zid-table__cell {
+  border: 1px solid var(--zid-divider);
+}
+
+/* ========================================
+ * Striped Table
+ * ======================================== */
+.zid-table--striped .zid-table__body .zid-table__row:nth-child(even) {
+  background-color: var(--zid-color-neutral-50);
+}
+
+.zid-table--striped .zid-table__body .zid-table__row:nth-child(even):hover {
+  background-color: var(--zid-action-hover);
+}
+
+/* ========================================
+ * Sticky Header
+ * ======================================== */
+.zid-table--sticky-header .zid-table__head {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* ========================================
+ * Table Container
+ * ======================================== */
+.zid-table-container {
+  overflow-x: auto;
+  border-radius: var(--zid-radius-standard);
+  border: 1px solid var(--zid-divider);
+}
+
+.zid-table-container .zid-table {
+  border: none;
+}
+
+/* ========================================
+ * Empty State
+ * ======================================== */
+.zid-table__empty {
+  text-align: center;
+  padding: var(--zid-spacing-6);
+  color: var(--zid-text-secondary);
+}

@@ -1,0 +1,364 @@
+/**
+ * Utility Classes
+ * Common patterns using design tokens
+ */
+
+/* ========================================
+ * Display Utilities
+ * ======================================== */
+.zid-hidden {
+  display: none;
+}
+
+.zid-block {
+  display: block;
+}
+
+.zid-inline {
+  display: inline;
+}
+
+.zid-inline-block {
+  display: inline-block;
+}
+
+.zid-flex {
+  display: flex;
+}
+
+.zid-inline-flex {
+  display: inline-flex;
+}
+
+.zid-grid {
+  display: grid;
+}
+
+/* ========================================
+ * Flex Utilities
+ * ======================================== */
+.zid-flex-row {
+  flex-direction: row;
+}
+
+.zid-flex-col {
+  flex-direction: column;
+}
+
+.zid-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.zid-flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.zid-items-start {
+  align-items: flex-start;
+}
+
+.zid-items-center {
+  align-items: center;
+}
+
+.zid-items-end {
+  align-items: flex-end;
+}
+
+.zid-justify-start {
+  justify-content: flex-start;
+}
+
+.zid-justify-center {
+  justify-content: center;
+}
+
+.zid-justify-end {
+  justify-content: flex-end;
+}
+
+.zid-justify-between {
+  justify-content: space-between;
+}
+
+.zid-flex-1 {
+  flex: 1;
+}
+
+.zid-flex-auto {
+  flex: auto;
+}
+
+.zid-flex-none {
+  flex: none;
+}
+
+/* ========================================
+ * Gap Utilities
+ * ======================================== */
+.zid-gap-0 {
+  gap: var(--zid-spacing-0);
+}
+
+.zid-gap-1 {
+  gap: var(--zid-spacing-1);
+}
+
+.zid-gap-2 {
+  gap: var(--zid-spacing-2);
+}
+
+.zid-gap-3 {
+  gap: var(--zid-spacing-3);
+}
+
+.zid-gap-4 {
+  gap: var(--zid-spacing-4);
+}
+
+/* ========================================
+ * Text Alignment
+ * ======================================== */
+.zid-text-left {
+  text-align: left;
+}
+
+.zid-text-center {
+  text-align: center;
+}
+
+.zid-text-right {
+  text-align: right;
+}
+
+/* ========================================
+ * Text Colors
+ * ======================================== */
+.zid-text-primary {
+  color: var(--zid-text-primary);
+}
+
+.zid-text-secondary {
+  color: var(--zid-text-secondary);
+}
+
+.zid-text-tertiary {
+  color: var(--zid-text-tertiary);
+}
+
+.zid-text-disabled {
+  color: var(--zid-text-disabled);
+}
+
+/* ========================================
+ * Font Weights
+ * ======================================== */
+.zid-font-regular {
+  font-weight: var(--zid-font-weight-regular);
+}
+
+.zid-font-medium {
+  font-weight: var(--zid-font-weight-medium);
+}
+
+.zid-font-semibold {
+  font-weight: var(--zid-font-weight-semibold);
+}
+
+.zid-font-bold {
+  font-weight: var(--zid-font-weight-bold);
+}
+
+/* ========================================
+ * Font Sizes
+ * ======================================== */
+.zid-text-xs {
+  font-size: var(--zid-font-size-xs);
+}
+
+.zid-text-sm {
+  font-size: var(--zid-font-size-sm);
+}
+
+.zid-text-base {
+  font-size: var(--zid-font-size-base);
+}
+
+.zid-text-lg {
+  font-size: var(--zid-font-size-lg);
+}
+
+.zid-text-xl {
+  font-size: var(--zid-font-size-xl);
+}
+
+/* ========================================
+ * Width Utilities
+ * ======================================== */
+.zid-w-full {
+  width: 100%;
+}
+
+.zid-w-auto {
+  width: auto;
+}
+
+/* ========================================
+ * Margin Utilities
+ * ======================================== */
+.zid-m-0 {
+  margin: var(--zid-spacing-0);
+}
+
+.zid-m-1 {
+  margin: var(--zid-spacing-1);
+}
+
+.zid-m-2 {
+  margin: var(--zid-spacing-2);
+}
+
+.zid-mt-1 {
+  margin-top: var(--zid-spacing-1);
+}
+
+.zid-mt-2 {
+  margin-top: var(--zid-spacing-2);
+}
+
+.zid-mb-1 {
+  margin-bottom: var(--zid-spacing-1);
+}
+
+.zid-mb-2 {
+  margin-bottom: var(--zid-spacing-2);
+}
+
+/* ========================================
+ * Padding Utilities
+ * ======================================== */
+.zid-p-0 {
+  padding: var(--zid-spacing-0);
+}
+
+.zid-p-1 {
+  padding: var(--zid-spacing-1);
+}
+
+.zid-p-2 {
+  padding: var(--zid-spacing-2);
+}
+
+.zid-p-3 {
+  padding: var(--zid-spacing-3);
+}
+
+.zid-p-4 {
+  padding: var(--zid-spacing-4);
+}
+
+/* ========================================
+ * Border Radius
+ * ======================================== */
+.zid-rounded-none {
+  border-radius: var(--zid-radius-none);
+}
+
+.zid-rounded-sm {
+  border-radius: var(--zid-radius-sm);
+}
+
+.zid-rounded {
+  border-radius: var(--zid-radius-standard);
+}
+
+.zid-rounded-md {
+  border-radius: var(--zid-radius-md);
+}
+
+.zid-rounded-lg {
+  border-radius: var(--zid-radius-lg);
+}
+
+.zid-rounded-full {
+  border-radius: var(--zid-radius-full);
+}
+
+/* ========================================
+ * Shadows
+ * ======================================== */
+.zid-shadow-none {
+  box-shadow: var(--zid-shadow-0);
+}
+
+.zid-shadow-sm {
+  box-shadow: var(--zid-shadow-1);
+}
+
+.zid-shadow {
+  box-shadow: var(--zid-shadow-2);
+}
+
+.zid-shadow-md {
+  box-shadow: var(--zid-shadow-4);
+}
+
+.zid-shadow-lg {
+  box-shadow: var(--zid-shadow-8);
+}
+
+.zid-shadow-xl {
+  box-shadow: var(--zid-shadow-16);
+}
+
+/* ========================================
+ * Overflow
+ * ======================================== */
+.zid-overflow-hidden {
+  overflow: hidden;
+}
+
+.zid-overflow-auto {
+  overflow: auto;
+}
+
+.zid-overflow-scroll {
+  overflow: scroll;
+}
+
+/* ========================================
+ * Cursor
+ * ======================================== */
+.zid-cursor-pointer {
+  cursor: pointer;
+}
+
+.zid-cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+/* ========================================
+ * Visibility
+ * ======================================== */
+.zid-visible {
+  visibility: visible;
+}
+
+.zid-invisible {
+  visibility: hidden;
+}
+
+/* ========================================
+ * Screen Reader Only
+ * ======================================== */
+.zid-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

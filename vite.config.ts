@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react';
 import { glob } from 'glob';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 import { peerDependencies } from './package.json';
 
@@ -36,6 +37,14 @@ export default defineConfig({
     dts({
       entryRoot: 'src',
       outDir: 'dist/types',
+    }),
+    viteStaticCopy({
+      targets: [
+        {
+          src: 'src/css/**/*',
+          dest: 'styles',
+        },
+      ],
     }),
   ],
 });

@@ -1,0 +1,316 @@
+/**
+ * Button Component
+ * Variants: contained, outlined, text
+ * Colors: primary, secondary, error
+ * Sizes: sm, md, lg
+ */
+
+/* ========================================
+ * Base Button (low specificity with :where)
+ * ======================================== */
+:where(.zid-button) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--zid-spacing-1);
+  font-family: var(--zid-font-family);
+  font-weight: var(--zid-font-weight-regular);
+  text-decoration: none;
+  text-transform: initial;
+  border: 1px solid transparent;
+  border-radius: 360px; /* Pill shape like MUI */
+  cursor: pointer;
+  transition: background-color var(--zid-transition-normal),
+              border-color var(--zid-transition-normal);
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ========================================
+ * Size Modifiers
+ * ======================================== */
+.zid-button--sm {
+  padding: 4px 16px;
+  font-size: 12px;
+  line-height: 22px;
+  min-width: 72px;
+  min-height: 32px;
+  max-height: 32px;
+}
+
+.zid-button--md {
+  padding: 7px 16px;
+  font-size: 14px;
+  line-height: 24px;
+  min-width: 104px;
+  min-height: 40px;
+  max-height: 40px;
+}
+
+.zid-button--lg {
+  padding: 10px 16px;
+  font-size: 16px;
+  line-height: 26px;
+  min-width: 122px;
+  min-height: 48px;
+  max-height: 48px;
+}
+
+/* ========================================
+ * Contained Variant - Primary
+ * ======================================== */
+.zid-button--contained.zid-button--primary {
+  background-color: var(--zid-color-primary-1000);
+  border-color: var(--zid-color-primary-1000);
+  color: var(--zid-base-white);
+}
+
+.zid-button--contained.zid-button--primary:hover {
+  background-color: var(--zid-color-primary-900);
+  border-color: var(--zid-color-primary-900);
+}
+
+.zid-button--contained.zid-button--primary:active {
+  background-color: var(--zid-color-primary-600);
+  border-color: var(--zid-color-primary-600);
+}
+
+.zid-button--contained.zid-button--primary:focus-visible {
+  background-color: var(--zid-color-primary-900);
+  border-color: var(--zid-color-primary-900);
+  outline: 2px solid var(--zid-primary-dark);
+  outline-offset: 2px;
+}
+
+
+/* ========================================
+ * Contained Variant - Secondary
+ * ======================================== */
+.zid-button--contained.zid-button--secondary {
+  background-color: var(--zid-color-secondary-50);
+  border-color: var(--zid-color-secondary-200);
+  color: var(--zid-color-secondary-1000);
+}
+
+.zid-button--contained.zid-button--secondary:hover {
+  background-color: var(--zid-color-secondary-50);
+  border-color: var(--zid-color-secondary-200);
+}
+
+.zid-button--contained.zid-button--secondary:active {
+  background-color: #EBE8ED;
+  border-color: var(--zid-color-secondary-200);
+}
+
+.zid-button--contained.zid-button--secondary:focus-visible {
+  background-color: var(--zid-color-primary-200);
+  border-color: var(--zid-color-secondary-200);
+  outline: 2px solid var(--zid-primary-dark);
+  outline-offset: 2px;
+}
+
+/* ========================================
+ * Contained Variant - Error
+ * ======================================== */
+.zid-button--contained.zid-button--error {
+  background-color: var(--zid-color-red-200);
+  border-color: var(--zid-color-red-400);
+  color: var(--zid-color-red-1000);
+}
+
+.zid-button--contained.zid-button--error:hover {
+  background-color: var(--zid-color-red-300);
+  border-color: var(--zid-color-red-400);
+}
+
+.zid-button--contained.zid-button--error:active {
+  background-color: var(--zid-color-red-300);
+  border-color: var(--zid-color-red-700);
+}
+
+.zid-button--contained.zid-button--error:focus-visible {
+  background-color: var(--zid-color-red-600);
+  border-color: transparent;
+  color: var(--zid-base-white);
+  outline: 2px solid var(--zid-primary-dark);
+  outline-offset: 2px;
+}
+
+/* ========================================
+ * Outlined Variant - Primary
+ * ======================================== */
+.zid-button--outlined.zid-button--primary {
+  background-color: transparent;
+  border-color: var(--zid-primary-main);
+  color: var(--zid-primary-main);
+}
+
+.zid-button--outlined.zid-button--primary:hover {
+  background-color: var(--zid-primary-state-hover);
+  border-color: var(--zid-primary-main);
+}
+
+.zid-button--outlined.zid-button--primary:active {
+  background-color: var(--zid-primary-state-selected);
+}
+
+.zid-button--outlined.zid-button--primary:focus-visible {
+  background-color: transparent;
+  outline: 2px solid var(--zid-primary-dark);
+  outline-offset: 2px;
+}
+
+/* ========================================
+ * Outlined Variant - Secondary
+ * ======================================== */
+.zid-button--outlined.zid-button--secondary {
+  background-color: transparent;
+  border-color: var(--zid-color-secondary-200);
+  color: var(--zid-color-secondary-1000);
+}
+
+.zid-button--outlined.zid-button--secondary:hover {
+  background-color: var(--zid-secondary-state-hover);
+  border-color: var(--zid-color-secondary-200);
+}
+
+.zid-button--outlined.zid-button--secondary:active {
+  background-color: var(--zid-secondary-state-selected);
+}
+
+.zid-button--outlined.zid-button--secondary:focus-visible {
+  background-color: transparent;
+  outline: 2px solid var(--zid-primary-dark);
+  outline-offset: 2px;
+}
+
+/* ========================================
+ * Outlined Variant - Error
+ * ======================================== */
+.zid-button--outlined.zid-button--error {
+  background-color: transparent;
+  border-color: var(--zid-error-main);
+  color: var(--zid-color-red-800);
+}
+
+.zid-button--outlined.zid-button--error:hover {
+  background-color: var(--zid-color-red-100);
+  border-color: var(--zid-error-main);
+}
+
+.zid-button--outlined.zid-button--error:active {
+  background-color: var(--zid-error-state-selected);
+}
+
+.zid-button--outlined.zid-button--error:focus-visible {
+  background-color: transparent;
+  outline: 2px solid var(--zid-primary-dark);
+  outline-offset: 2px;
+}
+
+/* ========================================
+ * Text Variant - Primary
+ * ======================================== */
+.zid-button--text.zid-button--primary {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--zid-primary-main);
+}
+
+.zid-button--text.zid-button--primary:hover {
+  background-color: var(--zid-primary-state-hover);
+}
+
+.zid-button--text.zid-button--primary:active {
+  background-color: var(--zid-primary-state-selected);
+}
+
+.zid-button--text.zid-button--primary:focus-visible {
+  background-color: transparent;
+  outline: 2px solid var(--zid-primary-dark);
+  outline-offset: 2px;
+}
+
+/* ========================================
+ * Text Variant - Secondary
+ * ======================================== */
+.zid-button--text.zid-button--secondary {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--zid-color-secondary-1000);
+}
+
+.zid-button--text.zid-button--secondary:hover {
+  background-color: var(--zid-secondary-state-hover);
+}
+
+.zid-button--text.zid-button--secondary:active {
+  background-color: var(--zid-secondary-state-selected);
+}
+
+.zid-button--text.zid-button--secondary:focus-visible {
+  background-color: transparent;
+  outline: 2px solid var(--zid-primary-dark);
+  outline-offset: 2px;
+}
+
+/* ========================================
+ * Text Variant - Error
+ * ======================================== */
+.zid-button--text.zid-button--error {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--zid-error-main);
+}
+
+.zid-button--text.zid-button--error:hover {
+  background-color: var(--zid-error-state-hover);
+}
+
+.zid-button--text.zid-button--error:active {
+  background-color: var(--zid-error-state-selected);
+}
+
+.zid-button--text.zid-button--error:focus-visible {
+  background-color: transparent;
+  outline: 2px solid var(--zid-primary-dark);
+  outline-offset: 2px;
+}
+
+/* ========================================
+ * Disabled State (all variants)
+ * ======================================== */
+.zid-button:disabled,
+.zid-button--disabled {
+  background-color: var(--zid-color-neutral-100);
+  border-color: var(--zid-color-neutral-200);
+  color: var(--zid-color-neutral-400);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ========================================
+ * Full Width Modifier
+ * ======================================== */
+.zid-button--full-width {
+  width: 100%;
+}
+
+/* ========================================
+ * Icon Button Modifier
+ * ======================================== */
+.zid-button--icon-only {
+  padding: var(--zid-spacing-1);
+  min-width: auto;
+}
+
+.zid-button--icon-only.zid-button--sm {
+  padding: var(--zid-spacing-0-5);
+}
+
+.zid-button--icon-only.zid-button--lg {
+  padding: var(--zid-spacing-1-5);
+}

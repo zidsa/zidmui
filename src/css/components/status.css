@@ -1,0 +1,162 @@
+/**
+ * Status Component
+ * Color variants: success, error, warning, info, neutral, disabled, orange, blue
+ * Sizes: sm, md
+ */
+
+/* ========================================
+ * Base Status
+ * ======================================== */
+:where(.zid-status) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--zid-font-family);
+  font-weight: var(--zid-font-weight-regular);
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  border-radius: var(--zid-radius-full);
+  white-space: nowrap;
+  min-width: 60px;
+}
+
+/* ========================================
+ * Size Modifiers
+ * ======================================== */
+.zid-status--sm {
+  padding: var(--zid-spacing-0-5) var(--zid-spacing-1);
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+}
+
+.zid-status--md {
+  padding: var(--zid-spacing-0-5) var(--zid-spacing-1-5);
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+}
+
+/* ========================================
+ * Success Variant
+ * ======================================== */
+.zid-status--success {
+  background-color: var(--zid-color-green-300);
+  color: var(--zid-color-green-900);
+}
+
+/* ========================================
+ * Error Variant
+ * ======================================== */
+.zid-status--error {
+  background-color: var(--zid-color-red-200);
+  color: var(--zid-color-red-900);
+}
+
+/* ========================================
+ * Warning Variant
+ * ======================================== */
+.zid-status--warning {
+  background-color: var(--zid-color-yellow-300);
+  color: var(--zid-color-yellow-1000);
+}
+
+/* ========================================
+ * Info Variant
+ * ======================================== */
+.zid-status--info {
+  background-color: var(--zid-color-primary-200);
+  color: var(--zid-color-primary-800);
+}
+
+/* ========================================
+ * Neutral Variant
+ * ======================================== */
+.zid-status--neutral {
+  background-color: var(--zid-color-neutral-100);
+  color: var(--zid-color-neutral-600);
+}
+
+/* ========================================
+ * Disabled Variant
+ * ======================================== */
+.zid-status--disabled {
+  background-color: var(--zid-color-neutral-50);
+  color: var(--zid-color-neutral-400);
+}
+
+/* ========================================
+ * Orange Variant
+ * ======================================== */
+.zid-status--orange {
+  background-color: var(--zid-color-orange-200);
+  color: var(--zid-color-orange-700);
+}
+
+/* ========================================
+ * Blue Variant
+ * ======================================== */
+.zid-status--blue {
+  background-color: var(--zid-color-blue-300);
+  color: var(--zid-color-blue-900);
+}
+
+/* ========================================
+ * Status with Icon
+ * ======================================== */
+.zid-status__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: var(--zid-spacing-0-5);
+}
+
+.zid-status__icon svg {
+  width: 12px;
+  height: 12px;
+}
+
+.zid-status--md .zid-status__icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* ========================================
+ * Status with Dot
+ * ======================================== */
+.zid-status__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--zid-radius-full);
+  margin-right: var(--zid-spacing-0-5);
+}
+
+.zid-status--success .zid-status__dot {
+  background-color: var(--zid-color-green-700);
+}
+
+.zid-status--error .zid-status__dot {
+  background-color: var(--zid-color-red-700);
+}
+
+.zid-status--warning .zid-status__dot {
+  background-color: var(--zid-color-yellow-700);
+}
+
+.zid-status--info .zid-status__dot {
+  background-color: var(--zid-color-primary-600);
+}
+
+.zid-status--neutral .zid-status__dot {
+  background-color: var(--zid-color-neutral-500);
+}
+
+.zid-status--disabled .zid-status__dot {
+  background-color: var(--zid-color-neutral-300);
+}
+
+.zid-status--orange .zid-status__dot {
+  background-color: var(--zid-color-orange-600);
+}
+
+.zid-status--blue .zid-status__dot {
+  background-color: var(--zid-color-blue-700);
+}
