@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.5.7-beta.2](https://github.com/zidsa/zidmui/compare/v1.5.6...v1.5.7-beta.2) (2026-02-20)
+
+## [1.5.7-beta.1](https://github.com/zidsa/zidmui/compare/v1.5.6...v1.5.7-beta.1) (2026-02-20)
+
 ## [1.5.6](https://github.com/zidsa/zidmui/compare/v1.5.5...v1.5.6) (2026-02-20)
 
 ## [1.5.5](https://github.com/zidsa/zidmui/compare/v1.5.3...v1.5.5) (2026-02-20)
