@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Box, IconButton } from '@mui/material';
 import { useState } from 'react';
-import { StackColumn } from '../../components/stack-column';
-import { StackRow } from '../../components/stack-row';
-import { AppTooltip } from '../../components/app-tooltip';
-import { IconFileCopyLine } from '../../icons/document/file-copy-line';
-import { IconCheckLine } from '../../icons/system/check-line';
-import { AppTypography } from '../../components/app-typography';
+import { StackColumn } from '~/components/stack-column';
+import { StackRow } from '~/components/stack-row';
+import { AppTooltip } from '~/components/app-tooltip';
+import { IconFileCopyLine } from '~/icons/document/file-copy-line';
+import { IconCheckLine } from '~/icons/system/check-line';
+import { AppTypography } from '~/components/app-typography';
 
 //
 //

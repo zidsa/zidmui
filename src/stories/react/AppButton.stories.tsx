@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import { AppButton } from '../components/app-button';
+import { AppButton } from '~/components/app-button';
 
 //
 //
 
 // Meta
 const meta = {
-  title: 'App Button',
+  title: 'React/App Button',
   component: AppButton,
   parameters: {
     layout: 'centered',

@@ -1,6 +1,6 @@
 import { IconButtonProps, SvgIconProps, TextFieldProps } from '@mui/material';
 
-import { IconSearchLine } from '../icons/system/search-line';
+import { IconSearchLine } from '~/icons/system/search-line';
 
 import { AppInputBase } from './app-input-base';
 

@@ -2,15 +2,15 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Box, Divider, styled } from '@mui/material';
 
-import { AppOverflownTextWithTooltip } from '../components/app-overflown-text-with-tooltip';
-import { StackColumn } from '../components/stack-column';
+import { AppOverflownTextWithTooltip } from '~/components/app-overflown-text-with-tooltip';
+import { StackColumn } from '~/components/stack-column';
 
 //
 //
 
 // Meta
 const meta = {
-  title: 'App Overflown Text With Tooltip',
+  title: 'React/App Overflown Text With Tooltip',
   component: AppOverflownTextWithTooltip,
   parameters: {
     layout: 'centered',

@@ -1,6 +1,6 @@
 import { Box, SvgIconOwnProps, styled } from '@mui/material';
 
-import { IconInformationLine } from '../icons/system/information-line';
+import { IconInformationLine } from '~/icons/system/information-line';
 
 import { AppTooltip, AppTooltipProps } from './app-tooltip';
 import { StackRow } from './stack-row';

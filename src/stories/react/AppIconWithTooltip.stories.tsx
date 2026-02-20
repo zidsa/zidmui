@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import { AppIconWithTooltip } from '../components/app-icon-with-tooltip';
+import { AppIconWithTooltip } from '~/components/app-icon-with-tooltip';
 
 //
 //
 
 // Meta
 const meta = {
-  title: 'App Icon With Tooltip',
+  title: 'React/App Icon With Tooltip',
   component: AppIconWithTooltip,
   parameters: {
     layout: 'centered',

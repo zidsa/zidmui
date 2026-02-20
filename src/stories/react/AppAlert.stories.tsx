@@ -2,8 +2,8 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Box, Stack } from '@mui/material';
 
-import { AppAlert, AppAlertButton } from '../components/app-alert';
-import { AppTypography } from '../components/app-typography';
+import { AppAlert, AppAlertButton } from '~/components/app-alert';
+import { AppTypography } from '~/components/app-typography';
 
 //
 //
@@ -19,7 +19,7 @@ const longContent =
 
 // Meta
 const meta = {
-  title: 'App Alert',
+  title: 'React/App Alert',
   component: AppAlert,
   parameters: {
     layout: 'centered',

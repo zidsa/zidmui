@@ -2,16 +2,16 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Divider } from '@mui/material';
 
-import { AppInputBase } from '../components/app-input-base';
-import { AppTypography } from '../components/app-typography';
-import { StackColumn } from '../components/stack-column';
+import { AppInputBase } from '~/components/app-input-base';
+import { AppTypography } from '~/components/app-typography';
+import { StackColumn } from '~/components/stack-column';
 
 //
 //
 
 // Meta
 const meta = {
-  title: 'App Input Base',
+  title: 'React/App Input Base',
   component: AppInputBase,
   parameters: {
     layout: 'centered',
@@ -82,7 +82,12 @@ export const Variants: Story = {
 
       <AppTypography variant="h6">States</AppTypography>
 
-      <AppInputBase label="Error" placeholder="Invalid input" error helperText="This field is required" />
+      <AppInputBase
+        label="Error"
+        placeholder="Invalid input"
+        error
+        helperText="This field is required"
+      />
       <AppInputBase label="Disabled" placeholder="Cannot edit" disabled />
 
       <Divider />

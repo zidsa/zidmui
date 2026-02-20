@@ -2,16 +2,16 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Divider } from '@mui/material';
 
-import { AppInputBaseSearch } from '../components/app-input-base-search';
-import { AppTypography } from '../components/app-typography';
-import { StackColumn } from '../components/stack-column';
+import { AppInputBaseSearch } from '~/components/app-input-base-search';
+import { AppTypography } from '~/components/app-typography';
+import { StackColumn } from '~/components/stack-column';
 
 //
 //
 
 // Meta
 const meta = {
-  title: 'App Input Base Search',
+  title: 'React/App Input Base Search',
   component: AppInputBaseSearch,
   parameters: {
     layout: 'centered',

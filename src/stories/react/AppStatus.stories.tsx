@@ -2,14 +2,14 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Divider, Stack } from '@mui/material';
 
-import { AppStatus } from '../components/app-status';
+import { AppStatus } from '~/components/app-status';
 
 //
 //
 
 // Meta
 const meta = {
-  title: 'App Status',
+  title: 'React/App Status',
   component: AppStatus,
   parameters: {
     layout: 'centered',

@@ -2,18 +2,18 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Box, Divider, styled } from '@mui/material';
 
-import { AppListItem } from '../components/app-list-item';
-import { AppStatus } from '../components/app-status';
-import { AppTypography } from '../components/app-typography';
-import { StackColumn } from '../components/stack-column';
-import { IconBankLine } from '../icons/buildings/bank-line';
+import { AppListItem } from '~/components/app-list-item';
+import { AppStatus } from '~/components/app-status';
+import { AppTypography } from '~/components/app-typography';
+import { StackColumn } from '~/components/stack-column';
+import { IconBankLine } from '~/icons/buildings/bank-line';
 
 //
 //
 
 // Meta
 const meta = {
-  title: 'App List Item',
+  title: 'React/App List Item',
   component: AppListItem,
   parameters: {
     layout: 'centered',
@@ -53,7 +53,9 @@ export const Playground: Story = {
 export const Variants: Story = {
   render: () => (
     <StackColumn gap={2}>
-      <AppTypography variant="h6" sx={{ px: 1 }}>Label Only</AppTypography>
+      <AppTypography variant="h6" sx={{ px: 1 }}>
+        Label Only
+      </AppTypography>
 
       <Container>
         <AppListItem textLabel="Sample Label" />
@@ -61,7 +63,9 @@ export const Variants: Story = {
 
       <Divider />
 
-      <AppTypography variant="h6" sx={{ px: 1 }}>Label and Description</AppTypography>
+      <AppTypography variant="h6" sx={{ px: 1 }}>
+        Label and Description
+      </AppTypography>
 
       <Container>
         <AppListItem textLabel="Another Item" textDescription="This is a description" />
@@ -69,7 +73,9 @@ export const Variants: Story = {
 
       <Divider />
 
-      <AppTypography variant="h6" sx={{ px: 1 }}>With Icon</AppTypography>
+      <AppTypography variant="h6" sx={{ px: 1 }}>
+        With Icon
+      </AppTypography>
 
       <Container>
         <AppListItem
@@ -81,7 +87,9 @@ export const Variants: Story = {
 
       <Divider />
 
-      <AppTypography variant="h6" sx={{ px: 1 }}>With Label Suffix</AppTypography>
+      <AppTypography variant="h6" sx={{ px: 1 }}>
+        With Label Suffix
+      </AppTypography>
 
       <Container>
         <AppListItem
@@ -93,7 +101,9 @@ export const Variants: Story = {
 
       <Divider />
 
-      <AppTypography variant="h6" sx={{ px: 1 }}>With Text Content</AppTypography>
+      <AppTypography variant="h6" sx={{ px: 1 }}>
+        With Text Content
+      </AppTypography>
 
       <Container>
         <AppListItem
@@ -105,7 +115,9 @@ export const Variants: Story = {
 
       <Divider />
 
-      <AppTypography variant="h6" sx={{ px: 1 }}>With Tooltip</AppTypography>
+      <AppTypography variant="h6" sx={{ px: 1 }}>
+        With Tooltip
+      </AppTypography>
 
       <Container>
         <AppListItem
@@ -117,7 +129,9 @@ export const Variants: Story = {
 
       <Divider />
 
-      <AppTypography variant="h6" sx={{ px: 1 }}>Full Example</AppTypography>
+      <AppTypography variant="h6" sx={{ px: 1 }}>
+        Full Example
+      </AppTypography>
 
       <Container>
         <AppListItem
@@ -132,7 +146,9 @@ export const Variants: Story = {
 
       <Divider />
 
-      <AppTypography variant="h6" sx={{ px: 1 }}>With Children</AppTypography>
+      <AppTypography variant="h6" sx={{ px: 1 }}>
+        With Children
+      </AppTypography>
 
       <Container>
         <AppListItem

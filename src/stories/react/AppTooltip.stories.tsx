@@ -2,19 +2,19 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Box, ClickAwayListener, styled, useTheme } from '@mui/material';
 
-import { AppButton } from '../components/app-button';
-import { AppTooltip, AppTooltipProps } from '../components/app-tooltip';
-import { AppTypography } from '../components/app-typography';
-import { StackColumn } from '../components/stack-column';
-import { StackRow } from '../components/stack-row';
-import { useToggle } from '../hooks/use-toggle';
+import { AppButton } from '~/components/app-button';
+import { AppTooltip, AppTooltipProps } from '~/components/app-tooltip';
+import { AppTypography } from '~/components/app-typography';
+import { StackColumn } from '~/components/stack-column';
+import { StackRow } from '~/components/stack-row';
+import { useToggle } from '~/hooks/use-toggle';
 
 //
 //
 
 // Meta
 const meta = {
-  title: 'App Tooltip',
+  title: 'React/App Tooltip',
   component: AppTooltip,
   parameters: {
     layout: 'centered',
