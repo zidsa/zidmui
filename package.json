@@ -41,119 +41,119 @@
   ],
   "exports": {
     "./icons/arrows/*": {
-      "require": "./dist/cjs/icons/arrows/*.js",
-      "types": "./dist/types/icons/arrows/*.d.ts",
-      "import": "./dist/es/icons/arrows/*.js"
+      "require": "./dist/react/cjs/icons/arrows/*.js",
+      "types": "./dist/react/types/icons/arrows/*.d.ts",
+      "import": "./dist/react/es/icons/arrows/*.js"
     },
     "./icons/buildings/*": {
-      "require": "./dist/cjs/icons/buildings/*.js",
-      "types": "./dist/types/icons/buildings/*.d.ts",
-      "import": "./dist/es/icons/buildings/*.js"
+      "require": "./dist/react/cjs/icons/buildings/*.js",
+      "types": "./dist/react/types/icons/buildings/*.d.ts",
+      "import": "./dist/react/es/icons/buildings/*.js"
     },
     "./icons/business/*": {
-      "require": "./dist/cjs/icons/business/*.js",
-      "types": "./dist/types/icons/business/*.d.ts",
-      "import": "./dist/es/icons/business/*.js"
+      "require": "./dist/react/cjs/icons/business/*.js",
+      "types": "./dist/react/types/icons/business/*.d.ts",
+      "import": "./dist/react/es/icons/business/*.js"
     },
     "./icons/communication/*": {
-      "require": "./dist/cjs/icons/communication/*.js",
-      "types": "./dist/types/icons/communication/*.d.ts",
-      "import": "./dist/es/icons/communication/*.js"
+      "require": "./dist/react/cjs/icons/communication/*.js",
+      "types": "./dist/react/types/icons/communication/*.d.ts",
+      "import": "./dist/react/es/icons/communication/*.js"
     },
     "./icons/currencies/*": {
-      "require": "./dist/cjs/icons/currencies/*.js",
-      "types": "./dist/types/icons/currencies/*.d.ts",
-      "import": "./dist/es/icons/currencies/*.js"
+      "require": "./dist/react/cjs/icons/currencies/*.js",
+      "types": "./dist/react/types/icons/currencies/*.d.ts",
+      "import": "./dist/react/es/icons/currencies/*.js"
     },
     "./icons/design/*": {
-      "require": "./dist/cjs/icons/design/*.js",
-      "types": "./dist/types/icons/design/*.d.ts",
-      "import": "./dist/es/icons/design/*.js"
+      "require": "./dist/react/cjs/icons/design/*.js",
+      "types": "./dist/react/types/icons/design/*.d.ts",
+      "import": "./dist/react/es/icons/design/*.js"
     },
     "./icons/development/*": {
-      "require": "./dist/cjs/icons/development/*.js",
-      "types": "./dist/types/icons/development/*.d.ts",
-      "import": "./dist/es/icons/development/*.js"
+      "require": "./dist/react/cjs/icons/development/*.js",
+      "types": "./dist/react/types/icons/development/*.d.ts",
+      "import": "./dist/react/es/icons/development/*.js"
     },
     "./icons/device/*": {
-      "require": "./dist/cjs/icons/device/*.js",
-      "types": "./dist/types/icons/device/*.d.ts",
-      "import": "./dist/es/icons/device/*.js"
+      "require": "./dist/react/cjs/icons/device/*.js",
+      "types": "./dist/react/types/icons/device/*.d.ts",
+      "import": "./dist/react/es/icons/device/*.js"
     },
     "./icons/document/*": {
-      "require": "./dist/cjs/icons/document/*.js",
-      "types": "./dist/types/icons/document/*.d.ts",
-      "import": "./dist/es/icons/document/*.js"
+      "require": "./dist/react/cjs/icons/document/*.js",
+      "types": "./dist/react/types/icons/document/*.d.ts",
+      "import": "./dist/react/es/icons/document/*.js"
     },
     "./icons/editor/*": {
-      "require": "./dist/cjs/icons/editor/*.js",
-      "types": "./dist/types/icons/editor/*.d.ts",
-      "import": "./dist/es/icons/editor/*.js"
+      "require": "./dist/react/cjs/icons/editor/*.js",
+      "types": "./dist/react/types/icons/editor/*.d.ts",
+      "import": "./dist/react/es/icons/editor/*.js"
     },
     "./icons/finance/*": {
-      "require": "./dist/cjs/icons/finance/*.js",
-      "types": "./dist/types/icons/finance/*.d.ts",
-      "import": "./dist/es/icons/finance/*.js"
+      "require": "./dist/react/cjs/icons/finance/*.js",
+      "types": "./dist/react/types/icons/finance/*.d.ts",
+      "import": "./dist/react/es/icons/finance/*.js"
     },
     "./icons/food/*": {
-      "require": "./dist/cjs/icons/food/*.js",
-      "types": "./dist/types/icons/food/*.d.ts",
-      "import": "./dist/es/icons/food/*.js"
+      "require": "./dist/react/cjs/icons/food/*.js",
+      "types": "./dist/react/types/icons/food/*.d.ts",
+      "import": "./dist/react/es/icons/food/*.js"
     },
     "./icons/health-medical/*": {
-      "require": "./dist/cjs/icons/health-medical/*.js",
-      "types": "./dist/types/icons/health-medical/*.d.ts",
-      "import": "./dist/es/icons/health-medical/*.js"
+      "require": "./dist/react/cjs/icons/health-medical/*.js",
+      "types": "./dist/react/types/icons/health-medical/*.d.ts",
+      "import": "./dist/react/es/icons/health-medical/*.js"
     },
     "./icons/logos/*": {
-      "require": "./dist/cjs/icons/logos/*.js",
-      "types": "./dist/types/icons/logos/*.d.ts",
-      "import": "./dist/es/icons/logos/*.js"
+      "require": "./dist/react/cjs/icons/logos/*.js",
+      "types": "./dist/react/types/icons/logos/*.d.ts",
+      "import": "./dist/react/es/icons/logos/*.js"
     },
     "./icons/map/*": {
-      "require": "./dist/cjs/icons/map/*.js",
-      "types": "./dist/types/icons/map/*.d.ts",
-      "import": "./dist/es/icons/map/*.js"
+      "require": "./dist/react/cjs/icons/map/*.js",
+      "types": "./dist/react/types/icons/map/*.d.ts",
+      "import": "./dist/react/es/icons/map/*.js"
     },
     "./icons/media/*": {
-      "require": "./dist/cjs/icons/media/*.js",
-      "types": "./dist/types/icons/media/*.d.ts",
-      "import": "./dist/es/icons/media/*.js"
+      "require": "./dist/react/cjs/icons/media/*.js",
+      "types": "./dist/react/types/icons/media/*.d.ts",
+      "import": "./dist/react/es/icons/media/*.js"
     },
     "./icons/others/*": {
-      "require": "./dist/cjs/icons/others/*.js",
-      "types": "./dist/types/icons/others/*.d.ts",
-      "import": "./dist/es/icons/others/*.js"
+      "require": "./dist/react/cjs/icons/others/*.js",
+      "types": "./dist/react/types/icons/others/*.d.ts",
+      "import": "./dist/react/es/icons/others/*.js"
     },
     "./icons/system/*": {
-      "require": "./dist/cjs/icons/system/*.js",
-      "types": "./dist/types/icons/system/*.d.ts",
-      "import": "./dist/es/icons/system/*.js"
+      "require": "./dist/react/cjs/icons/system/*.js",
+      "types": "./dist/react/types/icons/system/*.d.ts",
+      "import": "./dist/react/es/icons/system/*.js"
     },
     "./icons/user-faces/*": {
-      "require": "./dist/cjs/icons/user-faces/*.js",
-      "types": "./dist/types/icons/user-faces/*.d.ts",
-      "import": "./dist/es/icons/user-faces/*.js"
+      "require": "./dist/react/cjs/icons/user-faces/*.js",
+      "types": "./dist/react/types/icons/user-faces/*.d.ts",
+      "import": "./dist/react/es/icons/user-faces/*.js"
     },
     "./icons/weather/*": {
-      "require": "./dist/cjs/icons/weather/*.js",
-      "types": "./dist/types/icons/weather/*.d.ts",
-      "import": "./dist/es/icons/weather/*.js"
+      "require": "./dist/react/cjs/icons/weather/*.js",
+      "types": "./dist/react/types/icons/weather/*.d.ts",
+      "import": "./dist/react/es/icons/weather/*.js"
     },
     "./hooks/*": {
-      "require": "./dist/cjs/hooks/*.js",
-      "types": "./dist/types/hooks/*.d.ts",
-      "import": "./dist/es/hooks/*.js"
+      "require": "./dist/react/cjs/hooks/*.js",
+      "types": "./dist/react/types/hooks/*.d.ts",
+      "import": "./dist/react/es/hooks/*.js"
     },
     "./theme/*": {
-      "require": "./dist/cjs/theme/*.js",
-      "types": "./dist/types/theme/*.d.ts",
-      "import": "./dist/es/theme/*.js"
+      "require": "./dist/react/cjs/theme/*.js",
+      "types": "./dist/react/types/theme/*.d.ts",
+      "import": "./dist/react/es/theme/*.js"
     },
     "./components/*": {
-      "require": "./dist/cjs/components/*.js",
-      "types": "./dist/types/components/*.d.ts",
-      "import": "./dist/es/components/*.js"
+      "require": "./dist/react/cjs/components/*.js",
+      "types": "./dist/react/types/components/*.d.ts",
+      "import": "./dist/react/es/components/*.js"
     },
     "./styles/*": "./dist/styles/*",
     "./styles/components/*": "./dist/styles/components/*"

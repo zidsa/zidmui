@@ -1,5 +1,4 @@
 import path from 'path';
-
 import react from '@vitejs/plugin-react';
 import { glob } from 'glob';
 import { defineConfig } from 'vite';
@@ -8,6 +7,7 @@ import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 import { peerDependencies } from './package.json';
 
+//
 //
 
 export default defineConfig({
@@ -19,7 +19,7 @@ export default defineConfig({
   build: {
     target: 'es2022',
     minify: false,
-    outDir: 'dist',
+    outDir: 'dist/react',
     lib: {
       entry: path.resolve(__dirname, './src/index.ts'),
       name: 'zidmui',
@@ -41,13 +41,13 @@ export default defineConfig({
     react(),
     dts({
       entryRoot: 'src',
-      outDir: 'dist/types',
+      outDir: 'dist/react/types',
     }),
     viteStaticCopy({
       targets: [
         {
           src: 'src/css/**/*',
-          dest: 'styles',
+          dest: '../styles',
         },
       ],
     }),
