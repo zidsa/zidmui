@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/zidsa/zidmui/compare/v2.0.0...v2.0.1) (2026-02-22)
+
+
+### Bug Fixes
+
+* app typography with overflown ([7ae3bf4](https://github.com/zidsa/zidmui/commit/7ae3bf47147edb2366e056b35ceaea13a2c3629a))
+
 # [2.0.0](https://github.com/zidsa/zidmui/compare/v1.5.7-beta.2...v2.0.0) (2026-02-20)
 
 ## [1.5.7-beta.2](https://github.com/zidsa/zidmui/compare/v1.5.6...v1.5.7-beta.2) (2026-02-20)
