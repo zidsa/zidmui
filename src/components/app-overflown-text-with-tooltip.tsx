@@ -25,9 +25,7 @@ export const AppOverflownTextWithTooltip: React.FC<AppOverflownTextWithTooltipPr
 
   const checkIsOverflown = (element: HTMLElement) => {
     if (!element) return;
-    setIsOverflown(
-      element.clientWidth < element.scrollWidth || element.clientHeight < element.scrollHeight,
-    );
+    setIsOverflown(element.clientWidth < element.scrollWidth);
   };
 
   const checkIsOverflownTwoLines = (element: HTMLElement) => {
