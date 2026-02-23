@@ -14,31 +14,38 @@ import { Meta } from '@storybook/addon-docs/blocks';
 
 <h1 align="center">Zid MUI</h1>
 
-[Zid MUI](https://ui.zid.sa) is a React component library built on the [Parcel](https://brand.zid.sa) design system, adhering to [Zid's brand guidelines](https://brand.zid.sa). It provides shared components, icons, hooks, and theme utilities for building consistent UIs across Zid products.
+## What is Zid MUI?
 
-## Installation
+Zid MUI is a UI library built on the MUI design system. It provides components, icons, hooks, and design tokens for building UIs that match Zid's brand.
+
+## Why it matters
+
+- Consistent Zid look & feel across all partner integrations
+- Pre-built components following Zid's brand guidelines
+- Faster UI development, no need to build common patterns from scratch
+- RTL support out of the box
+
+---
+
+## How to use it
+
+### React Stack
+
+Full React component library with MUI integration.
+
+#### Install
 
 ```bash
-pnpm add @zidsa/zidmui
+pnpm add @zidsa/zidmui react react-dom use-debounce @mui/material @mui/lab @emotion/styled
 ```
 
-### Peer dependencies
-
-Make sure the following peer dependencies are installed in your project:
+#### Theme setup
 
 ```bash
-pnpm add @mui/material @mui/lab react react-dom use-debounce
-```
-
-## Theme setup
-
-Wrap your application with the zidmui theme provider:
-
-```tsx
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import { themeParcel } from '@zidsa/zidmui/theme/theme';
 
-function App({ children }) {
+const App = ({ children }) => {
   return (
     <ThemeProvider theme={themeParcel}>
       <CssBaseline />
@@ -48,31 +55,131 @@ function App({ children }) {
 }
 ```
 
-## Usage
+#### Usage
 
-Import components, icons, hooks, and theme utilities from their respective paths:
-
-```tsx
-// Components
+```bash
 import { AppButton } from '@zidsa/zidmui/components/app-button';
 import { AppInputBase } from '@zidsa/zidmui/components/app-input-base';
-import { AppListItem } from '@zidsa/zidmui/components/app-list-item';
-
-// Icons
 import { IconSearchLine } from '@zidsa/zidmui/icons/system/search-line';
-import { IconBankLine } from '@zidsa/zidmui/icons/buildings/bank-line';
-
-// Hooks
 import { useToggle } from '@zidsa/zidmui/hooks/use-toggle';
 
-// Theme
-import { themeParcel } from '@zidsa/zidmui/theme/theme';
 ```
 
-## What's included
+### CSS-Only Stack
 
-- **Components** — Form inputs, buttons, alerts, tooltips, list items, and more
-- **Icons** — Categorized SVG icons (arrows, buildings, communication, system, etc.)
-- **Hooks** — Reusable React hooks
-- **Theme** — MUI theme with custom palette, colors, spacing, and shadows
-- **RTL support** — All components support right-to-left layouts
+For non-React projects (Vue, Angular, vanilla JS, etc.). Pure CSS with design tokens and component classes.
+
+#### Install
+
+```bash
+pnpm add @zidsa/zidmui
+
+```
+
+#### Import the stylesheet
+
+```bash
+/* Import all styles */
+@import '@zidsa/zidmui/styles/index.css';
+
+/* Or import individual components */
+@import '@zidsa/zidmui/styles/colors.css';
+@import '@zidsa/zidmui/styles/typography.css';
+@import '@zidsa/zidmui/styles/components/button.css';
+@import '@zidsa/zidmui/styles/components/input.css';
+
+
+```
+
+#### Font setup
+
+```bash
+Add IBM Plex Sans Arabic to your HTML:
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+```
+
+#### Usage Example
+
+##### Button
+
+```bash
+<!-- Primary contained button -->
+<button class="zid-button zid-button--contained zid-button--primary zid-button--md">
+  Submit
+</button>
+
+<!-- Secondary outlined button -->
+<button class="zid-button zid-button--outlined zid-button--secondary zid-button--sm">
+  Cancel
+</button>
+
+<!-- Disabled button -->
+<button class="zid-button zid-button--contained zid-button--primary zid-button--md" disabled>
+  Disabled
+</button>
+Input
+
+<div class="zid-input zid-input--md">
+  <input type="text" class="zid-input__field" placeholder="Enter your name" />
+</div>
+
+<!-- With error state -->
+<div class="zid-input zid-input--md zid-input--error">
+  <input type="text" class="zid-input__field" placeholder="Email" />
+</div>
+<span class="zid-input-helper zid-input-helper--error">Invalid email</span>
+Alert
+
+<div class="zid-alert zid-alert--success">
+  <div class="zid-alert__icon"><!-- icon svg --></div>
+  <div class="zid-alert__content">
+    <div class="zid-alert__title">Success</div>
+    <div class="zid-alert__message">Your changes have been saved.</div>
+  </div>
+</div>
+```
+
+##### Available CSS components
+
+```bash
+Component	Class prefix	Variants
+Button	  .zid-button	  contained, outlined, text / primary, secondary, error / sm, md, lg
+Input	.zid-input	sm, md, lg / error, disabled
+Alert	.zid-alert	success, info, warning, error
+Checkbox	.zid-checkbox	checked, disabled
+Radio	.zid-radio	checked, disabled
+Switch	.zid-switch	checked, disabled
+Select	.zid-select	sm, md, lg
+Card	.zid-card	—
+Modal	.zid-modal	—
+Table	.zid-table	—
+Tooltip	.zid-tooltip	—
+Status	.zid-status	—
+List Item	.zid-list-item	—
+Design tokens
+All CSS variables are prefixed with --zid-:
+
+/* Colors */
+var(--zid-primary-main)
+var(--zid-error-main)
+var(--zid-text-primary)
+
+/* Typography */
+var(--zid-font-family)
+var(--zid-font-size-base)
+var(--zid-font-weight-medium)
+
+/* Spacing */
+var(--zid-spacing-1)
+var(--zid-spacing-2)
+
+/* Radius */
+var(--zid-radius-standard)
+var(--zid-radius-md)
+
+/* Shadows */
+var(--zid-shadow-1)
+var(--zid-shadow-4)
+```
