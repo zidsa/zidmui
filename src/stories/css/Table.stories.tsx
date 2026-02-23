@@ -1,4 +1,5 @@
 import type { StoryObj } from '@storybook/react-vite';
+import type { ReactNode } from 'react';
 import '../../css/index.css';
 
 const sampleData = [
@@ -123,7 +124,7 @@ export const Variants: Story = {
 };
 
 
-const statusMap: Record<string, JSX.Element> = {
+const statusMap: Record<string, ReactNode> = {
   'Active': <span className="zid-status zid-status--success zid-status--sm"><span className="zid-status__dot"></span>Active</span>,
   'Pending': <span className="zid-status zid-status--warning zid-status--sm"><span className="zid-status__dot"></span>Pending</span>,
   'Inactive': <span className="zid-status zid-status--error zid-status--sm"><span className="zid-status__dot"></span>Inactive</span>,
