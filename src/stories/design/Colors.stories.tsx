@@ -150,8 +150,11 @@ const ColorsDisplay = () => {
         <Typography variant="h4" sx={{ mb: 1 }}>
           Parcel Design System Colors
         </Typography>
+        <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+          <strong>How to use in React:</strong> <code>theme.palette.colors.&#123;name&#125;[shade]</code>
+        </Typography>
         <Typography variant="body2" color="text.secondary" sx={{ mb: 4 }}>
-          Access colors via <code>theme.palette.colors.&#123;colorName&#125;[shade]</code>
+          <strong>How to use in CSS:</strong> <code>var(--zid-color-&#123;name&#125;-&#123;shade&#125;)</code>
         </Typography>
       </Box>
 

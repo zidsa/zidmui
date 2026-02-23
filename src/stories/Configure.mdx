@@ -119,8 +119,11 @@ Add IBM Plex Sans Arabic to your HTML:
 <button class="zid-button zid-button--contained zid-button--primary zid-button--md" disabled>
   Disabled
 </button>
-Input
+```
 
+##### Input
+```bash
+<!-- Default -->
 <div class="zid-input zid-input--md">
   <input type="text" class="zid-input__field" placeholder="Enter your name" />
 </div>
@@ -129,9 +132,13 @@ Input
 <div class="zid-input zid-input--md zid-input--error">
   <input type="text" class="zid-input__field" placeholder="Email" />
 </div>
-<span class="zid-input-helper zid-input-helper--error">Invalid email</span>
-Alert
 
+<span class="zid-input-helper zid-input-helper--error">Invalid email</span>
+```
+
+##### Alert
+```bash
+<!-- Success Alert -->
 <div class="zid-alert zid-alert--success">
   <div class="zid-alert__icon"><!-- icon svg --></div>
   <div class="zid-alert__content">
@@ -141,45 +148,3 @@ Alert
 </div>
 ```
 
-##### Available CSS components
-
-```bash
-Component	Class prefix	Variants
-Button	  .zid-button	  contained, outlined, text / primary, secondary, error / sm, md, lg
-Input	.zid-input	sm, md, lg / error, disabled
-Alert	.zid-alert	success, info, warning, error
-Checkbox	.zid-checkbox	checked, disabled
-Radio	.zid-radio	checked, disabled
-Switch	.zid-switch	checked, disabled
-Select	.zid-select	sm, md, lg
-Card	.zid-card	—
-Modal	.zid-modal	—
-Table	.zid-table	—
-Tooltip	.zid-tooltip	—
-Status	.zid-status	—
-List Item	.zid-list-item	—
-Design tokens
-All CSS variables are prefixed with --zid-:
-
-/* Colors */
-var(--zid-primary-main)
-var(--zid-error-main)
-var(--zid-text-primary)
-
-/* Typography */
-var(--zid-font-family)
-var(--zid-font-size-base)
-var(--zid-font-weight-medium)
-
-/* Spacing */
-var(--zid-spacing-1)
-var(--zid-spacing-2)
-
-/* Radius */
-var(--zid-radius-standard)
-var(--zid-radius-md)
-
-/* Shadows */
-var(--zid-shadow-1)
-var(--zid-shadow-4)
-```

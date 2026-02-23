@@ -12,7 +12,7 @@ import { AppTypography } from '~/components/app-typography';
 //
 
 const meta = {
-  title: 'Design System/Spacing',
+  title: 'Design System/Spacing/React',
   parameters: {
     layout: 'centered',
   },
