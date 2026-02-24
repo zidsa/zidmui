@@ -1,7 +1,5 @@
-import { ThemeOptions } from '@mui/material';
-
 import { colors } from './colors';
-import { alpha } from '@mui/material/styles';
+import { alpha, ThemeOptions } from '@mui/material';
 
 //
 //
@@ -272,24 +270,24 @@ export const palette: ThemeOptions['palette'] = {
     },
     alert: {
       error: {
-        color: '#70192F',
-        border: '#FDC9D0',
-        background: '#FFF3F4',
+        color: colors.red[1000],
+        border: colors.red[300],
+        background: colors.red[100],
       },
       warning: {
-        color: '#6F673B',
-        border: '#FAEBA4',
-        background: '#FEFDF5',
+        color: colors.yellow[1000],
+        border: colors.yellow[500],
+        background: colors.yellow[100],
       },
       info: {
-        color: '#306666',
-        border: '#B5EFEF',
-        background: '#F4FCFC',
+        color: colors.blue[1000],
+        border: colors.blue[400],
+        background: colors.blue[100],
       },
       success: {
-        color: '#476A44',
-        border: '#CAF4C8',
-        background: '#F7FDF7',
+        color: colors.green[1000],
+        border: colors.green[400],
+        background: colors.green[100],
       },
     },
     stepper: {
@@ -300,22 +298,22 @@ export const palette: ThemeOptions['palette'] = {
         hover: '#0000001f',
       },
       primary: {
-        text: '#4E3372',
+        text: colors.primary[1000],
         focused: '#ae72ff4d',
-        hover: '#FBF9FF',
-        focusedIcon: '#ae72ff',
+        hover: colors.primary[50],
+        focusedIcon: colors.primary[600],
       },
       secondary: {
-        text: '#1B0D26',
+        text: colors.secondary[1000],
         focused: '#3c1c544d',
         hover: colors.secondary[50],
-        focusedIcon: '#ae72ff',
+        focusedIcon: colors.primary[600],
       },
       error: {
-        text: '#1B0D26',
+        text: colors.secondary[1000],
         focused: '#fa37684d',
         hover: colors.secondary[50],
-        focusedIcon: '#ae72ff',
+        focusedIcon: colors.primary[600],
       },
     },
   },

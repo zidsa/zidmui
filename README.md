@@ -24,7 +24,7 @@ pnpm add @zidsa/zidmui
 ### Peer dependencies
 
 ```sh
-pnpm add @mui/material @mui/lab react react-dom react-hook-form use-debounce
+pnpm add @zidsa/zidmui react react-dom use-debounce @mui/material @mui/lab @emotion/styled
 ```
 
 ## Documentation

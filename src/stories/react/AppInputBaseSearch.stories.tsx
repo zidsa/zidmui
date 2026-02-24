@@ -57,42 +57,50 @@ export const Playground: Story = {
 
 export const Variants: Story = {
   render: () => (
-    <StackColumn sx={{ background: 'white' }} padding={10} gap={4}>
-      <AppTypography variant="h6">Basic</AppTypography>
+    <StackColumn sx={{ background: 'white' }} padding={4} gap={4} width={400}>
+      <StackColumn>
+        <AppTypography variant="h6">Basic</AppTypography>
 
-      <AppInputBaseSearch name="search" />
-      <AppInputBaseSearch name="search" label="Search" />
-      <AppInputBaseSearch name="search" label="Search" placeholder="Search for..." />
-
-      <Divider />
-
-      <AppTypography variant="h6">Sizes</AppTypography>
-
-      <AppInputBaseSearch name="search" label="Medium" placeholder="Search for..." />
-      <AppInputBaseSearch name="search" label="Small" placeholder="Search for..." size="small" />
+        <AppInputBaseSearch name="search" />
+        <AppInputBaseSearch name="search" label="Search" />
+        <AppInputBaseSearch name="search" label="Search" placeholder="Search for..." />
+      </StackColumn>
 
       <Divider />
 
-      <AppTypography variant="h6">States</AppTypography>
+      <StackColumn>
+        <AppTypography variant="h6">Sizes</AppTypography>
 
-      <AppInputBaseSearch name="search" label="Error" placeholder="Search for..." error />
-      <AppInputBaseSearch name="search" label="Disabled" placeholder="Search for..." disabled />
+        <AppInputBaseSearch name="search" label="Medium" placeholder="Search for..." />
+        <AppInputBaseSearch name="search" label="Small" placeholder="Search for..." size="small" />
+      </StackColumn>
 
       <Divider />
 
-      <AppTypography variant="h6">RTL</AppTypography>
+      <StackColumn>
+        <AppTypography variant="h6">States</AppTypography>
 
-      <AppInputBaseSearch name="search" dir="rtl" />
-      <AppInputBaseSearch name="search" dir="rtl" label="بحث" />
-      <AppInputBaseSearch name="search" dir="rtl" label="بحث" placeholder="ابحث عن..." />
-      <AppInputBaseSearch
-        name="search"
-        dir="rtl"
-        label="بحث"
-        placeholder="ابحث عن..."
-        size="small"
-        error
-      />
+        <AppInputBaseSearch name="search" label="Error" placeholder="Search for..." error />
+        <AppInputBaseSearch name="search" label="Disabled" placeholder="Search for..." disabled />
+      </StackColumn>
+
+      <Divider />
+
+      <StackColumn>
+        <AppTypography variant="h6">RTL</AppTypography>
+
+        <AppInputBaseSearch name="search" dir="rtl" />
+        <AppInputBaseSearch name="search" dir="rtl" label="بحث" />
+        <AppInputBaseSearch name="search" dir="rtl" label="بحث" placeholder="ابحث عن..." />
+        <AppInputBaseSearch
+          name="search"
+          dir="rtl"
+          label="بحث"
+          placeholder="ابحث عن..."
+          size="small"
+          error
+        />
+      </StackColumn>
     </StackColumn>
   ),
 };
