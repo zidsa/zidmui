@@ -16,6 +16,7 @@ import { MuiInputAdornment } from './components/input-adornment';
 import { MuiInputBase } from './components/input-base';
 import { MuiInputLabel } from './components/input-label';
 import { MuiTextField } from './components/text-field';
+import { MuiPagination } from './components/pagination';
 
 //
 //
@@ -46,4 +47,5 @@ export const components: Record<string, any> = {
   MuiInputBase,
   MuiInputLabel,
   MuiInputAdornment,
+  MuiPagination,
 };
