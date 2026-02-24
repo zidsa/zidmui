@@ -5,11 +5,13 @@ import { MuiList, MuiListItemText, MuiListItemIcon } from './components/list';
 import { MuiStack } from './components/stack';
 import { MuiTooltip } from './components/tooltip';
 import { MuiTypography } from './components/typography';
+import { MuiDivider } from './components/divider';
+import { MuiIconButton } from './components/icon-button';
+
 // import { MuiInputAdornment } from './components/input-adornment';
 // import { MuiInputBase } from './components/input-base';
 // import { MuiInputLabel } from './components/input-label';
 // import { MuiTextField } from './components/text-field';
-import { MuiDivider } from './components/divider';
 
 //
 //
@@ -26,9 +28,10 @@ export const components: Record<string, any> = {
   MuiListItemText,
   MuiListItemIcon,
   MuiTooltip,
+  MuiDivider,
+  MuiIconButton,
   // MuiTextField,
   // MuiInputBase,
   // MuiInputLabel,
   // MuiInputAdornment,
-  MuiDivider,
 };
