@@ -9,6 +9,7 @@ import { MuiTypography } from './components/typography';
 // import { MuiInputBase } from './components/input-base';
 // import { MuiInputLabel } from './components/input-label';
 // import { MuiTextField } from './components/text-field';
+import { MuiDivider } from './components/divider';
 
 //
 //
@@ -29,4 +30,5 @@ export const components: Record<string, any> = {
   // MuiInputBase,
   // MuiInputLabel,
   // MuiInputAdornment,
+  MuiDivider,
 };
