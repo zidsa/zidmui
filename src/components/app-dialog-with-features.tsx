@@ -9,7 +9,7 @@ import { StackRow } from './stack-row';
 //
 //
 
-type AppDialogWithFeaturesProps = AppDialogProps & {
+export type AppDialogWithFeaturesProps = AppDialogProps & {
   open: boolean;
   onClose: () => void;
   search: string;

@@ -13,6 +13,5 @@
   "prettier.jsxSingleQuote": false,
   "prettier.singleQuote": true,
   "typescript.preferences.includePackageJsonAutoImports": "on",
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.autoClosingTags": false
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

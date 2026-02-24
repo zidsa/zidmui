@@ -1,5 +1,5 @@
 import type {} from '@mui/lab/themeAugmentation';
-import { Components, CssVarsTheme, Theme } from '@mui/material/styles';
+import { Components, CssVarsTheme, Theme } from '@mui/material';
 
 const createSwitchActiveStyles = (theme: CssVarsTheme, colorKey: 'primary' | 'error') => {
   const toggleCircleSize = theme.spacing(1.83);

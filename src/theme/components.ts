@@ -18,6 +18,8 @@ import { MuiInputLabel } from './components/input-label';
 import { MuiTextField } from './components/text-field';
 import { MuiPagination } from './components/pagination';
 import { MuiSwitch } from './components/switch';
+import { MuiRadio } from './components/radio';
+import { MuiFormGroup } from './components/form-group';
 
 //
 //
@@ -50,4 +52,6 @@ export const components: Record<string, any> = {
   MuiInputAdornment,
   MuiPagination,
   MuiSwitch,
+  MuiRadio,
+  MuiFormGroup,
 };
