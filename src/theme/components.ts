@@ -7,11 +7,15 @@ import { MuiTooltip } from './components/tooltip';
 import { MuiTypography } from './components/typography';
 import { MuiDivider } from './components/divider';
 import { MuiIconButton } from './components/icon-button';
-
-// import { MuiInputAdornment } from './components/input-adornment';
-// import { MuiInputBase } from './components/input-base';
-// import { MuiInputLabel } from './components/input-label';
-// import { MuiTextField } from './components/text-field';
+import { MuiTab } from './components/tab';
+import { MuiTabs } from './components/tabs';
+import { MuiSkeleton } from './components/skeleton';
+import { MuiCheckbox } from './components/checkbox';
+import { MuiDialog, MuiDialogTitle, MuiDialogContent, MuiDialogActions } from './components/dialog';
+import { MuiInputAdornment } from './components/input-adornment';
+import { MuiInputBase } from './components/input-base';
+import { MuiInputLabel } from './components/input-label';
+import { MuiTextField } from './components/text-field';
 
 //
 //
@@ -30,8 +34,16 @@ export const components: Record<string, any> = {
   MuiTooltip,
   MuiDivider,
   MuiIconButton,
-  // MuiTextField,
-  // MuiInputBase,
-  // MuiInputLabel,
-  // MuiInputAdornment,
+  MuiTabs,
+  MuiTab,
+  MuiSkeleton,
+  MuiCheckbox,
+  MuiDialog,
+  MuiDialogTitle,
+  MuiDialogContent,
+  MuiDialogActions,
+  MuiTextField,
+  MuiInputBase,
+  MuiInputLabel,
+  MuiInputAdornment,
 };

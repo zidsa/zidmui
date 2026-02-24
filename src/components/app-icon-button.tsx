@@ -1,7 +1,6 @@
 import React from 'react';
 
-import Box from '@mui/material/Box';
-import IconButton, { type IconButtonProps } from '@mui/material/IconButton';
+import { Box, IconButton, type IconButtonProps } from '@mui/material';
 import { AppTooltip, AppTooltipProps } from './app-tooltip';
 
 //

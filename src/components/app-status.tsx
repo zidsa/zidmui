@@ -8,6 +8,7 @@ import { AppTooltip } from './app-tooltip';
 //
 
 export type AppStatusColor =
+  | 'primary'
   | 'success'
   | 'warning'
   | 'error'
@@ -101,6 +102,12 @@ const StatusElement = styled(Chip, {
     ? {
         backgroundColor: theme.palette.colors.blue[300],
         color: theme.palette.colors.blue[900],
+      }
+    : undefined),
+  ...(color2 === 'primary'
+    ? {
+        backgroundColor: theme.palette.colors.primary[300],
+        color: theme.palette.colors.primary[900],
       }
     : undefined),
 }));
