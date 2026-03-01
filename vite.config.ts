@@ -49,6 +49,10 @@ export default defineConfig({
           src: 'src/css/**/*',
           dest: '../styles',
         },
+        {
+          src: 'src/theme/types.d.ts',
+          dest: 'types/theme',
+        },
       ],
     }),
   ],
