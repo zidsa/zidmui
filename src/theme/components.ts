@@ -20,6 +20,9 @@ import { MuiPagination } from './components/pagination';
 import { MuiSwitch } from './components/switch';
 import { MuiRadio } from './components/radio';
 import { MuiFormGroup } from './components/form-group';
+import { MuiBackdrop } from './components/backdrop';
+import { MuiSvgIcon } from './components/svg-icon';
+import { MuiTimeline } from './components/timeline';
 
 //
 //
@@ -54,4 +57,7 @@ export const components: Record<string, any> = {
   MuiSwitch,
   MuiRadio,
   MuiFormGroup,
+  MuiBackdrop,
+  MuiSvgIcon,
+  MuiTimeline,
 };
