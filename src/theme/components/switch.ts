@@ -121,6 +121,10 @@ export const MuiSwitch: Components<
             boxShadow: 'none',
           },
         },
+        '& .MuiSwitch-input': {
+          left: 'unset',
+          width: '100%',
+        },
         '& .MuiSwitch-thumb': {
           boxSizing: 'border-box',
           width: toggleCircleSize,
