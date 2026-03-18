@@ -12,7 +12,7 @@ import { StackRow } from './stack-row';
 export type AppDialogWithFeaturesProps = AppDialogProps & {
   open: boolean;
   onClose: () => void;
-  search: string;
+  search?: string;
   onSearchChange?: (search: string) => void;
   searchProps?: AppInputSearchProps;
   pagination?: AppPaginationProps;
