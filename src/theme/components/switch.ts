@@ -81,6 +81,7 @@ export const MuiSwitch: Components<
         height: toggleSwitchHeight,
         padding: 0,
         overflow: 'visible',
+        marginInlineStart: theme.spacing(0),
         marginInlineEnd: theme.spacing(1),
         '&:hover': {
           '& .MuiSwitch-switchBase:not(.Mui-checked)': {

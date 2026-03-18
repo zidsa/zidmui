@@ -23,6 +23,18 @@ import { MuiFormGroup } from './components/form-group';
 import { MuiBackdrop } from './components/backdrop';
 import { MuiSvgIcon } from './components/svg-icon';
 import { MuiTimeline } from './components/timeline';
+import { MuiFormControlLabel } from './components/form-control-label';
+import { MuiFormLabel } from './components/form-label';
+import { MuiFormHelperText } from './components/form-helper-text';
+import { MuiAppBar } from './components/app-bar';
+import { MuiAutocomplete } from './components/autocomplete';
+import { MuiDrawer } from './components/drawer';
+import { MuiMenu, MuiMenuItem } from './components/menu';
+import { MuiIcon } from './components/icon';
+import { MuiPaper } from './components/paper';
+import { MuiTable, MuiTableRow } from './components/table';
+import { MuiSelect } from './components/select';
+import { MuiCard } from './components/card';
 
 //
 //
@@ -60,4 +72,18 @@ export const components: Record<string, any> = {
   MuiBackdrop,
   MuiSvgIcon,
   MuiTimeline,
+  MuiFormControlLabel,
+  MuiFormLabel,
+  MuiFormHelperText,
+  MuiAppBar,
+  MuiAutocomplete,
+  MuiDrawer,
+  MuiMenu,
+  MuiMenuItem,
+  MuiIcon,
+  MuiPaper,
+  MuiTable,
+  MuiTableRow,
+  MuiSelect,
+  MuiCard,
 };
