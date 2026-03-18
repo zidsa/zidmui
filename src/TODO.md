@@ -1,0 +1,1 @@
+1- Disable tooltip feature AppOverflownTextWithTooltipProps

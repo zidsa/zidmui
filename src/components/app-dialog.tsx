@@ -24,7 +24,7 @@ export type AppDialogProps = DialogProps & {
   titleProps?: DialogTitleProps;
   actions?: React.ReactNode;
   actionsProps?: DialogActionsProps;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   dialogContentProps?: DialogContentProps;
   darkerBackdrop?: boolean;
 };
