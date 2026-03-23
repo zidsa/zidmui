@@ -118,6 +118,13 @@ export const AppListItem = ({
               )}
             </StackRow>
           }
+          slotProps={
+            textLabelProps?.primary
+              ? textLabelProps.slotProps
+              : {
+                  primary: { component: 'div' },
+                }
+          }
           {...textLabelProps}
         />
       )}
