@@ -1,6 +1,9 @@
 # Illustrations Rename
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d3b4b7d (chore: rename empty state svgs)
 | current name                                   | new name                        |
 | ---------------------------------------------- | ------------------------------- |
 | 404.svg                                        |                                 |
@@ -102,6 +105,7 @@
 | whatsapp-marketing-campaign.svg                | announcement.svg                |
 | whatsapp-templates-empty.svg                   | chat-bubble-plus.svg            |
 | zid-logo-star.svg                              |                                 |
+<<<<<<< HEAD
 =======
 | current name                                   | new name                 |
 | ---------------------------------------------- | ------------------------ |
@@ -207,3 +211,5 @@
 | whatsapp-templates-empty.svg                   |                          |
 | zid-logo-star.svg                              |                          |
 >>>>>>> f3c81c6 (chore: remove unused svgs)
+=======
+>>>>>>> d3b4b7d (chore: rename empty state svgs)
