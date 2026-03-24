@@ -25,7 +25,7 @@ const illustrations = Object.entries(svgModules)
 
 const Grid = styled(Box)({
   display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
+  gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
   gap: '16px',
   padding: '24px',
 });
@@ -35,7 +35,7 @@ const Card = styled(Box)({
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  minHeight: '320px',
+  minHeight: '200px',
   gap: '8px',
   padding: '16px',
   border: '1px solid rgba(0,0,0,0.1)',
