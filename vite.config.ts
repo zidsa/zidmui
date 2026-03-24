@@ -59,6 +59,10 @@ export default defineConfig({
           src: 'src/illustrations/*.svg',
           dest: '../illustrations',
         },
+        {
+          src: 'src/illustrations/index.d.ts',
+          dest: '../illustrations',
+        },
       ],
     }),
   ],
