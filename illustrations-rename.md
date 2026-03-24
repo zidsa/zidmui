@@ -31,7 +31,7 @@
 | map.svg                                        |                          |
 | catalog-inventory-stock-change-empty-state.svg |                          |
 | multicurrency-and-multilingual-support.svg     |                          |
-| tell-circle-step-badge.svg                     |                          |
+| tell-circle-step-badge.svg                     | step-heptagon-02.svg     |
 | raising-start.svg                              |                          |
 | culture-and-arts.svg                           |                          |
 | marketing-loyalty-program-empty-state.svg      |                          |
@@ -39,7 +39,7 @@
 | product-list.svg                               |                          |
 | vehicles.svg                                   |                          |
 | glass-zid-en.svg                               |                          |
-| step1.svg                                      |                          |
+| step1.svg                                      | step-diamond-01.svg      |
 | customers-empty-state.svg                      |                          |
 | sports-clubs.svg                               |                          |
 | offline-at-events.svg                          |                          |
@@ -48,10 +48,10 @@
 | product.svg                                    |                          |
 | online-marketplace.svg                         |                          |
 | reminder.svg                                   |                          |
-| step2.svg                                      |                          |
+| step2.svg                                      | step-hexagon-02.svg      |
 | no-results.svg                                 |                          |
 | the-starter.svg                                |                          |
-| step3.svg                                      |                          |
+| step3.svg                                      | step-shield-like-03.svg  |
 | faq-no-results.svg                             |                          |
 | campaign-add.svg                               |                          |
 | payment-methods.svg                            |                          |
@@ -61,16 +61,16 @@
 | saudi-arabia.svg                               | country-saudi-arabia.svg |
 | uae.svg                                        | country-uae.svg          |
 | individual.svg                                 |                          |
-| step6.svg                                      |                          |
+| step6.svg                                      | step-heptagon-06.svg     |
 | groups-add.svg                                 |                          |
-| step4.svg                                      |                          |
+| step4.svg                                      | step-heptagon-red-04.svg |
 | cashback.svg                                   |                          |
 | charity.svg                                    |                          |
-| step5.svg                                      |                          |
+| step5.svg                                      | step-pentagon-05.svg     |
 | draft-empty.svg                                |                          |
 | policy-tip-image.svg                           |                          |
 | setup-online-store.svg                         |                          |
-| social-bio-step-badge.svg                      |                          |
+| social-bio-step-badge.svg                      | step-pentagon-03.svg     |
 | marketplace-integration.svg                    |                          |
 | whatsapp-templates-empty.svg                   |                          |
 | barcode-with-code.svg                          |                          |
@@ -115,7 +115,7 @@
 | offline-store-support.svg                      |                          |
 | bahrain.svg                                    | country-bahrain.svg      |
 | page-error.svg                                 |                          |
-| coupon-step-badge.svg                          |                          |
+| coupon-step-badge.svg                          | step-diamond-01.svg      |
 | shipments-empty-state.svg                      |                          |
 | finance-payout-transactions-empty-state.svg    |                          |
 | congrats.svg                                   |                          |
@@ -139,7 +139,7 @@
 | fire-icon.svg                                  |                          |
 | food.svg                                       |                          |
 | marketing-campaigns-empty-state.svg            |                          |
-| step4-shipping.svg                             |                          |
+| step4-shipping.svg                             | step-heptagon-04.svg     |
 | sports-games-camping.svg                       |                          |
 | customers-groups-no-results.svg                |                          |
 | empty-abandoned-cart.svg                       |                          |
