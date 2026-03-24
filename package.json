@@ -156,7 +156,8 @@
       "import": "./dist/react/es/components/*.js"
     },
     "./styles/*": "./dist/styles/*",
-    "./styles/components/*": "./dist/styles/components/*"
+    "./styles/components/*": "./dist/styles/components/*",
+    "./illustrations/*": "./dist/illustrations/*"
   },
   "peerDependencies": {
     "@emotion/styled": "11.14.1",
