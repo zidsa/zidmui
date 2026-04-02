@@ -64,3 +64,43 @@
   --zid-common-white-focus: rgba(255, 255, 255, 0.12);
   --zid-common-white-focus-visible: rgba(255, 255, 255, 0.3);
 }
+
+/* ========================================
+ * Dark Mode State Overrides
+ * ======================================== */
+[data-theme="dark"] {
+  /* Action States (white-based for dark surfaces) */
+  --zid-action-active: rgba(255, 255, 255, 0.56);
+  --zid-action-hover: rgba(255, 255, 255, 0.08);
+  --zid-action-selected: rgba(255, 255, 255, 0.16);
+  --zid-action-focus: rgba(255, 255, 255, 0.12);
+  --zid-action-disabled: rgba(255, 255, 255, 0.38);
+  --zid-action-disabled-background: rgba(255, 255, 255, 0.12);
+
+  /* Primary States */
+  --zid-primary-state-hover: rgba(135, 88, 198, 0.12);
+  --zid-primary-state-selected: rgba(135, 88, 198, 0.20);
+  --zid-primary-state-focus: rgba(135, 88, 198, 0.24);
+  --zid-primary-state-focus-visible: rgba(135, 88, 198, 0.3);
+
+  /* Secondary States */
+  --zid-secondary-state-hover: rgba(60, 28, 84, 0.12);
+  --zid-secondary-state-selected: rgba(60, 28, 84, 0.20);
+  --zid-secondary-state-focus-visible: rgba(60, 28, 84, 0.3);
+
+  /* Error States */
+  --zid-error-state-hover: rgba(250, 55, 104, 0.12);
+  --zid-error-state-selected: rgba(250, 55, 104, 0.20);
+
+  /* Success States */
+  --zid-success-state-hover: rgba(46, 125, 50, 0.12);
+
+  /* Warning States */
+  --zid-warning-state-hover: rgba(193, 178, 101, 0.12);
+  --zid-warning-state-selected: rgba(193, 178, 101, 0.20);
+
+  /* Common States (inverted for dark surfaces) */
+  --zid-common-black-hover: rgba(255, 255, 255, 0.04);
+  --zid-common-black-selected: rgba(255, 255, 255, 0.08);
+  --zid-common-black-focus: rgba(255, 255, 255, 0.12);
+}

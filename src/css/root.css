@@ -51,3 +51,13 @@
   --zid-transition-normal: 200ms ease-in-out;
   --zid-transition-slow: 300ms ease-in-out;
 }
+
+/* ========================================
+ * Dark Mode Shadow Overrides
+ * ======================================== */
+[data-theme="dark"] {
+  --zid-shadow-1: 0px 1px 2px 0px rgba(0, 0, 0, 0.40);
+  --zid-shadow-2: 0px 1px 2px 0px rgba(0, 0, 0, 0.40), 0px 1px 3px 0px rgba(0, 0, 0, 0.45);
+  --zid-shadow-3: 0px 2px 4px -2px rgba(0, 0, 0, 0.40), 0px 4px 8px -2px rgba(0, 0, 0, 0.50);
+  --zid-shadow-4: 0px 2px 6px -2px rgba(0, 0, 0, 0.35), 0px 12px 16px -4px rgba(0, 0, 0, 0.50);
+}
