@@ -31,8 +31,8 @@ declare module '@mui/material' {
   interface CustomPalette {
     badge: {
       primary: {
-        color: '#8758C6';
-        backgroundColor: '#F1EAFF';
+        color: string;
+        backgroundColor: string;
       };
     };
     outlined?: {

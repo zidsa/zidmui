@@ -16,7 +16,7 @@ export const MuiCard: Components<Omit<Theme, 'components' | 'palette'> & CssVars
 
         '& .MuiCardContent-root .MuiCardContent-root': {
           borderRadius: 8,
-          border: `1px solid ${theme.palette.outlined.outlined_2}`,
+          border: `1px solid ${theme.palette.outlined?.outlined_2}`,
           padding: 16,
         },
 

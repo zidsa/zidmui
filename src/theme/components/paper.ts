@@ -9,7 +9,7 @@ export const MuiPaper: Components<
 >['MuiPaper'] = {
   styleOverrides: {
     root: ({ theme }) => ({
-      border: `1px solid ${theme.palette.outlined.outlined_2}`,
+      border: `1px solid ${theme.palette.outlined?.outlined_2}`,
     }),
   },
 };
