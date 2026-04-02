@@ -1,6 +1,16 @@
 # Changelog
 
-## [2.1.9](https://github.com/zidsa/zidmui/compare/v2.1.8...v2.1.9) (2026-04-02)
+# [2.2.0](https://github.com/zidsa/zidmui/compare/v2.1.2...v2.2.0) (2026-04-02)
+
+
+### Bug Fixes
+
+* add slotProps configuration for text label ([#23](https://github.com/zidsa/zidmui/issues/23)) ([969909f](https://github.com/zidsa/zidmui/commit/969909f505303acc0fcf923e388cb0a923a547cd))
+
+
+### Features
+
+* CR-31309 add dark theme support ([#26](https://github.com/zidsa/zidmui/issues/26)) ([45b61dc](https://github.com/zidsa/zidmui/commit/45b61dcef8df41cb137d0f33e0461e953f31caea)), closes [#F2F2F2](https://github.com/zidsa/zidmui/issues/F2F2F2) [#F8F8F8](https://github.com/zidsa/zidmui/issues/F8F8F8) [#FBFBFB](https://github.com/zidsa/zidmui/issues/FBFBFB) [#6F673B](https://github.com/zidsa/zidmui/issues/6F673B) [#449090](https://github.com/zidsa/zidmui/issues/449090) [#95E9E9](https://github.com/zidsa/zidmui/issues/95E9E9)
 
 ## [2.1.8](https://github.com/zidsa/zidmui/compare/v2.1.7...v2.1.8) (2026-03-18)
 
