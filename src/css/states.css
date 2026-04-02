@@ -82,6 +82,7 @@
   --zid-primary-state-selected: rgba(135, 88, 198, 0.20);
   --zid-primary-state-focus: rgba(135, 88, 198, 0.24);
   --zid-primary-state-focus-visible: rgba(135, 88, 198, 0.3);
+  --zid-primary-state-outlined-border: rgba(135, 88, 198, 0.5);
 
   /* Secondary States */
   --zid-secondary-state-hover: rgba(60, 28, 84, 0.12);
@@ -91,13 +92,19 @@
   /* Error States */
   --zid-error-state-hover: rgba(250, 55, 104, 0.12);
   --zid-error-state-selected: rgba(250, 55, 104, 0.20);
+  --zid-error-state-focus-visible: rgba(250, 55, 104, 0.3);
+  --zid-error-state-outlined-border: rgba(250, 55, 104, 0.5);
 
   /* Success States */
   --zid-success-state-hover: rgba(46, 125, 50, 0.12);
+  --zid-success-state-focus-visible: rgba(46, 125, 50, 0.3);
+  --zid-success-state-outlined-border: rgba(46, 125, 50, 0.5);
 
   /* Warning States */
   --zid-warning-state-hover: rgba(193, 178, 101, 0.12);
   --zid-warning-state-selected: rgba(193, 178, 101, 0.20);
+  --zid-warning-state-focus-visible: rgba(193, 178, 101, 0.3);
+  --zid-warning-state-outlined-border: rgba(193, 178, 101, 0.5);
 
   /* Common States (inverted for dark surfaces) */
   --zid-common-black-hover: rgba(255, 255, 255, 0.04);

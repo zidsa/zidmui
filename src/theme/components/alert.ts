@@ -19,13 +19,13 @@ export const MuiAlert: Components<
       },
       '&.MuiAlert-colorError': {
         color: 'inherit',
-        borderColor: theme.palette.colors.red[300],
-        background: theme.palette.colors.red[100],
+        borderColor: theme.palette._components.alert.error.border,
+        background: theme.palette._components.alert.error.background,
         '.MuiAlert-icon': {
           color: theme.palette.colors.red[400],
         },
         '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
-          fill: theme.palette.colors.red[1000],
+          fill: theme.palette._components.alert.error.color,
         },
       },
       '.MuiTypography-root.MuiAlertTitle-root': {
@@ -52,35 +52,35 @@ export const MuiAlert: Components<
       },
       '&.MuiAlert-colorWarning': {
         color: 'inherit',
-        borderColor: theme.palette.colors.yellow[500],
-        background: theme.palette.colors.yellow[100],
+        borderColor: theme.palette._components.alert.warning.border,
+        background: theme.palette._components.alert.warning.background,
         '.MuiAlert-icon': {
           color: theme.palette.colors.yellow[700],
         },
         '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
-          fill: theme.palette.colors.yellow[1000],
+          fill: theme.palette._components.alert.warning.color,
         },
       },
       '&.MuiAlert-colorInfo': {
         color: 'inherit',
-        borderColor: theme.palette.colors.blue[400],
-        background: theme.palette.colors.blue[100],
+        borderColor: theme.palette._components.alert.info.border,
+        background: theme.palette._components.alert.info.background,
         '.MuiAlert-icon': {
           color: theme.palette.colors.blue[900],
         },
         '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
-          fill: theme.palette.colors.blue[1000],
+          fill: theme.palette._components.alert.info.color,
         },
       },
       '&.MuiAlert-colorSuccess': {
         color: 'inherit',
-        borderColor: theme.palette.colors.green[400],
-        background: theme.palette.colors.green[100],
+        borderColor: theme.palette._components.alert.success.border,
+        background: theme.palette._components.alert.success.background,
         '.MuiAlert-icon': {
           color: theme.palette.colors.green[600],
         },
         '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
-          fill: theme.palette.colors.green[1000],
+          fill: theme.palette._components.alert.success.color,
         },
       },
     }),

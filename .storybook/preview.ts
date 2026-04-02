@@ -14,7 +14,6 @@ const withDataTheme = (Story: any, context: any) => {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    return () => document.documentElement.removeAttribute('data-theme');
   }, [theme]);
 
   return Story();
