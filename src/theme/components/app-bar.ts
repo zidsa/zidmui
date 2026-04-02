@@ -1,15 +1,12 @@
 import { Components, CssVarsTheme, Theme } from '@mui/material/styles';
 
-import { palette } from '../palette';
-import { shadows } from '../shadows';
-
 //
 //
 
 export const MuiAppBar: Components<Theme & CssVarsTheme>['MuiAppBar'] = {
   styleOverrides: {
     root: ({ theme }) => ({
-      boxShadow: shadows?.[4],
+      boxShadow: theme.shadows[4],
       input: {
         fontSize: 14,
         '&:-webkit-autofill': {
@@ -132,8 +129,8 @@ export const MuiAppBar: Components<Theme & CssVarsTheme>['MuiAppBar'] = {
         {
           props: { color: 'transparent' },
           style: ({ theme }) => ({
-            backgroundColor: palette?.background?.default,
-            boxShadow: shadows?.[0],
+            backgroundColor: theme.palette.background.default,
+            boxShadow: theme.shadows[0],
             borderBottom: `1px solid ${theme.palette?.outlined?.outlined_2}`,
             '& .MuiTextField-root': {
               '& .MuiOutlinedInput-root': {

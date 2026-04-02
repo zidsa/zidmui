@@ -58,7 +58,7 @@ export const MuiAlert: Components<
           color: theme.palette.colors.yellow[700],
         },
         '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
-          fill: '#6F673B',
+          fill: theme.palette.colors.yellow[1000],
         },
       },
       '&.MuiAlert-colorInfo': {
