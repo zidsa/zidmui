@@ -36,12 +36,12 @@ export const MuiTable: Components<Theme & CssVarsTheme>['MuiTable'] = {
 
 export const MuiTableRow: Components<Theme & CssVarsTheme>['MuiTableRow'] = {
   styleOverrides: {
-    root: ({ ownerState }) => ({
+    root: ({ theme, ownerState }) => ({
       ...(ownerState['disable-row-hover']
         ? {}
         : {
             '&:hover': {
-              backgroundColor: '#FBFBFB',
+              backgroundColor: theme.palette.background.gray,
             },
           }),
     }),

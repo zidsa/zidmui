@@ -8,8 +8,8 @@ export const MuiPaper: Components<
   Omit<Theme, 'components' | 'palette'> & CssVarsTheme
 >['MuiPaper'] = {
   styleOverrides: {
-    root: {
-      border: '1px solid #F2F2F2',
-    },
+    root: ({ theme }) => ({
+      border: `1px solid ${theme.palette.outlined?.outlined_2}`,
+    }),
   },
 };

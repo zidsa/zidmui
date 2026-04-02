@@ -201,3 +201,32 @@
    * ======================================== */
   --zid-divider: var(--zid-color-secondary-50);
 }
+
+/* ========================================
+ * Dark Mode Overrides
+ * ======================================== */
+[data-theme="dark"] {
+  /* Primary */
+  --zid-primary-main: #8758C6;
+  --zid-primary-dark: #6E48A1;
+  --zid-primary-light: #AE72FF;
+
+  /* Secondary */
+  --zid-secondary-main: #3C1C54;
+  --zid-secondary-dark: #2E1641;
+  --zid-secondary-light: #8A7798;
+
+  /* Text */
+  --zid-text-primary: #FFFFFF;
+  --zid-text-secondary: #A3A1A6;
+  --zid-text-tertiary: #B1A4BB;
+  --zid-text-disabled: #75727B;
+
+  /* Backgrounds */
+  --zid-bg-default: #0D0D1A;
+  --zid-bg-paper: #1A1A2E;
+  --zid-base-blur: rgba(26, 26, 46, 0.8);
+
+  /* Divider */
+  --zid-divider: #1C1C37;
+}

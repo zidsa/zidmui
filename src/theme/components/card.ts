@@ -7,7 +7,7 @@ import { Components, CssVarsTheme, Theme } from '@mui/material/styles';
 export const MuiCard: Components<Omit<Theme, 'components' | 'palette'> & CssVarsTheme>['MuiCard'] =
   {
     styleOverrides: {
-      root: () => ({
+      root: ({ theme }) => ({
         borderRadius: 16,
 
         '& > .MuiCardContent-root:last-child': {
@@ -16,13 +16,13 @@ export const MuiCard: Components<Omit<Theme, 'components' | 'palette'> & CssVars
 
         '& .MuiCardContent-root .MuiCardContent-root': {
           borderRadius: 8,
-          border: '1px solid #F2F2F2',
+          border: `1px solid ${theme.palette.outlined?.outlined_2}`,
           padding: 16,
         },
 
         '& .MuiCardContent-root .MuiCardContent-root .MuiCardContent-root': {
           borderRadius: 4,
-          backgroundColor: '#F8F8F8',
+          backgroundColor: theme.palette.background.gray,
           border: 'none',
         },
 
