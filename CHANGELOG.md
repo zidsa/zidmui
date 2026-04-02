@@ -1,5 +1,7 @@
 # Changelog
 
+## [2.1.9](https://github.com/zidsa/zidmui/compare/v2.1.8...v2.1.9) (2026-04-02)
+
 ## [2.1.8](https://github.com/zidsa/zidmui/compare/v2.1.7...v2.1.8) (2026-03-18)
 
 ## [2.1.7](https://github.com/zidsa/zidmui/compare/v2.1.6...v2.1.7) (2026-03-18)
@@ -24,10 +26,9 @@
 
 ## [2.0.1](https://github.com/zidsa/zidmui/compare/v2.0.0...v2.0.1) (2026-02-22)
 
-
 ### Bug Fixes
 
-* app typography with overflown ([7ae3bf4](https://github.com/zidsa/zidmui/commit/7ae3bf47147edb2366e056b35ceaea13a2c3629a))
+- app typography with overflown ([7ae3bf4](https://github.com/zidsa/zidmui/commit/7ae3bf47147edb2366e056b35ceaea13a2c3629a))
 
 # [2.0.0](https://github.com/zidsa/zidmui/compare/v1.5.7-beta.2...v2.0.0) (2026-02-20)
 
@@ -83,17 +84,15 @@
 
 ## [1.4.24](/compare/v1.4.22...v1.4.24) (2025-12-06)
 
-
 ### Bug Fixes
 
-* security issue - CVE-2025-55182 (#11) 6f395a8, closes #11
+- security issue - CVE-2025-55182 (#11) 6f395a8, closes #11
 
 ## [1.4.23](/compare/v1.4.22...v1.4.23) (2025-12-06)
 
-
 ### Bug Fixes
 
-* security issue - CVE-2025-55182 (#11) 6f395a8, closes #11
+- security issue - CVE-2025-55182 (#11) 6f395a8, closes #11
 
 ## [1.4.22](/compare/v1.4.21...v1.4.22) (2025-12-02)
 
@@ -143,10 +142,9 @@
 
 ## [1.4.2](https://github.com/zidsa/zidmui/compare/v1.3.1...v1.4.2) (2025-11-04)
 
-
 ### Bug Fixes
 
-* small issue with app status ([a24c4a7](https://github.com/zidsa/zidmui/commit/a24c4a7062a88ddfcc8f74b221ccd9956e5e393e))
+- small issue with app status ([a24c4a7](https://github.com/zidsa/zidmui/commit/a24c4a7062a88ddfcc8f74b221ccd9956e5e393e))
 
 ## [1.3.1](https://github.com/zidsa/zidmui/compare/v1.3.0...v1.3.1) (2025-10-04)
 
@@ -156,27 +154,25 @@
 
 ## [1.2.1](https://github.com/zidsa/zidmui/compare/v1.2.0...v1.2.1) (2025-08-30)
 
-
 ### Features
 
-* implement 'useToggle' hook ([1d36a94](https://github.com/zidsa/zidmui/commit/1d36a9407b0cae65276fbd1fe47dbda363c33bb7))
+- implement 'useToggle' hook ([1d36a94](https://github.com/zidsa/zidmui/commit/1d36a9407b0cae65276fbd1fe47dbda363c33bb7))
 
-* chore: update exports (6cbbb5d)
-* feat: implement 'useToggle' hook (1d36a94)
+- chore: update exports (6cbbb5d)
+- feat: implement 'useToggle' hook (1d36a94)
 
-* chore: update dependencies (dc799ac9)
-* chore: sync configuration with hermes, update dependencies (30ab6e1b)
+- chore: update dependencies (dc799ac9)
+- chore: sync configuration with hermes, update dependencies (30ab6e1b)
 
 ## [1.1.3](https://github.com/zidsa/zidmui/compare/vv1.1.3...vnull) (2025-01-21)
 
 ## [v1.1.3](https://github.com/zidsa/zidmui/compare/v1.1.1...vv1.1.3) (2025-01-14)
 
-* chore: add github actions (495ae956)
-* chore: project updates (414e5ba8)
+- chore: add github actions (495ae956)
+- chore: project updates (414e5ba8)
 
 # 1.0.0 (2025-01-13)
 
-
 ### Features
 
-* add icons (line variant only) ([f87fbe4](https://github.com/zidsa/zidmui/commit/f87fbe4621ba07b279356ef353c1d0301f31880c))
+- add icons (line variant only) ([f87fbe4](https://github.com/zidsa/zidmui/commit/f87fbe4621ba07b279356ef353c1d0301f31880c))
