@@ -20,6 +20,7 @@ export const paletteDark: ThemeOptions['palette'] = {
     white: '#FFFFFF',
     black: '#000000',
     gray: '#1D1D35',
+    // Both gray100 and gray200 map to the same "first layer outline" value per the Figma dark mode spec
     gray200: '#1C1C37',
     gray100: '#1C1C37',
     backgroundDisable: '#1C1C37',
@@ -272,21 +273,25 @@ export const paletteDark: ThemeOptions['palette'] = {
         color: colors.red[400],
         border: 'rgba(250, 55, 104, 0.3)',
         background: 'rgba(250, 55, 104, 0.1)',
+        icon: colors.red[400],
       },
       warning: {
         color: colors.yellow[600],
         border: 'rgba(249, 230, 131, 0.3)',
         background: 'rgba(249, 230, 131, 0.1)',
+        icon: colors.yellow[600],
       },
       info: {
         color: colors.blue[500],
         border: 'rgba(96, 203, 203, 0.3)',
         background: 'rgba(96, 203, 203, 0.1)',
+        icon: colors.blue[500],
       },
       success: {
         color: colors.green[500],
         border: 'rgba(158, 236, 152, 0.3)',
         background: 'rgba(158, 236, 152, 0.1)',
+        icon: colors.green[500],
       },
     },
     stepper: {

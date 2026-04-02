@@ -131,21 +131,25 @@ declare module '@mui/material' {
           color: string;
           border: string;
           background: string;
+          icon: string;
         };
         warning: {
           color: string;
           border: string;
           background: string;
+          icon: string;
         };
         info: {
           color: string;
           border: string;
           background: string;
+          icon: string;
         };
         success: {
           color: string;
           border: string;
           background: string;
+          icon: string;
         };
       };
       stepper: {

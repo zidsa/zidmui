@@ -273,21 +273,25 @@ export const palette: ThemeOptions['palette'] = {
         color: colors.red[1000],
         border: colors.red[300],
         background: colors.red[100],
+        icon: colors.red[400],
       },
       warning: {
         color: colors.yellow[1000],
         border: colors.yellow[500],
         background: colors.yellow[100],
+        icon: colors.yellow[700],
       },
       info: {
         color: colors.blue[1000],
         border: colors.blue[400],
         background: colors.blue[100],
+        icon: colors.blue[900],
       },
       success: {
         color: colors.green[1000],
         border: colors.green[400],
         background: colors.green[100],
+        icon: colors.green[600],
       },
     },
     stepper: {

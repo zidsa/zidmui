@@ -22,7 +22,7 @@ export const MuiAlert: Components<
         borderColor: theme.palette._components.alert.error.border,
         background: theme.palette._components.alert.error.background,
         '.MuiAlert-icon': {
-          color: theme.palette.colors.red[400],
+          color: theme.palette._components.alert.error.icon,
         },
         '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
           fill: theme.palette._components.alert.error.color,
@@ -55,7 +55,7 @@ export const MuiAlert: Components<
         borderColor: theme.palette._components.alert.warning.border,
         background: theme.palette._components.alert.warning.background,
         '.MuiAlert-icon': {
-          color: theme.palette.colors.yellow[700],
+          color: theme.palette._components.alert.warning.icon,
         },
         '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
           fill: theme.palette._components.alert.warning.color,
@@ -66,7 +66,7 @@ export const MuiAlert: Components<
         borderColor: theme.palette._components.alert.info.border,
         background: theme.palette._components.alert.info.background,
         '.MuiAlert-icon': {
-          color: theme.palette.colors.blue[900],
+          color: theme.palette._components.alert.info.icon,
         },
         '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
           fill: theme.palette._components.alert.info.color,
@@ -77,7 +77,7 @@ export const MuiAlert: Components<
         borderColor: theme.palette._components.alert.success.border,
         background: theme.palette._components.alert.success.background,
         '.MuiAlert-icon': {
-          color: theme.palette.colors.green[600],
+          color: theme.palette._components.alert.success.icon,
         },
         '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
           fill: theme.palette._components.alert.success.color,
