@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.3.1-beta.0](https://github.com/zidsa/zidmui/compare/v2.3.0...v2.3.1-beta.0) (2026-04-03)
+
+### Bug Fixes
+
+* exclude stories types ([91d4927](https://github.com/zidsa/zidmui/commit/91d4927c3522666bd0cbbee16af1fc8c45433ee9))
+* lighten secondary palette for dark mode visibility ([c8ba26c](https://github.com/zidsa/zidmui/commit/c8ba26c39f0d154461c91a77e5f7a3f71b137368)), closes [#3C1C54](https://github.com/zidsa/zidmui/issues/3C1C54)
+* linting warnings ([5dff69b](https://github.com/zidsa/zidmui/commit/5dff69bc079039b90c08c9d18039f721d6d4ce4a))
+* the IDE had no way to discover logos as a valid path when autocompleting ([7321bb8](https://github.com/zidsa/zidmui/commit/7321bb8210eaea22e30744c7be11bbccbad83732))
+
+### Chores
+
+* add illustrations and logos ([#28](https://github.com/zidsa/zidmui/issues/28)) ([207424f](https://github.com/zidsa/zidmui/commit/207424fcbb65fe88c7f6c1d15613799021ba909d))
+* release 2.3.0-beta.0 ([e0b35ff](https://github.com/zidsa/zidmui/commit/e0b35ff7b6b2f64a332057f39c2d85adda2a1d59))
+* update release-it config ([996c962](https://github.com/zidsa/zidmui/commit/996c96209d4dbb53a5f7a588281a36b9c4b2c2e0))
+
 ## [2.3.0-beta.0](https://github.com/zidsa/zidmui/compare/v2.3.0...v2.3.0-beta.0) (2026-04-03)
 
 ### Bug Fixes
