@@ -28,7 +28,7 @@ export default defineConfig({
     },
     rollupOptions: {
       input: glob.sync(path.resolve(__dirname, 'src/**/*.{ts,tsx}'), {
-        ignore: ['src/stories/**/*', 'src/illustrations/**/*'],
+        ignore: ['src/stories/**/*', 'src/illustrations/**/*', 'src/logos/**/*'],
       }),
       external: ['react/jsx-runtime', ...Object.keys(peerDependencies)],
       output: {
@@ -60,8 +60,12 @@ export default defineConfig({
           dest: '../illustrations',
         },
         {
-          src: 'src/illustrations/index.d.ts',
-          dest: '../illustrations',
+          src: 'src/logos/payments/*.svg',
+          dest: '../logos/payments',
+        },
+        {
+          src: 'src/logos/delivery/*.svg',
+          dest: '../logos/delivery',
         },
       ],
     }),

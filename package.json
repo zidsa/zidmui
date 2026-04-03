@@ -157,7 +157,9 @@
     },
     "./styles/*": "./dist/styles/*",
     "./styles/components/*": "./dist/styles/components/*",
-    "./illustrations/*": "./dist/illustrations/*"
+    "./illustrations/*": "./dist/illustrations/*",
+    "./logos/payments/*": "./dist/logos/payments/*",
+    "./logos/delivery/*": "./dist/logos/delivery/*"
   },
   "peerDependencies": {
     "@emotion/styled": "11.14.1",
