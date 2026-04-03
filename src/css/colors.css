@@ -195,8 +195,8 @@
    * ======================================== */
   --zid-bg-default: #F8F8F8;
   --zid-bg-paper: var(--zid-base-white);
-  --zid-bg-sidebar: #FFFFFF;
-  --zid-bg-container: #FFFFFF;
+  --zid-bg-sidebar: var(--zid-base-white);
+  --zid-bg-container: var(--zid-base-white);
 
   /* ========================================
    * Divider
