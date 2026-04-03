@@ -62,7 +62,7 @@ const IllustrationsDisplay = () => {
   const [copied, setCopied] = useState<string | null>(null);
 
   const handleCopy = async (name: string) => {
-    await navigator.clipboard.writeText(name);
+    await navigator.clipboard.writeText(`@zidsa/zidmui/illustrations/${name}.svg`);
     setCopied(name);
     setTimeout(() => setCopied(null), 1500);
   };

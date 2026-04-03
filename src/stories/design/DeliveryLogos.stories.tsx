@@ -62,7 +62,7 @@ const DeliveryLogosDisplay = () => {
   const [copied, setCopied] = useState<string | null>(null);
 
   const handleCopy = async (name: string) => {
-    await navigator.clipboard.writeText(name);
+    await navigator.clipboard.writeText(`@zidsa/zidmui/logos/delivery/${name}.svg`);
     setCopied(name);
     setTimeout(() => setCopied(null), 1500);
   };
