@@ -1,5 +1,12 @@
 # Changelog
 
+# [2.3.0](https://github.com/zidsa/zidmui/compare/v2.2.0...v2.3.0) (2026-04-03)
+
+
+### Features
+
+* add sidebar and container background tokens ([#27](https://github.com/zidsa/zidmui/issues/27)) ([2d47179](https://github.com/zidsa/zidmui/commit/2d47179b7aee4b048faed8d7b5038acdfe61a005)), closes [#16162B](https://github.com/zidsa/zidmui/issues/16162B) [#FFFFFF](https://github.com/zidsa/zidmui/issues/FFFFFF) [#13182A](https://github.com/zidsa/zidmui/issues/13182A) [#FFFFFF](https://github.com/zidsa/zidmui/issues/FFFFFF)
+
 # [2.2.0](https://github.com/zidsa/zidmui/compare/v2.1.2...v2.2.0) (2026-04-02)
 
 
