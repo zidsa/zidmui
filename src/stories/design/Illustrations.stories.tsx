@@ -13,10 +13,20 @@ const svgModules = import.meta.glob('../../illustrations/*.svg', {
   import: 'default',
 }) as Record<string, string>;
 
+const svgRaw = import.meta.glob('../../illustrations/*.svg', {
+  eager: true,
+  query: '?raw',
+  import: 'default',
+}) as Record<string, string>;
+
+const formatSize = (bytes: number) =>
+  bytes < 1024 ? `${bytes} B` : `${(bytes / 1024).toFixed(1)} KB`;
+
 const illustrations = Object.entries(svgModules)
   .map(([path, url]) => ({
     name: path.replace('../../illustrations/', '').replace('.svg', ''),
     url,
+    size: formatSize(new Blob([svgRaw[path] ?? '']).size),
   }))
   .sort((a, b) => a.name.localeCompare(b.name));
 
@@ -68,7 +78,7 @@ const IllustrationsDisplay = () => {
         </AppTypography>
       </Box>
       <Grid>
-        {illustrations.map(({ name, url }) => (
+        {illustrations.map(({ name, url, size }) => (
           <Card key={name} onClick={() => handleCopy(name)} title={`Click to copy: ${name}`}>
             <img
               src={url}
@@ -81,6 +91,9 @@ const IllustrationsDisplay = () => {
               sx={{ wordBreak: 'break-all', lineHeight: 1.3 }}
             >
               {copied === name ? '✓ Copied!' : name}
+            </AppTypography>
+            <AppTypography variant="caption" color="text.disabled">
+              {size}
             </AppTypography>
           </Card>
         ))}
