@@ -158,15 +158,7 @@
     "./styles/*": "./dist/styles/*",
     "./styles/components/*": "./dist/styles/components/*",
     "./illustrations/*": "./dist/illustrations/*",
-    "./logos/*": "./dist/logos/*",
-    "./logos/payments/*": {
-      "types": "./dist/logos/payments/*.d.ts",
-      "default": "./dist/logos/payments/*"
-    },
-    "./logos/delivery/*": {
-      "types": "./dist/logos/delivery/*.d.ts",
-      "default": "./dist/logos/delivery/*"
-    }
+    "./logos/*": "./dist/logos/*"
   },
   "peerDependencies": {
     "@emotion/styled": "11.14.1",

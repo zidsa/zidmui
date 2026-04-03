@@ -44,6 +44,7 @@ export default defineConfig({
     dts({
       entryRoot: 'src',
       outDir: 'dist/react/types',
+      exclude: ['src/stories/**'],
     }),
     viteStaticCopy({
       targets: [
