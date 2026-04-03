@@ -44,7 +44,8 @@
     "unicorn/no-thenable": "off",
     "unicorn/no-useless-fallback-in-spread": "off",
     "unicorn/no-useless-spread": "off",
-    "unicorn/prefer-string-starts-ends-with": "off"
+    "unicorn/prefer-string-starts-ends-with": "off",
+    "jsx-a11y/label-has-associated-control": "off"
   },
 
   "settings": {}

@@ -16,6 +16,9 @@ import { StackColumn } from './stack-column';
 //
 //
 
+const resolveSlotProps = <T,>(slot: T | ((...args: unknown[]) => T) | undefined): Partial<T> =>
+  typeof slot === 'function' ? {} : ((slot ?? {}) as Partial<T>);
+
 export type AppDialogProps = DialogProps & {
   title?: React.ReactNode;
   description?: React.ReactNode;
@@ -52,13 +55,13 @@ export const AppDialog = ({
       slotProps={{
         paper: {
           elevation: 4,
-          ...slotProps?.paper,
+          ...resolveSlotProps(slotProps?.paper),
         },
         backdrop: {
           sx: {
             backgroundColor: darkerBackdrop ? theme.palette.background.darkBackdrop : '',
           },
-          ...slotProps?.backdrop,
+          ...resolveSlotProps(slotProps?.backdrop),
         },
       }}
       {...props}

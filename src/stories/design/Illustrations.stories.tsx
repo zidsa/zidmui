@@ -61,8 +61,8 @@ const Card = styled(Box)({
 const IllustrationsDisplay = () => {
   const [copied, setCopied] = useState<string | null>(null);
 
-  const handleCopy = (name: string) => {
-    navigator.clipboard.writeText(name);
+  const handleCopy = async (name: string) => {
+    await navigator.clipboard.writeText(name);
     setCopied(name);
     setTimeout(() => setCopied(null), 1500);
   };

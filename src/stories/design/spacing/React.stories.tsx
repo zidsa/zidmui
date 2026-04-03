@@ -44,8 +44,8 @@ const DemoBox = ({ color = '#1976d2' }: { color?: string }) => (
 const CopyButton = ({ value }: { value: number | string }) => {
   const [copied, setCopied] = useState(false);
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(`gap={${value}}`);
+  const handleCopy = async () => {
+    await navigator.clipboard.writeText(`gap={${value}}`);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };

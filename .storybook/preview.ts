@@ -1,4 +1,4 @@
-import type { Preview } from '@storybook/react-vite';
+import type { Decorator, Preview } from '@storybook/react-vite';
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 import { useEffect } from 'react';
@@ -9,7 +9,7 @@ import { themeParcelDark } from '../src/theme/theme.dark';
 //
 //
 
-const withDataTheme = (Story: any, context: any) => {
+const WithDataTheme: Decorator = (Story, context) => {
   const theme = context.globals.theme || 'light';
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const withDataTheme = (Story: any, context: any) => {
 };
 
 export const decorators = [
-  withDataTheme,
+  WithDataTheme,
   withThemeFromJSXProvider({
     themes: {
       light: themeParcel,
