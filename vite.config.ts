@@ -27,7 +27,9 @@ export default defineConfig({
       formats: ['es', 'cjs'],
     },
     rollupOptions: {
-      input: glob.sync(path.resolve(__dirname, 'src/**/*.{ts,tsx}')),
+      input: glob.sync(path.resolve(__dirname, 'src/**/*.{ts,tsx}'), {
+        ignore: ['src/stories/**/*', 'src/illustrations/**/*', 'src/logos/**/*'],
+      }),
       external: ['react/jsx-runtime', ...Object.keys(peerDependencies)],
       output: {
         preserveModules: true,
@@ -52,6 +54,18 @@ export default defineConfig({
         {
           src: 'src/theme/types.d.ts',
           dest: 'types/theme',
+        },
+        {
+          src: 'src/illustrations/*.svg',
+          dest: '../illustrations',
+        },
+        {
+          src: 'src/logos/payments/*.svg',
+          dest: '../logos/payments',
+        },
+        {
+          src: 'src/logos/delivery/*.svg',
+          dest: '../logos/delivery',
         },
       ],
     }),
