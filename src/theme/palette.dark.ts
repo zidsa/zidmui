@@ -88,16 +88,16 @@ export const paletteDark: ThemeOptions['palette'] = {
     },
   },
   secondary: {
-    main: '#3C1C54',
-    dark: '#2E1641',
-    light: '#8A7798',
+    main: '#8A7798',
+    dark: '#6B5A7D',
+    light: '#B1A4BB',
     contrastText: '#FFFFFF',
     _states: {
-      hover: 'rgba(60, 28, 84, 0.12)',
-      selected: 'rgba(60, 28, 84, 0.20)',
-      focus: 'rgba(60, 28, 84, 0.24)',
-      focusVisible: 'rgba(60, 28, 84, 0.3)',
-      outlinedBorder: 'rgba(60, 28, 84, 0.5)',
+      hover: 'rgba(138, 119, 152, 0.12)',
+      selected: 'rgba(138, 119, 152, 0.20)',
+      focus: 'rgba(138, 119, 152, 0.24)',
+      focusVisible: 'rgba(138, 119, 152, 0.3)',
+      outlinedBorder: 'rgba(138, 119, 152, 0.5)',
     },
   },
   action: {
@@ -311,8 +311,8 @@ export const paletteDark: ThemeOptions['palette'] = {
       },
       secondary: {
         text: '#FFFFFF',
-        focused: 'rgba(60, 28, 84, 0.3)',
-        hover: 'rgba(60, 28, 84, 0.12)',
+        focused: 'rgba(138, 119, 152, 0.3)',
+        hover: 'rgba(138, 119, 152, 0.12)',
         focusedIcon: colors.primary[400],
       },
       error: {
