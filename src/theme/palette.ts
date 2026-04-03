@@ -31,6 +31,8 @@ export const palette: ThemeOptions['palette'] = {
     goldenYellow: '#EAD469',
     lavenderGlow: '#C498FF',
     royalPurple: '#532D6F',
+    sidebar: colors.base.white,
+    container: colors.base.white,
   },
   outlined: {
     outlined: colors.neutral[200],

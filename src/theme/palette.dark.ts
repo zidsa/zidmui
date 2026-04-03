@@ -32,6 +32,8 @@ export const paletteDark: ThemeOptions['palette'] = {
     goldenYellow: '#3A3520',
     lavenderGlow: '#3C1C54',
     royalPurple: '#532D6F',
+    sidebar: '#16162B',
+    container: '#13182A',
   },
   outlined: {
     outlined: '#1C1C37',

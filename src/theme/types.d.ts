@@ -315,6 +315,8 @@ declare module '@mui/material' {
     goldenYellow: string;
     lavenderGlow: string;
     royalPurple: string;
+    sidebar: string;
+    container: string;
   }
 
   interface SimplePaletteColorOptions {

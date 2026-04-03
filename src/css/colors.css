@@ -195,6 +195,8 @@
    * ======================================== */
   --zid-bg-default: #F8F8F8;
   --zid-bg-paper: var(--zid-base-white);
+  --zid-bg-sidebar: var(--zid-base-white);
+  --zid-bg-container: var(--zid-base-white);
 
   /* ========================================
    * Divider
@@ -225,6 +227,8 @@
   /* Backgrounds */
   --zid-bg-default: #0D0D1A;
   --zid-bg-paper: #1A1A2E;
+  --zid-bg-sidebar: #16162B;
+  --zid-bg-container: #13182A;
   --zid-base-blur: rgba(26, 26, 46, 0.8);
 
   /* Divider */
