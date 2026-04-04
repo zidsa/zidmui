@@ -239,8 +239,8 @@ export const paletteDark: ThemeOptions['palette'] = {
         focusVisible: 'rgba(255, 255, 255, 0.3)',
       },
       outlined: {
-        enabledBorder: '#1C1C37',
-        hoverBorder: '#252540',
+        enabledBorder: '#383354',
+        hoverBorder: '#4D4875',
       },
     },
     switch: {
