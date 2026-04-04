@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.4.2](https://github.com/zidsa/zidmui/compare/v2.4.1...v2.4.2) (2026-04-04)
+
+### Chores
+
+* rename payments illustrations name ([#30](https://github.com/zidsa/zidmui/issues/30)) ([404fc89](https://github.com/zidsa/zidmui/commit/404fc892644afb0fc629a5e36cd9fd6ac17df72e))
+
 ## [2.4.1](https://github.com/zidsa/zidmui/compare/v2.4.0...v2.4.1) (2026-04-04)
 
 ### Bug Fixes
