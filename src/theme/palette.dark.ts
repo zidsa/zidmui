@@ -20,9 +20,9 @@ export const paletteDark: ThemeOptions['palette'] = {
     white: '#FFFFFF',
     black: '#000000',
     gray: '#1D1D35',
-    // Both gray100 and gray200 map to the same "first layer outline" value per the Figma dark mode spec
+    // gray100 is the border/outline token (#383354); gray200 is the deeper background shade (#1C1C37)
     gray200: '#1C1C37',
-    gray100: '#1C1C37',
+    gray100: '#383354',
     backgroundDisable: '#1C1C37',
     Blur: 'rgba(26, 26, 46, 0.8)',
     green: '#1B3A1A',
@@ -36,8 +36,8 @@ export const paletteDark: ThemeOptions['palette'] = {
     container: '#13182A',
   },
   outlined: {
-    outlined: '#1C1C37',
-    outlined_2: '#1C1C37',
+    outlined: '#383354',
+    outlined_2: '#383354',
     outlinedDisable: '#252540',
   },
   text: {
@@ -149,7 +149,7 @@ export const paletteDark: ThemeOptions['palette'] = {
       hover: 'rgba(46, 125, 50, 0.12)',
     },
   },
-  divider: '#1C1C37',
+  divider: '#383354',
   _components: {
     button: {
       disabledText: '#75727B',
