@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.4.3](https://github.com/zidsa/zidmui/compare/v2.4.2...v2.4.3) (2026-04-04)
+
+### Bug Fixes
+
+* update dark mode input border tokens to match card borders ([#31](https://github.com/zidsa/zidmui/issues/31)) ([9ed2429](https://github.com/zidsa/zidmui/commit/9ed24294fb3a0352caedbf9bb8c8d70ac460fde7)), closes [#1C1C37](https://github.com/zidsa/zidmui/issues/1C1C37) [#383354](https://github.com/zidsa/zidmui/issues/383354) [#252540](https://github.com/zidsa/zidmui/issues/252540) [#4D4875](https://github.com/zidsa/zidmui/issues/4D4875)
+
+### Chores
+
+* release 2.4.2 ([b74fdef](https://github.com/zidsa/zidmui/commit/b74fdef59d76e6ab1706c89b014419aae5d236f2))
+
 ## [2.4.2](https://github.com/zidsa/zidmui/compare/v2.4.1...v2.4.2) (2026-04-04)
 
 ### Chores
