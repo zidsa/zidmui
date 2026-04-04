@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.4.1](https://github.com/zidsa/zidmui/compare/v2.4.0...v2.4.1) (2026-04-04)
+
+### Bug Fixes
+
+* exclude stories types ([91d4927](https://github.com/zidsa/zidmui/commit/91d4927c3522666bd0cbbee16af1fc8c45433ee9))
+* the IDE had no way to discover logos as a valid path when autocompleting ([7321bb8](https://github.com/zidsa/zidmui/commit/7321bb8210eaea22e30744c7be11bbccbad83732))
+* update dark mode border tokens to match Figma spec ([#383354](https://github.com/zidsa/zidmui/issues/383354)) ([#29](https://github.com/zidsa/zidmui/issues/29)) ([dbfad86](https://github.com/zidsa/zidmui/commit/dbfad86183e1a2168e2423184bece295b4d8d114)), closes [#1C1C37](https://github.com/zidsa/zidmui/issues/1C1C37)
+
+### Chores
+
+* copy imports when clicks upon svg ([de3d8a1](https://github.com/zidsa/zidmui/commit/de3d8a199631bd74ca210f7340432ce23c37ca07))
+* release 2.3.1-beta.0 ([40d4933](https://github.com/zidsa/zidmui/commit/40d49332b4f95b8ba7f1fdd814e39b26566db89f))
+* release 2.4.0 ([1dbca3f](https://github.com/zidsa/zidmui/commit/1dbca3f4cb5d8f47cd541b0c053b9f71405600e6))
+
 ## [2.4.0](https://github.com/zidsa/zidmui/compare/v2.3.0...v2.4.0) (2026-04-03)
 
 ### Bug Fixes
