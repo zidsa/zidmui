@@ -125,6 +125,7 @@ declare module '@mui/material' {
       };
       appBar: {
         defaultFill: string;
+        borderBottom: string;
       };
       alert: {
         error: {
