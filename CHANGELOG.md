@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.4.8](https://github.com/zidsa/zidmui/compare/v2.4.7...v2.4.8) (2026-04-05)
+
+### Bug Fixes
+
+* use dedicated token for AppBar bottom border in dark mode ([#34](https://github.com/zidsa/zidmui/issues/34)) ([aa99410](https://github.com/zidsa/zidmui/commit/aa99410cec593e65e81711bc90a34f52d17578ff)), closes [#383354](https://github.com/zidsa/zidmui/issues/383354) [#1C1C37](https://github.com/zidsa/zidmui/issues/1C1C37)
+
+### Chores
+
+* release 2.4.7 ([ff0e95b](https://github.com/zidsa/zidmui/commit/ff0e95b43cafa69942075304ac7019c6bbd64715))
+
 ## [2.4.7](https://github.com/zidsa/zidmui/compare/v2.4.6...v2.4.7) (2026-04-05)
 
 ### Chores
