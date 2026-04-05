@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.5.0](https://github.com/zidsa/zidmui/compare/v2.4.8...v2.5.0) (2026-04-05)
+
+### Features
+
+* configure MuiAppBar default variant for dark mode ([#35](https://github.com/zidsa/zidmui/issues/35)) ([1491adf](https://github.com/zidsa/zidmui/commit/1491adf33be7292113a14c59f32c2760e03586ca)), closes [#FFFFFF](https://github.com/zidsa/zidmui/issues/FFFFFF) [#1A1A2E](https://github.com/zidsa/zidmui/issues/1A1A2E)
+
 ## [2.4.8](https://github.com/zidsa/zidmui/compare/v2.4.7...v2.4.8) (2026-04-05)
 
 ### Bug Fixes
