@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.4.6](https://github.com/zidsa/zidmui/compare/v2.4.4...v2.4.6) (2026-04-05)
+
+### Chores
+
+* reset text field to previous config ([f897221](https://github.com/zidsa/zidmui/commit/f89722168c17c2ce75f3300c9c0027fb9dbb7257))
+
 ## [2.4.5](https://github.com/zidsa/zidmui/compare/v2.4.4...v2.4.5) (2026-04-05)
 
 ### Chores
