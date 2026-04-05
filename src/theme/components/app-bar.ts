@@ -3,7 +3,32 @@ import { Components, CssVarsTheme, Theme } from '@mui/material/styles';
 //
 //
 
+const sidebarAppBarStyle = (theme: Theme & CssVarsTheme) => ({
+  '--AppBar-background': theme.palette.background.sidebar,
+  backgroundColor: theme.palette.background.sidebar,
+  boxShadow: theme.shadows[0],
+  borderBottom: `1px solid ${theme.palette._components.appBar.borderBottom}`,
+  '& .MuiTextField-root': {
+    '& .MuiOutlinedInput-root': {
+      '& fieldset': {
+        borderColor: theme.palette?.outlined?.outlined,
+        background: theme.palette?.common?.black_states?.hover,
+      },
+      '&.Mui-focused fieldset': {
+        borderColor: theme.palette.primary.main,
+      },
+      '&:active fieldset': {
+        borderColor: theme.palette.primary.main,
+      },
+    },
+  },
+});
+
 export const MuiAppBar: Components<Theme & CssVarsTheme>['MuiAppBar'] = {
+  defaultProps: {
+    enableColorOnDark: true,
+    elevation: 0,
+  },
   styleOverrides: {
     root: ({ theme }) => ({
       boxShadow: theme.shadows[4],
@@ -69,16 +94,7 @@ export const MuiAppBar: Components<Theme & CssVarsTheme>['MuiAppBar'] = {
         },
         {
           props: { color: 'default' },
-          style: ({ theme }) => ({
-            '& .MuiTextField-root': {
-              '& .MuiOutlinedInput-root': {
-                '& fieldset': {
-                  border: 'none',
-                  background: theme.palette.common.black_states.selected,
-                },
-              },
-            },
-          }),
+          style: ({ theme }) => sidebarAppBarStyle(theme),
         },
         {
           props: { color: 'secondary' },
@@ -128,25 +144,7 @@ export const MuiAppBar: Components<Theme & CssVarsTheme>['MuiAppBar'] = {
         },
         {
           props: { color: 'transparent' },
-          style: ({ theme }) => ({
-            backgroundColor: theme.palette.background.sidebar,
-            boxShadow: theme.shadows[0],
-            borderBottom: `1px solid ${theme.palette._components.appBar.borderBottom}`,
-            '& .MuiTextField-root': {
-              '& .MuiOutlinedInput-root': {
-                '& fieldset': {
-                  borderColor: theme.palette?.outlined?.outlined,
-                  background: theme.palette?.common?.black_states?.hover,
-                },
-                '&.Mui-focused fieldset': {
-                  borderColor: theme.palette.primary.main,
-                },
-                '&:active fieldset': {
-                  borderColor: theme.palette.primary.main,
-                },
-              },
-            },
-          }),
+          style: ({ theme }) => sidebarAppBarStyle(theme),
         },
       ],
     }),

@@ -5,7 +5,7 @@ export const MuiInputBase: Components<Theme & CssVarsTheme>['MuiInputBase'] = {
   styleOverrides: {
     root: ({ theme }) => ({
       '&.MuiInputBase-root': {
-        background: theme.palette.background.white,
+        background: theme.palette.background.paper,
       },
     }),
     input: ({ theme }) => ({
