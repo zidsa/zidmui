@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.4.7](https://github.com/zidsa/zidmui/compare/v2.4.6...v2.4.7) (2026-04-05)
+
+### Chores
+
+* remove margin top from text field ([53080a8](https://github.com/zidsa/zidmui/commit/53080a8d61c20e94678db2678531f9cebc79d0f4))
+
 ## [2.4.6](https://github.com/zidsa/zidmui/compare/v2.4.4...v2.4.6) (2026-04-05)
 
 ### Chores
