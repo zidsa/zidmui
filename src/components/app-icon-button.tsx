@@ -23,25 +23,23 @@ export const AppIconButton = ({
   tooltip,
   tooltipProps,
   sx,
+  hideBorder,
   ...props
 }: AppIconButtonProps) => {
-  if (!tooltip) {
-    return (
-      <IconButton component="button" color={color} size={size} ref={ref} sx={sx} {...props}>
-        {children}
-        {content}
-      </IconButton>
-    );
-  }
+  const mergedSx = { ...sx, ...(hideBorder && { border: 'none' }) };
+
+  const button = (
+    <IconButton component="button" color={color} size={size} ref={ref} sx={mergedSx} {...props}>
+      {children}
+      {content}
+    </IconButton>
+  );
+
+  if (!tooltip) return button;
 
   return (
     <AppTooltip description={tooltip} disableInteractive {...tooltipProps}>
-      <Box>
-        <IconButton component="button" color={color} size={size} ref={ref} sx={sx} {...props}>
-          {children}
-          {content}
-        </IconButton>
-      </Box>
+      <Box>{button}</Box>
     </AppTooltip>
   );
 };

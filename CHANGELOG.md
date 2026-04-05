@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.5](https://github.com/zidsa/zidmui/compare/v2.4.4...v2.4.5) (2026-04-05)
+
+### Chores
+
+* create outlined and filled input ([df8ba8d](https://github.com/zidsa/zidmui/commit/df8ba8d1698df35ab0497f276c8b958392161c91))
+* enable hide border for app icon button ([93a6ca9](https://github.com/zidsa/zidmui/commit/93a6ca9714817b73e2a58c2a99f0cb3c695afc63))
+
 ## [2.4.4](https://github.com/zidsa/zidmui/compare/v2.4.3...v2.4.4) (2026-04-05)
 
 ### Chores

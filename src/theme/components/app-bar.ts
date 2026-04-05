@@ -129,9 +129,9 @@ export const MuiAppBar: Components<Theme & CssVarsTheme>['MuiAppBar'] = {
         {
           props: { color: 'transparent' },
           style: ({ theme }) => ({
-            backgroundColor: theme.palette.background.default,
+            backgroundColor: theme.palette.background.sidebar,
             boxShadow: theme.shadows[0],
-            borderBottom: `1px solid ${theme.palette?.outlined?.outlined_2}`,
+            borderBottom: `1px solid ${theme.palette?.outlined?.outlined_2 ?? theme.palette.divider}`,
             '& .MuiTextField-root': {
               '& .MuiOutlinedInput-root': {
                 '& fieldset': {

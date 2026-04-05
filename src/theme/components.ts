@@ -35,6 +35,8 @@ import { MuiPaper } from './components/paper';
 import { MuiTable, MuiTableRow } from './components/table';
 import { MuiSelect } from './components/select';
 import { MuiCard } from './components/card';
+import { MuiOutlinedInput } from './components/outlined-input';
+import { MuiFilledInput } from './components/filled-input';
 
 //
 //
@@ -86,4 +88,6 @@ export const components: Record<string, any> = {
   MuiTableRow,
   MuiSelect,
   MuiCard,
+  MuiOutlinedInput,
+  MuiFilledInput,
 };

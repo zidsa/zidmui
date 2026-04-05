@@ -124,3 +124,105 @@ export const Variants: Story = {
   ),
   args: {},
 };
+
+export const HideBorder: Story = {
+  render: () => (
+    <StackColumn gap={3}>
+      {/* Primary */}
+      <StackColumn direction="row" gap={2} alignItems="center">
+        <AppIconButton color="primary" size="large" hideBorder>
+          <IconSettingsLine />
+        </AppIconButton>
+
+        <AppIconButton color="primary" size="medium" hideBorder>
+          <IconSettingsLine />
+        </AppIconButton>
+
+        <AppIconButton color="primary" size="small" hideBorder>
+          <IconSettingsLine />
+        </AppIconButton>
+
+        <AppIconButton color="primary" size="extraSmall" hideBorder>
+          <IconSettingsLine />
+        </AppIconButton>
+      </StackColumn>
+
+      {/* Secondary */}
+      <StackColumn direction="row" gap={2} alignItems="center">
+        <AppIconButton color="secondary" size="large" hideBorder>
+          <IconSettingsLine />
+        </AppIconButton>
+
+        <AppIconButton color="secondary" size="medium" hideBorder>
+          <IconSettingsLine />
+        </AppIconButton>
+
+        <AppIconButton color="secondary" size="small" hideBorder>
+          <IconSettingsLine />
+        </AppIconButton>
+
+        <AppIconButton color="secondary" size="extraSmall" hideBorder>
+          <IconSettingsLine />
+        </AppIconButton>
+      </StackColumn>
+
+      {/* Error */}
+      <StackColumn direction="row" gap={2} alignItems="center">
+        <AppIconButton color="error" size="large" hideBorder>
+          <IconDeleteBinLine />
+        </AppIconButton>
+
+        <AppIconButton color="error" size="medium" hideBorder>
+          <IconDeleteBinLine />
+        </AppIconButton>
+
+        <AppIconButton color="error" size="small" hideBorder>
+          <IconDeleteBinLine />
+        </AppIconButton>
+
+        <AppIconButton color="error" size="extraSmall" hideBorder>
+          <IconDeleteBinLine />
+        </AppIconButton>
+      </StackColumn>
+
+      {/* Default */}
+      <StackColumn direction="row" gap={2} alignItems="center">
+        <AppIconButton color="default" size="large" hideBorder>
+          <IconDeleteBinLine />
+        </AppIconButton>
+
+        <AppIconButton color="default" size="medium" hideBorder>
+          <IconDeleteBinLine />
+        </AppIconButton>
+
+        <AppIconButton color="default" size="small" hideBorder>
+          <IconDeleteBinLine />
+        </AppIconButton>
+
+        <AppIconButton color="default" size="extraSmall" hideBorder>
+          <IconDeleteBinLine />
+        </AppIconButton>
+      </StackColumn>
+
+      {/* Loading */}
+      <StackColumn direction="row" gap={2} alignItems="center">
+        <AppIconButton color="primary" size="large" loading hideBorder>
+          <IconSettingsLine />
+        </AppIconButton>
+
+        <AppIconButton color="primary" size="medium" loading hideBorder>
+          <IconSettingsLine />
+        </AppIconButton>
+
+        <AppIconButton color="primary" size="small" loading hideBorder>
+          <IconSettingsLine />
+        </AppIconButton>
+
+        <AppIconButton color="primary" size="extraSmall" loading hideBorder>
+          <IconSettingsLine />
+        </AppIconButton>
+      </StackColumn>
+    </StackColumn>
+  ),
+  args: {},
+};
