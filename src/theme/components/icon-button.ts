@@ -22,7 +22,7 @@ export const MuiIconButton: Components<
         color: theme.palette._components.button.disabledText,
       },
       '&.MuiIconButton-loading .MuiSvgIcon-root': {
-        fill: 'rgba(0,0,0,0) !important',
+        fill: 'transparent !important',
       },
 
       variants: [

@@ -7,6 +7,7 @@ import {
   Radio,
   CircularProgress,
   styled,
+  alpha,
 } from '@mui/material';
 import { AppTypographyProps, AppTypography } from './app-typography';
 import { StackColumn } from './stack-column';
@@ -82,10 +83,10 @@ const FormControlLabelStyled = styled(FormControlLabel)(({ theme }) => {
     gap: theme.spacing(0.5),
     margin: 0,
     padding: theme.spacing(1.5),
-    border: `solid 1px ${theme.palette.colors.neutral[100]}`,
+    border: `solid 1px ${theme.palette.divider}`,
     borderRadius: theme.shape.standardBorderRadius,
     ':has(:checked)': {
-      backgroundColor: theme.palette.colors.primary[50],
+      backgroundColor: alpha(theme.palette.primary.main, 0.08),
       borderColor: '#AE72FF80',
     },
     overflow: 'hidden',
