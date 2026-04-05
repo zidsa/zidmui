@@ -142,7 +142,6 @@ export const palette: ThemeOptions['palette'] = {
     dark: '#649560',
     light: '#DDF8DC',
     contrastText: '#000000',
-    // 'contrastText 2': '#FFFFFF',
     _states: {
       outlinedBorder: 'rgba(46, 125, 50, 0.5)',
       focusVisible: 'rgba(46, 125, 50, 0.3)',
