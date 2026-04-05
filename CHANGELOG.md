@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.4.4](https://github.com/zidsa/zidmui/compare/v2.4.3...v2.4.4) (2026-04-05)
+
+### Chores
+
+* update theme palette ([#32](https://github.com/zidsa/zidmui/issues/32)) ([2e7d112](https://github.com/zidsa/zidmui/commit/2e7d112dfd6945660eb42ac06aec05f271d2e206))
+
 ## [2.4.3](https://github.com/zidsa/zidmui/compare/v2.4.2...v2.4.3) (2026-04-04)
 
 ### Bug Fixes
