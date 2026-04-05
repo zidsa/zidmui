@@ -70,11 +70,18 @@ export const MuiAppBar: Components<Theme & CssVarsTheme>['MuiAppBar'] = {
         {
           props: { color: 'default' },
           style: ({ theme }) => ({
+            '--AppBar-background': theme.palette.background.sidebar,
+            backgroundColor: theme.palette.background.sidebar,
+            boxShadow: theme.shadows[0],
+            borderBottom: `1px solid ${theme.palette._components.appBar.borderBottom}`,
             '& .MuiTextField-root': {
               '& .MuiOutlinedInput-root': {
                 '& fieldset': {
-                  border: 'none',
-                  background: theme.palette.common.black_states.selected,
+                  borderColor: theme.palette?.outlined?.outlined,
+                  background: theme.palette?.common?.black_states?.hover,
+                },
+                '&.Mui-focused fieldset': {
+                  borderColor: theme.palette.primary.main,
                 },
               },
             },
