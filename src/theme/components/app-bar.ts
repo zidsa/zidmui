@@ -4,6 +4,10 @@ import { Components, CssVarsTheme, Theme } from '@mui/material/styles';
 //
 
 export const MuiAppBar: Components<Theme & CssVarsTheme>['MuiAppBar'] = {
+  defaultProps: {
+    enableColorOnDark: true,
+    elevation: 0,
+  },
   styleOverrides: {
     root: ({ theme }) => ({
       boxShadow: theme.shadows[4],
