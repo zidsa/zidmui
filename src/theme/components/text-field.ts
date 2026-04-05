@@ -1,21 +1,20 @@
 import type {} from '@mui/lab/themeAugmentation';
-import { Components, CssVarsTheme, Theme } from '@mui/material';
-
-//
-//
+import { Components, CssVarsTheme, Theme } from '@mui/material/styles';
 
 export const MuiTextField: Components<Theme & CssVarsTheme>['MuiTextField'] = {
   styleOverrides: {
     root: ({ theme }) => ({
+      marginTop: theme.spacing(2.5),
       legend: {
         display: 'none',
       },
-
       '& .MuiInputLabel-root': {
         marginBottom: theme.spacing(1),
         transform: 'scale(1)',
         position: 'relative',
-        color: theme.palette.text.secondary,
+      },
+      '& .MuiFormHelperText-root': {
+        marginTop: theme.spacing(1),
       },
 
       '& .MuiOutlinedInput-root': {
@@ -66,10 +65,18 @@ export const MuiTextField: Components<Theme & CssVarsTheme>['MuiTextField'] = {
       style: ({ theme }) => ({
         '& .MuiOutlinedInput-root': {
           minHeight: theme.spacing(5),
-          paddingBlock: theme.spacing(1),
-          paddingInline: theme.spacing(2),
           input: {
-            padding: 0,
+            padding: theme.spacing(1.25, 2),
+          },
+        },
+        '& .MuiInputBase-adornedStart, & .MuiInputBase-inputAdornedStart': {
+          input: {
+            padding: theme.spacing(1.25, 2, 1.25, 0.5),
+          },
+        },
+        '& .MuiInputBase-adornedEnd, & .MuiInputBase-inputAdornedEnd': {
+          input: {
+            padding: theme.spacing(1.25, 0.5, 1.25, 2),
           },
         },
       }),
@@ -79,10 +86,19 @@ export const MuiTextField: Components<Theme & CssVarsTheme>['MuiTextField'] = {
       style: ({ theme }) => ({
         '& .MuiOutlinedInput-root': {
           minHeight: theme.spacing(6),
-          paddingBlock: theme.spacing(1),
-          paddingInline: theme.spacing(2),
+
           input: {
-            padding: 0,
+            padding: theme.spacing(1.75, 2),
+          },
+        },
+        '& .MuiInputBase-adornedStart, & .MuiInputBase-inputAdornedStart': {
+          input: {
+            padding: theme.spacing(1.75, 2, 1.75, 0.5),
+          },
+        },
+        '& .MuiInputBase-adornedEnd, & .MuiInputBase-inputAdornedEnd': {
+          input: {
+            padding: theme.spacing(1.75, 0.5, 1.75, 2),
           },
         },
       }),
