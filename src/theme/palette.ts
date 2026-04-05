@@ -268,6 +268,7 @@ export const palette: ThemeOptions['palette'] = {
     },
     appBar: {
       defaultFill: colors.neutral[100],
+      borderBottom: colors.neutral[100],
     },
     alert: {
       error: {

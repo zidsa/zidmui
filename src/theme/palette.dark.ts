@@ -269,6 +269,7 @@ export const paletteDark: ThemeOptions['palette'] = {
     },
     appBar: {
       defaultFill: '#1C1C37',
+      borderBottom: '#1C1C37',
     },
     alert: {
       error: {
