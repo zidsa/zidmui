@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.5.5](https://github.com/zidsa/zidmui/compare/v2.5.4...v2.5.5) (2026-04-06)
+
+### Bug Fixes
+
+* correct dark mode surface tokens for Tabs and Dialog ([#36](https://github.com/zidsa/zidmui/issues/36)) ([73d45fd](https://github.com/zidsa/zidmui/commit/73d45fd906e65f1f8090535925b805c1fcb0093b)), closes [#383354](https://github.com/zidsa/zidmui/issues/383354) [#1D1D35](https://github.com/zidsa/zidmui/issues/1D1D35) [#1A1A2E](https://github.com/zidsa/zidmui/issues/1A1A2E)
+
+### Chores
+
+* release 2.5.4 ([c9e1b5c](https://github.com/zidsa/zidmui/commit/c9e1b5c119e1196eca5aa78dfe0ee2a6ccd61d95))
+* update input adornment stories ([da4171b](https://github.com/zidsa/zidmui/commit/da4171b54a3dbc489b727a6c2740b8dd7a777ffc))
+
 ## [2.5.4](https://github.com/zidsa/zidmui/compare/v2.5.3...v2.5.4) (2026-04-06)
 
 ### Chores
