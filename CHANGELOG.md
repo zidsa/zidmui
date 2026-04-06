@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.5.4](https://github.com/zidsa/zidmui/compare/v2.5.3...v2.5.4) (2026-04-06)
+
+### Chores
+
+* update input adornment stories ([da4171b](https://github.com/zidsa/zidmui/commit/da4171b54a3dbc489b727a6c2740b8dd7a777ffc))
+
 ## [2.5.3](https://github.com/zidsa/zidmui/compare/v2.5.2...v2.5.3) (2026-04-06)
 
 ### Chores
