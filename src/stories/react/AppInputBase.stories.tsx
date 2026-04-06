@@ -127,13 +127,13 @@ export const Variants: Story = {
           label="Price"
           placeholder="0.00"
           endAdornmentText="$"
-          endAdornmentTextProps={{ hideBackground: true }}
+          endAdornmentTextProps={{ hideBackground: false }}
         />
         <AppInputBase
           label="Weight"
           placeholder="0"
           startAdornmentText="Kg"
-          startAdornmentTextProps={{ hideBackground: true }}
+          startAdornmentTextProps={{ hideBackground: false }}
         />
       </StackColumn>
 
