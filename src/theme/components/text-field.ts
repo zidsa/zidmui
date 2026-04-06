@@ -1,5 +1,5 @@
 import type {} from '@mui/lab/themeAugmentation';
-import { Components, CssVarsTheme, Theme } from '@mui/material/styles';
+import { Components, CssVarsTheme, Theme } from '@mui/material';
 
 export const MuiTextField: Components<Theme & CssVarsTheme>['MuiTextField'] = {
   styleOverrides: {

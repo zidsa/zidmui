@@ -3,6 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Divider } from '@mui/material';
 
 import { AppInputBase } from '~/components/app-input-base';
+import { IconSearchLine as SearchLineIcon } from '~/icons/system/search-line';
 import { AppTypography } from '~/components/app-typography';
 import { StackColumn } from '~/components/stack-column';
 
@@ -99,7 +100,14 @@ export const Variants: Story = {
       <StackColumn gap={2}>
         <AppTypography variant="h6">Adornments</AppTypography>
 
+        <AppInputBase
+          label="Search"
+          placeholder="Search..."
+          startAdornment={<SearchLineIcon fontSize="small" />}
+        />
+        <AppInputBase label="Price" placeholder="0.00" startAdornmentText="$" size="small" />
         <AppInputBase label="Price" placeholder="0.00" startAdornmentText="$" />
+        <AppInputBase label="Price" placeholder="0.00" endAdornmentText="$" size="small" />
         <AppInputBase label="Price" placeholder="0.00" endAdornmentText="$" />
         <AppInputBase label="Weight" placeholder="0" endAdornmentText="Kg" />
         <AppInputBase
@@ -107,6 +115,25 @@ export const Variants: Story = {
           placeholder="0.00"
           endAdornmentText="SAR"
           endAdornmentTextProps={{ typographyProps: { color: 'primary' } }}
+        />
+      </StackColumn>
+
+      <Divider />
+
+      <StackColumn gap={2}>
+        <AppTypography variant="h6">Hide Background</AppTypography>
+
+        <AppInputBase
+          label="Price"
+          placeholder="0.00"
+          endAdornmentText="$"
+          endAdornmentTextProps={{ hideBackground: true }}
+        />
+        <AppInputBase
+          label="Weight"
+          placeholder="0"
+          startAdornmentText="Kg"
+          startAdornmentTextProps={{ hideBackground: true }}
         />
       </StackColumn>
 

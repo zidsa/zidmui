@@ -8,22 +8,35 @@ import { AppTypography, AppTypographyProps } from './app-typography';
 export type AppInputAdornmentTextProps = Omit<InputAdornmentProps, 'position'> & {
   typographyProps?: AppTypographyProps;
   position?: 'start' | 'end';
+  hideBackground?: boolean;
 };
 
 export const AppInputAdornmentText = ({
   children,
   position = 'start',
   typographyProps,
+  hideBackground,
+  sx,
   ...props
 }: AppInputAdornmentTextProps) => {
   return (
-    <InputAdornment {...props} position={position}>
+    <InputAdornment
+      sx={{
+        ...sx,
+        ...getHideBackgroundSx(hideBackground),
+      }}
+      {...props}
+      position={position}
+    >
       <StyledAppTypography variant="body2" color="text.tertiary" {...typographyProps}>
         {children}
       </StyledAppTypography>
     </InputAdornment>
   );
 };
+
+const getHideBackgroundSx = (hide?: boolean) =>
+  hide ? { background: 'transparent', border: 'none' } : {};
 
 //
 
