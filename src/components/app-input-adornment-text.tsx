@@ -18,7 +18,7 @@ export const AppInputAdornmentText = ({
 }: AppInputAdornmentTextProps) => {
   return (
     <InputAdornment {...props} position={position}>
-      <StyledAppTypography variant="body1" color="text.secondary" {...typographyProps}>
+      <StyledAppTypography variant="body2" color="text.tertiary" {...typographyProps}>
         {children}
       </StyledAppTypography>
     </InputAdornment>

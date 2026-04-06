@@ -6,10 +6,10 @@ export const MuiInputAdornment: Components<Theme & CssVarsTheme>['MuiInputAdornm
     root: ({ theme }) => ({
       margin: 0,
       '&.MuiInputAdornment-positionEnd': {
-        marginInlineStart: theme.spacing(1),
+        marginLeft: theme.spacing(1),
       },
       '&.MuiInputAdornment-positionStart': {
-        marginInlineEnd: theme.spacing(1),
+        marginRight: theme.spacing(1),
       },
     }),
   },
