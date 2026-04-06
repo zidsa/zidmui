@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.5.1](https://github.com/zidsa/zidmui/compare/v2.5.0...v2.5.1) (2026-04-06)
+
+### Bug Fixes
+
+* input adornment issue ([b06974d](https://github.com/zidsa/zidmui/commit/b06974d3a94f25fef5c00395700838a2ca5cc22f))
+
+### Chores
+
+* remove release github action ([3aab2fb](https://github.com/zidsa/zidmui/commit/3aab2fb5edd8f8a89e66c350b0af0f9c6cfe8dd8))
+
 ## [2.5.0](https://github.com/zidsa/zidmui/compare/v2.4.8...v2.5.0) (2026-04-05)
 
 ### Features
