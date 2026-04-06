@@ -11,6 +11,7 @@ export const MuiDialog: Components<
   },
   styleOverrides: {
     paper: ({ theme }) => ({
+      backgroundImage: 'none',
       maxHeight: '80vh',
       borderRadius: theme.spacing(1.5),
       [theme.breakpoints.down('sm')]: {
