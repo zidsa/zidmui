@@ -53,7 +53,7 @@ export const MuiTabs: Components<Theme & CssVarsTheme>['MuiTabs'] = {
             },
 
             '.MuiButtonBase-root.Mui-selected': {
-              backgroundColor: theme.palette.background.gray100,
+              backgroundColor: theme.palette.background.gray,
               color: theme.palette.tabs.text.secondary,
             },
 
@@ -95,7 +95,7 @@ export const MuiTabs: Components<Theme & CssVarsTheme>['MuiTabs'] = {
             },
 
             '.MuiButtonBase-root.Mui-selected': {
-              backgroundColor: theme.palette.background.gray100,
+              backgroundColor: theme.palette.background.gray,
               color: theme.palette.tabs.text.secondary,
             },
 
