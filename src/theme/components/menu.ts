@@ -8,6 +8,7 @@ export const MuiMenu: Components<Theme & CssVarsTheme>['MuiMenu'] = {
   },
   styleOverrides: {
     paper: ({ theme }) => ({
+      backgroundImage: 'none',
       borderRadius: theme.spacing(1.5),
       marginTop: theme.spacing(1),
       borderStyle: 'solid',
