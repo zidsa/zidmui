@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.5.6](https://github.com/zidsa/zidmui/compare/v2.5.5...v2.5.6) (2026-04-07)
+
+### Bug Fixes
+
+* remove dark mode Paper overlay gradient from Menu ([#37](https://github.com/zidsa/zidmui/issues/37)) ([4aea3f0](https://github.com/zidsa/zidmui/commit/4aea3f01576363cb0d340b5c0c9725959443f23f))
+
 ## [2.5.5](https://github.com/zidsa/zidmui/compare/v2.5.4...v2.5.5) (2026-04-06)
 
 ### Bug Fixes
