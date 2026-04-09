@@ -297,6 +297,44 @@ export const paletteDark: ThemeOptions['palette'] = {
         icon: colors.green[500],
       },
     },
+    status: {
+      success: {
+        background: 'rgba(158, 236, 152, 0.15)',
+        color: colors.green[500],
+      },
+      error: {
+        background: 'rgba(250, 55, 104, 0.15)',
+        color: colors.red[400],
+      },
+      warning: {
+        background: 'rgba(249, 230, 131, 0.15)',
+        color: colors.yellow[600],
+      },
+      neutral: {
+        background: '#252540',
+        color: '#A3A1A6',
+      },
+      disabled: {
+        background: '#1C1C37',
+        color: '#75727B',
+      },
+      info: {
+        background: 'rgba(135, 88, 198, 0.15)',
+        color: colors.primary[400],
+      },
+      orange: {
+        background: 'rgba(255, 140, 58, 0.15)',
+        color: colors.orange[500],
+      },
+      blue: {
+        background: 'rgba(96, 203, 203, 0.15)',
+        color: colors.blue[500],
+      },
+      primary: {
+        background: 'rgba(135, 88, 198, 0.2)',
+        color: colors.primary[400],
+      },
+    },
     stepper: {
       connector: '#75727B',
     },

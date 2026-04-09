@@ -58,56 +58,56 @@ const StatusElement = styled(Chip, {
 })<{ color2?: AppStatusProps['color'] }>(({ theme, color2 = 'neutral' }) => ({
   ...(color2 === 'success'
     ? {
-        backgroundColor: theme.palette.colors.green[300],
-        color: theme.palette.colors.green[900],
+        backgroundColor: theme.palette._components.status.success.background,
+        color: theme.palette._components.status.success.color,
       }
     : undefined),
   ...(color2 === 'error'
     ? {
-        backgroundColor: theme.palette.colors.red[200],
-        color: theme.palette.colors.red[900],
+        backgroundColor: theme.palette._components.status.error.background,
+        color: theme.palette._components.status.error.color,
       }
     : undefined),
   ...(color2 === 'warning'
     ? {
-        backgroundColor: theme.palette.colors.yellow[300],
-        color: theme.palette.colors.yellow[1000],
+        backgroundColor: theme.palette._components.status.warning.background,
+        color: theme.palette._components.status.warning.color,
       }
     : undefined),
   ...(color2 === 'neutral'
     ? {
-        backgroundColor: theme.palette.colors.neutral[100],
-        color: theme.palette.colors.neutral[600],
+        backgroundColor: theme.palette._components.status.neutral.background,
+        color: theme.palette._components.status.neutral.color,
       }
     : undefined),
   ...(color2 === 'disabled'
     ? {
-        backgroundColor: theme.palette.colors.neutral[50],
-        color: theme.palette.colors.neutral[400],
+        backgroundColor: theme.palette._components.status.disabled.background,
+        color: theme.palette._components.status.disabled.color,
       }
     : undefined),
   ...(color2 === 'info'
     ? {
-        backgroundColor: theme.palette.colors.primary[200],
-        color: theme.palette.colors.primary[800],
+        backgroundColor: theme.palette._components.status.info.background,
+        color: theme.palette._components.status.info.color,
       }
     : undefined),
   ...(color2 === 'orange'
     ? {
-        backgroundColor: theme.palette.colors.orange[200],
-        color: theme.palette.colors.orange[700],
+        backgroundColor: theme.palette._components.status.orange.background,
+        color: theme.palette._components.status.orange.color,
       }
     : undefined),
   ...(color2 === 'blue'
     ? {
-        backgroundColor: theme.palette.colors.blue[300],
-        color: theme.palette.colors.blue[900],
+        backgroundColor: theme.palette._components.status.blue.background,
+        color: theme.palette._components.status.blue.color,
       }
     : undefined),
   ...(color2 === 'primary'
     ? {
-        backgroundColor: theme.palette.colors.primary[300],
-        color: theme.palette.colors.primary[900],
+        backgroundColor: theme.palette._components.status.primary.background,
+        color: theme.palette._components.status.primary.color,
       }
     : undefined),
 }));

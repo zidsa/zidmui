@@ -296,6 +296,44 @@ export const palette: ThemeOptions['palette'] = {
         icon: colors.green[600],
       },
     },
+    status: {
+      success: {
+        background: colors.green[300],
+        color: colors.green[900],
+      },
+      error: {
+        background: colors.red[200],
+        color: colors.red[900],
+      },
+      warning: {
+        background: colors.yellow[300],
+        color: colors.yellow[1000],
+      },
+      neutral: {
+        background: colors.neutral[100],
+        color: colors.neutral[600],
+      },
+      disabled: {
+        background: colors.neutral[50],
+        color: colors.neutral[400],
+      },
+      info: {
+        background: colors.primary[200],
+        color: colors.primary[800],
+      },
+      orange: {
+        background: colors.orange[200],
+        color: colors.orange[700],
+      },
+      blue: {
+        background: colors.blue[300],
+        color: colors.blue[900],
+      },
+      primary: {
+        background: colors.primary[300],
+        color: colors.primary[900],
+      },
+    },
     stepper: {
       connector: '#A3A1A6',
     },

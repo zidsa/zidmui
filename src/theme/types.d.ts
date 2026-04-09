@@ -153,6 +153,17 @@ declare module '@mui/material' {
           icon: string;
         };
       };
+      status: {
+        success: { background: string; color: string };
+        error: { background: string; color: string };
+        warning: { background: string; color: string };
+        neutral: { background: string; color: string };
+        disabled: { background: string; color: string };
+        info: { background: string; color: string };
+        orange: { background: string; color: string };
+        blue: { background: string; color: string };
+        primary: { background: string; color: string };
+      };
       stepper: {
         connector: string;
       };
