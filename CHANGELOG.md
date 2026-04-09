@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.5.7](https://github.com/zidsa/zidmui/compare/v2.5.6...v2.5.7) (2026-04-09)
+
+### Chores
+
+* update app status in dark mode ([b136f97](https://github.com/zidsa/zidmui/commit/b136f97c399159ed697bd140c73ff7d8f97c5406))
+
 ## [2.5.6](https://github.com/zidsa/zidmui/compare/v2.5.5...v2.5.6) (2026-04-07)
 
 ### Bug Fixes
