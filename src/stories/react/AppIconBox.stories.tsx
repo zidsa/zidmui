@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Stack } from '@mui/material';
 
-import { AppIconBox } from '~/theme/components/app-icon-box';
+import { AppIconBox } from '~/components/app-icon-box';
 import { IconShoppingCartLine } from '~/icons/finance/shopping-cart-line';
 
 //
