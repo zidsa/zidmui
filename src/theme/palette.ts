@@ -32,7 +32,7 @@ export const palette: ThemeOptions['palette'] = {
     lavenderGlow: '#C498FF',
     royalPurple: '#532D6F',
     sidebar: colors.base.white,
-    container: colors.base.white,
+    container: colors.neutral[50],
   },
   outlined: {
     outlined: colors.neutral[200],
