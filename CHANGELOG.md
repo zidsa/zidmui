@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.5.9](https://github.com/zidsa/zidmui/compare/v2.5.8...v2.5.9) (2026-04-10)
+
+### Chores
+
+* implement app icon box component ([efcefc3](https://github.com/zidsa/zidmui/commit/efcefc3fd3b2ad1dbd89eeb738e3e72f42fe92af))
+
 ## [2.5.8](https://github.com/zidsa/zidmui/compare/v2.5.6...v2.5.8) (2026-04-10)
 
 ### Bug Fixes
