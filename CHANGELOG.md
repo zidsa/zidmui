@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.5.8](https://github.com/zidsa/zidmui/compare/v2.5.6...v2.5.8) (2026-04-10)
+
+### Bug Fixes
+
+* container background ([f11984a](https://github.com/zidsa/zidmui/commit/f11984a9746a6c1457f9ae6ca1272c6b36e978ee))
+
+### Chores
+
+* release 2.5.7 ([#39](https://github.com/zidsa/zidmui/issues/39)) ([4ba36a4](https://github.com/zidsa/zidmui/commit/4ba36a4f787e92279d37d16f909ee3ed0192527f))
+* update app status in dark mode ([#38](https://github.com/zidsa/zidmui/issues/38)) ([a9778ad](https://github.com/zidsa/zidmui/commit/a9778ad8c7f33710e6753e4dd19702a89d259181))
+
 ## [2.5.7](https://github.com/zidsa/zidmui/compare/v2.5.6...v2.5.7) (2026-04-09)
 
 ### Chores
