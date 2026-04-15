@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.5.11](https://github.com/zidsa/zidmui/compare/v2.5.10...v2.5.11) (2026-04-15)
+
+### Chores
+
+* update whatsapp tiers svgs([#40](https://github.com/zidsa/zidmui/issues/40)) ([ab988a8](https://github.com/zidsa/zidmui/commit/ab988a86a7ec5bf308b691d6f7eb292904027a04))
+
 ## [2.5.10](https://github.com/zidsa/zidmui/compare/v2.5.9...v2.5.10) (2026-04-10)
 
 ### Bug Fixes
