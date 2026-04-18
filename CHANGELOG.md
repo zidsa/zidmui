@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.5.12](https://github.com/zidsa/zidmui/compare/v2.5.11...v2.5.12) (2026-04-18)
+
+### Chores
+
+* add zid logos ([040d64a](https://github.com/zidsa/zidmui/commit/040d64aaa69864d354da2a9c606fa225a360e4c3))
+* implement app accordion ([1140ce5](https://github.com/zidsa/zidmui/commit/1140ce52e2f75bba19ea10b5e0a7a7a803a7222e))
+* implement app accordion ([f14bceb](https://github.com/zidsa/zidmui/commit/f14bceb6b64bce39d8d28705a61230ce1f2b844a))
+
 ## [2.5.11](https://github.com/zidsa/zidmui/compare/v2.5.10...v2.5.11) (2026-04-15)
 
 ### Chores
