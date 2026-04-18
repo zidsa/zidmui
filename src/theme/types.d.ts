@@ -8,6 +8,17 @@ declare module '@mui/material/Button' {
   }
 }
 
+declare module '@mui/material/Accordion' {
+  interface AccordionPropsColorOverrides {
+    primary: true;
+    success: true;
+    error: true;
+    warning: true;
+    info: true;
+    neutral: true;
+  }
+}
+
 declare module '@mui/material/IconButton' {
   interface IconButtonPropsSizeOverrides {
     extraSmall: true;
@@ -163,6 +174,14 @@ declare module '@mui/material' {
         orange: { background: string; color: string };
         blue: { background: string; color: string };
         primary: { background: string; color: string };
+      };
+      accordion: {
+        primary: { background: string; border: string };
+        success: { background: string; border: string };
+        error: { background: string; border: string };
+        warning: { background: string; border: string };
+        info: { background: string; border: string };
+        neutral: { background: string; border: string };
       };
       stepper: {
         connector: string;
