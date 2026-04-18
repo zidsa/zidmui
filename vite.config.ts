@@ -68,6 +68,10 @@ export default defineConfig({
           src: 'src/logos/delivery/*.svg',
           dest: '../logos/delivery',
         },
+        {
+          src: 'src/logos/zid/*.svg',
+          dest: '../logos/zid',
+        },
       ],
     }),
   ],
