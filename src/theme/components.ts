@@ -1,3 +1,4 @@
+import { MuiAccordion, MuiAccordionSummary, MuiAccordionDetails } from './components/accordion';
 import { MuiAlert } from './components/alert';
 import { MuiButton } from './components/button';
 import { MuiChip } from './components/chip';
@@ -44,6 +45,9 @@ import { MuiFilledInput } from './components/filled-input';
 // NOTE: We use any here to avoid type inference issues
 // oxlint-disable-next-line @typescript-eslint/no-explicit-any
 export const components: Record<string, any> = {
+  MuiAccordion,
+  MuiAccordionSummary,
+  MuiAccordionDetails,
   MuiTypography,
   MuiChip,
   MuiButton,
