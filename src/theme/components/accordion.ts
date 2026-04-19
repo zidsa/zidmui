@@ -107,6 +107,9 @@ export const MuiAccordionDetails: Components<
 >['MuiAccordionDetails'] = {
   styleOverrides: {
     root: ({ theme, ownerState }) => ({
+      display: 'flex',
+      flexDirection: 'column',
+      gap: theme.spacing(1.5),
       background: theme.palette.background.paper,
       padding: theme.spacing(2),
       marginInline: theme.spacing(0.5),
