@@ -67,6 +67,10 @@ export const WithTitlePrefixAndSuffix: Story = {
         description="An icon is rendered before the title"
       >
         <AppTypography>Content with title prefix</AppTypography>
+        <AppTypography>Content with title prefix</AppTypography>
+        <AppTypography>Content with title prefix</AppTypography>
+        <AppTypography>Content with title prefix</AppTypography>
+        <AppTypography>Content with title prefix</AppTypography>
       </AppAccordion>
 
       <AppAccordion
@@ -74,6 +78,9 @@ export const WithTitlePrefixAndSuffix: Story = {
         titleSuffix={<AppStatus label="New" size="small" color="primary" />}
         description="A badge is rendered after the title"
       >
+        <AppTypography>Content with title suffix</AppTypography>
+        <AppTypography>Content with title suffix</AppTypography>
+        <AppTypography>Content with title suffix</AppTypography>
         <AppTypography>Content with title suffix</AppTypography>
       </AppAccordion>
 

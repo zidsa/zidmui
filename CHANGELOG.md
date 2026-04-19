@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.5.14](https://github.com/zidsa/zidmui/compare/v2.5.13...v2.5.14) (2026-04-19)
+
+### Chores
+
+* update gap in accordion details ([28aa0ab](https://github.com/zidsa/zidmui/commit/28aa0aba5d4d5739fefe6814ccb3a3c6b498d946))
+
 ## [2.5.13](https://github.com/zidsa/zidmui/compare/v2.5.11...v2.5.13) (2026-04-19)
 
 ### Chores
