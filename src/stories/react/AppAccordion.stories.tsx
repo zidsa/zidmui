@@ -36,6 +36,10 @@ const meta = {
       control: 'select',
       options: ['primary', 'success', 'error', 'warning', 'info', 'neutral'],
     },
+    roundedCorners: {
+      control: 'select',
+      options: ['grouped', 'all'],
+    },
     unmountOnExit: { control: 'boolean' },
   },
   args: {
@@ -215,72 +219,82 @@ export const Colors: Story = {
   render: () => <ColorsExample />,
 };
 
-//
+//;
 
-const AccordionGroupExample = () => {
+// Rounded Corners Examples
+const RoundedCornersExample = () => {
   const toggle = useToggle(false);
 
   return (
-    <StackColumn width={400} gap={1}>
-      <AppAccordion
-        isOpen={toggle.value}
-        onToggle={toggle.toggle}
-        color="primary"
-        title="Primary Color Accordion"
-      >
-        <AppTypography>Primary color content</AppTypography>
-      </AppAccordion>
+    <StackColumn width={400} gap={4}>
+      <StackColumn gap={0}>
+        <AppTypography variant="subtitle2" sx={{ mb: 1 }}>
+          Grouped (default) - Only first/last items have rounded corners
+        </AppTypography>
+        <AppAccordion
+          isOpen={toggle.value}
+          onToggle={toggle.toggle}
+          roundedCorners="grouped"
+          title="First Accordion"
+        >
+          <AppTypography>First accordion content</AppTypography>
+        </AppAccordion>
+        <AppAccordion
+          isOpen={toggle.value}
+          onToggle={toggle.toggle}
+          roundedCorners="grouped"
+          title="Middle Accordion"
+        >
+          <AppTypography>Middle accordion content</AppTypography>
+        </AppAccordion>
+        <AppAccordion
+          isOpen={toggle.value}
+          onToggle={toggle.toggle}
+          roundedCorners="grouped"
+          title="Last Accordion"
+        >
+          <AppTypography>Last accordion content</AppTypography>
+        </AppAccordion>
+      </StackColumn>
 
-      <AppAccordion
-        isOpen={toggle.value}
-        onToggle={toggle.toggle}
-        color="success"
-        title="Success Color Accordion"
-      >
-        <AppTypography>Success color content</AppTypography>
-      </AppAccordion>
-
-      <AppAccordion
-        isOpen={toggle.value}
-        onToggle={toggle.toggle}
-        color="error"
-        title="Error Color Accordion"
-      >
-        <AppTypography>Error color content</AppTypography>
-      </AppAccordion>
-
-      <AppAccordion
-        isOpen={toggle.value}
-        onToggle={toggle.toggle}
-        color="warning"
-        title="Warning Color Accordion"
-      >
-        <AppTypography>Warning color content</AppTypography>
-      </AppAccordion>
-
-      <AppAccordion
-        isOpen={toggle.value}
-        onToggle={toggle.toggle}
-        color="info"
-        title="Info Color Accordion"
-      >
-        <AppTypography>Info color content</AppTypography>
-      </AppAccordion>
-
-      <AppAccordion
-        isOpen={toggle.value}
-        onToggle={toggle.toggle}
-        color="neutral"
-        title="Neutral Color Accordion"
-      >
-        <AppTypography>Neutral color content</AppTypography>
-      </AppAccordion>
+      <StackColumn gap={1}>
+        <AppTypography variant="subtitle2" sx={{ mb: 1 }}>
+          All Rounded - Each accordion has all corners rounded
+        </AppTypography>
+        <AppAccordion
+          color="primary"
+          isOpen={toggle.value}
+          onToggle={toggle.toggle}
+          roundedCorners="all"
+          title="First Accordion"
+        >
+          <AppTypography>First accordion content</AppTypography>
+        </AppAccordion>
+        <AppAccordion
+          color="primary"
+          isOpen={toggle.value}
+          onToggle={toggle.toggle}
+          roundedCorners="all"
+          title="Middle Accordion"
+        >
+          <AppTypography>Middle accordion content</AppTypography>
+        </AppAccordion>
+        <AppAccordion
+          color="primary"
+          isOpen={toggle.value}
+          onToggle={toggle.toggle}
+          roundedCorners="all"
+          title="Last Accordion"
+        >
+          <AppTypography>Last accordion content</AppTypography>
+        </AppAccordion>
+      </StackColumn>
     </StackColumn>
   );
 };
 
-export const AccordionGroups: Story = {
-  render: () => <AccordionGroupExample />,
+export const RoundedCorners: Story = {
+  render: () => <RoundedCornersExample />,
 };
 
 export const UnmountOnExit: Story = {

@@ -14,6 +14,10 @@ export const MuiAccordion: Components<
     root: ({ theme }) => ({
       border: `1px solid ${theme.palette.divider}`,
       backgroundColor: theme.palette.background.paper,
+      overflow: 'hidden',
+      '&.Mui-disabled': {
+        backgroundColor: theme.palette.action.disabledBackground,
+      },
       ':first-of-type': {
         borderTopLeftRadius: theme.spacing(2),
         borderTopRightRadius: theme.spacing(2),
@@ -22,9 +26,8 @@ export const MuiAccordion: Components<
         borderBottomLeftRadius: theme.spacing(2),
         borderBottomRightRadius: theme.spacing(2),
       },
-      overflow: 'hidden',
-      '&.Mui-disabled': {
-        backgroundColor: theme.palette.action.disabledBackground,
+      '&[data-rounded-corners="all"]': {
+        borderRadius: theme.spacing(2),
       },
     }),
   },
