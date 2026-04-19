@@ -23,12 +23,16 @@ import ZidLogoSpinner from '../logos/zid/zid-logo-spinner.svg';
 
 export type AppAccordionColor = 'primary' | 'success' | 'error' | 'warning' | 'info' | 'neutral';
 
+export type AppAccordionRoundedCorners = 'grouped' | 'all';
+
 export type AppAccordionProps = {
   children?: React.ReactNode;
   isOpen?: boolean;
   onToggle?: (event: React.SyntheticEvent, expanded: boolean) => void;
   color?: AppAccordionColor;
   disable?: boolean;
+
+  roundedCorners?: AppAccordionRoundedCorners;
 
   accordionProps?: Partial<AccordionProps>;
   accordionSummaryProps?: Partial<AccordionSummaryProps>;
@@ -75,6 +79,7 @@ export const AppAccordion: React.FC<AppAccordionProps> = ({
   detailsLoader,
   detailsLoaderProps,
   disable,
+  roundedCorners = 'all',
 }) => {
   // Determine if controlled or uncontrolled mode
   const expandedProp = isOpen !== undefined ? { expanded: isOpen } : {};
@@ -101,6 +106,7 @@ export const AppAccordion: React.FC<AppAccordionProps> = ({
       onChange={onToggle}
       disabled={disable}
       slotProps={{ transition: { unmountOnExit } }}
+      data-rounded-corners={roundedCorners}
       color={color}
       {...expandedProp}
       {...accordionProps}
