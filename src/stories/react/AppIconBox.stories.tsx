@@ -20,6 +20,10 @@ const meta = {
       control: 'select',
       options: ['default', 'primary', 'blue', 'red', 'green', 'yellow', 'orange', 'secondary'],
     },
+    size: {
+      control: 'select',
+      options: ['small', 'medium', 'large'],
+    },
   },
 } satisfies Meta<typeof AppIconBox>;
 
@@ -61,6 +65,23 @@ export const Variants: Story = {
         <IconShoppingCartLine />
       </AppIconBox>
       <AppIconBox background="secondary">
+        <IconShoppingCartLine />
+      </AppIconBox>
+    </Stack>
+  ),
+};
+
+export const Sizes: Story = {
+  args: { children: null },
+  render: () => (
+    <Stack direction="row" spacing={0} gap={2} alignItems="center" justifyContent="center">
+      <AppIconBox size="small" background="secondary">
+        <IconShoppingCartLine />
+      </AppIconBox>
+      <AppIconBox size="medium" background="secondary">
+        <IconShoppingCartLine />
+      </AppIconBox>
+      <AppIconBox size="large" background="secondary">
         <IconShoppingCartLine />
       </AppIconBox>
     </Stack>

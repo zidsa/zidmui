@@ -13,18 +13,22 @@ export type AppIconBoxbackgroundColor =
   | 'orange'
   | 'secondary';
 
+export type AppIconBoxSize = 'small' | 'medium' | 'large';
+
 export type AppIconBoxProps = Omit<BoxProps, 'color'> & {
   children: React.ReactNode;
   background?: AppIconBoxbackgroundColor;
+  size?: AppIconBoxSize;
 };
 
 export const AppIconBox: React.FC<AppIconBoxProps> = ({
   children,
   background = 'default',
+  size = 'large',
   ...props
 }) => {
   return (
-    <IconWrapper data-background-color={background} {...props}>
+    <IconWrapper data-background-color={background} data-size={size} {...props}>
       {children}
     </IconWrapper>
   );
@@ -36,10 +40,34 @@ const IconWrapper = styled(Box)(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  padding: theme.spacing(1.5),
   borderRadius: theme.spacing(1.5),
   backgroundColor: theme.palette.action.selected,
   flexShrink: 0,
+
+  // Size variants
+  "&[data-size='large']": {
+    width: 48,
+    height: 48,
+  },
+  "&[data-size='medium']": {
+    width: 40,
+    height: 40,
+    '& svg': {
+      fontSize: 20,
+      width: 20,
+      height: 20,
+    },
+  },
+  "&[data-size='small']": {
+    width: 24,
+    height: 24,
+    borderRadius: theme.spacing(0.5),
+    '& svg': {
+      fontSize: 16,
+      width: 16,
+      height: 16,
+    },
+  },
 
   "&[data-background-color='default']": {
     backgroundColor: theme.palette.action.hover,

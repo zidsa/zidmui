@@ -12,6 +12,14 @@ export const MuiSvgIcon: Components<
         easing: theme.transitions.easing.easeInOut,
         duration: theme.transitions.duration.standard,
       }),
+      variants: [
+        {
+          props: { fontSize: 'extraSmall' },
+          style: {
+            fontSize: theme.spacing(2),
+          },
+        },
+      ],
     }),
   },
 };

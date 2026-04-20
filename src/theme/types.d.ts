@@ -24,6 +24,13 @@ declare module '@mui/material/IconButton' {
     extraSmall: true;
   }
 }
+
+declare module '@mui/material/SvgIcon' {
+  interface SvgIconPropsSizeOverrides {
+    extraSmall: true;
+  }
+}
+
 declare module '@mui/material/Radio' {
   interface RadioPropsSizeOverrides {
     small: true;
