@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.5.15](https://github.com/zidsa/zidmui/compare/v2.5.11...v2.5.15) (2026-04-20)
+
+### Chores
+
+* add 'roundedCorners' prop to app accordion ([#42](https://github.com/zidsa/zidmui/issues/42)) ([880857b](https://github.com/zidsa/zidmui/commit/880857b3dace103618324fa9ce5248448bfe3638))
+* update accordion details corner ([e9f8ffc](https://github.com/zidsa/zidmui/commit/e9f8ffcd384ef9f5e183a8553dd6459a03961abb))
+* update gap in accordion details ([#43](https://github.com/zidsa/zidmui/issues/43)) ([6e0ed43](https://github.com/zidsa/zidmui/commit/6e0ed43743ab7b5a790d3f703df0516065179527))
+
 ## [2.5.14](https://github.com/zidsa/zidmui/compare/v2.5.13...v2.5.14) (2026-04-19)
 
 ### Chores
