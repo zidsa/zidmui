@@ -106,7 +106,7 @@ export const MuiAccordionDetails: Components<
   Omit<Theme, 'components' | 'palette'> & CssVarsTheme
 >['MuiAccordionDetails'] = {
   styleOverrides: {
-    root: ({ theme, ownerState }) => ({
+    root: ({ theme }) => ({
       display: 'flex',
       flexDirection: 'column',
       gap: theme.spacing(1.5),
@@ -116,14 +116,15 @@ export const MuiAccordionDetails: Components<
       marginBottom: theme.spacing(0.5),
       borderBottomLeftRadius: theme.spacing(1.5),
       borderBottomRightRadius: theme.spacing(1.5),
-      ...(ownerState.color && {
+      '.MuiAccordion-root[data-color] &': {
         borderRadius: theme.spacing(1.5),
         marginTop: '-2px',
-      }),
-      ...(!ownerState.color && {
+      },
+      // When parent Accordion has no color
+      '.MuiAccordion-root:not([data-color]) &': {
         borderTop: `1px solid ${theme.palette.divider}`,
         marginTop: 0,
-      }),
+      },
       '.Mui-disabled &': {
         opacity: 0.5,
       },
