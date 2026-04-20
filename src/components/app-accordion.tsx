@@ -107,6 +107,7 @@ export const AppAccordion: React.FC<AppAccordionProps> = ({
       disabled={disable}
       slotProps={{ transition: { unmountOnExit } }}
       data-rounded-corners={roundedCorners}
+      data-color={color}
       color={color}
       {...expandedProp}
       {...accordionProps}
