@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.5.16](https://github.com/zidsa/zidmui/compare/v2.5.11...v2.5.16) (2026-04-20)
+
+### Features
+
+* add more font size for svg icon and size variant for app icon box ([64c4471](https://github.com/zidsa/zidmui/commit/64c44710c6f0db8cc5c9c0fe5347d7ecd7b2932b))
+
+### Chores
+
+* add 'roundedCorners' prop to app accordion ([#42](https://github.com/zidsa/zidmui/issues/42)) ([880857b](https://github.com/zidsa/zidmui/commit/880857b3dace103618324fa9ce5248448bfe3638))
+* update accordion details corner ([#44](https://github.com/zidsa/zidmui/issues/44)) ([867c96f](https://github.com/zidsa/zidmui/commit/867c96f202cf73fd371e48129d64f1b73ce533c8))
+* update gap in accordion details ([#43](https://github.com/zidsa/zidmui/issues/43)) ([6e0ed43](https://github.com/zidsa/zidmui/commit/6e0ed43743ab7b5a790d3f703df0516065179527))
+
 ## [2.5.15](https://github.com/zidsa/zidmui/compare/v2.5.11...v2.5.15) (2026-04-20)
 
 ### Chores
