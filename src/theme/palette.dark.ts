@@ -42,12 +42,12 @@ export const paletteDark: ThemeOptions['palette'] = {
   },
   text: {
     primary: '#FFFFFF',
-    secondary: '#A3A1A6',
+    secondary: colors.neutral[400],
     tertiary: '#B1A4BB',
-    disabled: '#75727B',
+    disabled: colors.neutral[500],
     deepGreen: '#9EEC98',
     darkOchre: '#F9E683',
-    contrastText: '#A3A1A6',
+    contrastText: colors.neutral[400],
     primaryContrastTest: '#FFFFFF',
     _states: {
       hover: alpha('#FFFFFF', 0.04),
@@ -58,8 +58,8 @@ export const paletteDark: ThemeOptions['palette'] = {
   },
   icon: {
     primary: '#FFFFFF',
-    secondary: '#A3A1A6',
-    disabled: '#75727B',
+    secondary: colors.neutral[400],
+    disabled: colors.neutral[500],
     draggable: '#B1A4BB',
   },
   tabs: {
@@ -152,7 +152,7 @@ export const paletteDark: ThemeOptions['palette'] = {
   divider: '#383354',
   _components: {
     button: {
-      disabledText: '#75727B',
+      disabledText: colors.neutral[500],
       disabledBorder: '#252540',
       primaryDarkText: {
         disabled: '#252540',
@@ -230,7 +230,7 @@ export const paletteDark: ThemeOptions['palette'] = {
       },
     },
     avatar: {
-      fill: '#75727B',
+      fill: colors.neutral[500],
     },
     input: {
       _states: {
@@ -245,7 +245,7 @@ export const paletteDark: ThemeOptions['palette'] = {
     },
     switch: {
       knobFillEnabled: '#1D1D35',
-      slideFill: '#75727B',
+      slideFill: colors.neutral[500],
       knowFillDisabled: '#252540',
       shadow: '#1C1C37',
       color: '#AE72FF',
@@ -301,38 +301,47 @@ export const paletteDark: ThemeOptions['palette'] = {
       success: {
         background: 'rgba(158, 236, 152, 0.15)',
         color: colors.green[500],
+        outlined: colors.green[500],
       },
       error: {
         background: 'rgba(250, 55, 104, 0.15)',
         color: colors.red[400],
+        outlined: colors.red[400],
       },
       warning: {
         background: 'rgba(249, 230, 131, 0.15)',
         color: colors.yellow[600],
+        outlined: colors.yellow[600],
       },
       neutral: {
         background: '#252540',
-        color: '#A3A1A6',
+        color: colors.neutral[400],
+        outlined: colors.neutral[400],
       },
       disabled: {
         background: '#1C1C37',
-        color: '#75727B',
+        color: colors.neutral[500],
+        outlined: colors.neutral[500],
       },
       info: {
         background: 'rgba(135, 88, 198, 0.15)',
         color: colors.primary[400],
+        outlined: colors.primary[400],
       },
       orange: {
         background: 'rgba(255, 140, 58, 0.15)',
         color: colors.orange[500],
+        outlined: colors.orange[500],
       },
       blue: {
         background: 'rgba(96, 203, 203, 0.15)',
         color: colors.blue[500],
+        outlined: colors.blue[500],
       },
       primary: {
         background: 'rgba(135, 88, 198, 0.2)',
         color: colors.primary[400],
+        outlined: colors.primary[400],
       },
     },
     accordion: {
@@ -362,7 +371,7 @@ export const paletteDark: ThemeOptions['palette'] = {
       },
     },
     stepper: {
-      connector: '#75727B',
+      connector: colors.neutral[500],
     },
     iconButton: {
       default: {

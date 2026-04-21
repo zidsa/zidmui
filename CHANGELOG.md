@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.5.17](https://github.com/zidsa/zidmui/compare/v2.5.16...v2.5.17) (2026-04-21)
+
+### Features
+
+* implement app status variants ([601676f](https://github.com/zidsa/zidmui/commit/601676fd940cd28d2909b240b09b0d8fb3544e94))
+
 ## [2.5.16](https://github.com/zidsa/zidmui/compare/v2.5.11...v2.5.16) (2026-04-20)
 
 ### Features
