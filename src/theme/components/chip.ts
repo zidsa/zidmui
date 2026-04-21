@@ -22,6 +22,157 @@ export const MuiChip: Components<Theme & CssVarsTheme>['MuiChip'] = {
             lineHeight: '1.125rem',
           },
         },
+        // Status colors
+        {
+          props: { color: 'success' },
+          style: {
+            backgroundColor: theme.palette._components.status.success.background,
+            color: theme.palette._components.status.success.color,
+          },
+        },
+        {
+          props: { color: 'success', variant: 'outlined' },
+          style: {
+            backgroundColor: 'transparent',
+            color: theme.palette._components.status.success.outlined,
+            borderColor: theme.palette._components.status.success.outlined,
+          },
+        },
+        {
+          props: { color: 'error' },
+          style: {
+            backgroundColor: theme.palette._components.status.error.background,
+            color: theme.palette._components.status.error.color,
+          },
+        },
+        {
+          props: { color: 'error', variant: 'outlined' },
+          style: {
+            backgroundColor: 'transparent',
+            color: theme.palette._components.status.error.outlined,
+            borderColor: theme.palette._components.status.error.outlined,
+          },
+        },
+        {
+          props: { color: 'warning' },
+          style: {
+            backgroundColor: theme.palette._components.status.warning.background,
+            color: theme.palette._components.status.warning.color,
+          },
+        },
+        {
+          props: { color: 'warning', variant: 'outlined' },
+          style: {
+            backgroundColor: 'transparent',
+            color: theme.palette._components.status.warning.outlined,
+            borderColor: theme.palette._components.status.warning.outlined,
+          },
+        },
+        {
+          props: { color: 'info' },
+          style: {
+            backgroundColor: theme.palette._components.status.info.background,
+            color: theme.palette._components.status.info.color,
+          },
+        },
+        {
+          props: { color: 'info', variant: 'outlined' },
+          style: {
+            backgroundColor: 'transparent',
+            color: theme.palette._components.status.info.color,
+            borderColor: theme.palette._components.status.info.color,
+          },
+        },
+        {
+          props: { color: 'primary' },
+          style: {
+            backgroundColor: theme.palette._components.status.primary.background,
+            color: theme.palette._components.status.primary.color,
+          },
+        },
+        {
+          props: { color: 'primary', variant: 'outlined' },
+          style: {
+            backgroundColor: 'transparent',
+            color: theme.palette._components.status.primary.outlined,
+            borderColor: theme.palette._components.status.primary.outlined,
+          },
+        },
+        {
+          props: { color: 'disabled' },
+          style: {
+            backgroundColor: theme.palette._components.status.disabled.background,
+            color: theme.palette._components.status.disabled.color,
+          },
+        },
+        {
+          props: { color: 'disabled', variant: 'outlined' },
+          style: {
+            backgroundColor: 'transparent',
+            color: theme.palette._components.status.disabled.color,
+            borderColor: theme.palette._components.status.disabled.color,
+          },
+        },
+        {
+          props: { color: 'default' },
+          style: {
+            backgroundColor: theme.palette._components.status.neutral.background,
+            color: theme.palette._components.status.neutral.color,
+          },
+        },
+        {
+          props: { color: 'default', variant: 'outlined' },
+          style: {
+            backgroundColor: 'transparent',
+            color: theme.palette._components.status.neutral.color,
+            borderColor: theme.palette._components.status.neutral.color,
+          },
+        },
+        {
+          props: { color: 'neutral' },
+          style: {
+            backgroundColor: theme.palette._components.status.neutral.background,
+            color: theme.palette._components.status.neutral.color,
+          },
+        },
+        {
+          props: { color: 'neutral', variant: 'outlined' },
+          style: {
+            backgroundColor: 'transparent',
+            color: theme.palette._components.status.neutral.color,
+            borderColor: theme.palette._components.status.neutral.color,
+          },
+        },
+        {
+          props: { color: 'orange' },
+          style: {
+            backgroundColor: theme.palette._components.status.orange.background,
+            color: theme.palette._components.status.orange.color,
+          },
+        },
+        {
+          props: { color: 'orange', variant: 'outlined' },
+          style: {
+            backgroundColor: 'transparent',
+            color: theme.palette._components.status.orange.color,
+            borderColor: theme.palette._components.status.orange.color,
+          },
+        },
+        {
+          props: { color: 'blue' },
+          style: {
+            backgroundColor: theme.palette._components.status.blue.background,
+            color: theme.palette._components.status.blue.color,
+          },
+        },
+        {
+          props: { color: 'blue', variant: 'outlined' },
+          style: {
+            backgroundColor: 'transparent',
+            color: theme.palette._components.status.blue.color,
+            borderColor: theme.palette._components.status.blue.color,
+          },
+        },
       ],
     }),
   },

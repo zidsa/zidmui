@@ -1,5 +1,17 @@
 import '@mui/material';
 
+//
+//
+
+declare module '@mui/material/Chip' {
+  interface ChipPropsColorOverrides {
+    neutral: true;
+    disabled: true;
+    orange: true;
+    blue: true;
+  }
+}
+
 declare module '@mui/material/Button' {
   interface ButtonPropsColorOverrides {
     primaryDark: true;
@@ -172,15 +184,15 @@ declare module '@mui/material' {
         };
       };
       status: {
-        success: { background: string; color: string };
-        error: { background: string; color: string };
-        warning: { background: string; color: string };
-        neutral: { background: string; color: string };
-        disabled: { background: string; color: string };
-        info: { background: string; color: string };
-        orange: { background: string; color: string };
-        blue: { background: string; color: string };
-        primary: { background: string; color: string };
+        success: { background: string; color: string; outlined: string };
+        error: { background: string; color: string; outlined: string };
+        warning: { background: string; color: string; outlined: string };
+        neutral: { background: string; color: string; outlined: string };
+        disabled: { background: string; color: string; outlined: string };
+        info: { background: string; color: string; outlined: string };
+        orange: { background: string; color: string; outlined: string };
+        blue: { background: string; color: string; outlined: string };
+        primary: { background: string; color: string; outlined: string };
       };
       accordion: {
         primary: { background: string; border: string };

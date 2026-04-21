@@ -57,7 +57,7 @@ export const palette: ThemeOptions['palette'] = {
   },
   icon: {
     primary: '#0E0217',
-    secondary: '#75727B',
+    secondary: colors.neutral[500],
     disabled: colors.neutral[400],
     draggable: '#634976',
   },
@@ -300,38 +300,47 @@ export const palette: ThemeOptions['palette'] = {
       success: {
         background: colors.green[300],
         color: colors.green[900],
+        outlined: colors.green[800],
       },
       error: {
         background: colors.red[200],
         color: colors.red[900],
+        outlined: colors.red[600],
       },
       warning: {
         background: colors.yellow[300],
         color: colors.yellow[1000],
+        outlined: colors.yellow[800],
       },
       neutral: {
         background: colors.neutral[100],
         color: colors.neutral[600],
+        outlined: colors.neutral[600],
       },
       disabled: {
         background: colors.neutral[50],
         color: colors.neutral[400],
+        outlined: colors.neutral[400],
       },
       info: {
         background: colors.primary[200],
         color: colors.primary[800],
+        outlined: colors.primary[800],
       },
       orange: {
         background: colors.orange[200],
         color: colors.orange[700],
+        outlined: colors.orange[700],
       },
       blue: {
         background: colors.blue[300],
         color: colors.blue[900],
+        outlined: colors.blue[900],
       },
       primary: {
         background: colors.primary[300],
         color: colors.primary[900],
+        outlined: colors.primary[800],
       },
     },
     accordion: {
