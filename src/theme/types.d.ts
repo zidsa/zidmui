@@ -31,6 +31,17 @@ declare module '@mui/material/Accordion' {
   }
 }
 
+declare module '@mui/material/Card' {
+  interface CardPropsColorOverrides {
+    primary: true;
+    success: true;
+    error: true;
+    warning: true;
+    info: true;
+    neutral: true;
+  }
+}
+
 declare module '@mui/material/IconButton' {
   interface IconButtonPropsSizeOverrides {
     extraSmall: true;
@@ -195,6 +206,14 @@ declare module '@mui/material' {
         primary: { background: string; color: string; outlined: string };
       };
       accordion: {
+        primary: { background: string; border: string };
+        success: { background: string; border: string };
+        error: { background: string; border: string };
+        warning: { background: string; border: string };
+        info: { background: string; border: string };
+        neutral: { background: string; border: string };
+      };
+      card: {
         primary: { background: string; border: string };
         success: { background: string; border: string };
         error: { background: string; border: string };

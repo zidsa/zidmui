@@ -369,6 +369,32 @@ export const palette: ThemeOptions['palette'] = {
         border: colors.neutral[200],
       },
     },
+    card: {
+      primary: {
+        background: '#F8F5FF',
+        border: 'rgba(174, 114, 255, 0.5)',
+      },
+      success: {
+        background: colors.green[100],
+        border: colors.green[400],
+      },
+      error: {
+        background: colors.red[100],
+        border: colors.red[300],
+      },
+      warning: {
+        background: colors.yellow[100],
+        border: colors.yellow[500],
+      },
+      info: {
+        background: colors.blue[100],
+        border: colors.blue[400],
+      },
+      neutral: {
+        background: colors.neutral[50],
+        border: colors.neutral[200],
+      },
+    },
     stepper: {
       connector: '#A3A1A6',
     },

@@ -111,6 +111,7 @@ export const MuiAccordionDetails: Components<
       flexDirection: 'column',
       gap: theme.spacing(1.5),
       background: theme.palette.background.paper,
+      border: `1px solid ${theme.palette.divider}`,
       padding: theme.spacing(2),
       marginInline: theme.spacing(0.5),
       marginBottom: theme.spacing(0.5),
