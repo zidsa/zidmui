@@ -79,8 +79,8 @@ export const MuiChip: Components<Theme & CssVarsTheme>['MuiChip'] = {
           props: { color: 'info', variant: 'outlined' },
           style: {
             backgroundColor: 'transparent',
-            color: theme.palette._components.status.info.color,
-            borderColor: theme.palette._components.status.info.color,
+            color: theme.palette._components.status.info.outlined,
+            borderColor: theme.palette._components.status.info.outlined,
           },
         },
         {
@@ -109,8 +109,8 @@ export const MuiChip: Components<Theme & CssVarsTheme>['MuiChip'] = {
           props: { color: 'disabled', variant: 'outlined' },
           style: {
             backgroundColor: 'transparent',
-            color: theme.palette._components.status.disabled.color,
-            borderColor: theme.palette._components.status.disabled.color,
+            color: theme.palette._components.status.disabled.outlined,
+            borderColor: theme.palette._components.status.disabled.outlined,
           },
         },
         {
@@ -124,8 +124,8 @@ export const MuiChip: Components<Theme & CssVarsTheme>['MuiChip'] = {
           props: { color: 'default', variant: 'outlined' },
           style: {
             backgroundColor: 'transparent',
-            color: theme.palette._components.status.neutral.color,
-            borderColor: theme.palette._components.status.neutral.color,
+            color: theme.palette._components.status.neutral.outlined,
+            borderColor: theme.palette._components.status.neutral.outlined,
           },
         },
         {
@@ -139,8 +139,8 @@ export const MuiChip: Components<Theme & CssVarsTheme>['MuiChip'] = {
           props: { color: 'neutral', variant: 'outlined' },
           style: {
             backgroundColor: 'transparent',
-            color: theme.palette._components.status.neutral.color,
-            borderColor: theme.palette._components.status.neutral.color,
+            color: theme.palette._components.status.neutral.outlined,
+            borderColor: theme.palette._components.status.neutral.outlined,
           },
         },
         {
@@ -154,8 +154,8 @@ export const MuiChip: Components<Theme & CssVarsTheme>['MuiChip'] = {
           props: { color: 'orange', variant: 'outlined' },
           style: {
             backgroundColor: 'transparent',
-            color: theme.palette._components.status.orange.color,
-            borderColor: theme.palette._components.status.orange.color,
+            color: theme.palette._components.status.orange.outlined,
+            borderColor: theme.palette._components.status.orange.outlined,
           },
         },
         {
@@ -169,8 +169,8 @@ export const MuiChip: Components<Theme & CssVarsTheme>['MuiChip'] = {
           props: { color: 'blue', variant: 'outlined' },
           style: {
             backgroundColor: 'transparent',
-            color: theme.palette._components.status.blue.color,
-            borderColor: theme.palette._components.status.blue.color,
+            color: theme.palette._components.status.blue.outlined,
+            borderColor: theme.palette._components.status.blue.outlined,
           },
         },
       ],
