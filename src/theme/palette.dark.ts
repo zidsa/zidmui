@@ -370,6 +370,32 @@ export const paletteDark: ThemeOptions['palette'] = {
         border: '#383354',
       },
     },
+    card: {
+      primary: {
+        background: 'rgba(135, 88, 198, 0.15)',
+        border: 'rgba(135, 88, 198, 0.5)',
+      },
+      success: {
+        background: 'rgba(158, 236, 152, 0.1)',
+        border: 'rgba(158, 236, 152, 0.3)',
+      },
+      error: {
+        background: 'rgba(250, 55, 104, 0.1)',
+        border: 'rgba(250, 55, 104, 0.3)',
+      },
+      warning: {
+        background: 'rgba(249, 230, 131, 0.1)',
+        border: 'rgba(249, 230, 131, 0.3)',
+      },
+      info: {
+        background: 'rgba(96, 203, 203, 0.1)',
+        border: 'rgba(96, 203, 203, 0.3)',
+      },
+      neutral: {
+        background: '#252540',
+        border: '#383354',
+      },
+    },
     stepper: {
       connector: colors.neutral[500],
     },
