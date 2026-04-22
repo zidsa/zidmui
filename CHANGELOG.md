@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.0.0](https://github.com/zidsa/zidmui/compare/v2.5.19...v3.0.0) (2026-04-22)
+
+### Refactors
+
+* update app alert ([cc30524](https://github.com/zidsa/zidmui/commit/cc3052446ef836e4dfb3dcb28e7f1d15b50eff47))
+
+### Chores
+
+* release 2.5.20 ([5197193](https://github.com/zidsa/zidmui/commit/5197193c631fee4813e5d4a0453e6b81b0986470))
+
 ## [2.5.20](https://github.com/zidsa/zidmui/compare/v2.5.19...v2.5.20) (2026-04-22)
 
 ### Refactors
