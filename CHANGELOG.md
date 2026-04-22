@@ -2,309 +2,341 @@
 
 ## [3.0.0](https://github.com/zidsa/zidmui/compare/v2.5.19...v3.0.0) (2026-04-22)
 
+### ⚠ BREAKING CHANGES
+
+#### Alert Theme Structure
+
+The alert palette structure has been reorganized to support multiple variants. The colors are now nested under `standard` and `filled` keys.
+
+**Before:**
+
+```ts
+theme.palette._components.alert.error.background;
+theme.palette._components.alert.error.color;
+```
+
+**After:**
+
+```ts
+theme.palette._components.alert.standard.error.background;
+theme.palette._components.alert.filled.error.background;
+```
+
+#### Migration
+
+If you're accessing alert colors directly from the theme, update your paths:
+
+```diff
+- theme.palette._components.alert.error.background
++ theme.palette._components.alert.standard.error.background
+```
+
+### Features
+
+- Added `variant="filled"` support for AppAlert with custom colors
+- Added new `color` prop values: `primary` and `gray`
+- Both `standard` and `filled` variants now support: `error`, `warning`, `info`, `success`, `primary`, `gray`
+
 ### Refactors
 
-* update app alert ([cc30524](https://github.com/zidsa/zidmui/commit/cc3052446ef836e4dfb3dcb28e7f1d15b50eff47))
+- update app alert ([cc30524](https://github.com/zidsa/zidmui/commit/cc3052446ef836e4dfb3dcb28e7f1d15b50eff47))
 
 ### Chores
 
-* release 2.5.20 ([5197193](https://github.com/zidsa/zidmui/commit/5197193c631fee4813e5d4a0453e6b81b0986470))
+- release 2.5.20 ([5197193](https://github.com/zidsa/zidmui/commit/5197193c631fee4813e5d4a0453e6b81b0986470))
 
 ## [2.5.20](https://github.com/zidsa/zidmui/compare/v2.5.19...v2.5.20) (2026-04-22)
 
 ### Refactors
 
-* update app alert ([cc30524](https://github.com/zidsa/zidmui/commit/cc3052446ef836e4dfb3dcb28e7f1d15b50eff47))
+- update app alert ([cc30524](https://github.com/zidsa/zidmui/commit/cc3052446ef836e4dfb3dcb28e7f1d15b50eff47))
 
 ## [2.5.19](https://github.com/zidsa/zidmui/compare/v2.5.18...v2.5.19) (2026-04-22)
 
 ### Bug Fixes
 
-* update package engines ([c5ecb09](https://github.com/zidsa/zidmui/commit/c5ecb09c712e0b9b6fd92465856f7201aab5176b))
+- update package engines ([c5ecb09](https://github.com/zidsa/zidmui/commit/c5ecb09c712e0b9b6fd92465856f7201aab5176b))
 
 ### Chores
 
-* remove github deployment action ([ad7079e](https://github.com/zidsa/zidmui/commit/ad7079efa8e1d5365508e1b8c843ac0f975ca846))
-* update app status ([5f590da](https://github.com/zidsa/zidmui/commit/5f590dae96a0266acc95d52e95ae62fb38fecac9))
+- remove github deployment action ([ad7079e](https://github.com/zidsa/zidmui/commit/ad7079efa8e1d5365508e1b8c843ac0f975ca846))
+- update app status ([5f590da](https://github.com/zidsa/zidmui/commit/5f590dae96a0266acc95d52e95ae62fb38fecac9))
 
 ## [2.5.18](https://github.com/zidsa/zidmui/compare/v2.5.16...v2.5.18) (2026-04-22)
 
 ### Features
 
-* add app card component ([#45](https://github.com/zidsa/zidmui/issues/45)) ([630c92f](https://github.com/zidsa/zidmui/commit/630c92f0760ca11b728cd64d6b5124200bb38de3))
-* implement app status variants ([#46](https://github.com/zidsa/zidmui/issues/46)) ([d71b459](https://github.com/zidsa/zidmui/commit/d71b459b3ee88b6386790483b957e10190aa83ba))
+- add app card component ([#45](https://github.com/zidsa/zidmui/issues/45)) ([630c92f](https://github.com/zidsa/zidmui/commit/630c92f0760ca11b728cd64d6b5124200bb38de3))
+- implement app status variants ([#46](https://github.com/zidsa/zidmui/issues/46)) ([d71b459](https://github.com/zidsa/zidmui/commit/d71b459b3ee88b6386790483b957e10190aa83ba))
 
 ## [2.5.17](https://github.com/zidsa/zidmui/compare/v2.5.16...v2.5.17) (2026-04-21)
 
 ### Features
 
-* implement app status variants ([601676f](https://github.com/zidsa/zidmui/commit/601676fd940cd28d2909b240b09b0d8fb3544e94))
+- implement app status variants ([601676f](https://github.com/zidsa/zidmui/commit/601676fd940cd28d2909b240b09b0d8fb3544e94))
 
 ## [2.5.16](https://github.com/zidsa/zidmui/compare/v2.5.11...v2.5.16) (2026-04-20)
 
 ### Features
 
-* add more font size for svg icon and size variant for app icon box ([64c4471](https://github.com/zidsa/zidmui/commit/64c44710c6f0db8cc5c9c0fe5347d7ecd7b2932b))
+- add more font size for svg icon and size variant for app icon box ([64c4471](https://github.com/zidsa/zidmui/commit/64c44710c6f0db8cc5c9c0fe5347d7ecd7b2932b))
 
 ### Chores
 
-* add 'roundedCorners' prop to app accordion ([#42](https://github.com/zidsa/zidmui/issues/42)) ([880857b](https://github.com/zidsa/zidmui/commit/880857b3dace103618324fa9ce5248448bfe3638))
-* update accordion details corner ([#44](https://github.com/zidsa/zidmui/issues/44)) ([867c96f](https://github.com/zidsa/zidmui/commit/867c96f202cf73fd371e48129d64f1b73ce533c8))
-* update gap in accordion details ([#43](https://github.com/zidsa/zidmui/issues/43)) ([6e0ed43](https://github.com/zidsa/zidmui/commit/6e0ed43743ab7b5a790d3f703df0516065179527))
+- add 'roundedCorners' prop to app accordion ([#42](https://github.com/zidsa/zidmui/issues/42)) ([880857b](https://github.com/zidsa/zidmui/commit/880857b3dace103618324fa9ce5248448bfe3638))
+- update accordion details corner ([#44](https://github.com/zidsa/zidmui/issues/44)) ([867c96f](https://github.com/zidsa/zidmui/commit/867c96f202cf73fd371e48129d64f1b73ce533c8))
+- update gap in accordion details ([#43](https://github.com/zidsa/zidmui/issues/43)) ([6e0ed43](https://github.com/zidsa/zidmui/commit/6e0ed43743ab7b5a790d3f703df0516065179527))
 
 ## [2.5.15](https://github.com/zidsa/zidmui/compare/v2.5.11...v2.5.15) (2026-04-20)
 
 ### Chores
 
-* add 'roundedCorners' prop to app accordion ([#42](https://github.com/zidsa/zidmui/issues/42)) ([880857b](https://github.com/zidsa/zidmui/commit/880857b3dace103618324fa9ce5248448bfe3638))
-* update accordion details corner ([e9f8ffc](https://github.com/zidsa/zidmui/commit/e9f8ffcd384ef9f5e183a8553dd6459a03961abb))
-* update gap in accordion details ([#43](https://github.com/zidsa/zidmui/issues/43)) ([6e0ed43](https://github.com/zidsa/zidmui/commit/6e0ed43743ab7b5a790d3f703df0516065179527))
+- add 'roundedCorners' prop to app accordion ([#42](https://github.com/zidsa/zidmui/issues/42)) ([880857b](https://github.com/zidsa/zidmui/commit/880857b3dace103618324fa9ce5248448bfe3638))
+- update accordion details corner ([e9f8ffc](https://github.com/zidsa/zidmui/commit/e9f8ffcd384ef9f5e183a8553dd6459a03961abb))
+- update gap in accordion details ([#43](https://github.com/zidsa/zidmui/issues/43)) ([6e0ed43](https://github.com/zidsa/zidmui/commit/6e0ed43743ab7b5a790d3f703df0516065179527))
 
 ## [2.5.14](https://github.com/zidsa/zidmui/compare/v2.5.13...v2.5.14) (2026-04-19)
 
 ### Chores
 
-* update gap in accordion details ([28aa0ab](https://github.com/zidsa/zidmui/commit/28aa0aba5d4d5739fefe6814ccb3a3c6b498d946))
+- update gap in accordion details ([28aa0ab](https://github.com/zidsa/zidmui/commit/28aa0aba5d4d5739fefe6814ccb3a3c6b498d946))
 
 ## [2.5.13](https://github.com/zidsa/zidmui/compare/v2.5.11...v2.5.13) (2026-04-19)
 
 ### Chores
 
-* add 'roundedCorners' prop to app accordion ([cf1d1e4](https://github.com/zidsa/zidmui/commit/cf1d1e43bbd8d0d8d7ed2a1b0ba5807a649d8b23))
+- add 'roundedCorners' prop to app accordion ([cf1d1e4](https://github.com/zidsa/zidmui/commit/cf1d1e43bbd8d0d8d7ed2a1b0ba5807a649d8b23))
 
 ## [2.5.12](https://github.com/zidsa/zidmui/compare/v2.5.11...v2.5.12) (2026-04-18)
 
 ### Chores
 
-* add zid logos ([040d64a](https://github.com/zidsa/zidmui/commit/040d64aaa69864d354da2a9c606fa225a360e4c3))
-* implement app accordion ([1140ce5](https://github.com/zidsa/zidmui/commit/1140ce52e2f75bba19ea10b5e0a7a7a803a7222e))
-* implement app accordion ([f14bceb](https://github.com/zidsa/zidmui/commit/f14bceb6b64bce39d8d28705a61230ce1f2b844a))
+- add zid logos ([040d64a](https://github.com/zidsa/zidmui/commit/040d64aaa69864d354da2a9c606fa225a360e4c3))
+- implement app accordion ([1140ce5](https://github.com/zidsa/zidmui/commit/1140ce52e2f75bba19ea10b5e0a7a7a803a7222e))
+- implement app accordion ([f14bceb](https://github.com/zidsa/zidmui/commit/f14bceb6b64bce39d8d28705a61230ce1f2b844a))
 
 ## [2.5.11](https://github.com/zidsa/zidmui/compare/v2.5.10...v2.5.11) (2026-04-15)
 
 ### Chores
 
-* update whatsapp tiers svgs([#40](https://github.com/zidsa/zidmui/issues/40)) ([ab988a8](https://github.com/zidsa/zidmui/commit/ab988a86a7ec5bf308b691d6f7eb292904027a04))
+- update whatsapp tiers svgs([#40](https://github.com/zidsa/zidmui/issues/40)) ([ab988a8](https://github.com/zidsa/zidmui/commit/ab988a86a7ec5bf308b691d6f7eb292904027a04))
 
 ## [2.5.10](https://github.com/zidsa/zidmui/compare/v2.5.9...v2.5.10) (2026-04-10)
 
 ### Bug Fixes
 
-* app icon box component issue ([37d685c](https://github.com/zidsa/zidmui/commit/37d685cc974a58d4879883336b865f0736810cf7))
+- app icon box component issue ([37d685c](https://github.com/zidsa/zidmui/commit/37d685cc974a58d4879883336b865f0736810cf7))
 
 ## [2.5.9](https://github.com/zidsa/zidmui/compare/v2.5.8...v2.5.9) (2026-04-10)
 
 ### Chores
 
-* implement app icon box component ([efcefc3](https://github.com/zidsa/zidmui/commit/efcefc3fd3b2ad1dbd89eeb738e3e72f42fe92af))
+- implement app icon box component ([efcefc3](https://github.com/zidsa/zidmui/commit/efcefc3fd3b2ad1dbd89eeb738e3e72f42fe92af))
 
 ## [2.5.8](https://github.com/zidsa/zidmui/compare/v2.5.6...v2.5.8) (2026-04-10)
 
 ### Bug Fixes
 
-* container background ([f11984a](https://github.com/zidsa/zidmui/commit/f11984a9746a6c1457f9ae6ca1272c6b36e978ee))
+- container background ([f11984a](https://github.com/zidsa/zidmui/commit/f11984a9746a6c1457f9ae6ca1272c6b36e978ee))
 
 ### Chores
 
-* release 2.5.7 ([#39](https://github.com/zidsa/zidmui/issues/39)) ([4ba36a4](https://github.com/zidsa/zidmui/commit/4ba36a4f787e92279d37d16f909ee3ed0192527f))
-* update app status in dark mode ([#38](https://github.com/zidsa/zidmui/issues/38)) ([a9778ad](https://github.com/zidsa/zidmui/commit/a9778ad8c7f33710e6753e4dd19702a89d259181))
+- release 2.5.7 ([#39](https://github.com/zidsa/zidmui/issues/39)) ([4ba36a4](https://github.com/zidsa/zidmui/commit/4ba36a4f787e92279d37d16f909ee3ed0192527f))
+- update app status in dark mode ([#38](https://github.com/zidsa/zidmui/issues/38)) ([a9778ad](https://github.com/zidsa/zidmui/commit/a9778ad8c7f33710e6753e4dd19702a89d259181))
 
 ## [2.5.7](https://github.com/zidsa/zidmui/compare/v2.5.6...v2.5.7) (2026-04-09)
 
 ### Chores
 
-* update app status in dark mode ([b136f97](https://github.com/zidsa/zidmui/commit/b136f97c399159ed697bd140c73ff7d8f97c5406))
+- update app status in dark mode ([b136f97](https://github.com/zidsa/zidmui/commit/b136f97c399159ed697bd140c73ff7d8f97c5406))
 
 ## [2.5.6](https://github.com/zidsa/zidmui/compare/v2.5.5...v2.5.6) (2026-04-07)
 
 ### Bug Fixes
 
-* remove dark mode Paper overlay gradient from Menu ([#37](https://github.com/zidsa/zidmui/issues/37)) ([4aea3f0](https://github.com/zidsa/zidmui/commit/4aea3f01576363cb0d340b5c0c9725959443f23f))
+- remove dark mode Paper overlay gradient from Menu ([#37](https://github.com/zidsa/zidmui/issues/37)) ([4aea3f0](https://github.com/zidsa/zidmui/commit/4aea3f01576363cb0d340b5c0c9725959443f23f))
 
 ## [2.5.5](https://github.com/zidsa/zidmui/compare/v2.5.4...v2.5.5) (2026-04-06)
 
 ### Bug Fixes
 
-* correct dark mode surface tokens for Tabs and Dialog ([#36](https://github.com/zidsa/zidmui/issues/36)) ([73d45fd](https://github.com/zidsa/zidmui/commit/73d45fd906e65f1f8090535925b805c1fcb0093b)), closes [#383354](https://github.com/zidsa/zidmui/issues/383354) [#1D1D35](https://github.com/zidsa/zidmui/issues/1D1D35) [#1A1A2E](https://github.com/zidsa/zidmui/issues/1A1A2E)
+- correct dark mode surface tokens for Tabs and Dialog ([#36](https://github.com/zidsa/zidmui/issues/36)) ([73d45fd](https://github.com/zidsa/zidmui/commit/73d45fd906e65f1f8090535925b805c1fcb0093b)), closes [#383354](https://github.com/zidsa/zidmui/issues/383354) [#1D1D35](https://github.com/zidsa/zidmui/issues/1D1D35) [#1A1A2E](https://github.com/zidsa/zidmui/issues/1A1A2E)
 
 ### Chores
 
-* release 2.5.4 ([c9e1b5c](https://github.com/zidsa/zidmui/commit/c9e1b5c119e1196eca5aa78dfe0ee2a6ccd61d95))
-* update input adornment stories ([da4171b](https://github.com/zidsa/zidmui/commit/da4171b54a3dbc489b727a6c2740b8dd7a777ffc))
+- release 2.5.4 ([c9e1b5c](https://github.com/zidsa/zidmui/commit/c9e1b5c119e1196eca5aa78dfe0ee2a6ccd61d95))
+- update input adornment stories ([da4171b](https://github.com/zidsa/zidmui/commit/da4171b54a3dbc489b727a6c2740b8dd7a777ffc))
 
 ## [2.5.4](https://github.com/zidsa/zidmui/compare/v2.5.3...v2.5.4) (2026-04-06)
 
 ### Chores
 
-* update input adornment stories ([da4171b](https://github.com/zidsa/zidmui/commit/da4171b54a3dbc489b727a6c2740b8dd7a777ffc))
+- update input adornment stories ([da4171b](https://github.com/zidsa/zidmui/commit/da4171b54a3dbc489b727a6c2740b8dd7a777ffc))
 
 ## [2.5.3](https://github.com/zidsa/zidmui/compare/v2.5.2...v2.5.3) (2026-04-06)
 
 ### Chores
 
-* update input adornment ([61ae08a](https://github.com/zidsa/zidmui/commit/61ae08aedf56608b6f1ea05d63fe6cf94154d6fd))
+- update input adornment ([61ae08a](https://github.com/zidsa/zidmui/commit/61ae08aedf56608b6f1ea05d63fe6cf94154d6fd))
 
 ## [2.5.2](https://github.com/zidsa/zidmui/compare/v2.5.1...v2.5.2) (2026-04-06)
 
 ### Bug Fixes
 
-* input adornment issue ([373c1a3](https://github.com/zidsa/zidmui/commit/373c1a39e8e44ea36743b247841ff7e0b87557c6))
+- input adornment issue ([373c1a3](https://github.com/zidsa/zidmui/commit/373c1a39e8e44ea36743b247841ff7e0b87557c6))
 
 ## [2.5.1](https://github.com/zidsa/zidmui/compare/v2.5.0...v2.5.1) (2026-04-06)
 
 ### Bug Fixes
 
-* input adornment issue ([b06974d](https://github.com/zidsa/zidmui/commit/b06974d3a94f25fef5c00395700838a2ca5cc22f))
+- input adornment issue ([b06974d](https://github.com/zidsa/zidmui/commit/b06974d3a94f25fef5c00395700838a2ca5cc22f))
 
 ### Chores
 
-* remove release github action ([3aab2fb](https://github.com/zidsa/zidmui/commit/3aab2fb5edd8f8a89e66c350b0af0f9c6cfe8dd8))
+- remove release github action ([3aab2fb](https://github.com/zidsa/zidmui/commit/3aab2fb5edd8f8a89e66c350b0af0f9c6cfe8dd8))
 
 ## [2.5.0](https://github.com/zidsa/zidmui/compare/v2.4.8...v2.5.0) (2026-04-05)
 
 ### Features
 
-* configure MuiAppBar default variant for dark mode ([#35](https://github.com/zidsa/zidmui/issues/35)) ([1491adf](https://github.com/zidsa/zidmui/commit/1491adf33be7292113a14c59f32c2760e03586ca)), closes [#FFFFFF](https://github.com/zidsa/zidmui/issues/FFFFFF) [#1A1A2E](https://github.com/zidsa/zidmui/issues/1A1A2E)
+- configure MuiAppBar default variant for dark mode ([#35](https://github.com/zidsa/zidmui/issues/35)) ([1491adf](https://github.com/zidsa/zidmui/commit/1491adf33be7292113a14c59f32c2760e03586ca)), closes [#FFFFFF](https://github.com/zidsa/zidmui/issues/FFFFFF) [#1A1A2E](https://github.com/zidsa/zidmui/issues/1A1A2E)
 
 ## [2.4.8](https://github.com/zidsa/zidmui/compare/v2.4.7...v2.4.8) (2026-04-05)
 
 ### Bug Fixes
 
-* use dedicated token for AppBar bottom border in dark mode ([#34](https://github.com/zidsa/zidmui/issues/34)) ([aa99410](https://github.com/zidsa/zidmui/commit/aa99410cec593e65e81711bc90a34f52d17578ff)), closes [#383354](https://github.com/zidsa/zidmui/issues/383354) [#1C1C37](https://github.com/zidsa/zidmui/issues/1C1C37)
+- use dedicated token for AppBar bottom border in dark mode ([#34](https://github.com/zidsa/zidmui/issues/34)) ([aa99410](https://github.com/zidsa/zidmui/commit/aa99410cec593e65e81711bc90a34f52d17578ff)), closes [#383354](https://github.com/zidsa/zidmui/issues/383354) [#1C1C37](https://github.com/zidsa/zidmui/issues/1C1C37)
 
 ### Chores
 
-* release 2.4.7 ([ff0e95b](https://github.com/zidsa/zidmui/commit/ff0e95b43cafa69942075304ac7019c6bbd64715))
+- release 2.4.7 ([ff0e95b](https://github.com/zidsa/zidmui/commit/ff0e95b43cafa69942075304ac7019c6bbd64715))
 
 ## [2.4.7](https://github.com/zidsa/zidmui/compare/v2.4.6...v2.4.7) (2026-04-05)
 
 ### Chores
 
-* remove margin top from text field ([53080a8](https://github.com/zidsa/zidmui/commit/53080a8d61c20e94678db2678531f9cebc79d0f4))
+- remove margin top from text field ([53080a8](https://github.com/zidsa/zidmui/commit/53080a8d61c20e94678db2678531f9cebc79d0f4))
 
 ## [2.4.6](https://github.com/zidsa/zidmui/compare/v2.4.4...v2.4.6) (2026-04-05)
 
 ### Chores
 
-* reset text field to previous config ([f897221](https://github.com/zidsa/zidmui/commit/f89722168c17c2ce75f3300c9c0027fb9dbb7257))
+- reset text field to previous config ([f897221](https://github.com/zidsa/zidmui/commit/f89722168c17c2ce75f3300c9c0027fb9dbb7257))
 
 ## [2.4.5](https://github.com/zidsa/zidmui/compare/v2.4.4...v2.4.5) (2026-04-05)
 
 ### Chores
 
-* create outlined and filled input ([df8ba8d](https://github.com/zidsa/zidmui/commit/df8ba8d1698df35ab0497f276c8b958392161c91))
-* enable hide border for app icon button ([93a6ca9](https://github.com/zidsa/zidmui/commit/93a6ca9714817b73e2a58c2a99f0cb3c695afc63))
+- create outlined and filled input ([df8ba8d](https://github.com/zidsa/zidmui/commit/df8ba8d1698df35ab0497f276c8b958392161c91))
+- enable hide border for app icon button ([93a6ca9](https://github.com/zidsa/zidmui/commit/93a6ca9714817b73e2a58c2a99f0cb3c695afc63))
 
 ## [2.4.4](https://github.com/zidsa/zidmui/compare/v2.4.3...v2.4.4) (2026-04-05)
 
 ### Chores
 
-* update theme palette ([#32](https://github.com/zidsa/zidmui/issues/32)) ([2e7d112](https://github.com/zidsa/zidmui/commit/2e7d112dfd6945660eb42ac06aec05f271d2e206))
+- update theme palette ([#32](https://github.com/zidsa/zidmui/issues/32)) ([2e7d112](https://github.com/zidsa/zidmui/commit/2e7d112dfd6945660eb42ac06aec05f271d2e206))
 
 ## [2.4.3](https://github.com/zidsa/zidmui/compare/v2.4.2...v2.4.3) (2026-04-04)
 
 ### Bug Fixes
 
-* update dark mode input border tokens to match card borders ([#31](https://github.com/zidsa/zidmui/issues/31)) ([9ed2429](https://github.com/zidsa/zidmui/commit/9ed24294fb3a0352caedbf9bb8c8d70ac460fde7)), closes [#1C1C37](https://github.com/zidsa/zidmui/issues/1C1C37) [#383354](https://github.com/zidsa/zidmui/issues/383354) [#252540](https://github.com/zidsa/zidmui/issues/252540) [#4D4875](https://github.com/zidsa/zidmui/issues/4D4875)
+- update dark mode input border tokens to match card borders ([#31](https://github.com/zidsa/zidmui/issues/31)) ([9ed2429](https://github.com/zidsa/zidmui/commit/9ed24294fb3a0352caedbf9bb8c8d70ac460fde7)), closes [#1C1C37](https://github.com/zidsa/zidmui/issues/1C1C37) [#383354](https://github.com/zidsa/zidmui/issues/383354) [#252540](https://github.com/zidsa/zidmui/issues/252540) [#4D4875](https://github.com/zidsa/zidmui/issues/4D4875)
 
 ### Chores
 
-* release 2.4.2 ([b74fdef](https://github.com/zidsa/zidmui/commit/b74fdef59d76e6ab1706c89b014419aae5d236f2))
+- release 2.4.2 ([b74fdef](https://github.com/zidsa/zidmui/commit/b74fdef59d76e6ab1706c89b014419aae5d236f2))
 
 ## [2.4.2](https://github.com/zidsa/zidmui/compare/v2.4.1...v2.4.2) (2026-04-04)
 
 ### Chores
 
-* rename payments illustrations name ([#30](https://github.com/zidsa/zidmui/issues/30)) ([404fc89](https://github.com/zidsa/zidmui/commit/404fc892644afb0fc629a5e36cd9fd6ac17df72e))
+- rename payments illustrations name ([#30](https://github.com/zidsa/zidmui/issues/30)) ([404fc89](https://github.com/zidsa/zidmui/commit/404fc892644afb0fc629a5e36cd9fd6ac17df72e))
 
 ## [2.4.1](https://github.com/zidsa/zidmui/compare/v2.4.0...v2.4.1) (2026-04-04)
 
 ### Bug Fixes
 
-* exclude stories types ([91d4927](https://github.com/zidsa/zidmui/commit/91d4927c3522666bd0cbbee16af1fc8c45433ee9))
-* the IDE had no way to discover logos as a valid path when autocompleting ([7321bb8](https://github.com/zidsa/zidmui/commit/7321bb8210eaea22e30744c7be11bbccbad83732))
-* update dark mode border tokens to match Figma spec ([#383354](https://github.com/zidsa/zidmui/issues/383354)) ([#29](https://github.com/zidsa/zidmui/issues/29)) ([dbfad86](https://github.com/zidsa/zidmui/commit/dbfad86183e1a2168e2423184bece295b4d8d114)), closes [#1C1C37](https://github.com/zidsa/zidmui/issues/1C1C37)
+- exclude stories types ([91d4927](https://github.com/zidsa/zidmui/commit/91d4927c3522666bd0cbbee16af1fc8c45433ee9))
+- the IDE had no way to discover logos as a valid path when autocompleting ([7321bb8](https://github.com/zidsa/zidmui/commit/7321bb8210eaea22e30744c7be11bbccbad83732))
+- update dark mode border tokens to match Figma spec ([#383354](https://github.com/zidsa/zidmui/issues/383354)) ([#29](https://github.com/zidsa/zidmui/issues/29)) ([dbfad86](https://github.com/zidsa/zidmui/commit/dbfad86183e1a2168e2423184bece295b4d8d114)), closes [#1C1C37](https://github.com/zidsa/zidmui/issues/1C1C37)
 
 ### Chores
 
-* copy imports when clicks upon svg ([de3d8a1](https://github.com/zidsa/zidmui/commit/de3d8a199631bd74ca210f7340432ce23c37ca07))
-* release 2.3.1-beta.0 ([40d4933](https://github.com/zidsa/zidmui/commit/40d49332b4f95b8ba7f1fdd814e39b26566db89f))
-* release 2.4.0 ([1dbca3f](https://github.com/zidsa/zidmui/commit/1dbca3f4cb5d8f47cd541b0c053b9f71405600e6))
+- copy imports when clicks upon svg ([de3d8a1](https://github.com/zidsa/zidmui/commit/de3d8a199631bd74ca210f7340432ce23c37ca07))
+- release 2.3.1-beta.0 ([40d4933](https://github.com/zidsa/zidmui/commit/40d49332b4f95b8ba7f1fdd814e39b26566db89f))
+- release 2.4.0 ([1dbca3f](https://github.com/zidsa/zidmui/commit/1dbca3f4cb5d8f47cd541b0c053b9f71405600e6))
 
 ## [2.4.0](https://github.com/zidsa/zidmui/compare/v2.3.0...v2.4.0) (2026-04-03)
 
 ### Bug Fixes
 
-* exclude stories types ([91d4927](https://github.com/zidsa/zidmui/commit/91d4927c3522666bd0cbbee16af1fc8c45433ee9))
-* lighten secondary palette for dark mode visibility ([c8ba26c](https://github.com/zidsa/zidmui/commit/c8ba26c39f0d154461c91a77e5f7a3f71b137368)), closes [#3C1C54](https://github.com/zidsa/zidmui/issues/3C1C54)
-* linting warnings ([5dff69b](https://github.com/zidsa/zidmui/commit/5dff69bc079039b90c08c9d18039f721d6d4ce4a))
-* the IDE had no way to discover logos as a valid path when autocompleting ([7321bb8](https://github.com/zidsa/zidmui/commit/7321bb8210eaea22e30744c7be11bbccbad83732))
+- exclude stories types ([91d4927](https://github.com/zidsa/zidmui/commit/91d4927c3522666bd0cbbee16af1fc8c45433ee9))
+- lighten secondary palette for dark mode visibility ([c8ba26c](https://github.com/zidsa/zidmui/commit/c8ba26c39f0d154461c91a77e5f7a3f71b137368)), closes [#3C1C54](https://github.com/zidsa/zidmui/issues/3C1C54)
+- linting warnings ([5dff69b](https://github.com/zidsa/zidmui/commit/5dff69bc079039b90c08c9d18039f721d6d4ce4a))
+- the IDE had no way to discover logos as a valid path when autocompleting ([7321bb8](https://github.com/zidsa/zidmui/commit/7321bb8210eaea22e30744c7be11bbccbad83732))
 
 ### Chores
 
-* add illustrations and logos ([#28](https://github.com/zidsa/zidmui/issues/28)) ([207424f](https://github.com/zidsa/zidmui/commit/207424fcbb65fe88c7f6c1d15613799021ba909d))
-* copy imports when clicks upon svg ([de3d8a1](https://github.com/zidsa/zidmui/commit/de3d8a199631bd74ca210f7340432ce23c37ca07))
-* release 2.3.0-beta.0 ([e0b35ff](https://github.com/zidsa/zidmui/commit/e0b35ff7b6b2f64a332057f39c2d85adda2a1d59))
-* release 2.3.1-beta.0 ([40d4933](https://github.com/zidsa/zidmui/commit/40d49332b4f95b8ba7f1fdd814e39b26566db89f))
-* update release-it config ([996c962](https://github.com/zidsa/zidmui/commit/996c96209d4dbb53a5f7a588281a36b9c4b2c2e0))
+- add illustrations and logos ([#28](https://github.com/zidsa/zidmui/issues/28)) ([207424f](https://github.com/zidsa/zidmui/commit/207424fcbb65fe88c7f6c1d15613799021ba909d))
+- copy imports when clicks upon svg ([de3d8a1](https://github.com/zidsa/zidmui/commit/de3d8a199631bd74ca210f7340432ce23c37ca07))
+- release 2.3.0-beta.0 ([e0b35ff](https://github.com/zidsa/zidmui/commit/e0b35ff7b6b2f64a332057f39c2d85adda2a1d59))
+- release 2.3.1-beta.0 ([40d4933](https://github.com/zidsa/zidmui/commit/40d49332b4f95b8ba7f1fdd814e39b26566db89f))
+- update release-it config ([996c962](https://github.com/zidsa/zidmui/commit/996c96209d4dbb53a5f7a588281a36b9c4b2c2e0))
 
 ## [2.3.1-beta.0](https://github.com/zidsa/zidmui/compare/v2.3.0...v2.3.1-beta.0) (2026-04-03)
 
 ### Bug Fixes
 
-* exclude stories types ([91d4927](https://github.com/zidsa/zidmui/commit/91d4927c3522666bd0cbbee16af1fc8c45433ee9))
-* lighten secondary palette for dark mode visibility ([c8ba26c](https://github.com/zidsa/zidmui/commit/c8ba26c39f0d154461c91a77e5f7a3f71b137368)), closes [#3C1C54](https://github.com/zidsa/zidmui/issues/3C1C54)
-* linting warnings ([5dff69b](https://github.com/zidsa/zidmui/commit/5dff69bc079039b90c08c9d18039f721d6d4ce4a))
-* the IDE had no way to discover logos as a valid path when autocompleting ([7321bb8](https://github.com/zidsa/zidmui/commit/7321bb8210eaea22e30744c7be11bbccbad83732))
+- exclude stories types ([91d4927](https://github.com/zidsa/zidmui/commit/91d4927c3522666bd0cbbee16af1fc8c45433ee9))
+- lighten secondary palette for dark mode visibility ([c8ba26c](https://github.com/zidsa/zidmui/commit/c8ba26c39f0d154461c91a77e5f7a3f71b137368)), closes [#3C1C54](https://github.com/zidsa/zidmui/issues/3C1C54)
+- linting warnings ([5dff69b](https://github.com/zidsa/zidmui/commit/5dff69bc079039b90c08c9d18039f721d6d4ce4a))
+- the IDE had no way to discover logos as a valid path when autocompleting ([7321bb8](https://github.com/zidsa/zidmui/commit/7321bb8210eaea22e30744c7be11bbccbad83732))
 
 ### Chores
 
-* add illustrations and logos ([#28](https://github.com/zidsa/zidmui/issues/28)) ([207424f](https://github.com/zidsa/zidmui/commit/207424fcbb65fe88c7f6c1d15613799021ba909d))
-* release 2.3.0-beta.0 ([e0b35ff](https://github.com/zidsa/zidmui/commit/e0b35ff7b6b2f64a332057f39c2d85adda2a1d59))
-* update release-it config ([996c962](https://github.com/zidsa/zidmui/commit/996c96209d4dbb53a5f7a588281a36b9c4b2c2e0))
+- add illustrations and logos ([#28](https://github.com/zidsa/zidmui/issues/28)) ([207424f](https://github.com/zidsa/zidmui/commit/207424fcbb65fe88c7f6c1d15613799021ba909d))
+- release 2.3.0-beta.0 ([e0b35ff](https://github.com/zidsa/zidmui/commit/e0b35ff7b6b2f64a332057f39c2d85adda2a1d59))
+- update release-it config ([996c962](https://github.com/zidsa/zidmui/commit/996c96209d4dbb53a5f7a588281a36b9c4b2c2e0))
 
 ## [2.3.0-beta.0](https://github.com/zidsa/zidmui/compare/v2.3.0...v2.3.0-beta.0) (2026-04-03)
 
 ### Bug Fixes
 
-* lighten secondary palette for dark mode visibility ([c8ba26c](https://github.com/zidsa/zidmui/commit/c8ba26c39f0d154461c91a77e5f7a3f71b137368)), closes [#3C1C54](https://github.com/zidsa/zidmui/issues/3C1C54)
-* linting warnings ([5dff69b](https://github.com/zidsa/zidmui/commit/5dff69bc079039b90c08c9d18039f721d6d4ce4a))
+- lighten secondary palette for dark mode visibility ([c8ba26c](https://github.com/zidsa/zidmui/commit/c8ba26c39f0d154461c91a77e5f7a3f71b137368)), closes [#3C1C54](https://github.com/zidsa/zidmui/issues/3C1C54)
+- linting warnings ([5dff69b](https://github.com/zidsa/zidmui/commit/5dff69bc079039b90c08c9d18039f721d6d4ce4a))
 
 ### Chores
 
-* add illustrations and logos ([#28](https://github.com/zidsa/zidmui/issues/28)) ([207424f](https://github.com/zidsa/zidmui/commit/207424fcbb65fe88c7f6c1d15613799021ba909d))
-* update release-it config ([996c962](https://github.com/zidsa/zidmui/commit/996c96209d4dbb53a5f7a588281a36b9c4b2c2e0))
+- add illustrations and logos ([#28](https://github.com/zidsa/zidmui/issues/28)) ([207424f](https://github.com/zidsa/zidmui/commit/207424fcbb65fe88c7f6c1d15613799021ba909d))
+- update release-it config ([996c962](https://github.com/zidsa/zidmui/commit/996c96209d4dbb53a5f7a588281a36b9c4b2c2e0))
 
 ## [2.4.0-beta.0](https://github.com/zidsa/zidmui/compare/v2.3.0...v2.4.0-beta.0) (2026-04-03)
 
 ### Bug Fixes
 
-* lighten secondary palette for dark mode visibility ([c8ba26c](https://github.com/zidsa/zidmui/commit/c8ba26c39f0d154461c91a77e5f7a3f71b137368)), closes [#3C1C54](https://github.com/zidsa/zidmui/issues/3C1C54)
-* linting warnings ([5dff69b](https://github.com/zidsa/zidmui/commit/5dff69bc079039b90c08c9d18039f721d6d4ce4a))
+- lighten secondary palette for dark mode visibility ([c8ba26c](https://github.com/zidsa/zidmui/commit/c8ba26c39f0d154461c91a77e5f7a3f71b137368)), closes [#3C1C54](https://github.com/zidsa/zidmui/issues/3C1C54)
+- linting warnings ([5dff69b](https://github.com/zidsa/zidmui/commit/5dff69bc079039b90c08c9d18039f721d6d4ce4a))
 
 ### Chores
 
-* add illustrations and logos ([#28](https://github.com/zidsa/zidmui/issues/28)) ([207424f](https://github.com/zidsa/zidmui/commit/207424fcbb65fe88c7f6c1d15613799021ba909d))
-* update release-it config ([996c962](https://github.com/zidsa/zidmui/commit/996c96209d4dbb53a5f7a588281a36b9c4b2c2e0))
+- add illustrations and logos ([#28](https://github.com/zidsa/zidmui/issues/28)) ([207424f](https://github.com/zidsa/zidmui/commit/207424fcbb65fe88c7f6c1d15613799021ba909d))
+- update release-it config ([996c962](https://github.com/zidsa/zidmui/commit/996c96209d4dbb53a5f7a588281a36b9c4b2c2e0))
 
 # [2.3.0](https://github.com/zidsa/zidmui/compare/v2.2.0...v2.3.0) (2026-04-03)
 
-
 ### Features
 
-* add sidebar and container background tokens ([#27](https://github.com/zidsa/zidmui/issues/27)) ([2d47179](https://github.com/zidsa/zidmui/commit/2d47179b7aee4b048faed8d7b5038acdfe61a005)), closes [#16162B](https://github.com/zidsa/zidmui/issues/16162B) [#FFFFFF](https://github.com/zidsa/zidmui/issues/FFFFFF) [#13182A](https://github.com/zidsa/zidmui/issues/13182A) [#FFFFFF](https://github.com/zidsa/zidmui/issues/FFFFFF)
+- add sidebar and container background tokens ([#27](https://github.com/zidsa/zidmui/issues/27)) ([2d47179](https://github.com/zidsa/zidmui/commit/2d47179b7aee4b048faed8d7b5038acdfe61a005)), closes [#16162B](https://github.com/zidsa/zidmui/issues/16162B) [#FFFFFF](https://github.com/zidsa/zidmui/issues/FFFFFF) [#13182A](https://github.com/zidsa/zidmui/issues/13182A) [#FFFFFF](https://github.com/zidsa/zidmui/issues/FFFFFF)
 
 # [2.2.0](https://github.com/zidsa/zidmui/compare/v2.1.2...v2.2.0) (2026-04-02)
 
-
 ### Bug Fixes
 
-* add slotProps configuration for text label ([#23](https://github.com/zidsa/zidmui/issues/23)) ([969909f](https://github.com/zidsa/zidmui/commit/969909f505303acc0fcf923e388cb0a923a547cd))
-
+- add slotProps configuration for text label ([#23](https://github.com/zidsa/zidmui/issues/23)) ([969909f](https://github.com/zidsa/zidmui/commit/969909f505303acc0fcf923e388cb0a923a547cd))
 
 ### Features
 
-* CR-31309 add dark theme support ([#26](https://github.com/zidsa/zidmui/issues/26)) ([45b61dc](https://github.com/zidsa/zidmui/commit/45b61dcef8df41cb137d0f33e0461e953f31caea)), closes [#F2F2F2](https://github.com/zidsa/zidmui/issues/F2F2F2) [#F8F8F8](https://github.com/zidsa/zidmui/issues/F8F8F8) [#FBFBFB](https://github.com/zidsa/zidmui/issues/FBFBFB) [#6F673B](https://github.com/zidsa/zidmui/issues/6F673B) [#449090](https://github.com/zidsa/zidmui/issues/449090) [#95E9E9](https://github.com/zidsa/zidmui/issues/95E9E9)
+- CR-31309 add dark theme support ([#26](https://github.com/zidsa/zidmui/issues/26)) ([45b61dc](https://github.com/zidsa/zidmui/commit/45b61dcef8df41cb137d0f33e0461e953f31caea)), closes [#F2F2F2](https://github.com/zidsa/zidmui/issues/F2F2F2) [#F8F8F8](https://github.com/zidsa/zidmui/issues/F8F8F8) [#FBFBFB](https://github.com/zidsa/zidmui/issues/FBFBFB) [#6F673B](https://github.com/zidsa/zidmui/issues/6F673B) [#449090](https://github.com/zidsa/zidmui/issues/449090) [#95E9E9](https://github.com/zidsa/zidmui/issues/95E9E9)
 
 ## [2.1.8](https://github.com/zidsa/zidmui/compare/v2.1.7...v2.1.8) (2026-03-18)
 
