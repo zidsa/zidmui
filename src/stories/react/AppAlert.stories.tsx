@@ -65,6 +65,28 @@ export const Variants: Story = {
           />
 
           <Box />
+
+          <AppAlert variant="standard" color="primary" title={shortTitle} />
+          <AppAlert
+            variant="standard"
+            color="primary"
+            title={shortTitle}
+            content={shortContent}
+            onClose={onClose}
+          />
+
+          <Box />
+
+          <AppAlert variant="standard" color="gray" title={shortTitle} />
+          <AppAlert
+            variant="standard"
+            color="gray"
+            title={shortTitle}
+            content={shortContent}
+            onClose={onClose}
+          />
+
+          <Box />
           <AppTypography variant="h6">Cases</AppTypography>
 
           <Box />
@@ -167,6 +189,73 @@ export const Variants: Story = {
             content={longContent}
             actions={<AppAlertButton>Button</AppAlertButton>}
             isLoading
+          />
+
+          <Box />
+          <AppTypography variant="h6">Filled Variant</AppTypography>
+
+          <AppAlert variant="filled" severity="error" title={shortTitle} />
+          <AppAlert
+            variant="filled"
+            severity="error"
+            title={shortTitle}
+            content={shortContent}
+            onClose={onClose}
+          />
+
+          <Box />
+
+          <AppAlert variant="filled" severity="warning" title={shortTitle} />
+          <AppAlert
+            variant="filled"
+            severity="warning"
+            title={shortTitle}
+            content={shortContent}
+            onClose={onClose}
+          />
+
+          <Box />
+
+          <AppAlert variant="filled" severity="info" title={shortTitle} />
+          <AppAlert
+            variant="filled"
+            severity="info"
+            title={shortTitle}
+            content={shortContent}
+            onClose={onClose}
+          />
+
+          <Box />
+
+          <AppAlert variant="filled" severity="success" title={shortTitle} />
+          <AppAlert
+            variant="filled"
+            severity="success"
+            title={shortTitle}
+            content={shortContent}
+            onClose={onClose}
+          />
+
+          <Box />
+
+          <AppAlert variant="filled" color="primary" title={shortTitle} />
+          <AppAlert
+            variant="filled"
+            color="primary"
+            title={shortTitle}
+            content={shortContent}
+            onClose={onClose}
+          />
+
+          <Box />
+
+          <AppAlert variant="filled" color="gray" title={shortTitle} />
+          <AppAlert
+            variant="filled"
+            color="gray"
+            title={shortTitle}
+            content={shortContent}
+            onClose={onClose}
           />
         </Stack>
       </>

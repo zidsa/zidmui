@@ -1,3 +1,4 @@
+// oxlint-disable max-lines
 import { colors } from './colors';
 import { alpha, ThemeOptions } from '@mui/material';
 
@@ -271,29 +272,75 @@ export const palette: ThemeOptions['palette'] = {
       borderBottom: colors.neutral[100],
     },
     alert: {
-      error: {
-        color: colors.red[1000],
-        border: colors.red[300],
-        background: colors.red[100],
-        icon: colors.red[400],
+      standard: {
+        error: {
+          color: colors.red[1000],
+          border: colors.red[300],
+          background: colors.red[100],
+          icon: colors.red[400],
+        },
+        warning: {
+          color: colors.yellow[1000],
+          border: colors.yellow[500],
+          background: colors.yellow[100],
+          icon: colors.yellow[700],
+        },
+        info: {
+          color: colors.blue[1000],
+          border: colors.blue[400],
+          background: colors.blue[100],
+          icon: colors.blue[900],
+        },
+        success: {
+          color: colors.green[1000],
+          border: colors.green[400],
+          background: colors.green[100],
+          icon: colors.green[600],
+        },
+        primary: {
+          color: colors.primary[800],
+          border: colors.primary[300],
+          background: colors.primary[100],
+          icon: colors.primary[600],
+        },
+        gray: {
+          color: colors.neutral[600],
+          border: colors.neutral[200],
+          background: colors.neutral[50],
+          icon: colors.neutral[500],
+        },
       },
-      warning: {
-        color: colors.yellow[1000],
-        border: colors.yellow[500],
-        background: colors.yellow[100],
-        icon: colors.yellow[700],
-      },
-      info: {
-        color: colors.blue[1000],
-        border: colors.blue[400],
-        background: colors.blue[100],
-        icon: colors.blue[900],
-      },
-      success: {
-        color: colors.green[1000],
-        border: colors.green[400],
-        background: colors.green[100],
-        icon: colors.green[600],
+      filled: {
+        error: {
+          background: colors.red[600],
+          color: colors.base.white,
+          icon: colors.base.white,
+        },
+        warning: {
+          background: colors.yellow[600],
+          color: colors.yellow[1000],
+          icon: colors.yellow[1000],
+        },
+        info: {
+          background: colors.blue[700],
+          color: colors.blue[1000],
+          icon: colors.blue[1000],
+        },
+        success: {
+          background: colors.green[600],
+          color: colors.green[1000],
+          icon: colors.green[1000],
+        },
+        primary: {
+          background: colors.secondary[600],
+          color: colors.base.white,
+          icon: colors.base.white,
+        },
+        gray: {
+          background: colors.neutral[300],
+          color: colors.neutral[1000],
+          icon: colors.neutral[500],
+        },
       },
     },
     status: {
