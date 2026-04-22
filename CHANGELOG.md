@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.18](https://github.com/zidsa/zidmui/compare/v2.5.16...v2.5.18) (2026-04-22)
+
+### Features
+
+* add app card component ([#45](https://github.com/zidsa/zidmui/issues/45)) ([630c92f](https://github.com/zidsa/zidmui/commit/630c92f0760ca11b728cd64d6b5124200bb38de3))
+* implement app status variants ([#46](https://github.com/zidsa/zidmui/issues/46)) ([d71b459](https://github.com/zidsa/zidmui/commit/d71b459b3ee88b6386790483b957e10190aa83ba))
+
 ## [2.5.17](https://github.com/zidsa/zidmui/compare/v2.5.16...v2.5.17) (2026-04-21)
 
 ### Features
