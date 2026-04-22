@@ -8,14 +8,14 @@ import { StackRow } from './stack-row';
 //
 //
 
-export type AppAlertProps = {
+export type AppAlertProps = Omit<AlertProps, 'title' | 'content'> & {
   title?: string | React.ReactNode;
   titleProps?: AlertTitleProps;
   link?: React.ReactNode;
   content?: React.ReactNode;
   actions?: React.ReactNode;
   isLoading?: boolean;
-} & Omit<AlertProps, 'title' | 'variant' | 'content'>;
+};
 
 export const AppAlert: React.FC<AppAlertProps> = ({
   title,
@@ -26,11 +26,12 @@ export const AppAlert: React.FC<AppAlertProps> = ({
   onClose,
   actions,
   isLoading,
+  variant = 'standard',
   ...props
 }) => {
   if (isLoading) {
     return (
-      <Alert {...props} onClose={onClose} variant="standard">
+      <Alert {...props} onClose={onClose} variant={variant}>
         <StackColumn gap={1.5} justifyContent="center" width="100%" alignItems="center">
           <CircularProgress size={22} />
         </StackColumn>
@@ -39,7 +40,7 @@ export const AppAlert: React.FC<AppAlertProps> = ({
   }
 
   return (
-    <Alert {...props} onClose={onClose} variant="standard">
+    <Alert {...props} onClose={onClose} variant={variant}>
       <StackColumn gap={1.5}>
         <StackColumn gap={0.5}>
           {title && (
@@ -48,7 +49,10 @@ export const AppAlert: React.FC<AppAlertProps> = ({
             </AlertTitle>
           )}
           {content && (
-            <AppTypography variant="body2" color={title ? 'text.tertiary' : 'text.primary'}>
+            <AppTypography
+              variant="body2"
+              color={variant === 'filled' ? undefined : title ? 'text.tertiary' : 'text.primary'}
+            >
               {content}
             </AppTypography>
           )}

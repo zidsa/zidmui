@@ -3,6 +3,13 @@ import '@mui/material';
 //
 //
 
+declare module '@mui/material/Alert' {
+  interface AlertPropsColorOverrides {
+    primary: true;
+    gray: true;
+  }
+}
+
 declare module '@mui/material/Chip' {
   interface ChipPropsColorOverrides {
     neutral: true;
@@ -169,29 +176,75 @@ declare module '@mui/material' {
         borderBottom: string;
       };
       alert: {
-        error: {
-          color: string;
-          border: string;
-          background: string;
-          icon: string;
+        standard: {
+          error: {
+            color: string;
+            border: string;
+            background: string;
+            icon: string;
+          };
+          warning: {
+            color: string;
+            border: string;
+            background: string;
+            icon: string;
+          };
+          info: {
+            color: string;
+            border: string;
+            background: string;
+            icon: string;
+          };
+          success: {
+            color: string;
+            border: string;
+            background: string;
+            icon: string;
+          };
+          primary: {
+            color: string;
+            border: string;
+            background: string;
+            icon: string;
+          };
+          gray: {
+            color: string;
+            border: string;
+            background: string;
+            icon: string;
+          };
         };
-        warning: {
-          color: string;
-          border: string;
-          background: string;
-          icon: string;
-        };
-        info: {
-          color: string;
-          border: string;
-          background: string;
-          icon: string;
-        };
-        success: {
-          color: string;
-          border: string;
-          background: string;
-          icon: string;
+        filled: {
+          error: {
+            background: string;
+            color: string;
+            icon: string;
+          };
+          warning: {
+            background: string;
+            color: string;
+            icon: string;
+          };
+          info: {
+            background: string;
+            color: string;
+            icon: string;
+          };
+          success: {
+            background: string;
+            color: string;
+            icon: string;
+          };
+          primary: {
+            background: string;
+            color: string;
+            icon: string;
+          };
+          gray: {
+            background: string;
+            color: string;
+            icon: string;
+          };
         };
       };
       status: {

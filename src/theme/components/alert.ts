@@ -17,17 +17,6 @@ export const MuiAlert: Components<
       [theme.breakpoints.down('md')]: {
         paddingInline: theme.spacing(1),
       },
-      '&.MuiAlert-colorError': {
-        color: 'inherit',
-        borderColor: theme.palette._components.alert.error.border,
-        background: theme.palette._components.alert.error.background,
-        '.MuiAlert-icon': {
-          color: theme.palette._components.alert.error.icon,
-        },
-        '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
-          fill: theme.palette._components.alert.error.color,
-        },
-      },
       '.MuiTypography-root.MuiAlertTitle-root': {
         margin: 0,
       },
@@ -50,39 +39,178 @@ export const MuiAlert: Components<
           paddingLeft: theme.spacing(0.5),
         },
       },
-      '&.MuiAlert-colorWarning': {
-        color: 'inherit',
-        borderColor: theme.palette._components.alert.warning.border,
-        background: theme.palette._components.alert.warning.background,
-        '.MuiAlert-icon': {
-          color: theme.palette._components.alert.warning.icon,
+      variants: [
+        // Standard variants
+        {
+          props: { variant: 'standard', severity: 'error' },
+          style: {
+            color: 'inherit',
+            borderColor: theme.palette._components.alert.standard.error.border,
+            background: theme.palette._components.alert.standard.error.background,
+            '.MuiAlert-icon': {
+              color: theme.palette._components.alert.standard.error.icon,
+            },
+            '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
+              fill: theme.palette._components.alert.standard.error.color,
+            },
+          },
         },
-        '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
-          fill: theme.palette._components.alert.warning.color,
+        {
+          props: { variant: 'standard', severity: 'warning' },
+          style: {
+            color: 'inherit',
+            borderColor: theme.palette._components.alert.standard.warning.border,
+            background: theme.palette._components.alert.standard.warning.background,
+            '.MuiAlert-icon': {
+              color: theme.palette._components.alert.standard.warning.icon,
+            },
+            '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
+              fill: theme.palette._components.alert.standard.warning.color,
+            },
+          },
         },
-      },
-      '&.MuiAlert-colorInfo': {
-        color: 'inherit',
-        borderColor: theme.palette._components.alert.info.border,
-        background: theme.palette._components.alert.info.background,
-        '.MuiAlert-icon': {
-          color: theme.palette._components.alert.info.icon,
+        {
+          props: { variant: 'standard', severity: 'info' },
+          style: {
+            color: 'inherit',
+            borderColor: theme.palette._components.alert.standard.info.border,
+            background: theme.palette._components.alert.standard.info.background,
+            '.MuiAlert-icon': {
+              color: theme.palette._components.alert.standard.info.icon,
+            },
+            '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
+              fill: theme.palette._components.alert.standard.info.color,
+            },
+          },
         },
-        '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
-          fill: theme.palette._components.alert.info.color,
+        {
+          props: { variant: 'standard', severity: 'success' },
+          style: {
+            color: 'inherit',
+            borderColor: theme.palette._components.alert.standard.success.border,
+            background: theme.palette._components.alert.standard.success.background,
+            '.MuiAlert-icon': {
+              color: theme.palette._components.alert.standard.success.icon,
+            },
+            '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
+              fill: theme.palette._components.alert.standard.success.color,
+            },
+          },
         },
-      },
-      '&.MuiAlert-colorSuccess': {
-        color: 'inherit',
-        borderColor: theme.palette._components.alert.success.border,
-        background: theme.palette._components.alert.success.background,
-        '.MuiAlert-icon': {
-          color: theme.palette._components.alert.success.icon,
+        {
+          props: { variant: 'standard', color: 'primary' },
+          style: {
+            color: 'inherit',
+            borderColor: theme.palette._components.alert.standard.primary.border,
+            background: theme.palette._components.alert.standard.primary.background,
+            '.MuiAlert-icon': {
+              color: theme.palette._components.alert.standard.primary.icon,
+            },
+            '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
+              fill: theme.palette._components.alert.standard.primary.color,
+            },
+          },
         },
-        '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
-          fill: theme.palette._components.alert.success.color,
+        {
+          props: { variant: 'standard', color: 'gray' },
+          style: {
+            color: 'inherit',
+            borderColor: theme.palette._components.alert.standard.gray.border,
+            background: theme.palette._components.alert.standard.gray.background,
+            '.MuiAlert-icon': {
+              color: theme.palette._components.alert.standard.gray.icon,
+            },
+            '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
+              fill: theme.palette._components.alert.standard.gray.color,
+            },
+          },
         },
-      },
+        // Filled variants
+        {
+          props: { variant: 'filled', severity: 'error' },
+          style: {
+            borderColor: 'transparent',
+            background: theme.palette._components.alert.filled.error.background,
+            color: theme.palette._components.alert.filled.error.color,
+            '.MuiAlert-icon': {
+              color: theme.palette._components.alert.filled.error.icon,
+            },
+            '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
+              fill: theme.palette._components.alert.filled.error.color,
+            },
+          },
+        },
+        {
+          props: { variant: 'filled', severity: 'warning' },
+          style: {
+            borderColor: 'transparent',
+            background: theme.palette._components.alert.filled.warning.background,
+            color: theme.palette._components.alert.filled.warning.color,
+            '.MuiAlert-icon': {
+              color: theme.palette._components.alert.filled.warning.icon,
+            },
+            '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
+              fill: theme.palette._components.alert.filled.warning.color,
+            },
+          },
+        },
+        {
+          props: { variant: 'filled', severity: 'info' },
+          style: {
+            borderColor: 'transparent',
+            background: theme.palette._components.alert.filled.info.background,
+            color: theme.palette._components.alert.filled.info.color,
+            '.MuiAlert-icon': {
+              color: theme.palette._components.alert.filled.info.icon,
+            },
+            '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
+              fill: theme.palette._components.alert.filled.info.color,
+            },
+          },
+        },
+        {
+          props: { variant: 'filled', severity: 'success' },
+          style: {
+            borderColor: 'transparent',
+            background: theme.palette._components.alert.filled.success.background,
+            color: theme.palette._components.alert.filled.success.color,
+            '.MuiAlert-icon': {
+              color: theme.palette._components.alert.filled.success.icon,
+            },
+            '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
+              fill: theme.palette._components.alert.filled.success.color,
+            },
+          },
+        },
+        {
+          props: { variant: 'filled', color: 'primary' },
+          style: {
+            borderColor: 'transparent',
+            background: theme.palette._components.alert.filled.primary.background,
+            color: theme.palette._components.alert.filled.primary.color,
+            '.MuiAlert-icon': {
+              color: theme.palette._components.alert.filled.primary.icon,
+            },
+            '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
+              fill: theme.palette._components.alert.filled.primary.color,
+            },
+          },
+        },
+        {
+          props: { variant: 'filled', color: 'gray' },
+          style: {
+            borderColor: 'transparent',
+            background: theme.palette._components.alert.filled.gray.background,
+            color: theme.palette._components.alert.filled.gray.color,
+            '.MuiAlert-icon': {
+              color: theme.palette._components.alert.filled.gray.icon,
+            },
+            '.MuiAlert-action .MuiSvgIcon-fontSizeSmall': {
+              fill: theme.palette._components.alert.filled.gray.color,
+            },
+          },
+        },
+      ],
     }),
   },
 };

@@ -77,19 +77,19 @@ export const AppEmptyState: FC<AppEmptyStateProps> = ({
   }
 
   if (variant === 'error') {
-    iconBoxVariantProps.bgcolor = theme.palette._components.alert.error.background;
-    iconBoxVariantProps.border = `1px solid ${theme.palette._components.alert.error.border}`;
+    iconBoxVariantProps.bgcolor = theme.palette._components.alert.standard.error.background;
+    iconBoxVariantProps.border = `1px solid ${theme.palette._components.alert.standard.error.border}`;
     iconColor = 'error';
   }
 
   if (variant === 'warning') {
-    iconBoxVariantProps.bgcolor = theme.palette._components.alert.warning.background;
-    iconBoxVariantProps.border = `1px solid ${theme.palette._components.alert.warning.border}`;
+    iconBoxVariantProps.bgcolor = theme.palette._components.alert.standard.warning.background;
+    iconBoxVariantProps.border = `1px solid ${theme.palette._components.alert.standard.warning.border}`;
   }
 
   if (variant === 'success') {
-    iconBoxVariantProps.bgcolor = theme.palette._components.alert.success.background;
-    iconBoxVariantProps.border = `1px solid ${theme.palette._components.alert.success.border}`;
+    iconBoxVariantProps.bgcolor = theme.palette._components.alert.standard.success.background;
+    iconBoxVariantProps.border = `1px solid ${theme.palette._components.alert.standard.success.border}`;
   }
 
   return (

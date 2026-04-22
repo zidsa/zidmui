@@ -1,3 +1,4 @@
+// oxlint-disable max-lines
 import { colors } from './colors';
 import { alpha, ThemeOptions } from '@mui/material';
 
@@ -272,29 +273,67 @@ export const paletteDark: ThemeOptions['palette'] = {
       borderBottom: '#1C1C37',
     },
     alert: {
-      error: {
-        color: colors.red[400],
-        border: 'rgba(250, 55, 104, 0.3)',
-        background: 'rgba(250, 55, 104, 0.1)',
-        icon: colors.red[400],
+      standard: {
+        error: {
+          color: colors.red[400],
+          border: 'rgba(250, 55, 104, 0.3)',
+          background: 'rgba(250, 55, 104, 0.1)',
+          icon: colors.red[400],
+        },
+        warning: {
+          color: colors.yellow[600],
+          border: 'rgba(249, 230, 131, 0.3)',
+          background: 'rgba(249, 230, 131, 0.1)',
+          icon: colors.yellow[600],
+        },
+        info: {
+          color: colors.blue[500],
+          border: 'rgba(96, 203, 203, 0.3)',
+          background: 'rgba(96, 203, 203, 0.1)',
+          icon: colors.blue[500],
+        },
+        success: {
+          color: colors.green[500],
+          border: 'rgba(158, 236, 152, 0.3)',
+          background: 'rgba(158, 236, 152, 0.1)',
+          icon: colors.green[500],
+        },
+        primary: {
+          color: colors.primary[400],
+          border: 'rgba(135, 88, 198, 0.3)',
+          background: 'rgba(135, 88, 198, 0.1)',
+          icon: colors.primary[400],
+        },
+        gray: {
+          color: colors.neutral[400],
+          border: 'rgba(255, 255, 255, 0.2)',
+          background: 'rgba(255, 255, 255, 0.05)',
+          icon: colors.neutral[500],
+        },
       },
-      warning: {
-        color: colors.yellow[600],
-        border: 'rgba(249, 230, 131, 0.3)',
-        background: 'rgba(249, 230, 131, 0.1)',
-        icon: colors.yellow[600],
-      },
-      info: {
-        color: colors.blue[500],
-        border: 'rgba(96, 203, 203, 0.3)',
-        background: 'rgba(96, 203, 203, 0.1)',
-        icon: colors.blue[500],
-      },
-      success: {
-        color: colors.green[500],
-        border: 'rgba(158, 236, 152, 0.3)',
-        background: 'rgba(158, 236, 152, 0.1)',
-        icon: colors.green[500],
+      filled: {
+        error: { background: colors.red[1000], color: colors.base.white, icon: colors.base.white },
+        warning: {
+          background: colors.yellow[1000],
+          color: colors.yellow[200],
+          icon: colors.yellow[200],
+        },
+        info: { background: colors.blue[1000], color: colors.base.white, icon: colors.base.white },
+        success: {
+          background: colors.green[1000],
+          color: colors.green[200],
+          icon: colors.green[200],
+        },
+        primary: {
+          background: colors.primary[1000],
+          color: colors.base.white,
+          icon: colors.base.white,
+        },
+        gray: {
+          background: colors.neutral[500],
+          color: colors.base.white,
+          icon: colors.base.white,
+        },
       },
     },
     status: {
