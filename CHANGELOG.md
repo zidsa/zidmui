@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.5.19](https://github.com/zidsa/zidmui/compare/v2.5.18...v2.5.19) (2026-04-22)
+
+### Bug Fixes
+
+* update package engines ([c5ecb09](https://github.com/zidsa/zidmui/commit/c5ecb09c712e0b9b6fd92465856f7201aab5176b))
+
+### Chores
+
+* remove github deployment action ([ad7079e](https://github.com/zidsa/zidmui/commit/ad7079efa8e1d5365508e1b8c843ac0f975ca846))
+* update app status ([5f590da](https://github.com/zidsa/zidmui/commit/5f590dae96a0266acc95d52e95ae62fb38fecac9))
+
 ## [2.5.18](https://github.com/zidsa/zidmui/compare/v2.5.16...v2.5.18) (2026-04-22)
 
 ### Features
