@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.0.1](https://github.com/zidsa/zidmui/compare/v2.5.19...v3.0.1) (2026-04-23)
+
+### Refactors
+
+* update app alert ([#47](https://github.com/zidsa/zidmui/issues/47)) ([b089b25](https://github.com/zidsa/zidmui/commit/b089b252a70394c6a4a8f8decfdc92c037515ad0))
+
+### Chores
+
+* simple adjustments for chip and accordion ([85cc0ee](https://github.com/zidsa/zidmui/commit/85cc0ee8df6c3d45cb33bbb760926adecfc3ca24))
+
 ## [3.0.0](https://github.com/zidsa/zidmui/compare/v2.5.19...v3.0.0) (2026-04-22)
 
 ### ⚠ BREAKING CHANGES
