@@ -111,14 +111,14 @@ export const MuiAccordionDetails: Components<
       flexDirection: 'column',
       gap: theme.spacing(1.5),
       background: theme.palette.background.paper,
-      border: `1px solid ${theme.palette.divider}`,
       padding: theme.spacing(2),
       marginInline: theme.spacing(0.5),
       marginBottom: theme.spacing(0.5),
       borderBottomLeftRadius: theme.spacing(1.5),
       borderBottomRightRadius: theme.spacing(1.5),
+      borderRadius: theme.spacing(1.5),
       '.MuiAccordion-root[data-color] &': {
-        borderRadius: theme.spacing(1.5),
+        border: `1px solid ${theme.palette.divider}`,
         marginTop: '-2px',
       },
       // When parent Accordion has no color

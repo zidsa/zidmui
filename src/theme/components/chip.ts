@@ -139,7 +139,7 @@ export const MuiChip: Components<Theme & CssVarsTheme>['MuiChip'] = {
           props: { color: 'neutral', variant: 'outlined' },
           style: {
             backgroundColor: 'transparent',
-            color: theme.palette._components.status.neutral.outlined,
+            color: theme.palette._components.status.neutral.color,
             borderColor: theme.palette._components.status.neutral.outlined,
           },
         },

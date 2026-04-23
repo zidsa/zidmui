@@ -362,7 +362,7 @@ export const palette: ThemeOptions['palette'] = {
       neutral: {
         background: colors.neutral[100],
         color: colors.neutral[600],
-        outlined: colors.neutral[900],
+        outlined: colors.neutral[400],
       },
       disabled: {
         background: colors.neutral[50],
