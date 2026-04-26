@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.0.2](https://github.com/zidsa/zidmui/compare/v3.0.1...v3.0.2) (2026-04-26)
+
+### Bug Fixes
+
+* remove overflow property from accordion component ([#48](https://github.com/zidsa/zidmui/issues/48)) ([c5af246](https://github.com/zidsa/zidmui/commit/c5af2467a57096bb8154b2643a84371a5f4787c5))
+
 ## [3.0.1](https://github.com/zidsa/zidmui/compare/v2.5.19...v3.0.1) (2026-04-23)
 
 ### Refactors
