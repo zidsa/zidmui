@@ -14,7 +14,6 @@ export const MuiAccordion: Components<
     root: ({ theme }) => ({
       border: `1px solid ${theme.palette.divider}`,
       backgroundColor: theme.palette.background.paper,
-      overflow: 'hidden',
       '&.Mui-disabled': {
         backgroundColor: theme.palette.action.disabledBackground,
       },
