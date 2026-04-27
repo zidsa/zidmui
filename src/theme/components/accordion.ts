@@ -14,6 +14,9 @@ export const MuiAccordion: Components<
     root: ({ theme }) => ({
       border: `1px solid ${theme.palette.divider}`,
       backgroundColor: theme.palette.background.paper,
+      ':before': {
+        display: 'none',
+      },
       '&.Mui-disabled': {
         backgroundColor: theme.palette.action.disabledBackground,
       },
@@ -123,6 +126,7 @@ export const MuiAccordionDetails: Components<
       // When parent Accordion has no color
       '.MuiAccordion-root:not([data-color]) &': {
         borderTop: `1px solid ${theme.palette.divider}`,
+        borderRadius: theme.spacing(0),
         marginTop: 0,
       },
       '.Mui-disabled &': {

@@ -12,6 +12,7 @@ import {
   type Theme,
   SxProps,
   Box,
+  AccordionDetailsProps,
 } from '@mui/material';
 import { StackRow, type StackRowProps } from './stack-row';
 import { StackColumn } from './stack-column';
@@ -52,6 +53,7 @@ export type AppAccordionProps = {
   summaryLoaderProps?: StackRowProps;
 
   isDetailsLoading?: boolean;
+  detailsProps?: AccordionDetailsProps;
   detailsLoader?: React.ReactNode;
   detailsLoaderProps?: StackRowProps;
 
@@ -77,6 +79,7 @@ export const AppAccordion: React.FC<AppAccordionProps> = ({
   summaryLoaderProps,
   isDetailsLoading,
   detailsLoader,
+  detailsProps,
   detailsLoaderProps,
   disable,
   roundedCorners = 'all',
@@ -155,7 +158,7 @@ export const AppAccordion: React.FC<AppAccordionProps> = ({
       </AccordionSummary>
 
       {/* Details */}
-      <AccordionDetails>
+      <AccordionDetails {...detailsProps}>
         {detailsLoaderContent ? (
           <StackRow alignItems="center" justifyContent="center" {...detailsLoaderProps}>
             {detailsLoaderContent}

@@ -38,6 +38,7 @@ import { MuiSelect } from './components/select';
 import { MuiCard } from './components/card';
 import { MuiOutlinedInput } from './components/outlined-input';
 import { MuiFilledInput } from './components/filled-input';
+import { MuiPopover } from './components/popover';
 
 //
 //
@@ -94,4 +95,5 @@ export const components: Record<string, any> = {
   MuiCard,
   MuiOutlinedInput,
   MuiFilledInput,
+  MuiPopover
 };
