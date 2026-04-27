@@ -9,6 +9,9 @@ const coloredCardContentStyle = (theme: Theme) => ({
     padding: 16,
     backgroundColor: theme.palette.background.paper,
     border: `1px solid ${theme.palette.divider}`,
+    '&:last-child': {
+      paddingBottom: 16,
+    },
   },
 });
 
@@ -24,14 +27,14 @@ export const MuiCard: Components<Omit<Theme, 'components' | 'palette'> & CssVars
         backgroundColor: theme.palette.background.paper,
         overflow: 'hidden',
 
-        '& .MuiCardContent-root:last-child': {
-          borderRadius: theme.spacing(1.25),
-        },
-
         '& .MuiCardContent-root': {
           padding: 8,
           borderRadius: theme.spacing(2),
           margin: `0 ${theme.spacing(0.5)} ${theme.spacing(0.5)}`,
+          '&:last-child': {
+            paddingBottom: 8,
+            borderRadius: theme.spacing(1.25),
+          },
         },
 
         // TODO: check
