@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.0.3](https://github.com/zidsa/zidmui/compare/v3.0.2...v3.0.3) (2026-04-27)
+
+### Features
+
+* update app card ([#49](https://github.com/zidsa/zidmui/issues/49)) ([3171cf6](https://github.com/zidsa/zidmui/commit/3171cf67264ada0b7fd3494253cfd5a07e4e03d4))
+
 ## [3.0.2](https://github.com/zidsa/zidmui/compare/v3.0.1...v3.0.2) (2026-04-26)
 
 ### Bug Fixes
