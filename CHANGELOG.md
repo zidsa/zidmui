@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.0.4](https://github.com/zidsa/zidmui/compare/v3.0.3...v3.0.4) (2026-04-27)
+
+### Chores
+
+* update app card padding ([0a74cbc](https://github.com/zidsa/zidmui/commit/0a74cbc69adad0fcf4073ec16a88c1de9b6fe0bf))
+
 ## [3.0.3](https://github.com/zidsa/zidmui/compare/v3.0.2...v3.0.3) (2026-04-27)
 
 ### Features
