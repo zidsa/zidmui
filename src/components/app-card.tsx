@@ -3,7 +3,7 @@ import React from 'react';
 import { AppTypography, type AppTypographyProps } from './app-typography';
 
 import { type Theme, SxProps, Card, CardContent } from '@mui/material';
-import { StackRow } from './stack-row';
+import { StackRow, StackRowProps } from './stack-row';
 import { StackColumn } from './stack-column';
 
 //
@@ -18,6 +18,7 @@ export type AppCard = {
   color?: AppCardColor;
   roundedCorners?: AppCardCorners;
   title?: string | React.ReactNode;
+  titleContainerProps?: StackRowProps;
   titleProps?: AppTypographyProps;
   titlePrefix?: React.ReactNode;
   titleSuffix?: React.ReactNode;
@@ -26,6 +27,7 @@ export type AppCard = {
   sx?: SxProps<Theme>;
   loading?: boolean;
   actions?: React.ReactElement | null | (React.ReactElement | null)[];
+  actionsProps?: StackRowProps;
 };
 
 export const AppCard: React.FC<AppCard> = ({
@@ -33,11 +35,13 @@ export const AppCard: React.FC<AppCard> = ({
   title,
   description,
   descriptionProps,
+  titleContainerProps,
   titleProps,
   titleSuffix,
   titlePrefix,
   children,
   actions,
+  actionsProps,
   loading,
   ...props
 }) => {
@@ -45,40 +49,42 @@ export const AppCard: React.FC<AppCard> = ({
 
   return (
     <Card color={color} {...props}>
-      <StackColumn gap={1.25}>
-        <StackRow alignItems="center" gap={1} p={1.5} pb={0} width="100%">
-          {titlePrefix}
+      <StackRow alignItems="center" gap={1} p={1.5} pb={0} width="100%" {...titleContainerProps}>
+        {titlePrefix}
 
-          <StackColumn gap={0.25} width="100%">
-            {typeof title === 'string' ? (
-              <AppTypography variant="subtitle1" color="text.primary" gap={1} {...titleProps}>
-                {title} {titleSuffix ? titleSuffix : null}
-              </AppTypography>
-            ) : (
-              title
-            )}
+        <StackColumn gap={0.25} width="100%">
+          {typeof title === 'string' ? (
+            <AppTypography variant="subtitle1" color="text.primary" gap={1} {...titleProps}>
+              {title} {titleSuffix ? titleSuffix : null}
+            </AppTypography>
+          ) : (
+            title
+          )}
 
-            {description && (
-              <AppTypography
-                variant="body2"
-                color="text.primary"
-                whiteSpace="pre-line"
-                {...descriptionProps}
-              >
-                {description}
-              </AppTypography>
-            )}
-          </StackColumn>
-        </StackRow>
+          {description && (
+            <AppTypography
+              variant="body2"
+              color="text.primary"
+              whiteSpace="pre-line"
+              {...descriptionProps}
+            >
+              {description}
+            </AppTypography>
+          )}
+        </StackColumn>
+      </StackRow>
 
-        <CardContent>
-          <StackColumn gap={2}>
-            {children}
+      <CardContent>
+        <StackColumn gap={2}>
+          {children}
 
-            {hasActions && !loading && <StackRow justifyContent="end">{actions}</StackRow>}
-          </StackColumn>
-        </CardContent>
-      </StackColumn>
+          {hasActions && !loading && (
+            <StackRow justifyContent="end" {...actionsProps}>
+              {actions}
+            </StackRow>
+          )}
+        </StackColumn>
+      </CardContent>
     </Card>
   );
 };
