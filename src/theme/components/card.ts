@@ -7,7 +7,7 @@ import { Components, CssVarsTheme, Theme } from '@mui/material';
 const coloredCardContentStyle = (theme: Theme) => ({
   '& .MuiCardContent-root': {
     padding: 16,
-    background: theme.palette.colors.base.white,
+    backgroundColor: theme.palette.background.paper,
     border: `1px solid ${theme.palette.divider}`,
   },
 });
@@ -16,36 +16,31 @@ export const MuiCard: Components<Omit<Theme, 'components' | 'palette'> & CssVars
   {
     styleOverrides: {
       root: ({ theme }) => ({
+        display: 'flex',
+        flexDirection: 'column',
+        gap: theme.spacing(1.25),
         borderRadius: theme.shape.standardBorderRadius,
         border: `1px solid ${theme.palette.divider}`,
         backgroundColor: theme.palette.background.paper,
         overflow: 'hidden',
 
         '& .MuiCardContent-root:last-child': {
-          paddingBottom: 16,
-          borderRadius: theme.shape.standardBorderRadius,
+          borderRadius: theme.spacing(1.25),
         },
 
         '& .MuiCardContent-root': {
-          padding: 9,
+          padding: 8,
           borderRadius: theme.spacing(2),
-          margin: `0 ${theme.spacing(0.6)} ${theme.spacing(0.6)}`,
+          margin: `0 ${theme.spacing(0.5)} ${theme.spacing(0.5)}`,
         },
 
+        // TODO: check
         '& .MuiCardContent-root .MuiCardContent-root .MuiCardContent-root': {
           border: 'none',
           borderRadius: 4,
           backgroundColor: theme.palette.background.gray,
         },
-
-        form: {
-          marginBottom: 0,
-        },
-
-        '& .MuiList-root:last-child  .MuiListItem-root:last-of-type': {
-          borderBottom: 'none',
-          paddingBottom: 0,
-        },
+        boxShadow: 'none',
       }),
     },
     variants: [
