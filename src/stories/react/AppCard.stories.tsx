@@ -204,3 +204,64 @@ export const WithCustomTitleProps: Story = {
     </StackColumn>
   ),
 };
+
+export const WithTitleAction: Story = {
+  render: () => (
+    <StackColumn width={800} gap={2}>
+      <AppCard
+        title="Card with Button Action"
+        description="A button is rendered on the right side of the title"
+        titleAction={
+          <AppButton variant="text" size="small">
+            Edit
+          </AppButton>
+        }
+      >
+        <AppTypography variant="body2">Content with a title action button.</AppTypography>
+      </AppCard>
+
+      <AppCard
+        title="Card with Icon Button Action"
+        description="An icon button is rendered on the right side"
+        titleAction={
+          <IconDeleteBinLine fontSize="small" color="action" sx={{ cursor: 'pointer' }} />
+        }
+      >
+        <AppTypography variant="body2">Content with an icon action.</AppTypography>
+      </AppCard>
+
+      <AppCard
+        title="Card with Multiple Actions"
+        description="Multiple elements can be used as title action"
+        titleAction={
+          <StackRow gap={1}>
+            <AppButton variant="outlined" size="small">
+              Cancel
+            </AppButton>
+            <AppButton variant="contained" size="small">
+              Save
+            </AppButton>
+          </StackRow>
+        }
+      >
+        <AppTypography variant="body2">Content with multiple title actions.</AppTypography>
+      </AppCard>
+
+      <AppCard
+        titlePrefix={<IconStarLine fontSize="small" color="primary" />}
+        title="Combined with Prefix"
+        titleSuffix={<AppStatus label="New" size="small" color="primary" />}
+        description="Title action works alongside prefix and suffix"
+        titleAction={
+          <AppButton variant="text" size="small">
+            View All
+          </AppButton>
+        }
+      >
+        <AppTypography variant="body2">
+          Content showing titleAction combined with titlePrefix and titleSuffix.
+        </AppTypography>
+      </AppCard>
+    </StackColumn>
+  ),
+};

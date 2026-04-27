@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.0.5](https://github.com/zidsa/zidmui/compare/v3.0.4...v3.0.5) (2026-04-27)
+
+### Features
+
+* implement mui popover components ([db64fd2](https://github.com/zidsa/zidmui/commit/db64fd2ddfb8c087ca78e725dce85f5ffd2c48ab))
+
 ## [3.0.4](https://github.com/zidsa/zidmui/compare/v3.0.3...v3.0.4) (2026-04-27)
 
 ### Chores

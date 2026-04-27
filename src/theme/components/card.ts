@@ -31,9 +31,15 @@ export const MuiCard: Components<Omit<Theme, 'components' | 'palette'> & CssVars
           padding: 8,
           borderRadius: theme.spacing(2),
           margin: `0 ${theme.spacing(0.5)} ${theme.spacing(0.5)}`,
+          display: 'flex',
+          flexDirection: 'column',
+          gap: theme.spacing(1.5),
           '&:last-child': {
             paddingBottom: 8,
             borderRadius: theme.spacing(1.25),
+          },
+          ':empty': {
+            display: 'none',
           },
         },
 

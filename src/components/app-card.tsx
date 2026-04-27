@@ -13,7 +13,7 @@ export type AppCardColor = 'primary' | 'success' | 'error' | 'warning' | 'info' 
 
 export type AppCardCorners = 'grouped' | 'all';
 
-export type AppCard = {
+export type AppCardProps = {
   children?: React.ReactNode;
   color?: AppCardColor;
   roundedCorners?: AppCardCorners;
@@ -22,6 +22,7 @@ export type AppCard = {
   titleProps?: AppTypographyProps;
   titlePrefix?: React.ReactNode;
   titleSuffix?: React.ReactNode;
+  titleAction?: React.ReactNode;
   description?: React.ReactNode;
   descriptionProps?: AppTypographyProps;
   sx?: SxProps<Theme>;
@@ -30,7 +31,7 @@ export type AppCard = {
   actionsProps?: StackRowProps;
 };
 
-export const AppCard: React.FC<AppCard> = ({
+export const AppCard: React.FC<AppCardProps> = ({
   color,
   title,
   description,
@@ -38,6 +39,7 @@ export const AppCard: React.FC<AppCard> = ({
   titleContainerProps,
   titleProps,
   titleSuffix,
+  titleAction,
   titlePrefix,
   children,
   actions,
@@ -72,18 +74,18 @@ export const AppCard: React.FC<AppCard> = ({
             </AppTypography>
           )}
         </StackColumn>
+
+        <StackRow>{titleAction}</StackRow>
       </StackRow>
 
       <CardContent>
-        <StackColumn gap={2}>
-          {children}
+        {children}
 
-          {hasActions && !loading && (
-            <StackRow justifyContent="end" {...actionsProps}>
-              {actions}
-            </StackRow>
-          )}
-        </StackColumn>
+        {hasActions && !loading && (
+          <StackRow justifyContent="end" {...actionsProps}>
+            {actions}
+          </StackRow>
+        )}
       </CardContent>
     </Card>
   );
