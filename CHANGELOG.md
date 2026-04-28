@@ -1,5 +1,7 @@
 # Changelog
 
+## [3.0.6](https://github.com/zidsa/zidmui/compare/v3.0.5...v3.0.6) (2026-04-28)
+
 ## [3.0.5](https://github.com/zidsa/zidmui/compare/v3.0.4...v3.0.5) (2026-04-27)
 
 ### Features
