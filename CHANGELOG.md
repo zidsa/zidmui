@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.0.7](https://github.com/zidsa/zidmui/compare/v3.0.6...v3.0.7) (2026-04-29)
+
+### Features
+
+* implement more feature for app card ([f5ea0b5](https://github.com/zidsa/zidmui/commit/f5ea0b5495f3f62d85186faf33c9eb502c5adc9d))
+
 ## [3.0.6](https://github.com/zidsa/zidmui/compare/v3.0.5...v3.0.6) (2026-04-28)
 
 ## [3.0.5](https://github.com/zidsa/zidmui/compare/v3.0.4...v3.0.5) (2026-04-27)
