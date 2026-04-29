@@ -1,14 +1,26 @@
 // oxlint-disable max-lines
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
+import Box from '@mui/material/Box';
+import Divider from '@mui/material/Divider';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import { styled } from '@mui/material/styles';
+
 import { AppButton } from '~/components/app-button';
 import { AppCard } from '~/components/app-card';
+import { AppIconBox } from '~/components/app-icon-box';
 import { AppStatus } from '~/components/app-status';
 import { AppTypography } from '~/components/app-typography';
 import { StackColumn } from '~/components/stack-column';
 import { StackRow } from '~/components/stack-row';
-import { IconStarLine } from '~/icons/system/star-line';
+import { IconBarChart2Line } from '~/icons/business/bar-chart-2-line';
+import { IconCheckboxCircleLine } from '~/icons/system/checkbox-circle-line';
 import { IconDeleteBinLine } from '~/icons/system/delete-bin-line';
+import { IconStarLine } from '~/icons/system/star-line';
+import { IconFireLine } from '~/icons/weather/fire-line';
 
 const meta = {
   title: 'React/App Card',
@@ -305,3 +317,237 @@ export const WithContent: Story = {
     </StackColumn>
   ),
 };
+
+export const WithIconBox: Story = {
+  render: () => (
+    <StackColumn width={400} gap={2}>
+      <AppCard
+        titlePrefix={
+          <AppIconBox>
+            <IconCheckboxCircleLine color="action" />
+          </AppIconBox>
+        }
+        title="Card with Icon Box"
+        description="Icon wrapped in AppIconBox for consistent styling"
+      />
+
+      <AppCard
+        titlePrefix={
+          <AppIconBox>
+            <IconFireLine color="action" />
+          </AppIconBox>
+        }
+        title="Feature Card"
+        titleDivider
+        description="A divider separates the title from description"
+        descriptionProps={{ variant: 'body2', color: 'text.tertiary' }}
+      />
+
+      <AppCard
+        headerProps={{ flexDirection: 'column', alignItems: 'flex-start' }}
+        titleContainerProps={{ gap: 1.5 }}
+        titlePrefix={
+          <AppIconBox>
+            <IconBarChart2Line color="action" />
+          </AppIconBox>
+        }
+        titleDivider
+        title="Vertical Layout"
+        description="Icon stacked above title using headerProps flexDirection column"
+        descriptionProps={{ variant: 'body2', color: 'text.tertiary' }}
+      />
+    </StackColumn>
+  ),
+};
+
+export const FeatureCards: Story = {
+  render: () => {
+    const features = [
+      {
+        id: 1,
+        title: 'Dashboard Analytics',
+        description: 'Track your store performance with real-time analytics',
+        icon: <IconBarChart2Line color="action" />,
+      },
+      {
+        id: 2,
+        title: 'Customer Retargeting',
+        description: 'Re-engage customers with personalized campaigns',
+        icon: <IconFireLine color="action" />,
+      },
+      {
+        id: 3,
+        title: 'Discount Management',
+        description: 'Create and manage promotional discounts',
+        icon: <IconCheckboxCircleLine color="action" />,
+      },
+    ];
+
+    return (
+      <AppCard title="Main Features" titleProps={{ variant: 'h6' }}>
+        <Grid>
+          {features.map(feature => (
+            <AppCard
+              key={feature.id}
+              sx={{ width: '100%' }}
+              headerProps={{ flexDirection: 'column', alignItems: 'flex-start' }}
+              titleContainerProps={{ gap: 1.5 }}
+              titlePrefix={<AppIconBox>{feature.icon}</AppIconBox>}
+              titleDivider
+              title={feature.title}
+              description={feature.description}
+              descriptionProps={{ variant: 'body2', color: 'text.tertiary' }}
+            />
+          ))}
+        </Grid>
+      </AppCard>
+    );
+  },
+};
+
+export const StatCards: Story = {
+  render: () => (
+    <AppCard title="Performance Stats" titleProps={{ variant: 'h6' }}>
+      <Grid>
+        <AppCard
+          headerProps={{ flexDirection: 'column', textAlign: 'center' }}
+          titlePrefix={<AppIconBox>98%</AppIconBox>}
+          description="Store Access Rate"
+        />
+        <AppCard
+          headerProps={{ flexDirection: 'column', textAlign: 'center' }}
+          titlePrefix={<AppIconBox>3x</AppIconBox>}
+          description="Retention Rate"
+        />
+        <AppCard
+          headerProps={{ flexDirection: 'column', textAlign: 'center' }}
+          titlePrefix={<AppIconBox>5x</AppIconBox>}
+          description="Conversion Rate"
+        />
+      </Grid>
+    </AppCard>
+  ),
+};
+
+export const WithListContent: Story = {
+  render: () => {
+    const listItems = [
+      { id: 1, text: 'Accept all major credit cards' },
+      { id: 2, text: 'Instant payment processing' },
+      { id: 3, text: 'Secure transactions' },
+    ];
+
+    return (
+      <StackColumn width={400} gap={2}>
+        <AppCard
+          sx={{ gap: 0.5 }}
+          headerProps={{ flexDirection: 'column', alignItems: 'flex-start' }}
+          title="Payment Features"
+          titlePrefix={
+            <AppIconBox>
+              <IconCheckboxCircleLine color="action" />
+            </AppIconBox>
+          }
+        >
+          <Divider />
+          <StyledList>
+            {listItems.map(item => (
+              <ListItem key={item.id}>
+                <ListItemIcon>
+                  <IconCheckboxCircleLine fontSize="small" />
+                </ListItemIcon>
+                <ListItemText>{item.text}</ListItemText>
+              </ListItem>
+            ))}
+          </StyledList>
+        </AppCard>
+      </StackColumn>
+    );
+  },
+};
+
+export const NestedCards: Story = {
+  render: () => (
+    <StackColumn width={500} gap={2}>
+      <AppCard
+        title="Growth Features"
+        description="Expand your business with these tools"
+        descriptionProps={{ color: 'text.secondary' }}
+      >
+        <StackColumn gap={2}>
+          <AppCard titleProps={{ variant: 'body1' }} title="Inventory Management" />
+          <AppCard titleProps={{ variant: 'body1' }} title="Order Tracking" />
+          <AppCard titleProps={{ variant: 'body1' }} title="Customer Analytics" />
+        </StackColumn>
+      </AppCard>
+    </StackColumn>
+  ),
+};
+
+export const SimpleFeatureList: Story = {
+  render: () => {
+    const features = [
+      { id: 1, name: 'Dashboard' },
+      { id: 2, name: 'Retargeting' },
+      { id: 3, name: 'Discounts' },
+      { id: 4, name: 'Notifications' },
+    ];
+
+    return (
+      <AppCard title="Available Features">
+        <Grid columns={2}>
+          {features.map(feature => (
+            <AppCard
+              key={feature.id}
+              title={feature.name}
+              titleProps={{ variant: 'body1' }}
+              titlePrefix={<IconCheckboxCircleLine color="action" />}
+            />
+          ))}
+        </Grid>
+      </AppCard>
+    );
+  },
+};
+
+export const NumberedSteps: Story = {
+  render: () => {
+    const steps = [
+      { id: '01', description: 'Create your account' },
+      { id: '02', description: 'Set up your store' },
+      { id: '03', description: 'Start selling' },
+    ];
+
+    return (
+      <AppCard title="Getting Started" titleProps={{ variant: 'h6' }}>
+        <Grid>
+          {steps.map(step => (
+            <AppCard
+              key={step.id}
+              headerProps={{ flexDirection: 'column', alignItems: 'flex-start' }}
+              description={step.description}
+              titlePrefix={<AppIconBox>{step.id}</AppIconBox>}
+            />
+          ))}
+        </Grid>
+      </AppCard>
+    );
+  },
+};
+
+//
+//
+
+const Grid = styled(Box)<{ columns?: number }>(({ theme, columns = 3 }) => ({
+  display: 'grid',
+  gridTemplateColumns: `repeat(${columns}, 1fr)`,
+  gap: theme.spacing(2),
+}));
+
+const StyledList = styled(List)(({ theme }) => ({
+  '.MuiListItem-root': {
+    border: 0,
+    paddingBlock: theme.spacing(0.5),
+    gap: theme.spacing(1),
+  },
+}));
