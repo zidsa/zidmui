@@ -27,6 +27,10 @@ export const MuiCard: Components<Omit<Theme, 'components' | 'palette'> & CssVars
         backgroundColor: theme.palette.background.paper,
         overflow: 'hidden',
 
+        '&:has(.MuiCardContent-root:empty)': {
+          paddingBottom: theme.spacing(1.5),
+        },
+
         '& .MuiCardContent-root': {
           padding: 8,
           borderRadius: theme.spacing(2),

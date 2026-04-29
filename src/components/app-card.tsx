@@ -2,9 +2,10 @@ import React from 'react';
 
 import { AppTypography, type AppTypographyProps } from './app-typography';
 
-import { type Theme, SxProps, Card, CardContent } from '@mui/material';
+import { type Theme, SxProps, Card, CardContent, Divider } from '@mui/material';
 import { StackRow, StackRowProps } from './stack-row';
-import { StackColumn } from './stack-column';
+import { StackColumn, StackColumnProps } from './stack-column';
+import { styled } from '@mui/material/styles';
 
 //
 //
@@ -18,11 +19,13 @@ export type AppCardProps = {
   color?: AppCardColor;
   roundedCorners?: AppCardCorners;
   title?: string | React.ReactNode;
-  titleContainerProps?: StackRowProps;
+  headerProps?: StackRowProps;
+  titleContainerProps?: StackColumnProps;
   titleProps?: AppTypographyProps;
   titlePrefix?: React.ReactNode;
   titleSuffix?: React.ReactNode;
   titleAction?: React.ReactNode;
+  titleDivider?: boolean;
   description?: React.ReactNode;
   descriptionProps?: AppTypographyProps;
   sx?: SxProps<Theme>;
@@ -36,10 +39,12 @@ export const AppCard: React.FC<AppCardProps> = ({
   title,
   description,
   descriptionProps,
+  headerProps,
   titleContainerProps,
   titleProps,
   titleSuffix,
   titleAction,
+  titleDivider,
   titlePrefix,
   children,
   actions,
@@ -51,32 +56,34 @@ export const AppCard: React.FC<AppCardProps> = ({
 
   return (
     <Card color={color} {...props}>
-      <StackRow alignItems="center" gap={1} p={1.5} pb={0} width="100%" {...titleContainerProps}>
+      <CardHead {...headerProps}>
         {titlePrefix}
+        {(!!title || !!description) && (
+          <StackColumn gap={0.25} width="100%" {...titleContainerProps}>
+            {typeof title === 'string' ? (
+              <AppTypography variant="subtitle1" color="text.primary" gap={1} {...titleProps}>
+                {title} {titleSuffix ? titleSuffix : null}
+              </AppTypography>
+            ) : (
+              title
+            )}
 
-        <StackColumn gap={0.25} width="100%">
-          {typeof title === 'string' ? (
-            <AppTypography variant="subtitle1" color="text.primary" gap={1} {...titleProps}>
-              {title} {titleSuffix ? titleSuffix : null}
-            </AppTypography>
-          ) : (
-            title
-          )}
+            {titleDivider && <Divider />}
 
-          {description && (
-            <AppTypography
-              variant="body2"
-              color="text.primary"
-              whiteSpace="pre-line"
-              {...descriptionProps}
-            >
-              {description}
-            </AppTypography>
-          )}
-        </StackColumn>
-
-        <StackRow>{titleAction}</StackRow>
-      </StackRow>
+            {description && (
+              <AppTypography
+                variant="body2"
+                color="text.primary"
+                whiteSpace="pre-line"
+                {...descriptionProps}
+              >
+                {description}
+              </AppTypography>
+            )}
+          </StackColumn>
+        )}
+        {titleAction && <StackRow>{titleAction}</StackRow>}
+      </CardHead>
 
       <CardContent>
         {children}
@@ -90,3 +97,15 @@ export const AppCard: React.FC<AppCardProps> = ({
     </Card>
   );
 };
+
+const CardHead = styled(StackRow)(({ theme }) => {
+  return {
+    gap: theme.spacing(1),
+    padding: theme.spacing(1.5),
+    paddingBottom: 0,
+    width: '100%',
+    ':empty': {
+      display: 'none',
+    },
+  };
+});

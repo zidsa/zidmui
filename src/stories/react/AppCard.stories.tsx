@@ -265,3 +265,43 @@ export const WithTitleAction: Story = {
     </StackColumn>
   ),
 };
+
+export const WithEmptyContent: Story = {
+  render: () => (
+    <StackColumn width={400} gap={2}>
+      <AppCard title="Card with Empty Content" description="The content area is hidden when empty">
+        {/* No children - CardContent will be empty and hidden via CSS */}
+      </AppCard>
+
+      <AppCard
+        title="Header Only Card"
+        titleAction={
+          <AppButton variant="text" size="small">
+            Action
+          </AppButton>
+        }
+      />
+    </StackColumn>
+  ),
+};
+
+export const WithContent: Story = {
+  render: () => (
+    <StackColumn width={400} gap={2}>
+      <AppCard title="Card with Content" description="The content area is visible with styling">
+        <AppTypography variant="body2">
+          This content area has padding, border-radius, and proper spacing applied via the theme.
+        </AppTypography>
+      </AppCard>
+
+      <AppCard
+        title="Card with Multiple Content Items"
+        description="Content items have gap spacing"
+      >
+        <AppTypography variant="body2">First content item</AppTypography>
+        <AppTypography variant="body2">Second content item</AppTypography>
+        <AppTypography variant="body2">Third content item</AppTypography>
+      </AppCard>
+    </StackColumn>
+  ),
+};
