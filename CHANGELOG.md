@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.1.0](https://github.com/zidsa/zidmui/compare/v3.0.7...v3.1.0) (2026-05-02)
+
+### Chores
+
+* add more app card examples ([f4a5464](https://github.com/zidsa/zidmui/commit/f4a54640bcd4793dddbb7741056d62b214ce39d1))
+* release 3.0.8 ([a52dc9a](https://github.com/zidsa/zidmui/commit/a52dc9ad64fc094d39100e62b1e4a4635282f030))
+* update the default title varaint value of app card ([f4df769](https://github.com/zidsa/zidmui/commit/f4df769295b3870662c8bcf6b05c206a02b8bd20))
+
 ## [3.0.8](https://github.com/zidsa/zidmui/compare/v3.0.7...v3.0.8) (2026-05-02)
 
 ### Chores
