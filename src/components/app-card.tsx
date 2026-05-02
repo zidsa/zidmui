@@ -61,7 +61,7 @@ export const AppCard: React.FC<AppCardProps> = ({
         {(!!title || !!description) && (
           <StackColumn gap={0.25} width="100%" {...titleContainerProps}>
             {typeof title === 'string' ? (
-              <AppTypography variant="subtitle1" color="text.primary" gap={1} {...titleProps}>
+              <AppTypography variant="h6" color="text.primary" gap={1} {...titleProps}>
                 {title} {titleSuffix ? titleSuffix : null}
               </AppTypography>
             ) : (
