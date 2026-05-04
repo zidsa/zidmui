@@ -2,7 +2,7 @@ import React from 'react';
 
 import { AppTypography, type AppTypographyProps } from './app-typography';
 
-import { type Theme, SxProps, Card, CardContent, Divider } from '@mui/material';
+import { type Theme, SxProps, Card, CardContent, Divider, CardContentProps } from '@mui/material';
 import { StackRow, StackRowProps } from './stack-row';
 import { StackColumn, StackColumnProps } from './stack-column';
 import { styled } from '@mui/material/styles';
@@ -32,6 +32,7 @@ export type AppCardProps = {
   loading?: boolean;
   actions?: React.ReactElement | null | (React.ReactElement | null)[];
   actionsProps?: StackRowProps;
+  cardContentProps?: CardContentProps;
 };
 
 export const AppCard: React.FC<AppCardProps> = ({
@@ -50,6 +51,7 @@ export const AppCard: React.FC<AppCardProps> = ({
   actions,
   actionsProps,
   loading,
+  cardContentProps,
   ...props
 }) => {
   const hasActions = Boolean(actions && React.Children.toArray(actions)?.length > 0);
@@ -85,7 +87,7 @@ export const AppCard: React.FC<AppCardProps> = ({
         {titleAction && <StackRow>{titleAction}</StackRow>}
       </CardHead>
 
-      <CardContent>
+      <CardContent {...cardContentProps}>
         {children}
 
         {hasActions && !loading && (
