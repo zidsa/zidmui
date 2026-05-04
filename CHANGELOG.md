@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.1.2](https://github.com/zidsa/zidmui/compare/v3.1.1...v3.1.2) (2026-05-04)
+
+### Chores
+
+* add 'cardContentProps' prop to app card ([9cc3b5e](https://github.com/zidsa/zidmui/commit/9cc3b5e9d7bc504c49fa600e87cdfa44722edd45))
+
 ## [3.1.1](https://github.com/zidsa/zidmui/compare/v3.1.0...v3.1.1) (2026-05-04)
 
 ### Chores
