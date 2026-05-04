@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.1.1](https://github.com/zidsa/zidmui/compare/v3.1.0...v3.1.1) (2026-05-04)
+
+### Chores
+
+* add 'white' variant for app icon box ([6027e49](https://github.com/zidsa/zidmui/commit/6027e494fd60e4d77ea284ab0bb510163f0a632d))
+
 ## [3.1.0](https://github.com/zidsa/zidmui/compare/v3.0.7...v3.1.0) (2026-05-02)
 
 ### Chores
