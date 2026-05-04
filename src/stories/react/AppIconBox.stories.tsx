@@ -18,7 +18,17 @@ const meta = {
   argTypes: {
     background: {
       control: 'select',
-      options: ['default', 'primary', 'blue', 'red', 'green', 'yellow', 'orange', 'secondary'],
+      options: [
+        'default',
+        'primary',
+        'blue',
+        'red',
+        'green',
+        'yellow',
+        'orange',
+        'secondary',
+        'white',
+      ],
     },
     size: {
       control: 'select',
@@ -65,6 +75,9 @@ export const Variants: Story = {
         <IconShoppingCartLine />
       </AppIconBox>
       <AppIconBox background="secondary">
+        <IconShoppingCartLine />
+      </AppIconBox>
+      <AppIconBox background="white">
         <IconShoppingCartLine />
       </AppIconBox>
     </Stack>

@@ -11,7 +11,8 @@ export type AppIconBoxbackgroundColor =
   | 'green'
   | 'yellow'
   | 'orange'
-  | 'secondary';
+  | 'secondary'
+  | 'white';
 
 export type AppIconBoxSize = 'small' | 'medium' | 'large';
 
@@ -93,6 +94,9 @@ const IconWrapper = styled(Box)(({ theme }) => ({
   "&[data-background-color='secondary']": {
     backgroundColor: alpha(theme.palette.secondary.main, 0.08),
   },
+  "&[data-background-color='white']": {
+    backgroundColor: theme.palette.common.white,
+  },
 
   ...theme.applyStyles('dark', {
     "&[data-background-color='default']": {
@@ -118,6 +122,9 @@ const IconWrapper = styled(Box)(({ theme }) => ({
     },
     "&[data-background-color='secondary']": {
       backgroundColor: alpha(theme.palette.secondary.main, 0.15),
+    },
+    "&[data-background-color='white']": {
+      backgroundColor: alpha(theme.palette.common.white, 0.1),
     },
   }),
 }));
