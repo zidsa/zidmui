@@ -98,7 +98,6 @@ export const AppInputBase: FC<AppInputBaseProps> = ({
           onWheel: handleWheel,
           ...slotProps?.htmlInput,
         },
-        ...slotProps,
       }}
       {...props}
       label={labelContent}
