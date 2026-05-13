@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.1.5](https://github.com/zidsa/zidmui/compare/v3.1.4...v3.1.5) (2026-05-13)
+
+### Bug Fixes
+
+* bug with wheel even with input number ([b486b1f](https://github.com/zidsa/zidmui/commit/b486b1f3dcb3d177ce3ad303f2c6491fd123af13))
+
 ## [3.1.4](https://github.com/zidsa/zidmui/compare/v3.1.3...v3.1.4) (2026-05-13)
 
 ### Features
