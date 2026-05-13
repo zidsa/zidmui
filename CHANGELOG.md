@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.1.6](https://github.com/zidsa/zidmui/compare/v3.1.5...v3.1.6) (2026-05-13)
+
+### Bug Fixes
+
+* prevent input number change with scrolling ([49a397e](https://github.com/zidsa/zidmui/commit/49a397eeff34ae49125263dab51855a4a9942289))
+
 ## [3.1.5](https://github.com/zidsa/zidmui/compare/v3.1.4...v3.1.5) (2026-05-13)
 
 ### Bug Fixes
