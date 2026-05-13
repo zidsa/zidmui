@@ -68,6 +68,10 @@ export const AppInputBase: FC<AppInputBaseProps> = ({
     }
   };
 
+  if (typeof slotProps?.htmlInput !== 'function' && slotProps?.htmlInput) {
+    slotProps.htmlInput.onWheel = handleWheel;
+  }
+
   return (
     <TextField
       size={size}
@@ -93,10 +97,6 @@ export const AppInputBase: FC<AppInputBaseProps> = ({
           // FIX: autocomplete inputs gets broken
           // oxlint-disable-next-line @typescript-eslint/no-explicit-any
           ...(props.InputProps as any),
-        },
-        htmlInput: {
-          onWheel: handleWheel,
-          ...slotProps?.htmlInput,
         },
       }}
       {...props}
