@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.1.4](https://github.com/zidsa/zidmui/compare/v3.1.3...v3.1.4) (2026-05-13)
+
+### Features
+
+* disable wheel number change with input ([c8c7504](https://github.com/zidsa/zidmui/commit/c8c7504be38364518443a451aa1495ca7203aede))
+
 ## [3.1.3](https://github.com/zidsa/zidmui/compare/v3.1.2...v3.1.3) (2026-05-06)
 
 ### Chores
