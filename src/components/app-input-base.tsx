@@ -16,6 +16,7 @@ export type AppInputBaseProps = Omit<TextFieldProps, 'variant'> & {
   endAdornmentText?: React.JSX.Element | string;
   endAdornmentTextProps?: AppInputAdornmentTextProps;
   labelSuffix?: ReactNode;
+  disableWheelNumberChange?: boolean;
 };
 
 export const AppInputBase: FC<AppInputBaseProps> = ({
@@ -28,7 +29,9 @@ export const AppInputBase: FC<AppInputBaseProps> = ({
   endAdornmentText,
   endAdornmentTextProps,
   labelSuffix,
+  disableWheelNumberChange = true,
   size = 'medium',
+  slotProps,
   ...props
 }) => {
   let labelContent = props.label;
@@ -40,35 +43,6 @@ export const AppInputBase: FC<AppInputBaseProps> = ({
       </>
     );
   }
-
-  const inputSlotProps =
-    typeof props.slotProps?.input === 'function' ? {} : props.slotProps?.input || {};
-
-  props.slotProps = {
-    ...props?.slotProps,
-    input: {
-      startAdornment: startAdornment ? (
-        <InputAdornment position="start">{startAdornment}</InputAdornment>
-      ) : startAdornmentText ? (
-        <AppInputAdornmentText position="start" {...startAdornmentTextProps}>
-          {startAdornmentText}
-        </AppInputAdornmentText>
-      ) : undefined,
-      endAdornment: endAdornment ? (
-        <InputAdornment position="end">{endAdornment}</InputAdornment>
-      ) : endAdornmentText ? (
-        <AppInputAdornmentText position="end" {...endAdornmentTextProps}>
-          {endAdornmentText}
-        </AppInputAdornmentText>
-      ) : undefined,
-      ...inputSlotProps,
-
-      // FIX: autocomplete inputs gets broken
-      // oxlint-disable-next-line @typescript-eslint/no-explicit-any
-      ...(props.InputProps as any),
-    },
-    ...props?.slotProps,
-  };
 
   const handleChangeText = useCallback(
     (text: string) => {
@@ -85,8 +59,51 @@ export const AppInputBase: FC<AppInputBaseProps> = ({
     [handleChangeText, props],
   );
 
+  const inputSlotProps = typeof slotProps?.input === 'function' ? {} : slotProps?.input || {};
+
+  // Prevent scroll wheel from changing number input values
+  const handleWheel = (event: React.WheelEvent<HTMLInputElement>) => {
+    if (disableWheelNumberChange && props.type === 'number') {
+      event.currentTarget.blur();
+    }
+  };
+
   return (
-    <TextField size={size} {...props} label={labelContent} onChange={onChange}>
+    <TextField
+      size={size}
+      slotProps={{
+        ...slotProps,
+        input: {
+          startAdornment: startAdornment ? (
+            <InputAdornment position="start">{startAdornment}</InputAdornment>
+          ) : startAdornmentText ? (
+            <AppInputAdornmentText position="start" {...startAdornmentTextProps}>
+              {startAdornmentText}
+            </AppInputAdornmentText>
+          ) : undefined,
+          endAdornment: endAdornment ? (
+            <InputAdornment position="end">{endAdornment}</InputAdornment>
+          ) : endAdornmentText ? (
+            <AppInputAdornmentText position="end" {...endAdornmentTextProps}>
+              {endAdornmentText}
+            </AppInputAdornmentText>
+          ) : undefined,
+          ...inputSlotProps,
+
+          // FIX: autocomplete inputs gets broken
+          // oxlint-disable-next-line @typescript-eslint/no-explicit-any
+          ...(props.InputProps as any),
+        },
+        htmlInput: {
+          onWheel: handleWheel,
+          ...slotProps?.htmlInput,
+        },
+        ...slotProps,
+      }}
+      {...props}
+      label={labelContent}
+      onChange={onChange}
+    >
       {children}
     </TextField>
   );
