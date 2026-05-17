@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.1.7](https://github.com/zidsa/zidmui/compare/v3.1.6...v3.1.7) (2026-05-17)
+
+### Chores
+
+* add omani icon riyal ([0415569](https://github.com/zidsa/zidmui/commit/0415569dc0acf62100dcc83ec3ec57b4051f2ae9))
+
 ## [3.1.6](https://github.com/zidsa/zidmui/compare/v3.1.5...v3.1.6) (2026-05-13)
 
 ### Bug Fixes
