@@ -43,7 +43,7 @@ export const AppInputRadio = ({
   name,
   label,
   helperText,
-  options = [],
+  options,
   size = 'medium',
   color = 'primary',
   labelPlacement = 'end',
