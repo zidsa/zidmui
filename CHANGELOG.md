@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.1.8](https://github.com/zidsa/zidmui/compare/v3.1.7...v3.1.8) (2026-05-17)
+
+### Chores
+
+* update packages ([fe323ef](https://github.com/zidsa/zidmui/commit/fe323ef0e92db2b9f829394a8605638a0c16a3c8))
+
 ## [3.1.7](https://github.com/zidsa/zidmui/compare/v3.1.6...v3.1.7) (2026-05-17)
 
 ### Chores
