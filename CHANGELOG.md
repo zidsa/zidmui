@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.2.2](https://github.com/zidsa/zidmui/compare/v3.2.1...v3.2.2) (2026-05-19)
+
+### Bug Fixes
+
+* add game sports icon import storybook ([4b3f987](https://github.com/zidsa/zidmui/commit/4b3f987ce34fc50b62bf1ebdbc81cfe55228e90c))
+
+### Chores
+
+* passing prop to label/icon container in app input radio card ([4554514](https://github.com/zidsa/zidmui/commit/455451426e544dd905c1080a220cca9994399138))
+
 ## [3.2.1](https://github.com/zidsa/zidmui/compare/v3.2.0...v3.2.1) (2026-05-19)
 
 ### Bug Fixes
