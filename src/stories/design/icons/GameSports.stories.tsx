@@ -5,9 +5,9 @@ import { IconsDisplay, getIconsFromModule } from './_shared';
 //
 
 const iconModules = import.meta.glob('../../../icons/game-sports/*.tsx', { eager: true });
-const allOthersIcons = getIconsFromModule(
+const allIcons = getIconsFromModule(
   iconModules as Record<string, Record<string, unknown>>,
-  'others',
+  'game-sports',
 );
 
 // Filter only game & sports related icons
@@ -28,9 +28,7 @@ const gameKeywords = [
   'target',
 ];
 
-const icons = allOthersIcons.filter(icon =>
-  gameKeywords.some(keyword => icon.name.includes(keyword)),
-);
+const icons = allIcons.filter(icon => gameKeywords.some(keyword => icon.name.includes(keyword)));
 
 const GameSportsIcons = () => <IconsDisplay icons={icons} categoryName="Game & Sports" />;
 
