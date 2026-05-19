@@ -20,6 +20,7 @@ export type AppInputRadioCardProps = Omit<FormControlLabelProps, 'control' | 'la
   label: string | React.ReactNode;
   labelProps?: AppTypographyProps;
   labelContainerProps?: StackProps;
+  labelIconContainerProps?: StackProps;
   description?: React.ReactNode;
   descriptionProps?: AppTypographyProps;
   radioProps?: RadioProps;
@@ -32,6 +33,7 @@ export const AppInputRadioCard: React.FC<AppInputRadioCardProps> = ({
   label,
   labelProps,
   labelContainerProps,
+  labelIconContainerProps,
   description,
   descriptionProps,
   radioProps,
@@ -45,7 +47,7 @@ export const AppInputRadioCard: React.FC<AppInputRadioCardProps> = ({
       {...props}
       control={<RadioStyled {...radioProps} />}
       label={
-        <StackRow justifyContent="space-between" alignItems="center">
+        <StackRow justifyContent="space-between" alignItems="center" {...labelIconContainerProps}>
           <StackColumn gap={0} overflow="hidden" {...labelContainerProps}>
             {isLoading && <CircularProgressStyled />}
 
