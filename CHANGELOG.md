@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.2.0](https://github.com/zidsa/zidmui/compare/v3.1.9...v3.2.0) (2026-05-19)
+
+### Bug Fixes
+
+* types issue with typescript 6 ([7069a13](https://github.com/zidsa/zidmui/commit/7069a13aae80da66b8dfa3bdf378706465d47ed2))
+
 ## [3.1.9](https://github.com/zidsa/zidmui/compare/v3.1.8...v3.1.9) (2026-05-19)
 
 ### Features
