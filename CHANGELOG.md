@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.2.1](https://github.com/zidsa/zidmui/compare/v3.2.0...v3.2.1) (2026-05-19)
+
+### Bug Fixes
+
+* add game sports icon types ([ad2cf88](https://github.com/zidsa/zidmui/commit/ad2cf881f4ae8926ac4e838a4a348bb9bb6110f2))
+
 ## [3.2.0](https://github.com/zidsa/zidmui/compare/v3.1.9...v3.2.0) (2026-05-19)
 
 ### Bug Fixes
