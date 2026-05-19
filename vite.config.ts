@@ -45,6 +45,11 @@ export default defineConfig({
       entryRoot: 'src',
       outDir: 'dist/react/types',
       exclude: ['src/stories/**'],
+      beforeWriteFile: (filePath, content) => {
+        // Fix for TypeScript 6.0 compatibility - remove extra 'src/' from path
+        const newPath = filePath.replace('/types/src/', '/types/');
+        return { filePath: newPath, content };
+      },
     }),
     viteStaticCopy({
       targets: [
