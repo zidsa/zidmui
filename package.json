@@ -70,6 +70,11 @@
       "types": "./dist/react/types/icons/design/*.d.ts",
       "import": "./dist/react/es/icons/design/*.js"
     },
+    "./icons/game-sports/*": {
+      "require": "./dist/react/cjs/icons/game-sports/*.js",
+      "types": "./dist/react/types/icons/game-sports/*.d.ts",
+      "import": "./dist/react/es/icons/game-sports/*.js"
+    },
     "./icons/development/*": {
       "require": "./dist/react/cjs/icons/development/*.js",
       "types": "./dist/react/types/icons/development/*.d.ts",
