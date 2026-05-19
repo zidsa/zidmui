@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.1.9](https://github.com/zidsa/zidmui/compare/v3.1.8...v3.1.9) (2026-05-19)
+
+### Features
+
+* add icons story ([91d703a](https://github.com/zidsa/zidmui/commit/91d703a7564920ede15df22ce8acafad0c290ec1))
+
 ## [3.1.8](https://github.com/zidsa/zidmui/compare/v3.1.7...v3.1.8) (2026-05-17)
 
 ### Chores
