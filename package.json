@@ -199,7 +199,7 @@
     "@commitlint/config-conventional": "20.5.3",
     "@release-it/conventional-changelog": "10.0.6",
     "@storybook/addon-docs": "10.3.5",
-    "@storybook/addon-mcp": "^0.6.0",
+    "@storybook/addon-mcp": "0.6.0",
     "@storybook/addon-themes": "10.3.5",
     "@storybook/react-vite": "10.3.5",
     "@types/react": "19.2.14",
