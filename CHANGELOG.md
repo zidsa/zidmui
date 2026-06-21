@@ -1,5 +1,11 @@
 # Changelog
 
+## [](https://github.com/zidsa/zidmui/compare/v3.3.0...vnull) (2026-06-21)
+
+### Chores
+
+* relax peer dependency version constraints ([8b28fa9](https://github.com/zidsa/zidmui/commit/8b28fa9e96865431c2dfc9ab15b9d6db00319a05))
+
 ## [3.3.0](https://github.com/zidsa/zidmui/compare/v3.2.2...v3.3.0) (2026-06-03)
 
 ## [3.2.2](https://github.com/zidsa/zidmui/compare/v3.2.1...v3.2.2) (2026-05-19)
