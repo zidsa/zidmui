@@ -8,10 +8,16 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "files.insertFinalNewline": true,
+  "files.watcherExclude": {
+    "**/graphify-out/**": true
+  },
   "files.trimTrailingWhitespace": true,
   "oxc.enable": true,
   "prettier.jsxSingleQuote": false,
   "prettier.singleQuote": true,
+  "search.exclude": {
+    "**/graphify-out/**": true
+  },
   "typescript.preferences.includePackageJsonAutoImports": "on",
   "typescript.tsdk": "node_modules/typescript/lib"
 }

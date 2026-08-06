@@ -1,0 +1,15 @@
+---
+description: Use Graphify for repository structure and code-flow questions
+globs:
+alwaysApply: true
+---
+
+When `graphify-out/graph.json` exists:
+
+- Run `graphify query "<question>"` for broad repository questions.
+- Run `graphify path "<source>" "<target>"` to trace a relationship.
+- Run `graphify explain "<node>"` to inspect one graph node.
+- Do not load the complete `graph.json` or `graph.html` into model context.
+- Verify mutable facts in current source.
+
+Run Graphify through the terminal. Ignore files do not block direct terminal access.
