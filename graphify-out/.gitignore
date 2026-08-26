@@ -1,1 +1,8 @@
 .graphify_python
+.graphify_learning.json
+.vocab.txt
+cache/
+memory/
+reflections/
+20??-??-??/
+cost.json
