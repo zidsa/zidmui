@@ -12,7 +12,7 @@ jobs:
     if: >-
       github.event.repository.private == true &&
       github.event.issue.pull_request != null &&
-      github.event.comment.body == '/code-review' &&
+      contains(github.event.comment.body, '/code-review') &&
       (
         github.event.comment.author_association == 'MEMBER' ||
         github.event.comment.author_association == 'OWNER'
