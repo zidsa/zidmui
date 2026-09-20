@@ -1,0 +1,101 @@
+# ZidMUI Icons — arrows
+
+Generated file. Do not edit by hand; run `node tools/generate-zidmui-icons-catalog.ts` instead.
+
+- Icons: **89**
+- Category: `arrows`
+- Package: `@zidsa/zidmui@3.3.0`
+- Types: `dist/react/types/icons/arrows/`
+- Index: [../icons.md](../icons.md)
+
+| Icon | Import |
+| --- | --- |
+| `IconArrowDownBoxLine` | `@zidsa/zidmui/icons/arrows/arrow-down-box-line` |
+| `IconArrowDownCircleLine` | `@zidsa/zidmui/icons/arrows/arrow-down-circle-line` |
+| `IconArrowDownDoubleLine` | `@zidsa/zidmui/icons/arrows/arrow-down-double-line` |
+| `IconArrowDownLine` | `@zidsa/zidmui/icons/arrows/arrow-down-line` |
+| `IconArrowDownLongLine` | `@zidsa/zidmui/icons/arrows/arrow-down-long-line` |
+| `IconArrowDownSLine` | `@zidsa/zidmui/icons/arrows/arrow-down-s-line` |
+| `IconArrowDownWideLine` | `@zidsa/zidmui/icons/arrows/arrow-down-wide-line` |
+| `IconArrowDropDownLine` | `@zidsa/zidmui/icons/arrows/arrow-drop-down-line` |
+| `IconArrowDropLeftLine` | `@zidsa/zidmui/icons/arrows/arrow-drop-left-line` |
+| `IconArrowDropRightLine` | `@zidsa/zidmui/icons/arrows/arrow-drop-right-line` |
+| `IconArrowDropUpLine` | `@zidsa/zidmui/icons/arrows/arrow-drop-up-line` |
+| `IconArrowGoBackLine` | `@zidsa/zidmui/icons/arrows/arrow-go-back-line` |
+| `IconArrowGoForwardLine` | `@zidsa/zidmui/icons/arrows/arrow-go-forward-line` |
+| `IconArrowLeftBoxLine` | `@zidsa/zidmui/icons/arrows/arrow-left-box-line` |
+| `IconArrowLeftCircleLine` | `@zidsa/zidmui/icons/arrows/arrow-left-circle-line` |
+| `IconArrowLeftDoubleLine` | `@zidsa/zidmui/icons/arrows/arrow-left-double-line` |
+| `IconArrowLeftDownBoxLine` | `@zidsa/zidmui/icons/arrows/arrow-left-down-box-line` |
+| `IconArrowLeftDownLine` | `@zidsa/zidmui/icons/arrows/arrow-left-down-line` |
+| `IconArrowLeftDownLongLine` | `@zidsa/zidmui/icons/arrows/arrow-left-down-long-line` |
+| `IconArrowLeftLine` | `@zidsa/zidmui/icons/arrows/arrow-left-line` |
+| `IconArrowLeftLongLine` | `@zidsa/zidmui/icons/arrows/arrow-left-long-line` |
+| `IconArrowLeftRightLine` | `@zidsa/zidmui/icons/arrows/arrow-left-right-line` |
+| `IconArrowLeftSLine` | `@zidsa/zidmui/icons/arrows/arrow-left-s-line` |
+| `IconArrowLeftUpBoxLine` | `@zidsa/zidmui/icons/arrows/arrow-left-up-box-line` |
+| `IconArrowLeftUpLine` | `@zidsa/zidmui/icons/arrows/arrow-left-up-line` |
+| `IconArrowLeftUpLongLine` | `@zidsa/zidmui/icons/arrows/arrow-left-up-long-line` |
+| `IconArrowLeftWideLine` | `@zidsa/zidmui/icons/arrows/arrow-left-wide-line` |
+| `IconArrowRightBoxLine` | `@zidsa/zidmui/icons/arrows/arrow-right-box-line` |
+| `IconArrowRightCircleLine` | `@zidsa/zidmui/icons/arrows/arrow-right-circle-line` |
+| `IconArrowRightDoubleLine` | `@zidsa/zidmui/icons/arrows/arrow-right-double-line` |
+| `IconArrowRightDownBoxLine` | `@zidsa/zidmui/icons/arrows/arrow-right-down-box-line` |
+| `IconArrowRightDownLine` | `@zidsa/zidmui/icons/arrows/arrow-right-down-line` |
+| `IconArrowRightDownLongLine` | `@zidsa/zidmui/icons/arrows/arrow-right-down-long-line` |
+| `IconArrowRightLine` | `@zidsa/zidmui/icons/arrows/arrow-right-line` |
+| `IconArrowRightLongLine` | `@zidsa/zidmui/icons/arrows/arrow-right-long-line` |
+| `IconArrowRightSLine` | `@zidsa/zidmui/icons/arrows/arrow-right-s-line` |
+| `IconArrowRightUpBoxLine` | `@zidsa/zidmui/icons/arrows/arrow-right-up-box-line` |
+| `IconArrowRightUpLine` | `@zidsa/zidmui/icons/arrows/arrow-right-up-line` |
+| `IconArrowRightUpLongLine` | `@zidsa/zidmui/icons/arrows/arrow-right-up-long-line` |
+| `IconArrowRightWideLine` | `@zidsa/zidmui/icons/arrows/arrow-right-wide-line` |
+| `IconArrowTurnBackLine` | `@zidsa/zidmui/icons/arrows/arrow-turn-back-line` |
+| `IconArrowTurnForwardLine` | `@zidsa/zidmui/icons/arrows/arrow-turn-forward-line` |
+| `IconArrowUpBoxLine` | `@zidsa/zidmui/icons/arrows/arrow-up-box-line` |
+| `IconArrowUpCircleLine` | `@zidsa/zidmui/icons/arrows/arrow-up-circle-line` |
+| `IconArrowUpDoubleLine` | `@zidsa/zidmui/icons/arrows/arrow-up-double-line` |
+| `IconArrowUpDownLine` | `@zidsa/zidmui/icons/arrows/arrow-up-down-line` |
+| `IconArrowUpLine` | `@zidsa/zidmui/icons/arrows/arrow-up-line` |
+| `IconArrowUpLongLine` | `@zidsa/zidmui/icons/arrows/arrow-up-long-line` |
+| `IconArrowUpSLine` | `@zidsa/zidmui/icons/arrows/arrow-up-s-line` |
+| `IconArrowUpWideLine` | `@zidsa/zidmui/icons/arrows/arrow-up-wide-line` |
+| `IconCollapseDiagonal2Line` | `@zidsa/zidmui/icons/arrows/collapse-diagonal-2-line` |
+| `IconCollapseDiagonalLine` | `@zidsa/zidmui/icons/arrows/collapse-diagonal-line` |
+| `IconCollapseHorizontalLine` | `@zidsa/zidmui/icons/arrows/collapse-horizontal-line` |
+| `IconCollapseVerticalLine` | `@zidsa/zidmui/icons/arrows/collapse-vertical-line` |
+| `IconContractLeftLine` | `@zidsa/zidmui/icons/arrows/contract-left-line` |
+| `IconContractLeftRightLine` | `@zidsa/zidmui/icons/arrows/contract-left-right-line` |
+| `IconContractRightLine` | `@zidsa/zidmui/icons/arrows/contract-right-line` |
+| `IconContractUpDownLine` | `@zidsa/zidmui/icons/arrows/contract-up-down-line` |
+| `IconCornerDownLeftLine` | `@zidsa/zidmui/icons/arrows/corner-down-left-line` |
+| `IconCornerDownRightLine` | `@zidsa/zidmui/icons/arrows/corner-down-right-line` |
+| `IconCornerLeftDownLine` | `@zidsa/zidmui/icons/arrows/corner-left-down-line` |
+| `IconCornerLeftUpLine` | `@zidsa/zidmui/icons/arrows/corner-left-up-line` |
+| `IconCornerRightDownLine` | `@zidsa/zidmui/icons/arrows/corner-right-down-line` |
+| `IconCornerRightUpLine` | `@zidsa/zidmui/icons/arrows/corner-right-up-line` |
+| `IconCornerUpLeftDoubleLine` | `@zidsa/zidmui/icons/arrows/corner-up-left-double-line` |
+| `IconCornerUpLeftLine` | `@zidsa/zidmui/icons/arrows/corner-up-left-line` |
+| `IconCornerUpRightDoubleLine` | `@zidsa/zidmui/icons/arrows/corner-up-right-double-line` |
+| `IconCornerUpRightLine` | `@zidsa/zidmui/icons/arrows/corner-up-right-line` |
+| `IconDragMove2Line` | `@zidsa/zidmui/icons/arrows/drag-move-2-line` |
+| `IconDragMoveLine` | `@zidsa/zidmui/icons/arrows/drag-move-line` |
+| `IconExpandDiagonal2Line` | `@zidsa/zidmui/icons/arrows/expand-diagonal-2-line` |
+| `IconExpandDiagonalLine` | `@zidsa/zidmui/icons/arrows/expand-diagonal-line` |
+| `IconExpandDiagonalS2Line` | `@zidsa/zidmui/icons/arrows/expand-diagonal-s-2-line` |
+| `IconExpandDiagonalSLine` | `@zidsa/zidmui/icons/arrows/expand-diagonal-s-line` |
+| `IconExpandHeightLine` | `@zidsa/zidmui/icons/arrows/expand-height-line` |
+| `IconExpandHorizontalLine` | `@zidsa/zidmui/icons/arrows/expand-horizontal-line` |
+| `IconExpandHorizontalSLine` | `@zidsa/zidmui/icons/arrows/expand-horizontal-s-line` |
+| `IconExpandLeftLine` | `@zidsa/zidmui/icons/arrows/expand-left-line` |
+| `IconExpandLeftRightLine` | `@zidsa/zidmui/icons/arrows/expand-left-right-line` |
+| `IconExpandRightLine` | `@zidsa/zidmui/icons/arrows/expand-right-line` |
+| `IconExpandUpDownLine` | `@zidsa/zidmui/icons/arrows/expand-up-down-line` |
+| `IconExpandVerticalLine` | `@zidsa/zidmui/icons/arrows/expand-vertical-line` |
+| `IconExpandVerticalSLine` | `@zidsa/zidmui/icons/arrows/expand-vertical-s-line` |
+| `IconExpandWidthLine` | `@zidsa/zidmui/icons/arrows/expand-width-line` |
+| `IconScrollToBottomLine` | `@zidsa/zidmui/icons/arrows/scroll-to-bottom-line` |
+| `IconSkipDownLine` | `@zidsa/zidmui/icons/arrows/skip-down-line` |
+| `IconSkipLeftLine` | `@zidsa/zidmui/icons/arrows/skip-left-line` |
+| `IconSkipRightLine` | `@zidsa/zidmui/icons/arrows/skip-right-line` |
+| `IconSkipUpLine` | `@zidsa/zidmui/icons/arrows/skip-up-line` |
