@@ -1,5 +1,27 @@
 # Changelog
 
+## [3.4.0](https://github.com/zidsa/zidmui/compare/v3.3.0...v3.4.0) (2026-10-20)
+
+### Features
+
+* support code review instructions ([40ccc0e](https://github.com/zidsa/zidmui/commit/40ccc0ed5187c217d26a7fb4f0e1157df7630bef))
+
+### Bug Fixes
+
+* keep typed digits in number inputs under arabic-indic locales ([#53](https://github.com/zidsa/zidmui/issues/53)) ([36964fb](https://github.com/zidsa/zidmui/commit/36964fbbe3eac138931312815ddebf46cc96b7da))
+
+### Chores
+
+* add agent instructions [skip ci] ([6df7a48](https://github.com/zidsa/zidmui/commit/6df7a480871c6d70ffde47d9f012cbb48894e258))
+* add graphify knowledge graph ([cede373](https://github.com/zidsa/zidmui/commit/cede373a1592b4b59cc19f78f5c7be75deb7b2f6))
+* add security policy ([#52](https://github.com/zidsa/zidmui/issues/52)) ([9be05b7](https://github.com/zidsa/zidmui/commit/9be05b7c91540a84f1cc8a4d83ea2e0ece66bf9b))
+* add shared code review listener ([94d14d1](https://github.com/zidsa/zidmui/commit/94d14d198316bc13f282e2d4b9bdf108916ab750))
+* create ai skills ([f0aadad](https://github.com/zidsa/zidmui/commit/f0aadad5d4f373103e0eda841f2899ee4c25f57b))
+* exclude graphify output from tooling ([7aee55b](https://github.com/zidsa/zidmui/commit/7aee55b263b8a2fdaaeee8d78d3e4cfb239f54d4))
+* ignore graphify runtime files ([93c4846](https://github.com/zidsa/zidmui/commit/93c48460f36f00b5b6b95bd187e4a106a50afd97))
+* relax peer dependency version constraints ([#51](https://github.com/zidsa/zidmui/issues/51)) ([acb0825](https://github.com/zidsa/zidmui/commit/acb0825c96710a65b337eb880401e4b74e4db5f8))
+* untrack graphify runtime cost ([b637911](https://github.com/zidsa/zidmui/commit/b6379114eb09935ddbf8fc159fad7a5bb9764a0a))
+
 ## [3.3.0](https://github.com/zidsa/zidmui/compare/v3.2.2...v3.3.0) (2026-06-03)
 
 ## [3.2.2](https://github.com/zidsa/zidmui/compare/v3.2.1...v3.2.2) (2026-05-19)
