@@ -53,7 +53,10 @@ export const AppInputBase: FC<AppInputBaseProps> = ({
 
   const onChange = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {
-      event.target.value = handleChangeText(event.target.value);
+      const transformedText = handleChangeText(event.target.value);
+      // Writing an unchanged value redraws a number input in the locale's digits
+      // (e.g. Arabic-Indic), and the next typed digit then clears the field.
+      if (transformedText !== event.target.value) event.target.value = transformedText;
       props?.onChange?.(event);
     },
     [handleChangeText, props],
