@@ -659,7 +659,7 @@ If you're accessing alert colors directly from the theme, update your paths:
 - feat: implement 'useToggle' hook (1d36a94)
 
 - chore: update dependencies (dc799ac9)
-- chore: sync configuration with hermes, update dependencies (30ab6e1b)
+- chore: sync configuration with merchant-dashboard, update dependencies (30ab6e1b)
 
 ## [1.1.3](https://github.com/zidsa/zidmui/compare/vv1.1.3...vnull) (2025-01-21)
 
