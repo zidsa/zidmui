@@ -43,3 +43,6 @@ storybook-static
 
 # .Kiro
 .kiro/settings/mcp.json
+
+# verify-zidmui skill scratch state and evidence
+/.verify-zidmui
