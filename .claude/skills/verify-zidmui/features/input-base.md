@@ -7,7 +7,7 @@
 - `input-type` types into a labelled field.
 - `input-states` shows error, disabled, helper text and adornment.
 - `input-multiline` grows into a textarea.
-- `input-number-wheel` ignores the wheel on number inputs (`disableWheelNumberChange`, default on).
+- `input-number-wheel` ignores the wheel on number inputs (`disableWheelNumberChange`, default `true`).
 - `input-number-locale` keeps typed digits in number inputs under Arabic-Indic locales.
 
 ## How to get to it (user POV)
@@ -30,4 +30,5 @@ Preconditions:
 
 - Boolean args in the URL use `!true` / `!false` (`error:!true`), not `true`.
 - `type` has no `argTypes` entry, so `--args 'type:number'` is silently dropped and the field stays a text input. No story renders `AppInputBase` with `type="number"` (the number inputs in `src/stories/css/Input.stories.tsx` are plain CSS, not this component). `input-number-wheel` and `input-number-locale` are therefore unreachable: report them as such, and add a story before claiming them.
+- The wheel guard is attached only when the caller passes `slotProps.htmlInput` (`app-input-base.tsx` sets `slotProps.htmlInput.onWheel` and does nothing otherwise). A story for `input-number-wheel` must cover both cases. Without `htmlInput`, expect the wheel to change the value even though `disableWheelNumberChange` defaults to `true`. That is an open finding, not a recipe error.
 - `input-number-locale` also needs a browser locale that renders Arabic-Indic digits (Chromium `--lang=ar` / `locale: 'ar-SA'`); `drive.mjs` does not set one.
