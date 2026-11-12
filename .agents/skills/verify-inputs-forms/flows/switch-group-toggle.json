@@ -1,0 +1,29 @@
+{
+  "story": "react-app-switch-group--playground",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "click": {
+        "role": "switch",
+        "name": "Jason Killian"
+      }
+    },
+    {
+      "expectChecked": {
+        "role": "switch",
+        "name": "Jason Killian",
+        "value": true
+      }
+    },
+    {
+      "expect": {
+        "text": "Be careful"
+      }
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

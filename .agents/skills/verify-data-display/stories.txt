@@ -1,0 +1,12 @@
+# Story ids or id prefixes (title slugs) that verify-data-display smoke-renders in light and dark.
+react-app-accordion
+react-app-card
+react-app-empty-state
+react-app-icon-box
+react-app-icon-with-tooltip
+react-app-overflown-text-with-tooltip
+react-app-status
+react-app-typography
+css-styles-components-card
+css-styles-components-status
+css-styles-components-table

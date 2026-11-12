@@ -1,0 +1,25 @@
+{
+  "story": "react-app-input-base-search--playground",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "type": {
+        "role": "textbox",
+        "name": "Search",
+        "value": "shoes"
+      }
+    },
+    {
+      "expectValue": {
+        "role": "textbox",
+        "name": "Search",
+        "value": "shoes"
+      }
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

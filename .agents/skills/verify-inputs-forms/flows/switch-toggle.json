@@ -1,0 +1,31 @@
+{
+  "story": "react-app-switch--default",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "expectChecked": {
+        "role": "switch",
+        "name": "Primary Switch",
+        "value": false
+      }
+    },
+    {
+      "click": {
+        "role": "switch",
+        "name": "Primary Switch"
+      }
+    },
+    {
+      "expectChecked": {
+        "role": "switch",
+        "name": "Primary Switch",
+        "value": true
+      }
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

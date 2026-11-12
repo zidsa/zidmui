@@ -1,0 +1,25 @@
+{
+  "story": "react-app-dialog-with-features--with-pagination",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "Open Dialog"
+      }
+    },
+    {
+      "expect": {
+        "role": "dialog"
+      }
+    },
+    {
+      "aria": "page1"
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

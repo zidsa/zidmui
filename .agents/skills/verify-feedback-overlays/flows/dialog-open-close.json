@@ -1,0 +1,33 @@
+{
+  "story": "react-app-dialog--with-actions",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "Open Dialog"
+      }
+    },
+    {
+      "expect": {
+        "role": "dialog"
+      }
+    },
+    {
+      "aria": "open"
+    },
+    {
+      "press": "Escape"
+    },
+    {
+      "expectGone": {
+        "role": "dialog"
+      }
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

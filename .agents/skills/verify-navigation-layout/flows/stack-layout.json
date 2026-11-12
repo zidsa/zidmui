@@ -1,0 +1,28 @@
+{
+  "story": "react-app-stack--stack-row-layout",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "expectStyle": {
+        "css": "#storybook-root .MuiStack-root",
+        "prop": "flex-direction",
+        "value": "row"
+      }
+    },
+    {
+      "expectStyle": {
+        "css": "#storybook-root .MuiStack-root",
+        "prop": "gap",
+        "value": "16px"
+      }
+    },
+    {
+      "shot": "row"
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

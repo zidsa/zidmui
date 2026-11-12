@@ -1,0 +1,8 @@
+# Story ids or id prefixes (title slugs) that verify-feedback-overlays smoke-renders in light and dark.
+react-app-alert
+react-app-dialog
+react-app-dialog-with-features
+react-app-tooltip
+css-styles-components-alert
+css-styles-components-modal
+css-styles-components-tooltip

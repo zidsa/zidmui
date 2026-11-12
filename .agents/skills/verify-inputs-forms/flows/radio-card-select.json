@@ -1,0 +1,30 @@
+{
+  "story": "react-app-input-radio-card--interactive",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "click": {
+        "role": "radio",
+        "name": "Option 2 Lorem ipsum dolor sit amet."
+      }
+    },
+    {
+      "expectChecked": {
+        "role": "radio",
+        "name": "Option 2 Lorem ipsum dolor sit amet."
+      }
+    },
+    {
+      "expectChecked": {
+        "role": "radio",
+        "name": "Option 1",
+        "value": false
+      }
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

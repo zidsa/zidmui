@@ -1,0 +1,13 @@
+diff --git a/src/components/stack-row.tsx b/src/components/stack-row.tsx
+index f9df415..b54dfae 100644
+--- a/src/components/stack-row.tsx
++++ b/src/components/stack-row.tsx
+@@ -11,7 +11,7 @@ export type StackRowProps = Omit<StackProps, 'spacing'> & {
+ 
+ export const StackRow: React.FC<StackRowProps> = ({ children, ...props }) => {
+   return (
+-    <Stack spacing={0} direction="row" alignItems="center" {...props}>
++    <Stack spacing={0} direction="row" alignItems="flex-start" {...props}>
+       {children}
+     </Stack>
+   );

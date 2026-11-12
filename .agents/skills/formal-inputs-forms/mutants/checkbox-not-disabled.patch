@@ -1,0 +1,13 @@
+diff --git a/src/components/app-checkbox.tsx b/src/components/app-checkbox.tsx
+index d62e1d6..5bab2e6 100644
+--- a/src/components/app-checkbox.tsx
++++ b/src/components/app-checkbox.tsx
+@@ -31,7 +31,7 @@ export const AppCheckbox: React.FC<AppCheckboxProps> = ({
+   return (
+     <FormControlLabel
+       label={label}
+-      disabled={disabled}
++      disabled={false}
+       control={
+         <AppCheckboxStyled
+           name={name}

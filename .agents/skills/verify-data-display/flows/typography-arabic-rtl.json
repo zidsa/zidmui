@@ -1,0 +1,28 @@
+{
+  "story": "react-app-typography--arabic-headings",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "expect": {
+        "role": "heading",
+        "name": "العنوان الأول"
+      }
+    },
+    {
+      "expectStyle": {
+        "role": "heading",
+        "name": "العنوان الأول",
+        "prop": "direction",
+        "value": "rtl"
+      }
+    },
+    {
+      "shot": "arabic"
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

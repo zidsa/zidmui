@@ -1,0 +1,21 @@
+{
+  "story": "react-app-status--variants",
+  "globals": "theme:dark",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "expect": {
+        "role": "heading",
+        "name": "Outlined"
+      }
+    },
+    {
+      "shot": "dark"
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

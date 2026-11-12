@@ -1,0 +1,59 @@
+{
+  "story": "react-app-pagination--interactive",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "expectAttr": {
+        "role": "button",
+        "name": "page 1",
+        "attr": "aria-current",
+        "value": "page"
+      }
+    },
+    {
+      "expectDisabled": {
+        "role": "button",
+        "name": "Go to previous page"
+      }
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "Go to page 3"
+      }
+    },
+    {
+      "expectAttr": {
+        "role": "button",
+        "name": "page 3",
+        "attr": "aria-current",
+        "value": "page"
+      }
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "Go to last page"
+      }
+    },
+    {
+      "expectAttr": {
+        "role": "button",
+        "name": "page 10",
+        "attr": "aria-current",
+        "value": "page"
+      }
+    },
+    {
+      "expectDisabled": {
+        "role": "button",
+        "name": "Go to next page"
+      }
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "story": "react-app-button--primary",
+  "globals": "theme:dark",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "expectHtmlAttr": {
+        "attr": "data-theme",
+        "value": "dark"
+      }
+    },
+    {
+      "expectStyle": {
+        "css": "body",
+        "prop": "background-color",
+        "value": "rgb(13, 13, 26)"
+      }
+    },
+    {
+      "shot": "dark"
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

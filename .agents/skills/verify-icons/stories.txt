@@ -1,0 +1,26 @@
+# Story ids or id prefixes (title slugs) that verify-icons smoke-renders in light and dark.
+design-system-icons-arrows
+design-system-icons-buildings
+design-system-icons-business
+design-system-icons-communication
+design-system-icons-currencies
+design-system-icons-design
+design-system-icons-development
+design-system-icons-device
+design-system-icons-document
+design-system-icons-editor
+design-system-icons-finance
+design-system-icons-food
+design-system-icons-game-sports
+design-system-icons-health-medical
+design-system-icons-logos
+design-system-icons-map
+design-system-icons-media
+design-system-icons-others
+design-system-icons-system
+design-system-icons-user-faces
+design-system-icons-weather
+design-system-delivery-logos
+design-system-payment-logos
+design-system-zid-logos
+design-system-illustrations

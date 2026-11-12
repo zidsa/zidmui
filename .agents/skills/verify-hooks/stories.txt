@@ -1,0 +1,6 @@
+# Story ids or id prefixes (title slugs) that verify-hooks smoke-renders in light and dark.
+react-app-accordion--controlled-with-toggle
+react-app-accordion--switch-controlled
+react-app-accordion--loading-simulation-story
+react-app-dialog-with-features--with-pagination
+react-app-tooltip--variants

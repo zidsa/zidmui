@@ -1,0 +1,21 @@
+{
+  "story": "react-app-list-item--playground",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "expect": {
+        "role": "listitem"
+      }
+    },
+    {
+      "expect": {
+        "text": "List item label"
+      }
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

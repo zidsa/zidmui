@@ -1,0 +1,27 @@
+{
+  "story": "design-system-colors--all-colors",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "expectCount": {
+        "css": "#storybook-root span:text-matches(\"^(#[0-9A-F]{6}|rgba.*)$\")",
+        "value": 93
+      }
+    },
+    {
+      "expectStyle": {
+        "css": "#storybook-root div:has(> span:text-is(\"#4E3372\"))",
+        "prop": "background-color",
+        "value": "rgb(78, 51, 114)"
+      }
+    },
+    {
+      "shot": "colors"
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

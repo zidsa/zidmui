@@ -50,3 +50,12 @@ Lefthook runs oxlint and `tsc` on staged files before commit, and commitlint
 ## Workflow
 
 Base branch: `main`. PR template: `pull_request_template.md` at the repo root.
+
+## Verification before a PR
+
+Every change must pass both checks for each feature group it touches before a PR opens:
+
+- Verification: `.agents/skills/verify-zidmui/scripts/verify.sh <group|all>` (skills `verify-<group>`: stories render in light and dark, flows pass in a real browser).
+- Formal verification: `.agents/skills/verify-zidmui/scripts/formal.sh <group|all> --mutants` (skills `formal-<group>`: exhaustive properties hold and every mutant is caught).
+
+Groups: data-display, feedback-overlays, hooks, icons, inputs-forms, navigation-layout, theme-styles. Skills live in `.agents/skills`; `.claude/skills`, `.codex/skills`, `.cursor/skills` and `.hermes/skills` link to them. A fix for a recorded FINDING updates its record in the same PR.

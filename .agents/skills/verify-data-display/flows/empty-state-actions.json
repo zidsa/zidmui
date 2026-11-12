@@ -1,0 +1,29 @@
+{
+  "story": "react-app-empty-state--default",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "expect": {
+        "role": "heading",
+        "name": "Empty state title"
+      }
+    },
+    {
+      "expect": {
+        "role": "button",
+        "name": "Primary Action"
+      }
+    },
+    {
+      "expect": {
+        "role": "button",
+        "name": "Secondary Action"
+      }
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

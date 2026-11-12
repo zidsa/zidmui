@@ -1,0 +1,25 @@
+{
+  "story": "react-app-tooltip--variants",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "hover": {
+        "role": "button",
+        "name": "Hover"
+      }
+    },
+    {
+      "expect": {
+        "role": "tooltip"
+      }
+    },
+    {
+      "aria": "shown"
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "story": "react-app-tabs--interactive",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "expectAttr": {
+        "role": "tab",
+        "name": "All 120",
+        "attr": "aria-selected",
+        "value": "true"
+      }
+    },
+    {
+      "click": {
+        "role": "tab",
+        "name": "Pending 25"
+      }
+    },
+    {
+      "expectAttr": {
+        "role": "tab",
+        "name": "Pending 25",
+        "attr": "aria-selected",
+        "value": "true"
+      }
+    },
+    {
+      "expectAttr": {
+        "role": "tab",
+        "name": "All 120",
+        "attr": "aria-selected",
+        "value": "false"
+      }
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}
