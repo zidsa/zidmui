@@ -1,0 +1,40 @@
+{
+  "story": "react-app-input-radio--interactive",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "expect": {
+        "text": "Selected: opt1"
+      }
+    },
+    {
+      "click": {
+        "role": "radio",
+        "name": "Option 3"
+      }
+    },
+    {
+      "expectChecked": {
+        "role": "radio",
+        "name": "Option 3"
+      }
+    },
+    {
+      "expectChecked": {
+        "role": "radio",
+        "name": "Option 1",
+        "value": false
+      }
+    },
+    {
+      "expect": {
+        "text": "Selected: opt3"
+      }
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

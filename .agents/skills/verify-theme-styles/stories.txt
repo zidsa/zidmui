@@ -1,0 +1,5 @@
+# Story ids or id prefixes (title slugs) that verify-theme-styles smoke-renders in light and dark.
+design-system-colors
+design-system-typography-css
+design-system-spacing-css
+css-styles-utilities

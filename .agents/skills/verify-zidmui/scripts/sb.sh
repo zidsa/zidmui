@@ -15,8 +15,11 @@ DRIVE="$(cd "$(dirname "$0")" && pwd)/drive.mjs"
 
 pid_alive() { [ -f "$RUN/pid" ] && kill -0 "$(cat "$RUN/pid")" 2>/dev/null; }
 
-# PID that listens on $PORT, or empty.
-listener_pid() { ss -ltnpH "sport = :$PORT" 2>/dev/null | grep -o 'pid=[0-9]*' | head -1 | cut -d= -f2; }
+# PID that listens on $PORT, or empty. lsof works on Linux and macOS (ss and setsid are Linux-only).
+listener_pid() { lsof -nP -iTCP:"$PORT" -sTCP:LISTEN -t 2>/dev/null | head -1; }
+port_busy() { lsof -nP -iTCP:"$PORT" -sTCP:LISTEN -t >/dev/null 2>&1; }
+# Start "$@" as its own process-group leader, so cleanup can find every child.
+spawn() { if command -v setsid >/dev/null; then exec setsid "$@"; else exec perl -e 'setpgrp(0,0); exec @ARGV or die "exec: $!"' "$@"; fi; }
 
 story_count() {
   curl -sf "$URL/index.json" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>console.log(Object.values(JSON.parse(s).entries).filter(e=>e.type==="story").length))'
@@ -24,14 +27,13 @@ story_count() {
 
 launch() {
   if pid_alive; then echo "already running: pid $(cat "$RUN/pid") on $URL (run cleanup first)"; exit 1; fi
-  if [ -n "$(listener_pid)" ] || ss -ltnH "sport = :$PORT" | grep -q .; then
+  if port_busy; then
     echo "port $PORT is taken by someone else; pick another with ZIDMUI_SB_PORT"; exit 1
   fi
   mkdir -p "$RUN" "$EVIDENCE"
   cd "$REPO"
   [ -d node_modules ] || "${PNPM[@]}" install --frozen-lockfile
-  # setsid: the launcher becomes a process-group leader, so cleanup can find every child.
-  setsid nohup "${PNPM[@]}" exec storybook dev -p "$PORT" --ci --no-open --host 127.0.0.1 >"$RUN/storybook.log" 2>&1 &
+  (spawn "${PNPM[@]}" exec storybook dev -p "$PORT" --ci --no-open --host 127.0.0.1 </dev/null >"$RUN/storybook.log" 2>&1) &
   echo $! >"$RUN/pid"
   echo "launched pid $(cat "$RUN/pid"), log $RUN/storybook.log"
   for _ in $(seq 1 120); do
@@ -70,7 +72,7 @@ cleanup() {
     rm -f "$RUN/pid"
     rmdir "$RUN" 2>/dev/null || true
   fi
-  if ss -ltnH "sport = :$PORT" | grep -q .; then echo "WARN port $PORT still in use (not by a pid this skill recorded)"; exit 1; fi
+  if port_busy; then echo "WARN port $PORT still in use (not by a pid this skill recorded)"; exit 1; fi
   echo "cleaned port $PORT; evidence kept in $EVIDENCE"
 }
 

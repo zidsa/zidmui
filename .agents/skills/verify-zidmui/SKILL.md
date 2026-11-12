@@ -65,7 +65,7 @@ node $S/drive.mjs --story <story-id> [--port 6116] [--args 'k:v;k:v'] [--globals
 - **`--args`** overrides story args through the URL. Storybook only accepts args that have an `argTypes` entry in the story's meta. Others, such as `type` on App Input Base, are **silently dropped**.
 - **`--globals theme:dark|light`** switches the Parcel theme. This is the same toolbar global the docs site uses.
 
-Steps are objects with one key each. A target is `{"role","name"}` (accessible role and exact accessible name), `{"label"}` (form label), or `{"text"}`.
+Steps are objects with one key each. A target is `{"role","name"}` (accessible role and exact accessible name), `{"label"}` (form label), `{"text"}`, or `{"css"}`; add `"nth"` to pick one match.
 
 | Step | Example | Meaning |
 | --- | --- | --- |
@@ -74,9 +74,16 @@ Steps are objects with one key each. A target is `{"role","name"}` (accessible r
 | `fill` | `{"fill":{"label":"Label","value":"abc"}}` | Replaces the value in one go. |
 | `press` | `{"press":"Escape"}` | Keyboard key. |
 | `wheel` | `{"wheel":{"label":"Amount","deltaY":-100}}` | Focus, hover, scroll the wheel. |
+| `hover` / `focus` | `{"hover":{"role":"button","name":"Info"}}` | Hover or focus the first match. |
+| `wait` | `{"wait":300}` | Waits that many milliseconds (for a transition, never instead of an `expect`). |
 | `expect` | `{"expect":{"role":"dialog","name":"…","state":"hidden"}}` | Waits up to 5 s for `visible` (the default) or `hidden`. |
 | `expectAttr` | `{"expectAttr":{"role":"tab","name":"All 120","attr":"aria-selected","value":"true"}}` | Exact attribute value. |
 | `expectValue` | `{"expectValue":{"label":"Label","value":"abc"}}` | Exact input value. |
+| `expectGone` | `{"expectGone":{"role":"tooltip"}}` | Waits up to 5 s for the target to leave the DOM. |
+| `expectChecked` | `{"expectChecked":{"role":"checkbox","name":"Click me","value":false}}` | Exact checked state (default `true`). |
+| `expectDisabled` | `{"expectDisabled":{"role":"button","name":"Save"}}` | Exact disabled state (default `true`). |
+| `expectCount` | `{"expectCount":{"css":"#storybook-root svg","value":89}}` | Exact number of matches of a `css`, `role` (+ optional `name`) or `text` target. |
+| `expectStyle` | `{"expectStyle":{"css":"body","prop":"background-color","value":"rgb(13, 13, 26)"}}` | Exact computed style of the first match. |
 | `expectHtmlAttr` | `{"expectHtmlAttr":{"attr":"data-theme","value":"dark"}}` | Attribute on `<html>`. |
 | `shot` / `aria` | `{"shot":"open"}`, `{"aria":"open"}` | Screenshot, or ARIA snapshot (YAML) of the page. |
 

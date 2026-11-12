@@ -1,0 +1,23 @@
+{
+  "story": "react-app-input-base--playground",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "fill": {
+        "label": "Label",
+        "value": "hello zid"
+      }
+    },
+    {
+      "expectValue": {
+        "label": "Label",
+        "value": "hello zid"
+      }
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "story": "react-app-accordion--controlled-with-toggle",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "click": {
+        "role": "button",
+        "name": "Controlled Accordion This accordion state is controlled externally"
+      }
+    },
+    {
+      "expectAttr": {
+        "role": "button",
+        "name": "Controlled Accordion This accordion state is controlled externally",
+        "attr": "aria-expanded",
+        "value": "true"
+      }
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

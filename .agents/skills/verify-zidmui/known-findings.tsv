@@ -1,0 +1,10 @@
+# Recorded FINDINGs: real pre-existing defects that smoke must keep reproducing (verify fails when one
+# goes away, so a fix also removes its row). Tab-separated: story-id, finding name, console-error substring.
+design-system-colors--all-colors	colors-story-prop-leak	DOM element. bgColor bgcolor
+design-system-colors--all-colors	colors-story-prop-leak	DOM element. isLight islight
+react-app-accordion--with-action-buttons	accordion-button-in-summary-button	error.%s <button> button
+react-app-accordion--with-action-buttons	accordion-button-in-summary-button	trace. button <button>
+react-app-accordion--with-delete-action	accordion-button-in-summary-button	error.%s <button> button
+react-app-accordion--with-delete-action	accordion-button-in-summary-button	trace. button <button>
+react-app-list-item--variants	list-item-p-in-p	error.%s <p> p
+react-app-list-item--variants	list-item-p-in-p	trace. p <p>

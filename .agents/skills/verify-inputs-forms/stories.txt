@@ -1,0 +1,18 @@
+# Story ids or id prefixes (title slugs) that verify-inputs-forms smoke-renders in light and dark.
+react-app-button
+react-app-checkbox
+react-app-icon-button
+react-app-input-base
+react-app-input-base-search
+react-app-input-radio
+react-app-input-radio-card
+react-app-radio-group
+react-app-switch
+react-app-switch-group
+css-styles-components-button
+css-styles-components-checkbox
+css-styles-components-input
+css-styles-components-radio
+css-styles-components-select
+css-styles-components-switch
+css-styles-component-reference

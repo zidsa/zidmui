@@ -1,0 +1,13 @@
+diff --git a/src/components/app-alert.tsx b/src/components/app-alert.tsx
+index 00d7f16..b53d443 100644
+--- a/src/components/app-alert.tsx
++++ b/src/components/app-alert.tsx
+@@ -43,7 +43,7 @@ export const AppAlert: React.FC<AppAlertProps> = ({
+     <Alert {...props} onClose={onClose} variant={variant}>
+       <StackColumn gap={1.5}>
+         <StackColumn gap={0.5}>
+-          {title && (
++          {false && title && (
+             <AlertTitle mb={0} variant="subtitle2" {...titleProps}>
+               {title}
+             </AlertTitle>

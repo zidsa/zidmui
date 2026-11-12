@@ -1,0 +1,25 @@
+{
+  "story": "design-system-icons-arrows--all-arrows",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "expect": {
+        "text": "89 icons — click to copy import"
+      }
+    },
+    {
+      "expectCount": {
+        "css": "#storybook-root svg",
+        "value": 89
+      }
+    },
+    {
+      "shot": "arrows"
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

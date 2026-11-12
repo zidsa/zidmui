@@ -1,0 +1,13 @@
+diff --git a/src/hooks/use-toggle.ts b/src/hooks/use-toggle.ts
+index a59eb87..a1551d3 100644
+--- a/src/hooks/use-toggle.ts
++++ b/src/hooks/use-toggle.ts
+@@ -12,7 +12,7 @@ export const useToggle = (defaultValue: boolean = false) => {
+ 
+   return {
+     value,
+-    toggle: () => setValue(v => !v),
++    toggle: () => setValue(v => v),
+     on: () => setValue(true),
+     off: () => setValue(false),
+     setValue: _setValue,

@@ -1,0 +1,12 @@
+diff --git a/src/theme/palette.dark.ts b/src/theme/palette.dark.ts
+index 5c5dbd6..08b3686 100644
+--- a/src/theme/palette.dark.ts
++++ b/src/theme/palette.dark.ts
+@@ -46,7 +46,6 @@ export const paletteDark: ThemeOptions['palette'] = {
+     secondary: colors.neutral[400],
+     tertiary: '#B1A4BB',
+     disabled: colors.neutral[500],
+-    deepGreen: '#9EEC98',
+     darkOchre: '#F9E683',
+     contrastText: colors.neutral[400],
+     primaryContrastTest: '#FFFFFF',

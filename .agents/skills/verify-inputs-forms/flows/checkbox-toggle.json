@@ -1,0 +1,43 @@
+{
+  "story": "react-app-checkbox--interactive",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "expectChecked": {
+        "role": "checkbox",
+        "name": "Click me",
+        "value": false
+      }
+    },
+    {
+      "click": {
+        "role": "checkbox",
+        "name": "Click me"
+      }
+    },
+    {
+      "expectChecked": {
+        "role": "checkbox",
+        "name": "Click me",
+        "value": true
+      }
+    },
+    {
+      "click": {
+        "text": "Click me"
+      }
+    },
+    {
+      "expectChecked": {
+        "role": "checkbox",
+        "name": "Click me",
+        "value": false
+      }
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

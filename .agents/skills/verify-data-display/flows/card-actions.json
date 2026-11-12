@@ -1,0 +1,31 @@
+{
+  "story": "react-app-card--with-actions",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "expect": {
+        "role": "heading",
+        "name": "Card with Multiple Actions"
+      }
+    },
+    {
+      "expectCount": {
+        "role": "button",
+        "name": "Save",
+        "value": 2
+      }
+    },
+    {
+      "expectCount": {
+        "role": "button",
+        "name": "Cancel",
+        "value": 1
+      }
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

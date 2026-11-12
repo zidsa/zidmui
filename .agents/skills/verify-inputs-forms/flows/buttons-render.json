@@ -1,0 +1,28 @@
+{
+  "story": "react-app-button--primary",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "expect": {
+        "role": "button",
+        "name": "Text"
+      }
+    },
+    {
+      "expectStyle": {
+        "role": "button",
+        "name": "Text",
+        "prop": "background-color",
+        "value": "rgb(78, 51, 114)"
+      }
+    },
+    {
+      "shot": "primary"
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

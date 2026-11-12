@@ -1,0 +1,30 @@
+{
+  "story": "react-app-accordion--disabled-state",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "expectDisabled": {
+        "role": "button",
+        "name": "Disabled Accordion (Closed) This accordion is disabled and cannot be interacted with"
+      }
+    },
+    {
+      "expectAttr": {
+        "role": "button",
+        "name": "Disabled Accordion (Closed) This accordion is disabled and cannot be interacted with",
+        "attr": "aria-expanded",
+        "value": "false"
+      }
+    },
+    {
+      "expect": {
+        "text": "This content is visible but the accordion cannot be collapsed"
+      }
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

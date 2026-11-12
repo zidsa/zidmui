@@ -1,0 +1,24 @@
+{
+  "story": "react-app-alert--variants",
+  "steps": [
+    {
+      "aria": "before"
+    },
+    {
+      "expect": {
+        "role": "alert",
+        "nth": 0
+      }
+    },
+    {
+      "expect": {
+        "role": "button",
+        "name": "Close",
+        "nth": 0
+      }
+    },
+    {
+      "aria": "after"
+    }
+  ]
+}

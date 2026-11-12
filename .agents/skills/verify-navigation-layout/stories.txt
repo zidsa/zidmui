@@ -1,0 +1,7 @@
+# Story ids or id prefixes (title slugs) that verify-navigation-layout smoke-renders in light and dark.
+react-app-list-item
+react-app-pagination
+react-app-tabs
+react-app-stack
+css-styles-components-listitem
+design-system-spacing-react

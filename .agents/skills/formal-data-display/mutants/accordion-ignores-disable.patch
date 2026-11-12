@@ -1,0 +1,13 @@
+diff --git a/src/components/app-accordion.tsx b/src/components/app-accordion.tsx
+index 4b94c29..5826b82 100644
+--- a/src/components/app-accordion.tsx
++++ b/src/components/app-accordion.tsx
+@@ -107,7 +107,7 @@ export const AppAccordion: React.FC<AppAccordionProps> = ({
+   return (
+     <Accordion
+       onChange={onToggle}
+-      disabled={disable}
++      disabled={false}
+       slotProps={{ transition: { unmountOnExit } }}
+       data-rounded-corners={roundedCorners}
+       data-color={color}
